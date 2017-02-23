@@ -48,6 +48,12 @@
 
     <style type="text/css">
         .ad-dash-pa { border-right: 5px solid {{ $Color }}; }
+        .ad-dash.bot { 
+            border-top: 2px solid {{ $Color }};
+            background: url({{ url('img/hex-bg-l.png') }}); 
+            background-size: 100%;
+            background-blend-mode: multiply;
+            background-color: grey; }
         .bot-scro #cts-time:hover { background-color: {{ $Color }}; color: white; transition: 0.3s; }
         .bot-scro #main-plot:hover { background-color: {{ $Color }}; color: white; transition: 0.3s; }
         .bot-scro #smooth-top:hover { background-color: {{ $Color }}; color: white; transition: 0.3s; }

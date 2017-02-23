@@ -29,7 +29,7 @@
             'des'=>'Disables all actions.'),
         array ('name'=>'pause', 'purge'=>false, 'ico'=>'ra ra-clockwork',
             'des'=>'Disables everything. Delays healing, damage, and other effects until removed.'),
-        array ('name'=>'petrify', 'purge'=>true, 'ico'=>'',
+        array ('name'=>'petrify', 'purge'=>true, 'ico'=>'ra ra-groundbreaker',
             'des'=>'Prevents any action. +80% physical defense. Removed on physical or mixed damage hit.'),
         //etc
         array ('name'=>'blind', 'purge'=>true, 'ico'=>'ra ra-bleeding-eye',
@@ -77,7 +77,7 @@
         array ('name'=>'disable', 'purge'=>false, 'ico'=>'ra ra-interdiction',
             'des'=>'Diables all actions.'),
         array ('name'=>'clone', 'purge'=>false, 'ico'=>'ra ra-double-team',
-            'des'=>'Copy of someone. Deals only 30% of the original damage and takes 170% damage.'),
+            'des'=>'Copy of someone. Non-perfect deals only 30% of the original damage and takes 170% damage.'),
         array ('name'=>'invisible', 'purge'=>true, 'ico'=>'ra ra-hood',
             'des'=>'Prevents being seen by enemies. Removed by Reveal or when attacking/casting.'),
 
@@ -100,6 +100,20 @@
 ?>
 
 <style type="text/css">
+
+    .row-skill-stat {
+        display: -webkit-box;
+        /*background: url({{ $charTexture }}); 
+        background-size: 300px;
+        background-blend-mode: overlay;
+        background-color: {{ $charColorSub }};*/
+        transition: 0.5s;
+    }
+    /*.skill-box:hover div .row .row-skill-stat {
+        background-blend-mode: overlay;
+        background-color: {{ $charColor }};
+        transition: 0.3s;
+    }*/
 
     .aug.{{ $charname }} i {
         color: {{ $charColor }};
@@ -148,7 +162,7 @@
     @endforeach 
 </style>
 
-<div class="row">
+<!-- <div class="row"> -->
 @foreach ($charability as $ability)
     <?php 
         $abilityprefix = "";
@@ -212,69 +226,72 @@
                             ?>
                             </p>
                     </div>
-                    @if($rowpos=="ski-base") <div class="col-xs-6"> @else <div class="col-xs-8"> @endif 
-                        <ul class="skill-stat"> 
-                            @foreach ($abilitystat as $stat)
-                                <?php
-                                    $statname = $stat['name']; 
-                                    $statval = $stat['val']; 
-                                    $statext = $stat['ext'];
-                                ?>
-                                @if ($statval!='')
+                    <div class="clear"></div>
+                    <div class="row-skill-stat">
+                        @if($rowpos=="ski-base") <div class="col-xs-6"> @else <div class="col-xs-8"> @endif 
+                            <ul class="skill-stat"> 
+                                @foreach ($abilitystat as $stat)
                                     <?php
-                                        if ($statext=='lum') { $statext = 'sbx lum'; }
-                                        else if ($statext=='mys') { $statext = 'sbx mys'; }
-                                        else if ($statext=='aer') { $statext = 'sbx aer'; }
-                                        else if ($statext=='pur') { $statext = 'sbx pur'; }
+                                        $statname = $stat['name']; 
+                                        $statval = $stat['val']; 
+                                        $statext = $stat['ext'];
+                                    ?>
+                                    @if ($statval!='')
+                                        <?php
+                                            if ($statext=='lum') { $statext = 'sbx lum'; }
+                                            else if ($statext=='mys') { $statext = 'sbx mys'; }
+                                            else if ($statext=='aer') { $statext = 'sbx aer'; }
+                                            else if ($statext=='pur') { $statext = 'sbx pur'; }
 
-                                        $des = explode("|", $statname); 
-                                        foreach ($des as $d) {
-                                            $found=false;
-                                            foreach ($statusEffects as $se) {
-                                                // var_dump($sename);
-                                                if (strpos($d, $se['name']) !== false) {
-                                                    $d = $se['name'];
-                                                    $seico = "";
-                                                    foreach ($statusEffects as $se) {
-                                                        if($se['name']==$d) $seico=$se['ico'];   
+                                            $des = explode("|", $statname); 
+                                            foreach ($des as $d) {
+                                                $found=false;
+                                                foreach ($statusEffects as $se) {
+                                                    // var_dump($sename);
+                                                    if (strpos($d, $se['name']) !== false) {
+                                                        $d = $se['name'];
+                                                        $seico = "";
+                                                        foreach ($statusEffects as $se) {
+                                                            if($se['name']==$d) $seico=$se['ico'];   
+                                                        }
+                                                        $found=true;
                                                     }
-                                                    $found=true;
                                                 }
                                             }
-                                        }
-                                    ?>
-                                    @if (!$found)
-                                        <li>{{ $statname }}: <b>{{ $statval }} <i class="{{ $statext }}"></i></b></li>
-                                    @else
-                                        <li><span class="inf-{{ $des[0] }}"><i class="{{ $seico }}"></i>{{ str_replace('-',' ',$des[0]) }}</span>: <b>{{ $statval }} <i class="{{ $statext }}"></i></b></li>
+                                        ?>
+                                        @if (!$found)
+                                            <li>{{ $statname }}: <b>{{ $statval }} <i class="{{ $statext }}"></i></b></li>
+                                        @else
+                                            <li><span class="inf-{{ $des[0] }}"><i class="{{ $seico }}"></i>{{ str_replace('-',' ',$des[0]) }}</span>: <b>{{ $statval }} <i class="{{ $statext }}"></i></b></li>
+                                        @endif
                                     @endif
-                                @endif
-                            @endforeach
-                        </ul>
-                    </div>
-                    @if($rowpos=="ski-base") <div class="col-xs-6"> @else <div class="col-xs-4"> @endif 
-                        <ul class="skill-stat">
-                            @foreach ($abilitymcdm as $stat)
-                                <?php 
-                                    $statname = $stat['name']; 
-                                    $statval = $stat['val'];
-                                    if($statname=='ml' && $statval==true) { $statname = 'fa fa-eercast'; $statval = 'MYSTLOCK -able'; }
-                                    if($statname=='da' && $statval==true) { $statname = 'fa fa-sign-language'; $statval = 'DISARM -able'; }
-                                    if($statname=='dp' && $statval==true) { $statname = 'DIRECT DAMAGE'; }
-                                    if($statname=='dp' && $statval==false) { $statname = 'INDIRECT DAMAGE'; }
-                                ?>
-                                @if ($stat['name']=='ml' || $stat['name']=='da')
-                                    <li><i class="{{ $statname }}" aria-hidden="true"></i> {{ $statval }}</li>
-                                @elseif ($stat['name']=='dp')
-                                    <li>{{ $statname }}</li>
-                                @elseif ($stat['name']=='cd' || $stat['name']=='sd')
-                                    <li>{{ $statval }}</li>
-                                @elseif ($stat['val']!='')
-                                    <li>{{ $statname }}: <b>{{ $statval }}</b></li>
-                                @endif
+                                @endforeach
+                            </ul>
+                        </div>
+                        @if($rowpos=="ski-base") <div class="col-xs-6"> @else <div class="col-xs-4"> @endif 
+                            <ul class="skill-stat">
+                                @foreach ($abilitymcdm as $stat)
+                                    <?php 
+                                        $statname = $stat['name']; 
+                                        $statval = $stat['val'];
+                                        if($statname=='ml' && $statval==true) { $statname = 'fa fa-eercast'; $statval = 'MYSTLOCK -able'; }
+                                        if($statname=='da' && $statval==true) { $statname = 'fa fa-sign-language'; $statval = 'DISARM -able'; }
+                                        if($statname=='dp' && $statval==true) { $statname = 'DIRECT DAMAGE'; }
+                                        if($statname=='dp' && $statval==false) { $statname = 'INDIRECT DAMAGE'; }
+                                    ?>
+                                    @if ($stat['name']=='ml' || $stat['name']=='da')
+                                        <li><i class="{{ $statname }}" aria-hidden="true"></i> {{ $statval }}</li>
+                                    @elseif ($stat['name']=='dp')
+                                        <li>{{ $statname }}</li>
+                                    @elseif ($stat['name']=='cd' || $stat['name']=='sd')
+                                        <li>{{ $statval }}</li>
+                                    @elseif ($stat['val']!='')
+                                        <li>{{ $statname }}: <b>{{ $statval }}</b></li>
+                                    @endif
 
-                            @endforeach
-                        </ul>
+                                @endforeach
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -321,4 +338,4 @@
         </div>
     </div>
 @endforeach
-</div>
+<!-- </div> -->

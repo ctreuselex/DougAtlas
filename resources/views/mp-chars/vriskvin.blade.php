@@ -89,7 +89,7 @@
 		$charpriaug = array (
 			array ('name' => "Psychic Frenzy",
 				'des'=>"For every third swing, Myst Hammer deals additional 125% mixed damage and reduces 20 seconds off Psyblade's recharge time."),
-			array ('name' => "Resistance is Futile",
+			array ('name' => "Resistance Is Futile",
 				'des'=>"Myst Hammer inflicts 2% |frangible| per hit. Stacks 5 times and lasts for 5 seconds."), 
 			);
 		// ------------------------------------------------------------ //
@@ -183,7 +183,7 @@
 				'des'=>"Psyblades caught within the explosion or implosion of another Psyblade will also explode or implode after a 0.50 second delay."),
 			array ('name' => "Myst Savings",
 				'des'=>"Psyblades' explosions or implosions will replenish Vriskvin and nearby allied units' Myst by 15% of the Psyblades' Myst"),
-			array ('name' => "Implosions are Cooler",
+			array ('name' => "Implosions Are Cooler",
 				'des'=>"Psychic Burst now causes Psyblades to implode after a 2 seconds delay dealing half the normal damage but |pause|-ing enemy units for 1.50 seconds"), 
 			);
 		// ------------------------------------------------------------ //
@@ -211,7 +211,7 @@
 				'des'=>"Reduces Myst Cost to 250 and Cooldown to 50 seconds."),
 			array ('name' => "Safe Distance",
 				'des'=>"Allows Psychic Rift to be cast from afar with a range of 650."),
-			array ('name' => "Point of Singularity",
+			array ('name' => "Point Of Singularity",
 				'des'=>"Psychic Rift now also sucks enemy units and inflicts 80% |slow| for 2 seconds after the rift. Reduces area of esffect to 300."),
 			array ('name' => "Assiduity",
 				'des'=>"Psyblades affected by Psychic Rift will instantly have their Myst Pool at maximum. Increases duration to 2 seconds."),  
@@ -239,7 +239,7 @@
 		$charultaug = array (
 			array ('name' => "Friendly Tap",
 				'des'=>"Prevents Time Tap from affecting allied units."),
-			array ('name' => "Speed of Light",
+			array ('name' => "Speed Of Light",
 				'des'=>"Allows Vriskvin to move freely after casting Time Tap without the need to channel it. Decreases duration to 3 seconds"), 
 			);
 		// ------------------------------------------------------------ //

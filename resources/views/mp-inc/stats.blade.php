@@ -211,43 +211,43 @@
     // -----------------------------------------------------
 
     $statRanks = array (
-        'phyDam' => number_format(round(($finValues['phyDam'] / 150) * 100)),
-        'mysDam' => number_format(round(($finValues['mysDam'] / 150) * 100)),
-        'mixDam' => number_format(round(($finValues['mixDam'] / 150) * 100)),
+        'phyDam' => number_format(round((($finValues['phyDam']-20) / 130) * 100)),
+        'mysDam' => number_format(round((($finValues['mysDam']-20) / 130) * 100)),
+        'mixDam' => number_format(round((($finValues['mixDam']-20) / 130) * 100)),
 
         'critMul' => number_format(round((($finValues['critMul'] - 1) / 4) * 100)),
-        'attRate' => number_format(round(($finValues['attRate'] / 5) * 100)),
-        'moveSpd' => number_format(round((($finValues['moveSpd'] - 200) / 200) * 100)),
+        'attRate' => number_format(round((($finValues['attRate']-0.5) / 3) * 100)),
+        'moveSpd' => number_format(round((($finValues['moveSpd'] - 250) / 150) * 100)),
 
-        'hPool' => number_format(round((($finValues['hPool']) / 1800) * 100)),
-        'hRgen' => number_format(round(($finValues['hRgen'] / 17) * 100)),
+        'hPool' => number_format(round(((($finValues['hPool'])-150) / 1800) * 100)),
+        'hRgen' => number_format(round((($finValues['hRgen']-1) / 17) * 100)),
 
-        'mPool' => number_format(round((($finValues['mPool']) / 2000) * 100)),
-        'mRgen' => number_format(round(($finValues['mRgen'] / 17) * 100)),
+        'mPool' => number_format(round(((($finValues['mPool'])-150) / 2000) * 100)),
+        'mRgen' => number_format(round((($finValues['mRgen']-1) / 17) * 100)),
 
-        'phyDef' => number_format(round(($finValues['phyDef'] / 30) * 100)),
-        'mysDef' => number_format(round(($finValues['mysDef'] / 30) * 100)),
-        'mixDef' => number_format(round(($finValues['mixDef'] / 30) * 100)),
+        'phyDef' => number_format(round((($finValues['phyDef']-5) / 30) * 100)),
+        'mysDef' => number_format(round((($finValues['mysDef']-5) / 30) * 100)),
+        'mixDef' => number_format(round((($finValues['mixDef']-5) / 30) * 100)),
         );
 
     $statMaxRanks = array (
-        'phyDam' => number_format(round(($maxValues['phyDam'] / 150) * 100)),
-        'mysDam' => number_format(round(($maxValues['mysDam'] / 150) * 100)),
-        'mixDam' => number_format(round(($maxValues['mixDam'] / 150) * 100)),
+        'phyDam' => number_format(round((($maxValues['phyDam']-20) / 130) * 100)),
+        'mysDam' => number_format(round((($maxValues['mysDam']-20) / 130) * 100)),
+        'mixDam' => number_format(round((($maxValues['mixDam']-20) / 130) * 100)),
 
         'critMul' => number_format(round((($maxValues['critMul'] - 1) / 4) * 100)),
-        'attRate' => number_format(round(($maxValues['attRate'] / 5) * 100)),
-        'moveSpd' => number_format(round((($maxValues['moveSpd'] - 200) / 200) * 100)),
+        'attRate' => number_format(round((($maxValues['attRate']-0.5) / 3) * 100)),
+        'moveSpd' => number_format(round((($maxValues['moveSpd'] - 250) / 150) * 100)),
 
-        'hPool' => number_format(round((($maxValues['hPool']) / 1800) * 100)),
-        'hRgen' => number_format(round(($maxValues['hRgen'] / 17) * 100)),
+        'hPool' => number_format(round(((($maxValues['hPool'])-150) / 1800) * 100)),
+        'hRgen' => number_format(round((($maxValues['hRgen']-1) / 17) * 100)),
 
-        'mPool' => number_format(round((($maxValues['mPool']) / 2000) * 100)),
-        'mRgen' => number_format(round(($maxValues['mRgen'] / 17) * 100)),
+        'mPool' => number_format(round(((($maxValues['mPool'])-150) / 2000) * 100)),
+        'mRgen' => number_format(round((($maxValues['mRgen']-1) / 17) * 100)),
 
-        'phyDef' => number_format(round(($maxValues['phyDef'] / 30) * 100)),
-        'mysDef' => number_format(round(($maxValues['mysDef'] / 30) * 100)),
-        'mixDef' => number_format(round(($maxValues['mixDef'] / 30) * 100)),
+        'phyDef' => number_format(round((($maxValues['phyDef']-5) / 30) * 100)),
+        'mysDef' => number_format(round((($maxValues['mysDef']-5) / 30) * 100)),
+        'mixDef' => number_format(round((($maxValues['mixDef']-5) / 30) * 100)),
         );
 
     $chardiv = max($lumTotal, $aerTotal, $mysTotal, $geiTotal);
@@ -371,7 +371,7 @@
         transition: 0.3s;
     }
     .st:hover b .details {
-        left: -250px;
+        left: -200px;
         opacity: 1;
         transition: 0.5s;
         z-index: 10;

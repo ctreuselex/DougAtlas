@@ -40,13 +40,24 @@
 <body>
 
 	@include('inc/navigation')
-   
+
     @yield('char-meta')
 
+    <?php 
+        $charTexture = url('img/hex-bg-l.png'); 
+        // $charTexture = url('img/mp-char/texture/'.$charname.'.jpg'); 
+    ?>
+
     <style type="text/css">
-        .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover { background-color: {{ $charColor }}; }
+        .ad-dash.bot .list-group a.list-group-item.active, .ad-dash.bot .list-group a.list-group-item.active:focus, .ad-dash.bot .list-group a.list-group-item.active:hover { background-color: {{ $charColor }}; }
         .list-group-item.active i { color: {{ $charColorSub }};}
         .ad-dash-pa { border-right: 5px solid {{ $charColor }}; }
+        .ad-dash.bot { 
+            border-top: 2px solid {{ $charColor }};
+            background: url({{ $charTexture }}); 
+            background-size: 100%;
+            background-blend-mode: multiply;
+            background-color: {{ $charColorSub }}; }
         .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover { background-color: {{ $charColor }}; }
 
         .char-logs.per li { border-left: 5px solid {{ $charColor }}; }
@@ -141,7 +152,7 @@
     @include('mp-inc/dash')
 
     <div class="col-sm-10 col-sm-offset-2" style="padding: 15px; 
-        /*background: url({{ url('img/hex-bg-l.png') }}); background-size: 30%; background-blend-mode: hard-light; background-color: {{ $charColorSub }};*/
+        /*background: url({{ $charTexture }}); background-size: 30%; background-blend-mode: overlay; background-color: {{ $charColorSub }};*/
         "> 
 
         <p><span class="char-name">{{ $mcharNam }}</span> | {{ $charthemes}}</p>

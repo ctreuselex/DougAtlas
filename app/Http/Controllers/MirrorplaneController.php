@@ -123,7 +123,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'llaxine','sur'=>'loquintez','year'=>1677,'color'=>'#EC78A0','subcolor'=>'#EFE167','ico'=>'ra ra-fairy' ),
             array ( 'name'=>'maximus','sur'=>'seidlitz','year'=>1673,'color'=>'#17EF79','subcolor'=>'#3D7D7A','ico'=>'ra ra-reactor' ),
             array ( 'name'=>'mikael','sur'=>'clayford','year'=> 1667,'color'=>'','subcolor'=>'','ico'=>'ra ra-kitchen-knives' ),
-            array ( 'name'=>'moon','sur'=>'beleaguer','year'=>1668,'color'=>'#26DC9F','subcolor'=>'#BB7C4E','ico'=>'ra ra-slash-ring' ),
+            array ( 'name'=>'moon','sur'=>'beleaguer','year'=>1668,'color'=>'#26DC9F','subcolor'=>'#D2A368','ico'=>'ra ra-slash-ring' ),
             array ( 'name'=>'noemi','sur'=>'','year'=> 1664,'color'=>'','subcolor'=>'','ico'=>'ra ra-flowers' ),
             array ( 'name'=>'rigel','sur'=>'','year'=>1666,'color'=>'#00BCD4','subcolor'=>'#D824A2','ico'=>'ra ra-daggers' ),
             array ( 'name'=>'riza','sur'=>'harmilton','year'=>1671,'color'=>'#E61547','subcolor'=>'#CD15E6','ico'=>'fa fa-cogs' ),

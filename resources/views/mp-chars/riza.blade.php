@@ -59,7 +59,7 @@
 				'des'=>"Riza places a ulitity tower at her position that grants healing, along with other benefits for all surrounding allies."),
 
 			array ('name'=>"Aero Dynamics", 'sk'=>'ult',
-				'des'=>"Riza equips her jet pack that allows her to temporarily fly over the battlefield. While active, Nano Smoke's cooldown is reduced."),
+				'des'=>"Riza equips her jet pack that allows her to temporarily fly over the city like a glorious figher jet. While active, Nano Smoke's cooldown is reduced which allows for dropping bombs below."),
 
 			array ('name'=>"Statis Trap", 'sk'=>'ext',
 				'des'=>"Running and hiding allowed Riza to stay away from all the other nonsense around Mirrorplane, what allowed her to do this for all time now is, well. trapping everyone who tried to follow her into dark alleways."),
@@ -103,7 +103,7 @@
 			);
 		$charsecmcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
-			array ('name'=>'Cooldown', 'val'=>''),
+			array ('name'=>'Cooldown', 'val'=>'10s'),
 			array ('name'=>'Myst Cost', 'val'=>'100'),
 			array ('name'=>'Health Cost', 'val'=>''),
 			array ('name'=>'dp', 'val'=>true), //damage point // 't=direct' 'f=indirect'
@@ -114,7 +114,7 @@
 			);
 		$charsecaug = array (
 			array ('name' => "Front Liner",
-				'des'=>"Grants Hawk Turret an additional shield that blocks incoming damage from the front which have 150 shield."),
+				'des'=>"Grants Hawk Turret an additional 150 shield that blocks incoming damage from the front."),
 			array ('name' => "Who's Your Guardian",
 				'des'=>"Allow Riza to attach Hawk Turret on allied units applying the its |shield| to the target itself."), 
 			);

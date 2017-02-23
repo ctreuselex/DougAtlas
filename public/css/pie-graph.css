@@ -44,7 +44,7 @@ section {
 }
 
 .pie::after {
-  content: "";
+  /*content: "";*/
   display: block;
   width: 120px;
   height: 2px;
@@ -82,7 +82,7 @@ section {
   padding: 15px;
   padding-bottom: 0;
   font-size: 13px;
-  box-shadow: 1px 1px 0 #DDD, 2px 2px 0 #BBB;
+  /*box-shadow: 1px 1px 0 #DDD, 2px 2px 0 #BBB;*/ 
 }
 
 .legend li {
