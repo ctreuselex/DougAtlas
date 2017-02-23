@@ -12,10 +12,10 @@
         <br>
         <br>Hey Max,
         <br>I see you already heard of this.
-        <br>You've been appointed a new teammate. Yup, there's only one. He's name is Daud Irwin, he came from the Institute's Geios Division and is pretty much a lot like you. From what I know about him, he was raised from the lower rings, a gifted student -he won the cup for Geios last year, a pretty chill dude overall, and if you've been skipping, he's from GEIOS! We guys might have some form of tether.
+        <br>You've been appointed a new teammate. Yup, there's only one. He's name is Daud Irwin, he came from the Institute's Geios Division and is pretty much a lot like you. From what I know about him, he was raised from the lower rings, a gifted student -he won the cup for Geios last recurssion, a pretty chill dude overall, and if you've been skipping, he's from GEIOS! We guys might have some form of tether.
         <br>
-        <br>I expect you to meet him this afternoon. He still has three more years in the Institute. So I look forward to seeing you to be like a mentor to him. Being mentored by another gifted student almost graduating this year eh! What could go wrong?
-        <br>That's if, of course, you're really ready to go out of the shell you've been hiding in for the past year.
+        <br>I expect you to meet him this afternoon. He still has three more recurssions in the Institute. So I look forward to seeing you to be like a mentor to him. Being mentored by another gifted student almost graduating eh! What could go wrong?
+        <br>That's if, of course, you're really ready to go out of the shell you've been hiding in.
         <br>
         <br>It wasn't your fault you know? Sandra said you're still blaming yourself for what happen, and I'm here to tell you that, you know, things happen. Just make good of what you accomplished despite the failures that came with it.
         <br>
