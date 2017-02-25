@@ -11,7 +11,7 @@
         <br>TIME: 1687, SR 32nd Summer
         <br>
         <br>Hey Eagle.
-        <br>After a while of not talking and barely seeing. Ferry came to me and said that in the years we are together, there is a miracle that happened to both of us. And actually there are two...
+        <br>After a while of not talking and barely seeing. Ferry came to me and said that in the time we were together, there is a miracle that happened to both of us. And actually there are two...
         <br>
         <br>One, that we both met each other and became part of each other's lives making us who we are now with memories and ideas that will forever remain in our hearts and minds.
         <br>

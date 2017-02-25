@@ -24,6 +24,7 @@
 		$mcharWoc = "Landar Industries' ACMA Tech Twin Pistol";
 
 		$charthemes = 'Dual Guns, Balance, No Second Chances, Being a Jerk to Everyone ';
+		$cityname = 'City of Pride';
 
 		$lum = 8;
 		$lumPlus = 25;

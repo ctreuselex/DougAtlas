@@ -19,7 +19,7 @@
         <br>
         <br>We named the kid 'Sol' after the sun. Because... you know... we can. I guarantee, it'll make you laugh once you figured out how appropriate that is for a pun.
         <br>
-        <br>My only problem is that I can't seem to find actual valid points for me and my husband to adopt a random child we found in the middle of a razed district. But we already fell in love with him and I believe he feels the same way for us too. So my husband came up with a plan to just tell the social workers that I can figure out a way if the kid can give us some sort of clues to who started the fire. He's a child maybe, but they tend to bring miracles, especially if they're only like two years old.
+        <br>My only problem is that I can't seem to find actual valid points for me and my husband to adopt a random child we found in the middle of a razed district. But we already fell in love with him and I believe he feels the same way for us too. So my husband came up with a plan to just tell the social workers that I can figure out a way if the kid can give us some sort of clues to who started the fire. He's a child maybe, but they tend to bring miracles, especially if they're only like two cycles old.
         <br>So I'll wait for that while my team continue on to seeking our goal for this mission till as intended.
         <br>
         <br>Gene out.

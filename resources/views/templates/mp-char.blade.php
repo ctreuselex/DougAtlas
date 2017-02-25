@@ -41,23 +41,38 @@
 
 	@include('inc/navigation')
 
-    @yield('char-meta')
-
     <?php 
         $charTexture = url('img/hex-bg-l.png'); 
         // $charTexture = url('img/mp-char/texture/'.$charname.'.jpg'); 
+        $pageNotes = array (
+            array('ord'=>'', 'n'=>"Game Stats",'v'=>"I have no idea why these people have stats."),
+            array('ord'=>'', 'n'=>"Skillset",'v'=>"Skill sets seem reasonable, calculating damage and effect output of each is over-the-top ridiculous, however."),
+
+            array('ord'=>'kianna', 'n'=>"Let It Go",'v'=>"Nope. has a thing for keeping things concealed and not being felt."),
+            array('ord'=>'maximus', 'n'=>"Old Self",'v'=>"The guy used to not be human, and then he became a non-stereotypical genius bully. Which is still close to being inhuman."),
+            array('ord'=>'moon', 'n'=>"Natural Satellite",'v'=>"It's a really stupid name until you realize its connection. There isn't any. But we can still make stuff up."),
+            array('ord'=>'seline', 'n'=>"Domination",'v'=>"Hey kid, are you interested in some form of pain and pleasure?"),
+            array('ord'=>'vriskvin', 'n'=>"Naiademn",'v'=>"Everyone recognizes it, nobody knows what it is."),
+            );
     ?>
 
+    @yield('char-meta')
+
+
     <style type="text/css">
-        .ad-dash.bot .list-group a.list-group-item.active, .ad-dash.bot .list-group a.list-group-item.active:focus, .ad-dash.bot .list-group a.list-group-item.active:hover { background-color: {{ $charColor }}; }
+        .ad-dash .list-group a.list-group-item.active, .ad-dash .list-group a.list-group-item.active:focus, .ad-dash .list-group a.list-group-item.active:hover { background-color: {{ $charColor }}; }
         .list-group-item.active i { color: {{ $charColorSub }};}
         .ad-dash-pa { border-right: 5px solid {{ $charColor }}; }
-        .ad-dash.bot { 
-            border-top: 2px solid {{ $charColor }};
+        .ad-dash { 
+            border-top: 1px solid {{ $charColor }};
             background: url({{ $charTexture }}); 
             background-size: 100%;
             background-blend-mode: multiply;
             background-color: {{ $charColorSub }}; }
+        .city-scape .moon { background-color: {{ $charColor }}; }
+        .city-scape .moon { box-shadow: 0 0 30px 0px {{ $charColorSub }}; border: 85px solid {{ $charColorSub }}; }
+        .city-scape:hover .moon { box-shadow: 0 0 100px 10px {{ $charColor }}; border: 10px solid {{ $charColorSub }}; }
+        .city-scape .city-name { color: {{ $charColor }}; }
         .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover { background-color: {{ $charColor }}; }
 
         .char-logs.per li { border-left: 5px solid {{ $charColor }}; }
@@ -73,9 +88,10 @@
         .modal-footer { background-color: {{ $charColorSub }}; }
         .modal-footer .btn { background: {{ $charColor }}; color: white; }
         .bot-scro a { color: {{ $charColorSub }};}
-        .bot-scro #cts-time:hover { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
-        .bot-scro #main-plot:hover { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
-        .bot-scro #smooth-top:hover { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
+        .bot-scro a.fir:hover, .bot-scro a.fir.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
+        .bot-scro a.mid:hover, .bot-scro a.mid.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; } 
+        .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
+        .notes ul li b { background: {{ $charColor }}; }
 
         @foreach ($mirChars as $char)
             /*span#ctslog-{{ $char['name'] }} i {
@@ -189,7 +205,9 @@
                                     ?>
 
                                     <a href="" type="button" id="cts-{{ $ctsnum }}" data-toggle="modal" data-target="#{{ $datatar }}"><li>
-                                    {{ $logs['y'] }} | <b>{{ $logs['name'] }}</b></li></a>
+                                        <span class="col-xs-2" style="padding: 0;">{{ $logs['y'] }}</span>
+                                        <b class="col-xs-10" style="border-left: 1px solid rgba(0,0,0,0.3)">{{ $logs['name'] }}</b>
+                                    </li></a>
 
                                     @include("mp-chars/cts-files/{$datatar}")
                                     <?php $ctsnum++; ?>
@@ -297,6 +315,11 @@
                 }
             }            
         });
+    </script>
+
+    <script type="text/javascript"> 
+        var charname = <?php echo json_encode($charname); ?>;
+        var pageNotes = <?php echo json_encode($pageNotes); ?>;
     </script>
 
 </body>

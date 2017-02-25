@@ -24,6 +24,7 @@
 		$mcharWoc = "Custom-made Aquadextrius";
 
 		$charthemes = 'Pole-arms, Mirrors, Illusions, Wicked Dance Moves';
+		$cityname = 'City of Deceit';
 
 		$lum = 12;
 		$lumPlus = 29;

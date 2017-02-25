@@ -16,7 +16,7 @@
         <br><span class="cts-avery"></span>: I saw you with Cristine yesterday...
         <br><span class="cts-avery"></span>: You two have a thing going on between huh?
         <br><span class="cts-daud"></span>: What?
-        <br><span class="cts-avery"></span>: Took you a year to finally make a move that's not running away.
+        <br><span class="cts-avery"></span>: Took you long enough to finally make a move that does not involve running away.
         <br><span class="cts-avery"></span>: Hahaha.
         <br>
         <br>[USER: <span class="cts-froxy"></span> joined the session] 

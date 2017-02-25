@@ -24,6 +24,7 @@
 		$mcharWoc = "Tauroscene's Titan & Myst-based Mini-Glaives";
 
 		$charthemes = 'Storms, Mists, Elite, Purging, Genocide, Anything Sexy';
+		$cityname = 'City of Glamour';
 
 		$lum = 4;
 		$lumPlus = 10;

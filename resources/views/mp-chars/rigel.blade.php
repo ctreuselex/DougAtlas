@@ -24,6 +24,7 @@
 		$mcharWoc = "Myst-based Shards & Corporal Works' Twin Daggers";
 
 		$charthemes = 'Wind, Blades, Invisibility, Lots of Floating Blades, Surprisingly Not-So-Grumpy';
+		$cityname = 'City of Rats';
 
 		$lum = 6;
 		$lumPlus = 17;

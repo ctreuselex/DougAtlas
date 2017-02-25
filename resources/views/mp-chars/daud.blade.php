@@ -24,6 +24,7 @@
 		$mcharWoc = "Landar Industries' ACMA Tech Mini Pistol";
 
 		$charthemes = 'Speed, Sports, Arrows, Vectors, Hater of Cats, Lover of Non-Cats';
+		$cityname = 'City of Fame';
 
 		$lum = 8;
 		$lumPlus = 34;
@@ -215,7 +216,7 @@
 		// ULTIMATE
 		// ------------------------------------------------------------ //
 		$charultstats = array (
-			array ('name'=>'Damage', 'val'=>'50% Physical Damage + 15% of Movement Speed /Kick', 'ext'=>'lum'),
+			array ('name'=>'Damage', 'val'=>'60% Physical Damage + 25% of Movement Speed /Kick', 'ext'=>'lum'),
 			array ('name'=>'Kick Interval', 'val'=>'0.25s', 'ext'=>''),
 			array ('name'=>'Area of Effect', 'val'=>'500', 'ext'=>''),
 			array ('name'=>'Duration', 'val'=>'3s', 'ext'=>''),

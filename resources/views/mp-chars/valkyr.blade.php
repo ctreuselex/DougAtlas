@@ -24,6 +24,7 @@
 		$mcharWoc = "Myst-based Chain Blades";
 
 		$charthemes = 'Firebirds, Ultimate Powah, Immortality, Dad Puns, I Like Boats';
+		$cityname = 'City of Walls';
 
 		$lum = 7;
 		$lumPlus = 35;

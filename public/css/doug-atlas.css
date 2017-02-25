@@ -109,29 +109,62 @@ a, a:hover, a:focus, a:active {
 
 /*---------------------------- MP-DASH ----------------------------*/
 
+	.city-scape {
+	    height: 28.5%;
+	    background-color: grey; 
+	    margin: -15px;
+	}
+	.city-scape .moon{
+		position: absolute;
+	    top: 70px;
+	    left: 25px;
+	    height: 170px;
+	    width: 170px;
+	    background-color: #E2C926;
+	    border-radius: 90px;
+        mix-blend-mode: exclusion;
+        /*opacity: 0.8;*/
+	    transition: 0.5s;
+	}
+	.city-scape:hover .moon {
+		transition: 0.3s;
+	}
+	.city-scape .city-name {
+	    position: absolute;
+	    top: 130px;
+	    width: 100%;
+	    text-align: center;    
+	    font-family: "Righteous";
+	    font-size: 25px;
+	    text-shadow: 0 0px 10px;
+    	letter-spacing: -2px;
+	    color: white;
+	    mix-blend-mode: overlay;
+	    transition: 0.5s;
+	}
+	.city-scape:hover .city-name {
+		color: white;
+		transition: 0.3s;
+	}
 	.ad-dash-pa {
 		height: 100vh;
+		background-color: #333333; 
 		padding-right: 0;
 	    overflow-y: hidden;
     	position: fixed;
 	}
 	.ad-dash {
-		height: 100vh;
+		height: 75vh;
 		position: absolute;
-	    top: 0;
+	    top: 25vh;
 	    bottom: 0;
 	    left: 0;
 	    right: -25px;
 		background-color: #333333; 
-	    padding-top: 33px;
+	    padding-top: 0px;
 	    padding-bottom: 100px;
 	    padding-right: 0;
 	    overflow-y: scroll;
-	}
-	.ad-dash.bot{
-		height: 80vh;
-	    top: 20vh;
-	    padding-top: 0px;
 	}
 
 	/*.ad-dash.bot .list-group a.list-group-item {
@@ -161,15 +194,12 @@ a, a:hover, a:focus, a:active {
 	    border-bottom-right-radius: 0px;
 	    border-bottom-left-radius: 0px;
 	}
-	a.list-group-item i {
-	    font-size: 18px;
-	    margin-right: 10px;
-	}
 
 	a.list-group-item {
 	    color: white;
 	    text-transform: capitalize;
 	    text-decoration: none;
+    	padding: 5px 15px;
 	    transition: 0.3s;
 	}
 	a.list-group-item:hover {
@@ -191,9 +221,10 @@ a, a:hover, a:focus, a:active {
 	    opacity: 0;
 	    display: block;
 	    float: right;
-	    font-size: 30px;
-	    top: -5px;
+	    font-size: 25px;
+	    top: -3px;
 	    position: relative;
+	    margin-right: 10px;
 	    transition: 0.5s;
 	}
 	a.list-group-item:hover i{
@@ -204,8 +235,6 @@ a, a:hover, a:focus, a:active {
 		opacity: 1;
 	    display: block;
 	    float: right;
-	    font-size: 30px;
-	    top: -5px;
 	    position: relative;
 	}
 
@@ -391,7 +420,7 @@ a, a:hover, a:focus, a:active {
 	    position: absolute;
 	    z-index: 2;
 	    top: 110px;
-	    left: 90px;
+	    left: 89px;
 	}
 	.pie {
 	    margin: 30px auto;
@@ -407,12 +436,44 @@ a, a:hover, a:focus, a:active {
 
 /*---------------------------- FOOTER YO ----------------------------*/
 
+	.notes {
+	    position: fixed;
+	    right: 0;
+    	top: 60px;
+	    transition: 0.3s;
+	}
+	.notes.boop {
+	    right: -145px;
+	    transition: 0.3s;
+	}
+	.notes ul {
+	    padding: 0;
+	    /*text-align: right;*/
+	}
+	.notes ul li {
+	    list-style: none;
+	    max-width: 150px;
+	    background: white;
+	    font-size: 12px;
+	    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	    padding: 5px 10px;
+	    padding-left: 15px;
+	    margin: 1px;
+	}
+	.notes ul li b {
+	    position: absolute;
+    	min-width: 50px;
+	    color: white;
+	    right: 140px;
+	    padding: 3px;
+	}
+
 	.bot-scro {
 	    position: fixed;
 	    bottom: 0px;
 	    right: 60px;    
 	}
-	.bot-scro #cts-time {
+	.bot-scro a.fir {
 	    background: white;
 	    padding: 5px 10px;
         border: 1px solid #d5d5d5;
@@ -420,14 +481,14 @@ a, a:hover, a:focus, a:active {
 	    box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
 	    transition: 0.5s;
 	}
-	.bot-scro #main-plot {
+	.bot-scro a.mid {
 	    background: white;
 	    padding: 5px 10px;
         border: 1px solid #d5d5d5;
 	    box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
 	    transition: 0.5s;
 	}
-	.bot-scro #smooth-top {
+	.bot-scro a.las {
 	    background: white;
 	    padding: 5px 10px;
         border: 1px solid #d5d5d5;
@@ -437,7 +498,7 @@ a, a:hover, a:focus, a:active {
 	}
 	.bot-scro a {
 		color: #333;
-		font-size: 25px;
+		font-size: 20px;
 		margin: 0px -2px;
 	}
 

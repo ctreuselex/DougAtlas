@@ -24,6 +24,7 @@
 		$mcharWoc = "Landar Industries' MMGA Tech Prototype";
 
 		$charthemes = 'Shields, Tethers, Technology, Jock Nerd Combo';
+		$cityname = 'City of Design';
 
 		$lum = 2;
 		$lumPlus = 5;

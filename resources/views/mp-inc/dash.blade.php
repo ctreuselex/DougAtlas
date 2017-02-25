@@ -1,13 +1,17 @@
 <div class="col-sm-2 ad-dash-pa">
-	<div class="ad-dash top">
-	    <div class="list-group">
-	        <a id="mirrorplane" href="/mirrorplane" class="list-group-item">The City</a>
-	        <a id="mirrorplane" href="/mirrorplane/story" class="list-group-item">The Story<i class="fa fa-braille"></i></a>
-	        <a id="mirrorplane" href="/mirrorplane/cts-timeline" class="list-group-item">The Past<i class="fa fa-inbox"></i></a>
-	    </div>
-	</div>
-	<hr>
-	<div class="ad-dash bot">
+	<a id="mirrorplane" href="/mirrorplane">
+		<div class="city-scape" style="
+			background-image: url({{ url('img/city-scape.jpg') }});
+			background-size: contain;
+		    background-repeat: no-repeat;
+		    background-position: bottom;
+	        background-blend-mode: multiply;">
+	        <div class="moon"></div>
+	        <div class="city-name">{{ $cityname }}</div>
+        	<!-- <p>MIRRORPLANE</p> -->
+		</div>
+    </a>
+	<div class="ad-dash">
 	    <div class="list-group">
 	        @foreach ($mirChars as $char)
 	        	@if ($char['ico']!='' && $char['color']!='')

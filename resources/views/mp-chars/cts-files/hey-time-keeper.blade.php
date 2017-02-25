@@ -14,7 +14,7 @@
         <span class="cts-djerick"></span>: what? i forgot to tell you that i have short term memory loss<br>
         <span class="cts-vriskvin"></span>: No. You don't have that.<br>
         <span class="cts-vriskvin"></span>: You still remembered to put 'vivie' in those poems.<br>
-        <span class="cts-vriskvin"></span>: That was an insult already long forgotten 2 years ago.<br>
+        <span class="cts-vriskvin"></span>: That was an insult already long forgotten 2 cycles ago.<br>
         <span class="cts-djerick"></span>: thats long term vivie<br>
         <span class="cts-djerick"></span>: and dont worry, i think only the whole squad saw it anyway haha<br>
         <span class="cts-djerick"></span>: and i made sure "she" wont see it<br>

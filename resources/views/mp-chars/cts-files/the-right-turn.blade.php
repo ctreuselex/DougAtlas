@@ -72,7 +72,7 @@
         <br>Uhhh... yeah?
         <br>
         <br>Fine go on... So...
-        <br>But for years, he's been asking me to kill all those people. 'For the better of the future' he says. 'It will be good for us' he says.
+        <br>But for cycles, he's been asking me to kill all those people. 'For the better of the future' he says. 'It will be good for us' he says.
         <br>But I am the one who releases the arrow. He only knows that the job is done but for every shot I take, I see a dead body, a friend being taken away, a family being torn apart. A person... Who could've only be doing what he thought was good for those he loved. They're just the same as me.
         <br>Do you see? I don't know if I'm still doing the right thing.
         <br>

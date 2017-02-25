@@ -43,20 +43,31 @@
 
     <?php
         $Color = '#18FF81';
+        $cityname = 'Mirrorplane';
         // $ColorSub = '#18FF81';
+        
+        $pageNotes = array (
+            array('ord'=>'', 'n'=>"Much Info, Very Wow",'v'=>"Building all the stuff to destroy later, and then to fix after, only to destroy again and again."),
+            );
     ?>
 
     <style type="text/css">
         .ad-dash-pa { border-right: 5px solid {{ $Color }}; }
-        .ad-dash.bot { 
-            border-top: 2px solid {{ $Color }};
+        .ad-dash { 
+            border-top: 1px solid {{ $Color }};
             background: url({{ url('img/hex-bg-l.png') }}); 
             background-size: 100%;
             background-blend-mode: multiply;
             background-color: grey; }
-        .bot-scro #cts-time:hover { background-color: {{ $Color }}; color: white; transition: 0.3s; }
-        .bot-scro #main-plot:hover { background-color: {{ $Color }}; color: white; transition: 0.3s; }
-        .bot-scro #smooth-top:hover { background-color: {{ $Color }}; color: white; transition: 0.3s; }
+        .city-scape { background-color: grey; }
+        .city-scape .moon { background-color: {{ $Color }}; }
+        .city-scape .moon { box-shadow: 0 0 30px 0px white; border: 85px solid white; }
+        .city-scape:hover .moon { box-shadow: 0 0 100px 10px {{ $Color }}; border: 10px solid white; }
+        .bot-scro a.fir:hover, .bot-scro a.fir.active { background-color: {{ $Color }}; color: white; transition: 0.3s; }
+        .bot-scro a.mid:hover, .bot-scro a.mid.active { background-color: {{ $Color }}; color: white; transition: 0.3s; } 
+        .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $Color }}; color: white; transition: 0.3s; }
+        .notes ul li b { background: {{ $Color }}; }
+        
         .mp-cont li {
             padding: 5px;
             margin-bottom: 1px;
@@ -419,6 +430,7 @@
         );
     </script>
 
+    <script type="text/javascript"> var pageNotes = <?php echo json_encode($pageNotes); ?>;</script>
 
 </body>
 

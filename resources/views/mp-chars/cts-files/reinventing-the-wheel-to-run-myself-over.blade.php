@@ -16,7 +16,7 @@
         <br>
         <br>I still think it's quite unintelligent, sir.
         <br>
-        <br>Oh come on! It's been EXACTLY four years since they came, and I definitely learned my lesson.
+        <br>Oh come on! It's been EXACTLY four cycles since they came, and I definitely learned my lesson.
         <br>
         <br>Obviously, you did not, sir.
         <br>

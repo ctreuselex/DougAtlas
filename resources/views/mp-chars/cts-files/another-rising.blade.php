@@ -25,7 +25,7 @@
         <br><span class="cts-olive-frm"></span> TIME: 1685, SR 2nd Winter
         
         <hr>
-        @COLDking glad you guys enjoyed our little celebration! and @juvileee09 no need to wait another 10 years! there's another just next year!
+        @COLDking glad you guys enjoyed our little celebration! and @juvileee09 no need to wait another 10 recurssions! there's another just next cycle!
         <br><span class="cts-kianna-frm"></span> TIME: 1685, SR 2nd Winter
         
         <hr>

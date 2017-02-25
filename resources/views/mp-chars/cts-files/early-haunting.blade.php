@@ -23,7 +23,7 @@
         <br><span class="cts-sherkeythelocker-frm"></span> TIME: 1680, SR 16th Fall
 
         <hr>
-        Yep, and if it's true, how would a 10 year old little girl scare you death?
+        Yep, and if it's true, how would a 10 cycles old little girl scare you death?
         <br><span class="cts-sandra-frm"></span>  TIME: 1680, SR 16th Fall
         
         <hr>

@@ -24,6 +24,7 @@
 		$mcharWoc = "Myst-based Sledge Hammers & Psyblades";
 
 		$charthemes = 'Physics, Hammers, Saws, Eyepatches, Do Not Provoke, Total Hipster';
+		$cityname = 'City of Clocks';
 
 		$lum = 11;
 		$lumPlus = 16;

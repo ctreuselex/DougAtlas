@@ -24,7 +24,7 @@
         <br><span class="cts-daud"></span>: Thanks.
         <br><span class="cts-maximus"></span>: Just wondering.
         <br><span class="cts-maximus"></span>: Cross called me and asked where you are right now.
-        <br><span class="cts-maximus"></span>: He told me you're really broken losing the cup to Luminos this year.
+        <br><span class="cts-maximus"></span>: He told me you're really broken losing the cup to Luminos this time.
         <br><span class="cts-maximus"></span>: Kinda... Kinda broke your streak there buddy.
         <br><span class="cts-daud"></span>: Huh.
         <br><span class="cts-daud"></span>: I'm here at sir Holland's.

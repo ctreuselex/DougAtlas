@@ -24,6 +24,7 @@
 		$mcharWoc = "Tauroscene's Spike Bracelets";
 
 		$charthemes = 'Light, Ballet, Bracelets, Twisting and Spinning, Poof';
+		$cityname = 'City of Light';
 
 		$lum = 6;
 		$lumPlus = 20;

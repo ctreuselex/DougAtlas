@@ -24,6 +24,7 @@
 		$mcharWoc = "Corporal Works' Ritual Broadsword";
 
 		$charthemes = 'Light, Sigils, Cosmos, Seriously? Like Are You Serious? Why So Serious?';
+		$cityname = 'City of Disputes';
 
 		$lum = 9;
 		$lumPlus = 25;

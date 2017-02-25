@@ -24,6 +24,7 @@
 		$mcharWoc = "None";
 
 		$charthemes = 'Frost, Snow, Fabulousness, Queen, Ultimate Rebel';
+		$cityname = 'City of Secrets';
 
 		$lum = 2;
 		$lumPlus = 7;

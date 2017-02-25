@@ -25,7 +25,7 @@
         <br>TIME: 1683, SR 36th Summer
         <br>
         <br>YOU DON"T TELL ME HOW TO LIVE MY LIFE! VAL!
-        <br>so. replying here. you sound like a 13 year old virgin. she's too perfect. she's definitely a witch. and fuck you. i'm no lesbian.
+        <br>so. replying here. you sound like a 13 cycle old virgin. she's too perfect. she's definitely a witch. and fuck you. i'm no lesbian.
         </p>
 
         </div>

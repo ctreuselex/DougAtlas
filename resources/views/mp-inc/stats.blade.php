@@ -219,7 +219,7 @@
         'attRate' => number_format(round((($finValues['attRate']-0.5) / 3) * 100)),
         'moveSpd' => number_format(round((($finValues['moveSpd'] - 250) / 150) * 100)),
 
-        'hPool' => number_format(round(((($finValues['hPool'])-150) / 1800) * 100)),
+        'hPool' => number_format(round(((($finValues['hPool'])-150) / 1500) * 100)),
         'hRgen' => number_format(round((($finValues['hRgen']-1) / 17) * 100)),
 
         'mPool' => number_format(round(((($finValues['mPool'])-150) / 2000) * 100)),
@@ -239,7 +239,7 @@
         'attRate' => number_format(round((($maxValues['attRate']-0.5) / 3) * 100)),
         'moveSpd' => number_format(round((($maxValues['moveSpd'] - 250) / 150) * 100)),
 
-        'hPool' => number_format(round(((($maxValues['hPool'])-150) / 1800) * 100)),
+        'hPool' => number_format(round(((($maxValues['hPool'])-150) / 1500) * 100)),
         'hRgen' => number_format(round((($maxValues['hRgen']-1) / 17) * 100)),
 
         'mPool' => number_format(round(((($maxValues['mPool'])-150) / 2000) * 100)),
@@ -249,6 +249,13 @@
         'mysDef' => number_format(round((($maxValues['mysDef']-5) / 30) * 100)),
         'mixDef' => number_format(round((($maxValues['mixDef']-5) / 30) * 100)),
         );
+
+    foreach ($statRanks as $key => $sr) {
+        if ($sr>100) $statRanks[$key]=100;
+    }
+    foreach ($statMaxRanks as $key => $sr) {
+        if ($sr>100) $statMaxRanks[$key]=100;
+    }
 
     $chardiv = max($lumTotal, $aerTotal, $mysTotal, $geiTotal);
 
@@ -349,7 +356,7 @@
     <?php for ($i=0; $i<=100; $i++) { ?>
         
         .st .per.b{{ $i }}:after {
-            width: {{ ($i/100)*250 }}px;
+            width: {{ ($i/100)*250 }}px; 
         }
         .st .per.a{{ $i }} {
             width: {{ ($i/100)*250 }}px;
