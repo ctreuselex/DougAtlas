@@ -20,11 +20,11 @@
 		$mcharAff = "Institute";
 		
 		$mcharAft = "Raw Myst";
-		$mcharSty = "Maximo";
+		$mcharSty = "Exnihille";
 		$mcharWoc = "Landar Industries' MMGA Tech Prototype";
 
 		$charthemes = 'Shields, Tethers, Technology, Jock Nerd Combo';
-		$cityname = 'City of Design';
+		$cityname = 'Design';
 
 		$lum = 2;
 		$lumPlus = 5;
@@ -233,7 +233,7 @@
 		// EXTRA
 		// ------------------------------------------------------------ //
 		$charextstats = array (
-			array ('name'=>'Counter Duration', 'val'=>'2s', 'ext'=>''),
+			array ('name'=>'Counter Duration', 'val'=>'1s', 'ext'=>''),
 			array ('name'=>'Damage Blocked', 'val'=>'100%', 'ext'=>''),
 			);
 		$charextmcdm = array (

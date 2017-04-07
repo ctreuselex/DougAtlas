@@ -22,7 +22,7 @@
         array ('name'=>'disarm', 'purge'=>false, 'ico'=>'fa fa-sign-language',
             'des'=>'Disables certain abilities. Instantly ends on weapon retrieval.'),
         array ('name'=>'freeze', 'purge'=>true, 'ico'=>'ra ra-frost-emblem',
-            'des'=>'Prevents any action. +60% physical defense. Removed on physical or mixed damage hit.'),
+            'des'=>'Prevents any action. -60% physical defense. Removed on hit or struggling.'),
         array ('name'=>'root', 'purge'=>true, 'ico'=>'ra ra-thorny-vine',
             'des'=>'Prevents moving. Instantly removed on dash, blink, teleport.'),
         array ('name'=>'stun', 'purge'=>true, 'ico'=>'ra ra-doubled',
@@ -30,7 +30,7 @@
         array ('name'=>'pause', 'purge'=>false, 'ico'=>'ra ra-clockwork',
             'des'=>'Disables everything. Delays healing, damage, and other effects until removed.'),
         array ('name'=>'petrify', 'purge'=>true, 'ico'=>'ra ra-groundbreaker',
-            'des'=>'Prevents any action. +80% physical defense. Removed on physical or mixed damage hit.'),
+            'des'=>'Periodically slows and prevents any action after a 10 second delay. Instantly kills on hit. Removed by healing, if healing done is equal or greater than 20% of remaining health.'),
         //etc
         array ('name'=>'blind', 'purge'=>true, 'ico'=>'ra ra-bleeding-eye',
             'des'=>'Fills screen with darkness.'),
@@ -38,14 +38,18 @@
             'des'=>'Prevents any form of healing. Deals 1% of remaining health as physical damage every second.'),
         array ('name'=>'burn', 'purge'=>true, 'ico'=>'ra ra-fire',
             'des'=>'Deals 7/15/23 physical damage every second. Increases damage for every instance, maximum of 3. Removed on water.'),
+        array ('name'=>'drench', 'purge'=>true, 'ico'=>'ra ra-droplet',
+            'des'=>'Decreases movement speed and attack rate by 10%. Decreases damage from Burn by 50%. Lasts for 3 seconds out of water.'),
         array ('name'=>'expose', 'purge'=>true, 'ico'=>'ra ra-targeted',
             'des'=>'Increases the next critical hit damage by 15% along with a 1 second disable. Removed on critical hit. Also, opens crotch shots. Yep. Crotch shots.'),
         array ('name'=>'myst-lock', 'purge'=>false, 'ico'=>'fa fa-eercast',
             'des'=>'Disables certain abilities. Mixed damage deals 50% less damage.'),
         array ('name'=>'myst-leak', 'purge'=>true, 'ico'=>'ra ra-bottle-vapors',
-            'des'=>'Prevents myst regeneration.'),
+            'des'=>'Prevents myst regeneration and any form of replenishing myst.'),
         array ('name'=>'poison', 'purge'=>true, 'ico'=>'ra ra-skull',
-            'des'=>'Deals damage every second. Removed by healing.'),
+            'des'=>'Deals damage every second. Removed by healing, if healing done is equal or greater than periodic damage.'),
+        array ('name'=>'thundershock', 'purge'=>true, 'ico'=>'ra ra-lightning-trio',
+            'des'=>'Disables all actions for 1 second. Has a 20% chance of jumping to nearby units on impact, 100% chance if the unit is drenched.'),
         
         //buffs 
         //damage
@@ -169,7 +173,7 @@
         if($ability['sk']=='pri') $abilityprefix='Primary:';
         if($ability['sk']=='sec') $abilityprefix='Secondary:';
         if($ability['sk']=='ult') $abilityprefix='Ultimate:';
-        if($ability['sk']=='ext') $abilityprefix='Extra:';
+        if($ability['sk']=='ext') $abilityprefix='Core:';
         $rowdiv = "4";
         if($ability['sk']=='pri'||$ability['sk']=='sec'||$ability['sk']=='ult'||$ability['sk']=='ext') $rowdiv = "6";
         $rowpos = "";

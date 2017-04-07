@@ -45,7 +45,7 @@
         <br><span class="cts-theodore"></span>: NO, you won't get any position as anything in the Institute, let alone be the head of division.
         <br><span class="cts-theodore"></span>: So have your dreams get crushed and get thrown into the garbage where they belong! Maybe, you can claim yourself be the head of losertown!
         <br><span class="cts-chance"></span>: HOW DARE YOU YOU AUTISTIC SNAKE!
-        <br><span class="cts-chance"></span>: I'LL HAVE YOUR TOUNGE CUT OF BY A RUSTY BUTTER KNIFE!!!
+        <br><span class="cts-chance"></span>: I'LL HAVE YOUR TOUNGE CUT OFF BY A RUSTY BUTTER KNIFE!!!
         <br>
         <br>[USER: <span class="cts-vines"></span> joined the session]
         <br>

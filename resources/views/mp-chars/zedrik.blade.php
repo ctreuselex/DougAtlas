@@ -24,7 +24,7 @@
 		$mcharWoc = "Corporal Works' Rune Blade";
 
 		$charthemes = 'Berserker, Demon, Beast, Much Swag, Boom, Masochism, Boom!';
-		$cityname = 'City of Ruins';
+		$cityname = 'Ruins';
 
 		$lum = 11;
 		$lumPlus = 36;
@@ -47,7 +47,7 @@
 				'des'=>"Blades are used for slicing and dicing, which is why, Zed uses his for slicing and dicing. Runic Blast, fires bolts of fire at the distance."),
 
 			array ('name'=>"Unbind", 'sk'=>'sec',
-				'des'=>"Zed does not like being affected by anything, like emotions and stuff like that, so he pulls them out of his system and throws it as a projectile. Does not affect |myst-lock|, |stun|, and |pause|."), 
+				'des'=>"Zed does not like being affected by anything, like emotions and stuff like that, so he pulls them out of his system and throws it as a projectile. Acts as a |purge|, therefore limited to it as well."), 
 
 			array ('name'=>"Igni's Curse", 'sk'=>'sk1',
 				'des'=>"Curses the target with harsh words which drains their Myst until they use their Myst which in turn |myst-lock|-s them for a short period."), 
@@ -62,7 +62,7 @@
 				'des'=>"Drains all Myst in the surrounding area to centralize in the target area, then causing it the combust into a glorious explosion."),
 
 			array ('name'=>"Runic Transfiguration", 'sk'=>'ext',
-				'des'=>"Zed continiously combusts nearby Myst around him causing him to become the legendary 'Rune Beast'. At this state, Rune Blade becomes Runic Blast, he will not be able to regenerate Myst, and he will be slow. Zed can transform back at will or if his remaining Myst is 0."),
+				'des'=>"Zed continuously combusts nearby Myst around him causing him to become the legendary 'Rune Beast'. At this state, Rune Blade becomes Runic Blast, he will not be able to regenerate Myst, and he will be slow. Zed can transform back at will or if his remaining Myst is 0."),
 			);
 
 		// ------------------------------------------------------------ //

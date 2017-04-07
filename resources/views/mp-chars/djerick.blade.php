@@ -24,7 +24,7 @@
 		$mcharWoc = "Custom-made Aquadextrius";
 
 		$charthemes = 'Pole-arms, Mirrors, Illusions, Wicked Dance Moves';
-		$cityname = 'City of Deceit';
+		$cityname = 'Deceit';
 
 		$lum = 12;
 		$lumPlus = 29;
@@ -51,19 +51,19 @@
 				'des'=>"For some magical reason, Moon can create a |clone| of himself to fight along side him using a body of water. Not even him understand how this whole thing works. But he likes it."), 
 
 			array ('name'=>"Aqua Blast", 'sk'=>'sk1',
-				'des'=>"This trick shot allows Moon to quickly damage and annoy his target with a blast to the face along with a |clone| of himself."), 
+				'des'=>"This trick shot allows Moon to quickly damage, |drench|, and annoy his target with a blast of water to the face along with a |clone| of himself. Double the annoyance."), 
 
 			array ('name'=>"Whirlpool", 'sk'=>'sk2',
 				'des'=>"Unleashes his inner breakdancer and wildly swings Aquadextrius around damaging those who are damned and nearby while also allowing him to |reflect| damage."),  
 
 			array ('name'=>"Water Affinity", 'sk'=>'sk3',
-				'des'=>"Moon's affinity to water grants him additional buffs whenever he is on water. Like a fish."),
+				'des'=>"Moon's affinity to water grants him additional buffs whenever he is |drench|-ed. Like a fish. And like fish, |drench| will not decrease his movement speed and attack rate."),
 
 			array ('name'=>"Percutiens Aerugo", 'sk'=>'ult',
 				'des'=>"Recreates an enormous Aquadextrius with water which can be shot at a direction in which Moon hates the most, damages and |stun|-s enemies hit."),
 
 			array ('name'=>"Geyser", 'sk'=>'ext',
-				'des'=>"Creates a geyser sprout at the target point which damages and |stun|-s enemies after a short delay. The geyser will also leave a puddle to roll on which will disappear after a short time."),
+				'des'=>"Creates a geyser sprout at the target point which damages and |stun|-s and |drench|-es enemies after a short delay. The geyser will also leave a puddle to roll on which will disappear after a short time."),
 			);
 
 		// ------------------------------------------------------------ //
@@ -197,9 +197,9 @@
 			);
 		$charsk3aug = array (
 			array ('name' => "Essence Of Water",
-				'des'=>"Allows the buffs of Water Affinity to linger for 8 seconds after Moon steps out of water."),
+				'des'=>"Allows |drench| to linger longer for up to 8 seconds on Moon."),
 			array ('name' => "Bloodbather",
-				'des'=>"Hitting enemy units with Aquadextrius, Whirlpool, or Percutiens Aerugo has a 15% chance of giving the effects of Water Affinity for 3 seconds. |clone|-s get this ability too."),
+				'des'=>"Hitting enemy units with Aquadextrius, Whirlpool, or Percutiens Aerugo has a 15% chance of |drench|-ing Moon and whoever it is he's hitting. |clone|-s get this ability too."),
 			array ('name' => "Tide Turner",
 				'des'=>"Each charge of Water Image, if cast of water, now creates two copies of Moon instead of one but after a 1 second delay."),
 			array ('name' => "Total Fanatic",
@@ -258,7 +258,7 @@
 			array ('name' => "Hydroxplosion",
 				'des'=>"Removes the delay of Geyser while increasing its area of effect to 800. Also replaces its |stun| with a 30% |slow| which lasts for 5 seconds."),
 			array ('name' => "Mirror Dome",
-				'des'=>"reates a mirror dome at the area after Geyser's eruption. The mirror dome will block anyone who isn't Moon from going in or out of it while also continuously creating |clone|-s of Moon every second as long as he is inside it. The dome will lasts for 3 seconds."), 
+				'des'=>"Creates a mirror dome at the area after Geyser's eruption. The mirror dome will block anyone who isn't Moon from going in or out of it while also continuously creating |clone|-s of Moon every second as long as he is inside it. The dome will lasts for 3 seconds."), 
 			);
 	?>
 @stop 

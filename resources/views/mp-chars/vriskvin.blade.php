@@ -24,7 +24,7 @@
 		$mcharWoc = "Myst-based Sledge Hammers & Psyblades";
 
 		$charthemes = 'Physics, Hammers, Saws, Eyepatches, Do Not Provoke, Total Hipster';
-		$cityname = 'City of Clocks';
+		$cityname = 'Pawns';
 
 		$lum = 11;
 		$lumPlus = 16;
@@ -247,7 +247,7 @@
 		// EXTRA
 		// ------------------------------------------------------------ //
 		$charextstats = array (
-			array ('name'=>'Duration', 'val'=>'2s', 'ext'=>''),
+			array ('name'=>'Counter Duration', 'val'=>'1s', 'ext'=>''),
 			array ('name'=>'Damage Blocked', 'val'=>'100%', 'ext'=>''),
 
 			array ('name'=>'pause Duration', 'val'=>'1s', 'ext'=>''),

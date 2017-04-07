@@ -24,7 +24,7 @@
 		$mcharWoc = "Tauroscene's Starshooter";
 
 		$charthemes = 'Longshots, Blindshots, Ghosts, Stars, Ethereal Perfectionist';
-		$cityname = 'City of Lies';
+		$cityname = 'Lies';
 
 		$lum = 4;
 		$lumPlus = 20;

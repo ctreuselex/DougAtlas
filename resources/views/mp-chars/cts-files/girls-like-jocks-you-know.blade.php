@@ -29,12 +29,12 @@
         <br>
         <br><span class="cts-kash"></span>: Waddup guyzzz?
         <br><span class="cts-daud"></span>: Kash? 
-        <br><span class="cts-avery"></span>: You're not inviting everyone here are you, Av?
+        <br><span class="cts-daud"></span>: You're not inviting everyone here are you, Av?
         <br><span class="cts-avery"></span>: Nope. Only pals.
         <br><span class="cts-avery"></span>: Want me to invite Moon too?
         <br><span class="cts-daud"></span>: What? Who? Djerick? No!
         <br><span class="cts-daud"></span>: What are these for anyway.
-        <br><span class="cts-froxy"></span>: Av said where going to have party.
+        <br><span class="cts-froxy"></span>: Av said were going to have party.
         <br><span class="cts-froxy"></span>: Pizza party perhaps?
         <br><span class="cts-avery"></span>: Nahh, too expensive. I'd settle for chips.
         <br><span class="cts-froxy"></span>: Too Cheap!

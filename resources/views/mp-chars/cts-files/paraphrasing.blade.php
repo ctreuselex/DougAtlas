@@ -22,15 +22,7 @@
         Text Message by <span class="cts-avery"></span> to <span class="cts-mikael"></span>
         <br>TIME: 1692, SR 13th Fall
         <br>
-        <br>I like that you wasted your time writing a bunch of paragraphs you could have said with one.
-        <br>
-        <br>Girls...
-
-        <hr>
-        Text Message by <span class="cts-mikael"></span> to <span class="cts-avery"></span>
-        <br>TIME: 1692, SR 13th Fall
-        <br>
-        <br>Call me a girl one more time and I'll have you beheaded. Not only with one head. But also the other. The one below. Top and Bottom. 
+        <br>I really like how you wasted your time writing a bunch of paragraphs you could have said with one.
         </p>
 
         </div>

@@ -16,7 +16,7 @@
         <br>Avery Gebsen, son of well... Mr and Mrs. Gebsen.
         <br>Sorry, his parents' names kinda slipped out of my mind. I don't know, I can't hear him properly so I'd rather not type in their names.
         <br>
-        <br>Avery is well, an average kid. He has the ability to fold papers into shapes with his Myst Manipulations. I remember Zaldy folding origamis as one of her hobbies, but I also remember her hobbies doing nothing else aside from getting wetting and making her rage, so I really don't see any point to this. However, it seem like Skyforge already has their eyes on him, seeing as he is already in possession of one of their weapons; the Biblumancer. It's shit. But it's Tauroscene and who'd know what it can do? I actually want to know. This kid has a lot of mystery around him.
+        <br>Avery is well, an average kid. He has the ability to fold papers into shapes with his Myst Manipulations. I remember Zaldy folding origamis as one of her hobbies, but I also remember her hobbies doing nothing else aside from getting wet and making her mad with rage, so I really don't see any point to this. However, it seem like Skyforge already has their eyes on him, seeing as he is already in possession of one of their weapons; the Biblumancer. It's shit. But it's Tauroscene and who'd know what it can do? I actually want to know. This kid has a lot of mystery around him.
         <br>
         <br>He's also extremely, but secretly, perverted.
         <br>

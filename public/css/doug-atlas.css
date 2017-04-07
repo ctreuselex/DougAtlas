@@ -15,6 +15,21 @@ a, a:hover, a:focus, a:active {
 .right { text-align: right; }
 .capitalize { text-transform: capitalize; }
 
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    /*-webkit-transform: matrix(1, 0, 0, 1, 0, 0);*/
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    /*-webkit-transform: matrix(3, 0, 0, 3, 1, 0);*/
+  }
+}
+
+.rotating {
+    -webkit-animation: rotating 3s linear infinite;
+}
+
 /*---------------------------- NAVBAR ----------------------------*/
 
 	#da-logo {
@@ -117,7 +132,7 @@ a, a:hover, a:focus, a:active {
 	.city-scape .moon{
 		position: absolute;
 	    top: 70px;
-	    left: 25px;
+	    left: 12%;
 	    height: 170px;
 	    width: 170px;
 	    background-color: #E2C926;
@@ -131,11 +146,11 @@ a, a:hover, a:focus, a:active {
 	}
 	.city-scape .city-name {
 	    position: absolute;
-	    top: 130px;
+	    top: 18%;
 	    width: 100%;
 	    text-align: center;    
 	    font-family: "Righteous";
-	    font-size: 25px;
+	    font-size: 30px;
 	    text-shadow: 0 0px 10px;
     	letter-spacing: -2px;
 	    color: white;
@@ -511,3 +526,4 @@ a, a:hover, a:focus, a:active {
 	.eon-nactive { background: #f5b301; }
 	.mirrorplane-nactive { background: #18ff81; }
 	.birdwatch-nactive { background: #ca01f5; }
+

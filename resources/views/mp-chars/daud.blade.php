@@ -24,7 +24,7 @@
 		$mcharWoc = "Landar Industries' ACMA Tech Mini Pistol";
 
 		$charthemes = 'Speed, Sports, Arrows, Vectors, Hater of Cats, Lover of Non-Cats';
-		$cityname = 'City of Fame';
+		$cityname = 'Fame';
 
 		$lum = 8;
 		$lumPlus = 34;
@@ -49,7 +49,7 @@
 			array ('name'=>"Backup Pistol", 'sk'=>'sec',
 				'des'=>"Getting an ACMA Tech Mini Pistol from Max can serve to be usefull at mid-range assaults and not just suicide."), 
 
-			array ('name'=>"Forward Dash", 'sk'=>'sk1',
+			array ('name'=>"Mad Dash", 'sk'=>'sk1',
 				'des'=>"Dashes forward through the wind, leaving all enemies he passed through, |disarm|-ed and |root|-ed."), 
 
 			array ('name'=>"Trailblazer", 'sk'=>'sk2',
@@ -58,7 +58,7 @@
 			array ('name'=>"Friction Blast", 'sk'=>'sk3',
 				'des'=>"George does not understand how this works, neither does Daud, but he dances around and then come a powerful shockwave that |stun|-s all nearby crooked-footed enemies with amazing-ness."),
 
-			array ('name'=>"Sports Agility", 'sk'=>'ult',
+			array ('name'=>"Cutting Wind", 'sk'=>'ult',
 				'des'=>"Daud repeatedly dashes towards an enemy then jumps towards another nearby, damaging and |blind|-ing them for the duration. Daud is under |invulnerability| for the duration of the skill."),
 
 			array ('name'=>"Vector Master", 'sk'=>'ext',
@@ -141,13 +141,13 @@
 			);
 		$charsk1aug = array (
 			array ('name' => "Got Ya",
-				'des'=>"Forward Dash now only |root|-s the first enemy unit Daud bumps to for 5 seconds."),
+				'des'=>"Mad Dash now only |root|-s the first enemy unit Daud bumps to for 5 seconds."),
 			array ('name' => "Echo Echo",
-				'des'=>"Forward Dash leaves a 10% |haste| buff for 5 seconds."),
+				'des'=>"Mad Dash leaves a 10% |haste| buff for 5 seconds."),
 			array ('name' => "Gotta Go Fast",
 				'des'=>"Increases distance by 300 and causes allies who get caught in the dash to get their Myst replenished by 5% of their maximum Myst pool."),
 			array ('name' => "Made You Look",
-				'des'=>"Allows Forward Dash to be cast again which then pulls Daud back to his original position. Can only be used 2 seconds after the original cast, otherwise, the skill will go on cooldown. Decreases cooldown to 19 seconds."), 
+				'des'=>"Allows Mad Dash to be cast again which then pulls Daud back to his original position. Can only be used 2 seconds after the original cast, otherwise, the skill will go on cooldown. Decreases cooldown to 19 seconds."), 
 			);
 		// ------------------------------------------------------------ //
 		// SK2

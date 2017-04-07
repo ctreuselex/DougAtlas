@@ -54,7 +54,7 @@
         <b class="mp-title">Tauroscene Corporation</b> | "From the smiths of Skyforge!"
         <br>Founded in 1640 by Helios Skyforge.
         <br>
-        <br>Tauroscene Corp. is a Mystic custom weapon creator since it's inception, hailing Skyforge for his use of his father's famed smithery and creative weapon designs. However, due to pride, and basically, their whole business premise, Tauroscene only make their weapons once and based it whole on their client's fighting style, making them unique, one-of-a-kind, and out-of-this-world ultra expensive.
+        <br>Tauroscene Corp. is a Mystic custom weapon creator since it's inception, hailing Helios Skyforge for his use of his father's famed smithery and creative weapon designs. However, due to pride, and basically, their whole business premise, Tauroscene only make their weapons once and based it whole on their client's fighting style, making them unique, one-of-a-kind, and out-of-this-world ultra expensive.
         <br>
         <br>The Tauroscene Corp. helds an annual weapon exhibition every 28th of Spring in which people showcases their Tauroscene weapon in a one-on-one spar, in which the best are being awarded with the Tauroscene Exellence Trophy, complete with a golden replica of their own weapon. 
         <div class="clear"></div>
@@ -76,7 +76,7 @@
         <br>
         <br>They haven been the center of trusted news althroughout the city, aside from Nimbocolumbus which has their own centered and exclusive around them. Midring Republic Times used the CTsystem to deliver their reports from all around the city to all around the city, and though they mostly create reports they also tend to create random things if there's nothing hot happening or even mock some higher ups for the lulz.
         <br>
-        <br>In early 1680s, after the inception of Landar Industries, Midring Republic has been associating themselves with weapons as well. Ending up with their own version of Landar's ACMA guns, and even with lower quality copies of Tauroscene weapons. Their weapons are often regarded as the worst of the worst for their unoriginality and being made from very cheap materials that even the worst of Corporal Works weapons would work better than their Tauroscene-copied weapons.
+        <br>In early 1680s, after the inception of Landar Industries, Midring Republic has been associating themselves with weapons as well. Ending up with their own version of Landar's ACMA guns, and even with lower quality copies of Tauroscene weapons. Their weapons are often regarded as the worst of the worst for their unoriginality and being made from very cheap materials that even the worst of Corporal Works weapons would work better than their Tauroscene-copied weapons. Good thing is no one really consider them as a weapon manufacturer.
         <div class="clear"></div>
     </li>
     <li>

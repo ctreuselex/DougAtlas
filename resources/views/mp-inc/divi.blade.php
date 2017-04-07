@@ -78,7 +78,7 @@
         <br>
         <br>The division of Aeros is the most crowded in the entire city, causing the houses to be stacked on top of each other, bringing a lot of vertical space and momentum to the entire division. This also, results in many shady businesses and secret organizations, especially in the deeper parts of the streets that the light doesn't reach. Some of the houses almost reach the the top of the wall of the next Ring, is also becoming a problem to the higher ups.
         <br>
-        <br>The Great Aeros Fire, happened in 1666, is an incredibly large fire which razed almost half of the division and lasted almost 2 weeks and has taken thousends of lives in the process. The people of Aeros brought a bright side to such a tragic disaster, however, the Carnival of Madness, which happens right in the center of the fire, every 16th of Fall.
+        <br>The Great Aeros Fire, happened in 1666, is an incredibly large fire which razed almost half of the division and lasted almost 2 weeks and has taken thousands of lives in the process. The people of Aeros brought a bright side to such a tragic disaster, with the Carnival of Madness, which happens right in the center of the fire, every 16th of Fall.
         <br>
         <br>The Aeros division of the Institute practices Exnihille.
         <br>
@@ -148,7 +148,7 @@
         <img class="mp-img" src="{{ url('img/mys.png') }}" width="125px">
         <b class="mp-title">Mystos</b> | The division of Water, Winter, and Change.
         <br>
-        <br>The division of Mystos is considered to be the most powerful division in the entire city, bringing most of the most talented students into the Institute. However, on top of this is that they are also considered to be full of evil people, especially in the Higher Ring, as Mystos is also the home of the Felix Zacharias, which is the leader of the Dominion. They did also brought the Children of Mandalas though, so they got that going for them, which is nice.
+        <br>The division of Mystos is considered to be the most powerful division in the entire city, bringing most of the most talented students into the Institute. However, on top of this is that they are also considered to be full of evil people, especially in the Higher Ring, as Mystos is also the home of the Felix Zacharias, which is the leader of the Dominion. They did also brought the Children of Mandalas though, so they got that going for them, which is n-ice.
         <br>
         <br>With the Dominion mostly, consisting of Mystos population, the only way up to the Nimbocolumbus is through the Institute's Mystos Division, which requires extensive indentification protocols, including background check, scanning of criminal records, checking of diseases, scanning of criminal records of your dog, and more, and can take several days to be validated. Most would rather not, seeing that almost everyone they'll meet up there are assholes.
         <br>

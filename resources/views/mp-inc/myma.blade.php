@@ -22,9 +22,9 @@
         <br>
         <br>Exnihille is a style that mostly consist of Myst crystallization; creating weapons, objects, armors with Myst itself and fight off opponents with extreme versatility and unpredictableness.
         <br>
-        <br>Another practice of Exnihille is an uncommon one, which is called 'Voiding'. Voiding is the process of removing Myst from a particular area, preventing all Mystics from using it to their advantage or being 'Myst Locked' in Mystics' terms. Technology and the city itself can be affected by Voiding, and the fact that it's effects are harsh makes it a taboo among Mystics.
+        <br>Another practice of Exnihille is an uncommon one, called 'Voiding'. Voiding is the process of removing Myst from a particular area, preventing all Mystics from using it to their advantage or being 'Myst Locked' in Mystics' terms. Technology and the city itself can be affected by Voiding, and the fact that it's effects are harsh makes it a taboo among Mystics.
         <br>
-        <br>The first Voiding was used my Frederick Lemaitre, in his departure from the Dominion.  
+        <br>The first Voiding was demonstrated by Frederick Lemaitre, in moment of his departure from the Dominion.  
         <br>
         <br>Practiced by the Institute's Aeros division.
         <img class="mp-ref" src="{{ url('img/ref-exn.png') }}" width="100%">

@@ -14,12 +14,9 @@
         <br>Ok ok ok ok ok ok ok...
         <br>Koba, relax
         <br>I'm a little nervous right now.
-        <br>
         <br>I mean, it's my birthday, and I'm coming to work at night with all the lights off. The guys might be planning a surprise party for me. haha!
         <br> OH man oh man oh man oh man
-        <br>
         <br>Breathe in... breathe out
-        <br>
         <br>ok.
         <br>Here I go
         <br>
@@ -49,7 +46,7 @@
         <br>You don't need to know.
         <br>
         <br>Right. miss scorpion girl, and miss tall girl, and miss hood girl? huh...
-        <br>You don't know what you're doing! But it's my birthday!s
+        <br>You don't know what you're doing! But it's my birthday!
         <bt>Can't we have a little party and pretend all this never happened and just be happy? You can have all the gifts!
         <br>
         <br>Like a birthday surprise party. Yeah! Like what we planned for Koba.

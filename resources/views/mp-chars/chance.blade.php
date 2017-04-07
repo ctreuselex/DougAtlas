@@ -24,7 +24,7 @@
 		$mcharWoc = "Landar Industries' ACMA Tech Twin Pistol";
 
 		$charthemes = 'Dual Guns, Balance, No Second Chances, Being a Jerk to Everyone ';
-		$cityname = 'City of Pride';
+		$cityname = 'Pride';
 
 		$lum = 8;
 		$lumPlus = 25;
@@ -44,19 +44,19 @@
 
 		$charability = array(
 			array ('name'=>"Dual ACMA", 'sk'=>'pri',
-				'des'=>"Using the ACMA Tech Twin Pistols he got from years of pestering his mother to pestering Tauroscene, Chance can happily tot his way to victory with Sandra's pity."),
+				'des'=>"Using the ACMA Tech Twin Pistols he got from eons of pestering his mother to pestering Tauroscene, Chance can happily tot his way to victory with Sandra's pity."),
 
 			array ('name'=>"Charged Shot", 'sk'=>'sec',
 				'des'=>"Chance unloads the rounds off his twin pistols into a single shot that deals massive amount of damage to the target. Hitting a friend, even if no one likes him as a friend, with Charged Shot will heal them instead."), 
 
-			array ('name'=>"Grad Hold", 'sk'=>'sk1',
+			array ('name'=>"Grab Hold", 'sk'=>'sk1',
 				'des'=>"Chance pulls a nerd and holds him tight in position inflicting |stun| and then |root| and |disarm| after. Chance is |disable|-d and |expose|-d for the whole duration or until the nerd escapes."), 
 
 			array ('name'=>"Compound Flask", 'sk'=>'sk2',
 				'des'=>"Despite being incredibly rich, Chance always get the rejects of things for his incredibly bad personality. Good thing is, he mixes all those up and throw them into the ground."),  
 
 			array ('name'=>"Rollover", 'sk'=>'sk3',
-				'des'=>"Chance rolls a short distance in any direction with a short |haste| boost after, giving him extreme maneuverability and a little bit tactical, which means attractive, to the ladies."),
+				'des'=>"Chance rolls a short distance in any direction with a short |haste| boost after, giving him extreme maneuverability and a little bit tactical, which means attractive, to the psykeeper ladies."),
 
 			array ('name'=>"Aim Bot", 'sk'=>'ult',
 				'des'=>"Chance's chances of hitting things is ultimately low, good thing is, he can cheat the universe and cause his bullets to always hit the target, at the cost of taking extra damage."),

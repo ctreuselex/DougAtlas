@@ -24,7 +24,7 @@
 		$mcharWoc = "Tauroscene's Biblumancer";
 
 		$charthemes = 'Papers, Witch, Wizard, Origami, Hopeless Romantic, Lookin\' Good';
-		$cityname = 'City of Love';
+		$cityname = 'Love';
 
 		$lum = 6;
 		$lumPlus = 17;

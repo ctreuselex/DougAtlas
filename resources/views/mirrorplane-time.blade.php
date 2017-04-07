@@ -210,14 +210,14 @@
                             @endif
                             | {{ $log['d']  }}
                         </span>
-                        <b class="col-xs-6">
+                        <b class="col-xs-7">
                             @foreach ($mirChars as $char)
                                 @if ($log['ord']==$char['name'])
                                     <i class="{{ $char['ico'] }}"></i> 
                                 @endif
                             @endforeach
                         {{ $log['name']  }}</b>
-                        <span class="col-xs-3 right capitalize">
+                        <span class="col-xs-2 right capitalize">
                             <b>{{ $log['ord']  }}</b> | 
                             @foreach ($mirChars as $char)
                                 @if ($log['ord']==$char['name'])

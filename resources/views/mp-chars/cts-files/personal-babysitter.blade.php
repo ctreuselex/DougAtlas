@@ -16,7 +16,7 @@
         <br>First, don't you think bootes is a really stupid name? cause it think it's a really stupid name, why not sagitarius, or or orion? there's like a lot of better names out there!
         <br>Second, have you met vivie? I dont know if you have but I think I already did when he sent me weird text messages. He said they're for my sister but of course how stupid could he be even! If we have similar innitials, he should be reading things! I dont read a lot. but still!
         <br>Third, should we apply for Tauroscene weapons? I mean I like aquadextrius, but it's not getting me any points to anybody! And I don't like not getting points to anybody. That's just rude!
-        <br>fourth, can you tell me if I have been repeating myself? Can you be my personal teller-if-repeater guy? Cause I tend to repeat myself sometimes cause I tend to forgot I already said what I already repeated.
+        <br>fourth, can you tell me if I have been repeating myself? Can you be my personal teller-if-repeater guy? Cause I tend to repeat myself sometimes cause I tend to forget I already said what I already repeated.
         <br>fifth I think bootes is is a tupid name.
         <br>six i also happen to not proofread my messages so id appreciate it if you like to be my personal correcter-if-mispeller guy as well.
         <br>
@@ -30,7 +30,7 @@
         <br>No.
         <br>No.
         <br>No.
-        <br>You've repeated youself.
+        <br>You've repeated yourself.
         <br>and... 
         <br>No.
 

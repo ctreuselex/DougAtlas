@@ -24,7 +24,7 @@
 		$mcharWoc = "Tauroscene's Titan & Myst-based Mini-Glaives";
 
 		$charthemes = 'Storms, Mists, Elite, Purging, Genocide, Anything Sexy';
-		$cityname = 'City of Glamour';
+		$cityname = 'Glamour';
 
 		$lum = 4;
 		$lumPlus = 10;
@@ -50,16 +50,16 @@
 				'des'=>"A woman should always be able to protect herself, or should always be the one people protect other people for."), 
 
 			array ('name'=>"Lightning Vortex", 'sk'=>'sk1',
-				'des'=>"Titan can be thrown into position and channel the power of the storms, damaging every enemies too foolish to stand on a spinning giant blade."), 
+				'des'=>"Titan can be thrown into position and channel the power of the storms, damaging every enemies too foolish to stand on a spinning giant blade. Has a 7% chance of inflicting |thundershock|."), 
 
 			array ('name'=>"Static Discharge", 'sk'=>'sk2',
-				'des'=>"Distrups an area with an electric shock, |purge|-ing everyone in it, as well as damaging them. After the shock however, affected units will be able to recover the damage if not damaged by another source."),  
+				'des'=>"Distrups an area with an electric shock, |purge|-ing everyone in it, as well as damaging them. After the shock however, affected units will be able to recover the damage if not damaged by another source. Has a 20% chance of inflicting |thundershock|."),  
 
 			array ('name'=>"Spark", 'sk'=>'sk3',
-				'des'=>"Seline creates a connection between her and her target which then allows both of them to be transported into the area between them, damaging the target and enemies in the landing area."),
+				'des'=>"Seline creates a connection between her and her target which then allows both of them to be transported into the area between them, damaging the target and enemies in the landing area. Has a 45% chance of inflicting |thundershock|."),
 
 			array ('name'=>"Lightning Storm", 'sk'=>'ult',
-				'des'=>"Calls upon the power of the storm to continiously distrup the area around Seline. If Titan is not in use, Titan will chase around enemy units during the duration of the storm."),
+				'des'=>"Calls upon the power of the storm to continuously distrup the area around Seline. If Titan is not in use, Titan will chase around enemy units during the duration of the storm."),
 
 			array ('name'=>"Mist Cloud", 'sk'=>'ext',
 				'des'=>"Surrounds herself with mist, causing her and her friends - with benefits - to become |invisible| while they remain inside the mist. The mist itself, will remain visible."),
@@ -238,7 +238,7 @@
 		// EXTRA
 		// ------------------------------------------------------------ //
 		$charextstats = array (
-			array ('name'=>'Area of Effect', 'val'=>'250', 'ext'=>''),
+			array ('name'=>'Area of Effect', 'val'=>'700', 'ext'=>''),
 			array ('name'=>'Delay', 'val'=>'2s', 'ext'=>''),
 			array ('name'=>'Duration', 'val'=>'9s', 'ext'=>''),
 			);

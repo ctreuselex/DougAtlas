@@ -52,6 +52,7 @@
         <br><span class="cts-chance"></span>: [distant female voice] Go Vrisk!
         <br><span class="cts-chance"></span>: IM GOING TO FRY ALL THREE OF YOU!!! MOTHER WILL HEAR ABOUT THIS!!!
         <br><span class="cts-chance"></span>: [distant male voice] FUCKING COME BACK HERE CHANCE!
+        <br><span class="cts-chance"></span>: [distant male voice] CRAWL BACK SO YOUR MOTHER WOULD HAVE ANOTHER REASON TO KISS YOUR DISGUSTING FACE!
         <br><span class="cts-chance"></span>: [distant cursing]
         <br>
         <br>[<span class="cts-chance"></span> has ended the session]

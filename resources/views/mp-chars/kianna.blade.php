@@ -24,7 +24,7 @@
 		$mcharWoc = "None";
 
 		$charthemes = 'Frost, Snow, Fabulousness, Queen, Ultimate Rebel';
-		$cityname = 'City of Secrets';
+		$cityname = 'Secrets';
 
 		$lum = 2;
 		$lumPlus = 7;
@@ -56,7 +56,7 @@
 				'des'=>"Channels a frost cloud on the target area that damages and slows enemies within. Enemies staying for more than 3 seconds within the frost cloud will be |freeze|-d."),  
 
 			array ('name'=>"Purify", 'sk'=>'sk3',
-				'des'=>"Cleanses the target ally of all the sins they commited in their lifetime, removing debuffs and healing them for a short period of time, after which they can proceed to go on with sinning again."),
+				'des'=>"Cleanses the target ally of all the sins they commited in their lifetime, |purge|-ing and healing them for a short period of time, after which they can proceed to go on with sinning again."),
 
 			array ('name'=>"Frost Guard", 'sk'=>'ult',
 				'des'=>"Blesses the allied target with a spell that allows them to ignore all damage taken during the spell's guard phase. A percentage of the total damage taken is then cast upon them throughout a duration on the spell's end phase. Frost Guard will not protect them if the damage dealt is greater than their remaining health. End phase's damage is pure but non-lethal."),
@@ -203,7 +203,7 @@
 			array ('name' => "Divinity",
 				'des'=>"Increases Purify's healing by 40%."),
 			array ('name' => "Frost Bites",
-				'des'=>"Can now target enemy units which instead of healing them, damages them while also removing all buffs currently affecting them."),
+				'des'=>"Can now target enemy units which instead of healing them, damages them while also |purge|-ing all status effects currently affecting them."),
 			array ('name' => "Oh Golly",
 				'des'=>"The target will now instantly receive all of Purify's heal or damage."),
 			array ('name' => "Snow Party",

@@ -21,10 +21,10 @@
 		
 		$mcharAft = "Light";
 		$mcharSty = "Maximo | Sigilios";
-		$mcharWoc = "Corporal Works' Ritual Broadsword";
+		$mcharWoc = "Corporal Works' Ascalon";
 
 		$charthemes = 'Light, Sigils, Cosmos, Seriously? Like Are You Serious? Why So Serious?';
-		$cityname = 'City of Disputes';
+		$cityname = 'Disputes';
 
 		$lum = 9;
 		$lumPlus = 25;
@@ -43,8 +43,8 @@
 		$geiTotal = $gei+$geiPlus;
 
 		$charability = array(
-			array ('name'=>"Patterend Strike", 'sk'=>'pri',
-				'des'=>"Rustom slices up his enemies with his sword that charges up every three hit. A slash from his charged sword deals additional damage."),
+			array ('name'=>"Patterned Strike", 'sk'=>'pri',
+				'des'=>"Rustom slices up his enemies with Ascalon that charges up every three hit. A slash from charged Ascalon deals additional damage."),
 
 			array ('name'=>"Lunatic Albedo", 'sk'=>'sec',
 				'des'=>"Counters a direct hit, creating several Stardusts around Rustom and causing all nearby Stardusts to target the countered enemy."), 
@@ -59,7 +59,7 @@
 				'des'=>"Creates a miniture nebula at the target area that |slow|-s all enemies inside while also creating Stardusts inside it every second."),
 
 			array ('name'=>"Supernovae", 'sk'=>'ult',
-				'des'=>"Rustom absorbs all light within the vicinity to supercharge his sword and slams it into the ground causing a devastating explosion, damaging enemies and healing allies."),
+				'des'=>"Rustom absorbs all light within the vicinity to supercharge Ascalon and slams it into the ground causing a devastating explosion, damaging enemies and healing allies."),
 
 			array ('name'=>"Stardust", 'sk'=>'ext',
 				'des'=>"Are orbs/miniature stars that will home over the nearest enemy or ally and damages or heals them respectively."),
@@ -95,7 +95,7 @@
 		// SECONDARY
 		// ------------------------------------------------------------ //
 		$charsecstats = array (
-			array ('name'=>'Duration', 'val'=>'2s', 'ext'=>''),
+			array ('name'=>'Duration', 'val'=>'1s', 'ext'=>''),
 			array ('name'=>'Damage Blocked', 'val'=>'50%', 'ext'=>''),
 			array ('name'=>'Stardust Created', 'val'=>'3', 'ext'=>''),
 			);
@@ -114,7 +114,7 @@
 			array ('name' => "Perfect Reflection",
 				'des'=>"Increases damage blocked to 100% while also creating a perfect |clone| of Rustom on the countered position which lasts for 4 seconds."),
 			array ('name' => "Lunar Alignment",
-				'des'=>"Countering an attack inflicts a 2 second |petrify| to the countered. Increases cooldown to 13 seconds."), 
+				'des'=>"Countering an attack inflicts |petrify| to the countered. Increases cooldown to 13 seconds."), 
 			);
 
 		// ------------------------------------------------------------ //
@@ -123,8 +123,7 @@
 		$charsk1stats = array (
 			array ('name'=>'Range', 'val'=>'900', 'ext'=>''),
 			array ('name'=>'Area of Effect', 'val'=>'200', 'ext'=>''),
-			array ('name'=>'Delay', 'val'=>'1s', 'ext'=>''),
-			array ('name'=>'Duration', 'val'=>'2s', 'ext'=>''),
+			array ('name'=>'Delay', 'val'=>'2s', 'ext'=>''),
 			);
 		$charsk1mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
@@ -141,11 +140,11 @@
 			array ('name' => "Extreme Contrast",
 				'des'=>"Causes the sigil to create 5 Stardusts on its side after activation."),
 			array ('name' => "Stone Breaker",
-				'des'=>"Allows all of Rustom's damage to pass through |petrify|'s physical defense without breaking it."),
-			array ('name' => "Cosmic Strike",
+				'des'=>"Decreases Lunar Eclipse's |petrify|-cation's delay to 6 seconds."),
+			array ('name' => "Patience Is Virtue",
 				'des'=>"The sigil will not activate if there are no enemy unit inside it, causing it to lasts for 15 seconds more. It then activates if an enemy unit enters it."),
-			array ('name' => "Moon Stone",
-				'des'=>"Increases |petrify|'s physical defense increase to 100% on allies."), 
+			array ('name' => "Strong Allegiances",
+				'des'=>"Prevents allies from being affected by Lunar Eclipse's |petrify|."), 
 			);
 		// ------------------------------------------------------------ //
 		// SK2

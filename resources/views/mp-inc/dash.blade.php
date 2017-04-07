@@ -7,6 +7,10 @@
 		    background-position: bottom;
 	        background-blend-mode: multiply;">
 	        <div class="moon"></div>
+	        <div class="city-name" style="
+				font-size: 16px;
+				top: 16.5%;
+			">City of</div>
 	        <div class="city-name">{{ $cityname }}</div>
         	<!-- <p>MIRRORPLANE</p> -->
 		</div>

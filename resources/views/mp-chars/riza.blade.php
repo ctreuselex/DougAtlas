@@ -24,7 +24,7 @@
 		$mcharWoc = "Custom-made Hawk Turret";
 
 		$charthemes = 'Sentries, Nano-tech, Machines, Tech Fan Girl, I Believe I Can Fly';
-		$cityname = 'City of Dirt';
+		$cityname = 'Dirt';
 
 		$lum = 9;
 		$lumPlus = 26;

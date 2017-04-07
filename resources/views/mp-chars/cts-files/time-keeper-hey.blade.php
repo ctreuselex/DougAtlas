@@ -21,7 +21,7 @@
         <br><span class="cts-vriskvin"></span>: No.
         <br><span class="cts-vriskvin"></span>: I punched Djerick for the third time.
         <br><span class="cts-avery"></span>: Okay that's it.
-        <br><span class="cts-avery"></span>: Duellie told me to ask you to stop punching her brother.
+        <br><span class="cts-avery"></span>: Duellie asked me to ask you to stop punching her brother.
         <br><span class="cts-avery"></span>: I mean, Djerick is really punchable. But you gotta lay it down a bit.
         <br><span class="cts-avery"></span>: Maybe punch him only twice a week? and then once a week?
         <br><span class="cts-vriskvin"></span>: Can't.
@@ -35,7 +35,7 @@
         <br><span class="cts-avery"></span>: So...
         <br><span class="cts-vriskvin"></span>: Why do I get the feeling you're doing this because you're just trying to get to Duellie?
         <br><span class="cts-avery"></span>: What? Haahaha! That's absurd!
-        <br><span class="cts-avery"></span>: I'm actually trying to get to her hot bestfriend.
+        <br><span class="cts-avery"></span>: I'm actually trying to get to her hotter bestfriend.
         <br><span class="cts-avery"></span>: Duellie said she'll let me talk to her if I get you to not punch Djerick anymore.
         <br><span class="cts-vriskvin"></span>: Denied.
         <br><span class="cts-avery"></span>: Oh come on man!

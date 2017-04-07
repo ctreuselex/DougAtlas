@@ -24,7 +24,7 @@
 		$mcharWoc = "Myst-based Chain Blades";
 
 		$charthemes = 'Firebirds, Ultimate Powah, Immortality, Dad Puns, I Like Boats';
-		$cityname = 'City of Walls';
+		$cityname = 'Walls';
 
 		$lum = 7;
 		$lumPlus = 35;
@@ -265,7 +265,7 @@
 			array ('name' => "Like a Phoenix",
 				'des'=>"Increases health regeneration to +4 and myst regeneration to -2 every threshold."),
 			array ('name' => "Fair Trade",
-				'des'=>"Passively decreases the Myst cost of all of Valkyr's abilities by 50% and causes them to cost 20% more health based on their normal health cost."), 
+				'des'=>"Passively decreases the Myst cost of all of Valkyr's abilities by 30% and causes them to cost 5% more health based on their normal health cost."), 
 			);
 	?>
 @stop

@@ -34,8 +34,8 @@
         <br>
         <br>Thanks Mig.
         <br>By the way, do you want to come drink with me?
-        <br>It's been a while since we talked and being alone all the time isn't doing well for you. We can talk about our wives breaking our hearts and how our sons running away and suddenly deciding to live on their own completely forgeting about their old men.
-        <br>Georgie and Zaldy's coming too. 
+        <br>It's been a while since we talked and being alone all the time isn't doing well for you. We can talk about why all the people we care about always run away from their old men thinking they can do all things by themselves.
+        <br>And... Georgie and Zaldy's coming too. 
 
         <hr>
         Text Message by <span class="cts-mig"></span> to <span class="cts-thomas"></span>

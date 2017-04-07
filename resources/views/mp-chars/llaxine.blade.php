@@ -24,7 +24,7 @@
 		$mcharWoc = "Tauroscene's Spike Bracelets";
 
 		$charthemes = 'Light, Ballet, Bracelets, Twisting and Spinning, Poof';
-		$cityname = 'City of Light';
+		$cityname = 'Light';
 
 		$lum = 6;
 		$lumPlus = 20;
@@ -52,7 +52,7 @@
 			array ('name'=>"Celestial Apparition", 'sk'=>'sk1',
 				'des'=>"Conjures a slow moving apparition of Llaxine herself that goes towards the direction while damaging and |blind|-ing enemy units it passes through."), 
 
-			array ('name'=>"Celetial Strike", 'sk'=>'sk2',
+			array ('name'=>"Celestial Strike", 'sk'=>'sk2',
 				'des'=>"Strikes the target location with pure devastating light that damages enemy units caught within its radius after a short delay. Where the light comes from remains classified."),  
 
 			array ('name'=>"Light Orb", 'sk'=>'sk3',

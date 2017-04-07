@@ -131,7 +131,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'seline','sur'=>'loquintez','year'=>1668,'color'=>'#EFE167','subcolor'=>'#00BCD4','ico'=>'ra ra-focused-lightning' ),              
             array ( 'name'=>'theodore','sur'=>'orcullo','year'=>1665,'color'=>'','subcolor'=>'','ico'=>'ra ra-axe' ),
             array ( 'name'=>'valkyr','sur'=>'soltaire','year'=>1664,'color'=>'#F3A40C','subcolor'=>'#F54C04','ico'=>'ra ra-heartburn' ),
-            array ( 'name'=>'vines','sur'=>'roderick','year'=>1668,'color'=>'','subcolor'=>'','ico'=>'ra ra-dragonfly' ),
+            array ( 'name'=>'vines','sur'=>'roderick','year'=>1668,'color'=>'#18FF81','subcolor'=>'#E91E63','ico'=>'ra ra-dragonfly' ),
             array ( 'name'=>'vriskvin','sur'=>'dirk','year'=>1667,'color'=>'#E91E63','subcolor'=>'#5F0B28','ico'=>'ra ra-clockwork' ),
             array ( 'name'=>'zedrik','sur'=>'azazel','year'=>1661,'color'=>'#FFC107','subcolor'=>'#00BCD4','ico'=>'ra ra-flaming-claw' ), 
 
@@ -144,6 +144,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'zaldy','sur'=>'ruiz','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),  
             array ( 'name'=>'jon','sur'=>'horacio','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),
             array ( 'name'=>'gamora','sur'=>'asbistos','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),  
+            array ( 'name'=>'samtiel','sur'=>'vance','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),  
             // landar
             array ( 'name'=>'sandra','sur'=>'seidlitz','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-reactor' ),  
             array ( 'name'=>'landar','sur'=>'seidlitz','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-reactor' ), 
@@ -159,6 +160,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'hadji','sur'=>'feralte','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-health' ),  
             array ( 'name'=>'colin','sur'=>'forth','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),   
             array ( 'name'=>'cristine','sur'=>'leicel','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-gear-heart' ),
+            array ( 'name'=>'marina','sur'=>'maramba','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),
             // linus   
             array ( 'name'=>'eva','sur'=>'linus','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),  
             // skyforge
@@ -273,6 +275,7 @@ class MirrorplaneController extends Controller
             array ('div' => 'lum', 'name' => 'theodore', 'year' => '1692'),
             array ('div' => 'lum', 'name' => 'gamora', 'year' => '1683'),
             array ('div' => 'aer', 'name' => 'mikael', 'year' => '1690'),
+            array ('div' => 'aer', 'name' => 'samtiel', 'year' => '1679'),
             array ('div' => 'aer', 'name' => 'jon', 'year' => '1660'),
             array ('div' => 'mys', 'name' => 'ceniza', 'year' => '1693'),
             array ('div' => 'mys', 'name' => 'thomas', 'year' => '1680'),
@@ -396,7 +399,13 @@ class MirrorplaneController extends Controller
             array ( 'y'=>1692, 's'=>2, 'd'=>'13', 'ord'=>'avery', 'logn'=>4, 'name'=>'Paraphrasing'),
 
             array ( 'y'=>1687, 's'=>3, 'd'=>'10', 'ord'=>'rustom', 'logn'=>1, 'name'=>'Personal Babysitter'),
-            array ( 'y'=>1697, 's'=>1, 'd'=>'25', 'ord'=>'rustom', 'logn'=>2, 'name'=>'Back From The Dead'),
+            array ( 'y'=>1694, 's'=>1, 'd'=>'19', 'ord'=>'rustom', 'logn'=>2, 'name'=>'The Universe Ain\'t That Vast If With My Avoidance I Still Keep Crossing You'),
+            array ( 'y'=>1696, 's'=>1, 'd'=>'1', 'ord'=>'rustom', 'logn'=>3, 'name'=>'Storming In'),
+            array ( 'y'=>1697, 's'=>1, 'd'=>'25', 'ord'=>'rustom', 'logn'=>4, 'name'=>'Back From The Dead'),
+
+            array ( 'y'=>1693, 's'=>2, 'd'=>'7', 'ord'=>'vines', 'logn'=>1, 'name'=>'The Guy With The Shiny Head'),
+
+            array ( 'y'=>1689, 's'=>2, 'd'=>'25', 'ord'=>'zedrik', 'logn'=>1, 'name'=>'Good To Be Bad'),
             );
 
         if($req=="char") return $mirChars;

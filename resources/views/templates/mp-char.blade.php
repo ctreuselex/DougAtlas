@@ -313,7 +313,9 @@
                     $( '.cts-'+frmname+'-frm' ).append( "<i class='" + charico + "'></i>" );
                     // console.log('nope' + frmname);
                 }
-            }            
+            }
+
+            // $('img[src="http://localhost:8000/img/mp-char/skills/valkyr/pri.png"]').hide();
         });
     </script>
 
