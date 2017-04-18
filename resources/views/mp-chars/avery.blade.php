@@ -173,12 +173,12 @@
 		// ------------------------------------------------------------ //
 		$charsk3stats = array (
 			array ('name'=>'Range', 'val'=>'300', 'ext'=>''),
-			array ('name'=>'Duration', 'val'=>'3s', 'ext'=>''),
+			array ('name'=>'Duration', 'val'=>'4s', 'ext'=>''),
 
-			array ('name'=>'Brittle', 'val'=>'-70% Physical & Mystical Damage', 'ext'=>''),
-			array ('name'=>'Sluggish', 'val'=>'-30% Movement & -25% Attack Rate', 'ext'=>''),
-			array ('name'=>'Sheeple', 'val'=>'Turns the unit into a sheep', 'ext'=>''),
-			array ('name'=>'Avert', 'val'=>'Myst Lock', 'ext'=>''),
+			array ('name'=>'weaken', 'val'=>'-70% Physical & Mystical Damage', 'ext'=>''),
+			array ('name'=>'slow', 'val'=>'-60% Movement', 'ext'=>''),
+			array ('name'=>'morph Duration', 'val'=>'2s', 'ext'=>''),
+			array ('name'=>'myst-lock Duration', 'val'=>'3s', 'ext'=>''),
 			array ('name'=>'Activation Range', 'val'=>'100', 'ext'=>''),
 			);
 		$charsk3mcdm = array (

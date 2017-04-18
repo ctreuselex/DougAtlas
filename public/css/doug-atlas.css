@@ -15,21 +15,6 @@ a, a:hover, a:focus, a:active {
 .right { text-align: right; }
 .capitalize { text-transform: capitalize; }
 
-@keyframes rotating {
-  from {
-    -webkit-transform: rotate(0deg);
-    /*-webkit-transform: matrix(1, 0, 0, 1, 0, 0);*/
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    /*-webkit-transform: matrix(3, 0, 0, 3, 1, 0);*/
-  }
-}
-
-.rotating {
-    -webkit-animation: rotating 3s linear infinite;
-}
-
 /*---------------------------- NAVBAR ----------------------------*/
 
 	#da-logo {
@@ -527,3 +512,23 @@ a, a:hover, a:focus, a:active {
 	.mirrorplane-nactive { background: #18ff81; }
 	.birdwatch-nactive { background: #ca01f5; }
 
+
+/*---------------------------- RANDOMSSS ----------------------------*/
+
+/*CONSTANT ANIMATIN'*/
+@keyframes rotating {
+  from { -webkit-transform: rotate(0deg);}
+  to { -webkit-transform: rotate(360deg);}
+}
+
+.rotating {-webkit-animation: rotating 3s linear infinite;}
+
+/*VERTICAL ALIGN*/
+.verticalMiddle{
+	height: 100vh; /*set*/
+	display: flex; 
+	align-items: center;
+}
+
+/*SET CSS FOR NTH INSTANCE*/
+.insertclass:nth-of-type(2n) { /*css here*/ }

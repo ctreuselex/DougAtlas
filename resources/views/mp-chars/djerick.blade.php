@@ -23,7 +23,7 @@
 		$mcharSty = "Armagus";
 		$mcharWoc = "Custom-made Aquadextrius";
 
-		$charthemes = 'Pole-arms, Mirrors, Illusions, Wicked Dance Moves';
+		$charthemes = 'Pole-arms, Mirrors, Wicked Dance Moves, A Little Too Short On Everything';
 		$cityname = 'Deceit';
 
 		$lum = 12;

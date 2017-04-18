@@ -390,86 +390,84 @@
     .details span.gei { background :#8bc34a; }
 </style>
 
-<div class="col-sm-6">
-    <div class="col-xs-6">
-        <h3 class="skill-name right" style="    background: white; padding: 5px 10px; margin-bottom: 1px; border-bottom: 2px solid {{ $charColor }};"><b>Statistics</b></h3>
+<div class="col-xs-6">
+    <h3 class="skill-name right" style="    background: white; padding: 5px 10px; margin-bottom: 1px; border-bottom: 2px solid {{ $charColor }};"><b>Statistics</b></h3>
 
-        @foreach ($finValues as $key => $val)
-            <div class="st {{ $key }}"><div class="per b{{ $statRanks[$key] }} a{{ $statMaxRanks[$key] }}"></div>
-                <b>
-                    @if ($key=='phyDam' || $key=='mysDam' || $key=='mixDam' || $key=='moveSpd' || $key=='hPool' || $key=='mPool')
-                        {{ number_format(round($val, 2), 0) }}
-                    @else
-                        {{ number_format(round($val, 2), 2) }}
-                    @endif
-                    -
-                    @if ($key=='phyDam' || $key=='mysDam' || $key=='mixDam' || $key=='moveSpd' || $key=='hPool' || $key=='mPool')
-                        {{ number_format(round($maxValues[$key], 2), 0) }}
-                    @else
-                        {{ number_format(round($maxValues[$key], 2), 2) }}
-                    @endif
+    @foreach ($finValues as $key => $val)
+        <div class="st {{ $key }}"><div class="per b{{ $statRanks[$key] }} a{{ $statMaxRanks[$key] }}"></div>
+            <b>
+                @if ($key=='phyDam' || $key=='mysDam' || $key=='mixDam' || $key=='moveSpd' || $key=='hPool' || $key=='mPool')
+                    {{ number_format(round($val, 2), 0) }}
+                @else
+                    {{ number_format(round($val, 2), 2) }}
+                @endif
+                -
+                @if ($key=='phyDam' || $key=='mysDam' || $key=='mixDam' || $key=='moveSpd' || $key=='hPool' || $key=='mPool')
+                    {{ number_format(round($maxValues[$key], 2), 0) }}
+                @else
+                    {{ number_format(round($maxValues[$key], 2), 2) }}
+                @endif
 
-                    <div class="details">
-                        <?php $constantext = false; ?>
-                        @foreach ($statMaxComps[$key] as $comps => $val)
-                            <!-- constant -->
-                            @foreach ($constantsArr as $cons) 
-                                @if ($cons['name']==$key && $key!='mixDam' && $key!='mixDef' && !$constantext) 
-                                    <span> {{ $cons['val'] }} </span> 
-                                    <?php $constantext = true; ?>
-                                @endif
-                            @endforeach
-                            <!-- adds -->
-                            <span class="{{ $comps }}">
+                <div class="details">
+                    <?php $constantext = false; ?>
+                    @foreach ($statMaxComps[$key] as $comps => $val)
+                        <!-- constant -->
+                        @foreach ($constantsArr as $cons) 
+                            @if ($cons['name']==$key && $key!='mixDam' && $key!='mixDef' && !$constantext) 
+                                <span> {{ $cons['val'] }} </span> 
+                                <?php $constantext = true; ?>
+                            @endif
+                        @endforeach
+                        <!-- adds -->
+                        <span class="{{ $comps }}">
+                            @if ($key=='phyDam' || $key=='mysDam' || $key=='mixDam' || $key=='moveSpd' || $key=='hPool' || $key=='mPool')
+                                {{ number_format(round($val, 2), 0) }}
+                            @else
+                                {{ number_format(round($val, 2), 2) }}
+                            @endif
+                        </span>
+                    @endforeach
+
+                    <!-- deductions -->
+                    @foreach ($statMaxDecs as $decs => $val) @if ($decs==$key)
+                        @foreach ($val as $d => $v)
+                            <span class="{{ $d }}">
                                 @if ($key=='phyDam' || $key=='mysDam' || $key=='mixDam' || $key=='moveSpd' || $key=='hPool' || $key=='mPool')
-                                    {{ number_format(round($val, 2), 0) }}
+                                    - {{ number_format(round($v, 2), 0) }}
                                 @else
-                                    {{ number_format(round($val, 2), 2) }}
+                                    - {{ number_format(round($v, 2), 2) }}
                                 @endif
                             </span>
-                        @endforeach
+                        @endforeach 
+                    @endif @endforeach
 
-                        <!-- deductions -->
-                        @foreach ($statMaxDecs as $decs => $val) @if ($decs==$key)
-                            @foreach ($val as $d => $v)
-                                <span class="{{ $d }}">
-                                    @if ($key=='phyDam' || $key=='mysDam' || $key=='mixDam' || $key=='moveSpd' || $key=='hPool' || $key=='mPool')
-                                        - {{ number_format(round($v, 2), 0) }}
-                                    @else
-                                        - {{ number_format(round($v, 2), 2) }}
-                                    @endif
-                                </span>
-                            @endforeach 
-                        @endif @endforeach
-
-                        @if ($key=='mixDam') <span class="aer">{{ number_format(round($mixAer*100, 2), 0) }}%</span> @endif
-                        @if ($key=='mixDef') <span class="gei">{{ number_format(round($mixGei*100, 2), 0) }}%</span> @endif
-                        <!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
-                    </div>
-                </b>
-            </div>
-        @endforeach
-    </div>
-    <div class="col-xs-6">
-        <section>
-            @if ($chardiv == $lumTotal)
-                <img class="pie-division" src="{{ url('img/lum.png') }}">
-            @elseif ($chardiv == $aerTotal)
-                <img class="pie-division" src="{{ url('img/aer.png') }}">
-            @elseif ($chardiv == $mysTotal)
-                <img class="pie-division" src="{{ url('img/mys.png') }}">
-            @elseif ($chardiv == $geiTotal)
-                <img class="pie-division" src="{{ url('img/gei.png') }}">
-            @endif
-            <div class="pieID pie"></div>
-            <ul class="pieID legend">
-                <li><b>Luminos</b> | {{ $lum }} + {{ $lumPlus }} <span>{{ $lumTotal }}</span></li>
-                <li><b>Aeros</b> | {{ $aer }} + {{ $aerPlus }}<span>{{ $aerTotal }}</span></li>
-                <li><b>Mystos</b> | {{ $mys }} + {{ $mysPlus }}<span>{{ $mysTotal }}</span></li>
-                <li><b>Geios</b> | {{ $gei }} + {{ $geiPlus }}<span>{{ $geiTotal }}</span></li>
-                <p class="right">{{ $lum+$aer+$mys+$gei }} | <b>{{ $lumTotal+$aerTotal+$mysTotal+$geiTotal }}</b></p>
-            </ul>
-        </section>
-        <br>
-    </div>
+                    @if ($key=='mixDam') <span class="aer">{{ number_format(round($mixAer*100, 2), 0) }}%</span> @endif
+                    @if ($key=='mixDef') <span class="gei">{{ number_format(round($mixGei*100, 2), 0) }}%</span> @endif
+                    <!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
+                </div>
+            </b>
+        </div>
+    @endforeach
+</div>
+<div class="col-xs-6">
+    <section>
+        @if ($chardiv == $lumTotal)
+            <img class="pie-division" src="{{ url('img/lum.png') }}">
+        @elseif ($chardiv == $aerTotal)
+            <img class="pie-division" src="{{ url('img/aer.png') }}">
+        @elseif ($chardiv == $mysTotal)
+            <img class="pie-division" src="{{ url('img/mys.png') }}">
+        @elseif ($chardiv == $geiTotal)
+            <img class="pie-division" src="{{ url('img/gei.png') }}">
+        @endif
+        <div class="pieID pie"></div>
+        <ul class="pieID legend">
+            <li><b>Luminos</b> | {{ $lum }} + {{ $lumPlus }} <span>{{ $lumTotal }}</span></li>
+            <li><b>Aeros</b> | {{ $aer }} + {{ $aerPlus }}<span>{{ $aerTotal }}</span></li>
+            <li><b>Mystos</b> | {{ $mys }} + {{ $mysPlus }}<span>{{ $mysTotal }}</span></li>
+            <li><b>Geios</b> | {{ $gei }} + {{ $geiPlus }}<span>{{ $geiTotal }}</span></li>
+            <p class="right">{{ $lum+$aer+$mys+$gei }} | <b>{{ $lumTotal+$aerTotal+$mysTotal+$geiTotal }}</b></p>
+        </ul>
+    </section>
+    <br>
 </div>

@@ -63,6 +63,9 @@ class MirrorplaneController extends Controller
     public function llaxine() { 
          $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
          return view('mp-chars.llaxine')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
+    public function lupe() { 
+         $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
+         return view('mp-chars.lupe')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
     public function maximus() { 
          $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
          return view('mp-chars.maximus')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
@@ -121,6 +124,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'koom','sur'=>'','year'=>1685,'color'=>'','subcolor'=>'','ico'=>'ra ra-wolf-howl' ),
             array ( 'name'=>'frederick','sur'=>'lemaitre','year'=> 1543,'color'=>'','subcolor'=>'','ico'=>'ra ra-bird-mask' ),
             array ( 'name'=>'llaxine','sur'=>'loquintez','year'=>1677,'color'=>'#EC78A0','subcolor'=>'#EFE167','ico'=>'ra ra-fairy' ),
+            array ( 'name'=>'lupe','sur'=>'wolgraff','year'=>1665,'color'=>'#DDAF47','subcolor'=>'#882826','ico'=>'ra ra-wolf-howl' ),
             array ( 'name'=>'maximus','sur'=>'seidlitz','year'=>1673,'color'=>'#17EF79','subcolor'=>'#3D7D7A','ico'=>'ra ra-reactor' ),
             array ( 'name'=>'mikael','sur'=>'clayford','year'=> 1667,'color'=>'','subcolor'=>'','ico'=>'ra ra-kitchen-knives' ),
             array ( 'name'=>'moon','sur'=>'beleaguer','year'=>1668,'color'=>'#26DC9F','subcolor'=>'#D2A368','ico'=>'ra ra-slash-ring' ),
@@ -138,6 +142,7 @@ class MirrorplaneController extends Controller
             // none main
             array ( 'name'=>'amelia','sur'=>'beleaguer','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-snowflake' ),
             array ( 'name'=>'markus','sur'=>'beleaguer','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-flame-symbol' ),
+            array ( 'name'=>'duellie','sur'=>'beleaguer','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-flame-symbol' ),
             // heads
             array ( 'name'=>'thomas','sur'=>'dirk','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-frostfire' ),  
             array ( 'name'=>'george','sur'=>'holland','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-circular-saw' ), 
@@ -222,6 +227,7 @@ class MirrorplaneController extends Controller
             array ('name'=>'mig','act'=>'firebird'),
             array ('name'=>'demeter','act'=>'ocdVanDionyus'),
             array ('name'=>'noemi','act'=>'thelegendarylongcat'),
+            array ('name'=>'vines','act'=>'ChuggingOnCaffeine'),
             //randoms
             array ('name'=>'berex','act'=>'thefangirl01'),
             array ('name'=>'aguilia','act'=>'CristinaMEEE'),
@@ -399,11 +405,13 @@ class MirrorplaneController extends Controller
             array ( 'y'=>1692, 's'=>2, 'd'=>'13', 'ord'=>'avery', 'logn'=>4, 'name'=>'Paraphrasing'),
 
             array ( 'y'=>1687, 's'=>3, 'd'=>'10', 'ord'=>'rustom', 'logn'=>1, 'name'=>'Personal Babysitter'),
-            array ( 'y'=>1694, 's'=>1, 'd'=>'19', 'ord'=>'rustom', 'logn'=>2, 'name'=>'The Universe Ain\'t That Vast If With My Avoidance I Still Keep Crossing You'),
+            array ( 'y'=>1694, 's'=>1, 'd'=>'19', 'ord'=>'rustom', 'logn'=>2, 'name'=>'The Universe Ain\'t That Vast If With My Avoidance, Crossing You Is Still Inevitable'),
             array ( 'y'=>1696, 's'=>1, 'd'=>'1', 'ord'=>'rustom', 'logn'=>3, 'name'=>'Storming In'),
             array ( 'y'=>1697, 's'=>1, 'd'=>'25', 'ord'=>'rustom', 'logn'=>4, 'name'=>'Back From The Dead'),
 
-            array ( 'y'=>1693, 's'=>2, 'd'=>'7', 'ord'=>'vines', 'logn'=>1, 'name'=>'The Guy With The Shiny Head'),
+            array ( 'y'=>1688, 's'=>3, 'd'=>'16', 'ord'=>'vines', 'logn'=>1, 'name'=>'Raging Fire'),
+            array ( 'y'=>1693, 's'=>2, 'd'=>'7', 'ord'=>'vines', 'logn'=>2, 'name'=>'The Guy With The Shiny Head'),
+            array ( 'y'=>1695, 's'=>3, 'd'=>'9', 'ord'=>'vines', 'logn'=>3, 'name'=>'Instantaneous Repositioning'),
 
             array ( 'y'=>1689, 's'=>2, 'd'=>'25', 'ord'=>'zedrik', 'logn'=>1, 'name'=>'Good To Be Bad'),
             );

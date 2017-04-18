@@ -24,6 +24,7 @@
 		$mcharWoc = "None";
 
 		$charthemes = '';
+		$cityname = '';
 
 		$lum = 8;
 		$lumPlus = 25;

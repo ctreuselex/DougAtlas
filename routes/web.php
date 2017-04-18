@@ -31,6 +31,7 @@ Route::get('/mirrorplane/kalli', 'MirrorplaneController@kalli');
 Route::get('/mirrorplane/kianna', 'MirrorplaneController@kianna');
 Route::get('/mirrorplane/koom', 'MirrorplaneController@koom');
 Route::get('/mirrorplane/llaxine', 'MirrorplaneController@llaxine');
+Route::get('/mirrorplane/lupe', 'MirrorplaneController@lupe');
 Route::get('/mirrorplane/maximus', 'MirrorplaneController@maximus');
 Route::get('/mirrorplane/gemini', 'MirrorplaneController@gemini');
 Route::get('/mirrorplane/noemi', 'MirrorplaneController@noemi');

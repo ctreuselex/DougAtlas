@@ -1,4 +1,4 @@
-<div class="modal fade" id="the-universe-aint-that-vast-if-with-my-avoidance-i-still-keep-crossing-you" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="the-universe-aint-that-vast-if-with-my-avoidance-crossing-you-is-still-inevitable" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -34,9 +34,9 @@
         <br><span class="cts-porlo"></span>: And I was clueless? 
         <br><span class="cts-rustom"></span>: I sent you a message about what happened, five cycles ago.
         <br><span class="cts-rustom"></span>: You most likely ignored it because you were too busy making yourself important to the city.
-        <br><span class="cts-rustom"></span>: And then being too busy hiding because the city ended not liking you.
+        <br><span class="cts-rustom"></span>: And then being too busy hiding because the city ended up not liking you.
         <br><span class="cts-porlo"></span>: Well...
-        <br><span class="cts-porlo"></span>: I do not have much time diving in to the amount of message to search for it right now.
+        <br><span class="cts-porlo"></span>: I do not have much time diving in to the amount of messages I have to search for it right now.
         <br><span class="cts-porlo"></span>: Did they leave anything before they transcended to the heavens?
         <br><span class="cts-rustom"></span>: They did left words.
         <br><span class="cts-porlo"></span>: Anything for me?
@@ -45,7 +45,6 @@
         <br><span class="cts-porlo"></span>: Uh...
         <br><span class="cts-porlo"></span>: Is it for the both of us? 
         <br><span class="cts-porlo"></span>: Cause I'm only a little bit not so disappointed in you too.
-
         <br>
         <br>[<span class="cts-rustom"></span> has ended the session]
         </p>

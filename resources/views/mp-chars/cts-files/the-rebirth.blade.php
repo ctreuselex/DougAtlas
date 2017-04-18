@@ -13,7 +13,7 @@
         <br>ATTACHMENT: baby-sol-eating-chili.avi
         <br>
         <br>Gene Salatiel here reporting on mission 'AEROSFIRE' for team AURIGA.
-        <br>The fire that lasted for almost 2 weeks, 12 days to be exact, has finally been extinguished. Thanks to the help of the Aeros locals and a few from the nearby district from Luminos. However our investigation regarding who or what started the fire still have no clear leads.
+        <br>The fire that lasted for almost 2 weeks, 12 days to be exact, has finally been extinguished. Thanks to the help of the Aeros locals, a few from the nearby district from Luminos, and of course, Mr. Markus Beleaguer and his team. However our investigation regarding who or what started the fire still have no clear leads.
         <br>
         <br>One thing though, is that one of my team mates found a child so deep within the ashes of the ruined district. To our surprise, the child is still alive with little to no injuries but maybe a few light scratches and bruises here and there. Always wanting a child of my own, I took responsibility of taking care of him and I am very delighted that Mig, mah hubby, got his impotent self attached to the child faster than he *insert sexual themes here*.
         <br>

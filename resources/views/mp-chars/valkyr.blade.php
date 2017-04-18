@@ -53,10 +53,10 @@
 				'des'=>"Conjures a large bird of flames which Valkyr rides to battle, damaging and burning enemies he passes through."), 
 
 			array ('name'=>"Fiery Bind", 'sk'=>'sk2',
-				'des'=>"Throws a fiery chain which binds the the first enemy it comes in contact with inflicting |root| and |burn|."),  
+				'des'=>"Throws a fiery chain which binds the first enemy it comes in contact with inflicting |root| and |burn|."),  
 
 			array ('name'=>"Flame Bolt", 'sk'=>'sk3',
-				'des'=>"Fire exploding balls of... well... fire which latches on the ground and... well... explodes after a short delay."),
+				'des'=>"Fire exploding balls o fire which explodes after a short delay upon coming in contact with its target or the ground."),
 
 			array ('name'=>"Dual Ignition", 'sk'=>'ult',
 				'des'=>"Valkyr concentrates on the power of rock and roll, and dad humor, to inflict twice the effect and damage of his attacks in the next few seconds."),
@@ -101,8 +101,8 @@
 		$charsecstats = array (
 			array ('name'=>'Damage', 'val'=>'140% Physical Damage', 'ext'=>'lum'),
 			array ('name'=>'Damage /swing', 'val'=>'+15%', 'ext'=>''),
-			array ('name'=>'100% Damage AoE', 'val'=>'120', 'ext'=>''),
-			array ('name'=>'50% Damage AoE', 'val'=>'70', 'ext'=>''),
+			array ('name'=>'100% Damage AoE', 'val'=>'70', 'ext'=>''),
+			array ('name'=>'50% Damage AoE', 'val'=>'150', 'ext'=>''),
 			array ('name'=>'Attack Rate', 'val'=>'100%', 'ext'=>''),
 			array ('name'=>'Range', 'val'=>'800', 'ext'=>''),
 			);
@@ -249,7 +249,7 @@
 
 			array ('name'=>'Health Regeneration', 'val'=>'+2', 'ext'=>''),
 			array ('name'=>'Myst Regeneration', 'val'=>'-1', 'ext'=>''),
-			array ('name'=>'Threshold', 'val'=>'80 Heath lost', 'ext'=>''),
+			array ('name'=>'Threshold', 'val'=>'80 Heath Lost', 'ext'=>''),
 			);
 		$charextmcdm = array (
 			array ('name'=>'Cooldown', 'val'=>''),

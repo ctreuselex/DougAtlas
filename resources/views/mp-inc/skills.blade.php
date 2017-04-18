@@ -50,6 +50,8 @@
             'des'=>'Deals damage every second. Removed by healing, if healing done is equal or greater than periodic damage.'),
         array ('name'=>'thundershock', 'purge'=>true, 'ico'=>'ra ra-lightning-trio',
             'des'=>'Disables all actions for 1 second. Has a 20% chance of jumping to nearby units on impact, 100% chance if the unit is drenched.'),
+        array ('name'=>'morph', 'purge'=>true, 'ico'=>'ra ra-sheep',
+            'des'=>'Turns into a critter and prevents all actions but moving. Can only move at 20% of normal movement speed.'),
         
         //buffs 
         //damage

@@ -9,7 +9,6 @@
         <p>
         Text Message by <span class="cts-george"></span> to <span class="cts-vriskvin"></span>
         <br>TIME: 1693, SR 54th Summer
-        <br>TITLE: Thomas Dirk
         <br>ATTACHMENTS:  tdirk-eyepatch.obj
         <br>
         <br>Vriskvin,

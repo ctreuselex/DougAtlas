@@ -7,7 +7,7 @@
         <div class="modal-body">
           
         <p>
-        CRIMNAL RECORD NO. 129
+        CRIMINAL RECORD NO. 129
         <br>INTERVIEWER: <span class="cts-gamora"></span>
         <br>SUBJECT: Zedrik Azazel AGE: 28
         <br>TIME: 1689, SR 25th Fall

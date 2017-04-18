@@ -91,6 +91,11 @@
     </li>
     <li>
         <img class="mp-img" src="{{ url('img/orv.png') }}" width="125px">
+        <b class="mp-title">Howlers</b> | "..."
+        <div class="clear"></div>
+    </li>
+    <li>
+        <img class="mp-img" src="{{ url('img/orv.png') }}" width="125px">
         <b class="mp-title">The Order of the Void</b> | "..."
         <div class="clear"></div>
     </li>

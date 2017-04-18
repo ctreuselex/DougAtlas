@@ -91,44 +91,32 @@ $(function() {
 
 /*=========== FIX HEIGHT ===========*/
 $(document).ready(function() {
-  // Get an array of all element heights
   var elementHeights = $('.ski-top').map(function() {
     return $(this).height();
   }).get();
 
-  // Math.max takes a variable number of arguments
-  // `apply` is equivalent to passing each height as an argument
   var maxHeight = Math.max.apply(null, elementHeights);
 
-  // Set each height to the max height
   $('.ski-top').height(maxHeight+15);
 });
 
 
 $(document).ready(function() {
-  // Get an array of all element heights
   var elementHeights = $('.ski-base').map(function() {
     return $(this).height();
   }).get();
 
-  // Math.max takes a variable number of arguments
-  // `apply` is equivalent to passing each height as an argument
   var maxHeight = Math.max.apply(null, elementHeights);
 
-  // Set each height to the max height
   $('.ski-base').height(maxHeight+15);
 });
 
 $(document).ready(function() {
-  // Get an array of all element heights
   var elementHeights = $('.ski-bot').map(function() {
     return $(this).height();
   }).get();
 
-  // Math.max takes a variable number of arguments
-  // `apply` is equivalent to passing each height as an argument
   var maxHeight = Math.max.apply(null, elementHeights);
 
-  // Set each height to the max height
   $('.ski-bot').height(maxHeight+15);
 });

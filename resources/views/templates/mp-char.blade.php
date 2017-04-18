@@ -171,12 +171,17 @@
         /*background: url({{ $charTexture }}); background-size: 30%; background-blend-mode: overlay; background-color: {{ $charColorSub }};*/
         "> 
 
-        <p><span class="char-name">{{ $mcharNam }}</span> | {{ $charthemes}}</p>
     	<div class="row">
 	    	<div class="col-sm-5"> 
-                <img src="{{ url('img/mp-char/'.$charname.'.png') }}" width="100%">
+                <img src="{{ url('img/mp-char/'.$charname.'.png') }}" width="125%" style="margin-top:-20px; margin-left:-12%;">
 	    	</div>
-	    	@include('mp-inc/stats')
+            <div class="col-sm-6" style="padding:0;">
+                <div class="col-sm-12">
+                    <span class="char-name">{{ $mcharNam }}</span>
+                    <p>{{ $charthemes}}</p>
+                </div>
+                @include('mp-inc/stats')
+            </div>
     	</div>
 
         <div class="col-xs-12" style="padding: 5px; color: white;

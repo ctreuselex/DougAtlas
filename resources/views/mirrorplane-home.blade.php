@@ -182,7 +182,7 @@
 
     @include('mp-inc/dash')
 
-    <div class="col-sm-10 col-sm-offset-2" style="padding: 15px;"> 
+    <div class="col-sm-10 col-sm-offset-2" style="padding: 15px;">
         
         <p><span class="char-name">The City</span> | The World, the Universe</p>
         <ul class="mp-cont">
