@@ -39,7 +39,7 @@
         <br>I talked to him as well. He said you're kind of a bully.
         <br>Maybe you two just needs more time. You'll be fine.
         <br>
-        <br>Also, you must have seem a lot of pictures of him. He's quite the celebrity.
+        <br>Also, you must have seen a lot of pictures of him. He's quite the celebrity.
         
         <hr>
         Text Message by <span class="cts-maximus"></span> to <span class="cts-george"></span>

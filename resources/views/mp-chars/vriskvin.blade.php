@@ -70,7 +70,7 @@
 		// ------------------------------------------------------------ //
 		$charpristats = array (
 			array ('name'=>'Damage', 'val'=>'100% Mixed Damage', 'ext'=>'aer'),
-			array ('name'=>'Attack Rate', 'val'=>'85%', 'ext'=>''),
+			array ('name'=>'Attack Rate', 'val'=>'100%', 'ext'=>''),
 			array ('name'=>'Range', 'val'=>'120 radius cone', 'ext'=>''),
 
 			array ('name'=>'Hammer Hit Points', 'val'=>'300', 'ext'=>''),

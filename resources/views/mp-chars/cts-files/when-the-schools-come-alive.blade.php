@@ -29,7 +29,7 @@
         <br><span class="cts-maximus"></span>: I wasn't even there!
         <br><span class="cts-daud"></span>: And you also don't have this monitor on your office that directly spots the position of their fight in the hallway!
         <br><span class="cts-maximus"></span>: Hey, it's him we're interviewing here! Not me!
-        <br><span class="cts-daud"></span>: Oh yes. Sorry, I forgot you'd have a lot more experience into topics like bullying than me.
+        <br><span class="cts-daud"></span>: Oh yes. Sorry, I forgot you'd have a lot more experience into topics like bullying than I do.
         <br><span class="cts-maximus"></span>: What are you trying to say?
         <br><span class="cts-jack"></span>: Sirs?
         <br><span class="cts-maximus"></span>: Shut up, Jack.

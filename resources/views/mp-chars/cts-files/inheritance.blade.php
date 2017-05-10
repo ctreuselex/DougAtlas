@@ -18,7 +18,7 @@
         <br>
         <br>I'm sorry for your loss.
         <br>
-        <br>PS. The King mentioned that you should not go and seek vegeance because he wouldn't like to lose another valuable Psykeeper but I say ignore that. Do what you can and bring justice to your father's misfortune. He was my best pal. So if you need me, I'm just one call away. If I didn't answer, then you know where I went.
+        <br>PS. The King mentioned that you should not go and seek vegeance because he wouldn't like to lose another valuable Psykeeper but I say ignore that. Who is he to say things and say that he cares if we can't even see him. Do what you can and bring justice to your father's misfortune. He was my best pal. So if you need me, I'm just one call away. If I didn't answer, then you know where I went.
         <br>
         <br>Condolences and Good Luck,
         <br>George Holland

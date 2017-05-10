@@ -52,17 +52,17 @@
 			array ('name'=>"Igni's Curse", 'sk'=>'sk1',
 				'des'=>"Curses the target with harsh words which drains their Myst until they use their Myst which in turn |myst-lock|-s them for a short period."), 
 
-			array ('name'=>"Breath Of Fire", 'sk'=>'sk2',
-				'des'=>"Causes the surrounding Myst to burst into flames causing massive damage in front of Zed. Damage diminishes the farther the fire travels."),  
+			array ('name'=>"Breath of Fire", 'sk'=>'sk2',
+				'des'=>"Causes the surrounding Myst to burst into flames causing massive damage in front of Zed. Damage diminishes the farther the fire travels. Causes |burn| for 2 seconds."),  
 
 			array ('name'=>"Igni's Ground", 'sk'=>'sk3',
 				'des'=>"Curses the ground with unpleasant bitterness causing it be void of Myst. Because of pain, the ground causes Zed to lose a percentage of health while he's standing on it."),
 
 			array ('name'=>"Azure Fire Assault", 'sk'=>'ult',
-				'des'=>"Drains all Myst in the surrounding area to centralize in the target area, then causing it the combust into a glorious explosion."),
+				'des'=>"Drains all Myst in the surrounding area to centralize in the target area, then causing it to combust into a glorious explosion."),
 
 			array ('name'=>"Runic Transfiguration", 'sk'=>'ext',
-				'des'=>"Zed continuously combusts nearby Myst around him causing him to become the legendary 'Rune Beast'. At this state, Rune Blade becomes Runic Blast, he will not be able to regenerate Myst, and he will be slow. Zed can transform back at will or if his remaining Myst is 0."),
+				'des'=>"Zed continuously combusts nearby Myst around him causing him to become the legendary 'Rune Beast'. At this state, Rune Blade becomes Runic Blast, he will not be able to regenerate Myst, and he will be |slow|-ed. Zed can transform back at will or if his remaining Myst is 0."),
 			);
 
 		// ------------------------------------------------------------ //
@@ -135,9 +135,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "Pain Amplification",
+			array ('name' => "Daredevil",
 				'des'=>"Causes the cursed target and Zedrik himself with 25% |frangible|-ility."),
-			array ('name' => "Adrenaline Rush",
+			array ('name' => "Predator Rush",
 				'des'=>"Whenever an enemy units is cursed, Zed gains a 15% |frenzy|."),
 			array ('name' => "Burn Out",
 				'des'=>"Increases Myst drained per second to 5% while decreasing duration to 2."),
@@ -177,7 +177,7 @@
 		// ------------------------------------------------------------ //
 		$charsk3stats = array (
 			array ('name'=>'Area of Effect', 'val'=>'200', 'ext'=>''),
-			array ('name'=>'Duration', 'val'=>'3s', 'ext'=>''),
+			array ('name'=>'Duration', 'val'=>'5s', 'ext'=>''),
 			);
 		$charsk3mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
@@ -241,8 +241,8 @@
 			);
 		$charextmcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
-			array ('name'=>'Cooldown', 'val'=>'5s'),
-			array ('name'=>'Myst Cost', 'val'=>''),
+			array ('name'=>'Cooldown', 'val'=>''),
+			array ('name'=>'Myst Cost', 'val'=>'5/s'),
 			array ('name'=>'Health Cost', 'val'=>''),
 			// array ('name'=>'dp', 'val'=>false), //damage point // 't=direct' 'f=indirect'
 			array ('name'=>'cd', 'val'=>'STATIONARY'), //cast design // 'freeform' 'stationary'

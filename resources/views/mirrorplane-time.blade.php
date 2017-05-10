@@ -42,12 +42,14 @@
 	@include('inc/navigation')
 
     <?php
+        $curPage = 'time';
         $Color = '#18FF81';
         $cityname = 'Mirrorplane';
         // $ColorSub = '#18FF81';
         
         $pageNotes = array (
-            array('ord'=>'', 'n'=>"Much Info, Very Wow",'v'=>"Building all the stuff to destroy later, and then to fix after, only to destroy again and again."),
+            array('ord'=>'', 'n'=>"Much Info",'v'=>"Build Stuff. Build Moar Stuff! Destroy Said Stuff. That's the plan!"),
+            array('ord'=>'', 'n'=>"Oh Hey Look!",'v'=>"Look at all these backstories which are all going to be thrown out the window!"),
             );
     ?>
 
@@ -282,7 +284,7 @@
                     array_multisort($name, SORT_ASC, $mirChars); 
                 ?>
                 @foreach ($mirChars as $char)
-                    @if ($char['ico']!='' && $char['color']!='' && $char['name']!='djerick')
+                    @if ($char['ico']!='' && $char['color']!='' && $char['name']!='djerick' && $char['name']!='dom' && $char['name']!='cin')
                         <?php 
                             $charlink = strtolower($char['name']);
                             if ($char['name']=='moon') $charlink = 'djerick';

@@ -33,10 +33,10 @@
         'moveSpd' => array( 'aer' => ($aer*2.05) ),
 
         'hPool' => array( 'lum' => ($lum*15), 'gei' => ($gei*22) ),
-        'hRgen' => array( 'lum' => ($lum*0.08), 'gei' => ($gei*0.18) ),
+        'hRgen' => array( 'lum' => ($lum*0.11), 'gei' => ($gei*0.21) ),
 
         'mPool' => array( 'mys' => ($mys*17), 'gei' => ($gei*12) ),
-        'mRgen' => array( 'mys' => ($mys*0.18), 'gei' => ($gei*0.08) ),
+        'mRgen' => array( 'mys' => ($mys*0.21), 'gei' => ($gei*0.11) ),
 
         'phyDef' => array( 'lum' => ($lum*0.25), 'gei' => ($gei*0.20) ),
         'mysDef' => array( 'mys' => ($mys*0.25), 'gei' => ($gei*0.20) ),
@@ -128,10 +128,10 @@
         'moveSpd' => array( 'aer' => ($aerTotal*2.05) ),
 
         'hPool' => array( 'lum' => ($lumTotal*15), 'gei' => ($geiTotal*22) ),
-        'hRgen' => array( 'lum' => ($lumTotal*0.08), 'gei' => ($geiTotal*0.18) ),
+        'hRgen' => array( 'lum' => ($lumTotal*0.11), 'gei' => ($geiTotal*0.21) ),
 
         'mPool' => array( 'mys' => ($mysTotal*17), 'gei' => ($geiTotal*12) ),
-        'mRgen' => array( 'mys' => ($mysTotal*0.18), 'gei' => ($geiTotal*0.08) ),
+        'mRgen' => array( 'mys' => ($mysTotal*0.21), 'gei' => ($geiTotal*0.11) ),
 
         'phyDef' => array( 'lum' => ($lumTotal*0.25), 'gei' => ($geiTotal*0.20) ),
         'mysDef' => array( 'mys' => ($mysTotal*0.25), 'gei' => ($geiTotal*0.20) ),

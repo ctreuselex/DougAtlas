@@ -47,8 +47,8 @@
 			array ('name'=>"Aquadextrius", 'sk'=>'pri',
 				'des'=>"Moon's own custom made pole-arm is as deadly as rust rushing through open wounds and a breakdancer having a very long third leg."),
 
-			array ('name'=>"Water Image", 'sk'=>'sec',
-				'des'=>"For some magical reason, Moon can create a |clone| of himself to fight along side him using a body of water. Not even him understand how this whole thing works. But he likes it."), 
+			array ('name'=>"Geyser Strike", 'sk'=>'sec',
+				'des'=>"Swings an upward strike which throws the target into air, damaging and |disarm|-ing them in the process. Can be cast again for 35 Myst cost for a second hit with a water blast which damages again, but now knockbacks and |drench|-es."),
 
 			array ('name'=>"Aqua Blast", 'sk'=>'sk1',
 				'des'=>"This trick shot allows Moon to quickly damage, |drench|, and annoy his target with a blast of water to the face along with a |clone| of himself. Double the annoyance."), 
@@ -62,8 +62,8 @@
 			array ('name'=>"Percutiens Aerugo", 'sk'=>'ult',
 				'des'=>"Recreates an enormous Aquadextrius with water which can be shot at a direction in which Moon hates the most, damages and |stun|-s enemies hit."),
 
-			array ('name'=>"Geyser", 'sk'=>'ext',
-				'des'=>"Creates a geyser sprout at the target point which damages and |stun|-s and |drench|-es enemies after a short delay. The geyser will also leave a puddle to roll on which will disappear after a short time."),
+			array ('name'=>"Water Image", 'sk'=>'ext',
+				'des'=>"For some magical reason, Moon can create a |clone| of himself to fight along side him using a body of water. Not even him understand how this whole thing works. But he likes it."), 
 			);
 
 		// ------------------------------------------------------------ //
@@ -95,25 +95,27 @@
 		// SECONDARY
 		// ------------------------------------------------------------ //
 		$charsecstats = array (
-			array ('name'=>'Charges', 'val'=>'3', 'ext'=>''),
-			array ('name'=>'clone Duration', 'val'=>'7s', 'ext'=>''),
+			array ('name'=>'First Strike Damage', 'val'=>'140% Physical Damage', 'ext'=>'aer'),
+			array ('name'=>'Second Strike Damage', 'val'=>'85 + 30% Physical Damage', 'ext'=>'aer'),
+			array ('name'=>'Cast Time', 'val'=>'70% of Attack Rate', 'ext'=>''),
+			array ('name'=>'Range', 'val'=>'150 radius cone', 'ext'=>''),
 			);
 		$charsecmcdm = array (
-			array ('name'=>'Recharge Rate', 'val'=>'45s'),
+			array ('name'=>'Recharge Rate', 'val'=>''),
 			array ('name'=>'Cooldown', 'val'=>''),
-			array ('name'=>'Myst Cost', 'val'=>'20'),
+			array ('name'=>'Myst Cost', 'val'=>''),
 			array ('name'=>'Health Cost', 'val'=>''),
-			// array ('name'=>'dp', 'val'=>false), //damage point // 't=direct' 'f=indirect'
-			array ('name'=>'cd', 'val'=>'FREEFORM'), //cast design // 'freeform' 'stationary'
+			array ('name'=>'dp', 'val'=>true), //damage point // 't=direct' 'f=indirect'
+			array ('name'=>'cd', 'val'=>'STATIONARY'), //cast design // 'freeform' 'stationary'
 			array ('name'=>'sd', 'val'=>''), //skill design // 'active' 'passive' 'channeling' 'toggle'
 			array ('name'=>'ml', 'val'=>true), //constraints
-			array ('name'=>'da', 'val'=>false),
+			array ('name'=>'da', 'val'=>true),
 			);
 		$charsecaug = array (
-			array ('name' => "Perfect Copy",
-				'des'=>"Turns Water Image's |clone|-s of Moon into a perfect copy of himself. Decreases their duration to 4 seconds."),
-			array ('name' => "Moon Party",
-				'des'=>"Gives Moon a passive 30% chance of creating a |clone| of himself when he attacks with Aquadextrius, Whirlpool, or Percutiens Aerugo. Decreases Water Image's charges to 1."), 
+			array ('name' => "Hydroxplosion",
+				'des'=>"The second strike now leaves a 400 radius puddle in front of Moon which lasts for 8 seconds."),
+			array ('name' => "Dirty Mirror",
+				'des'=>"Hitting an |expose|-d unit with the first strike will trigger as a critical hit, then reapplyies the |expose| effect."), 
 			);
 
 		// ------------------------------------------------------------ //
@@ -126,7 +128,7 @@
 		$charsk1mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
 			array ('name'=>'Cooldown', 'val'=>'6s'),
-			array ('name'=>'Myst Cost', 'val'=>'45'),
+			array ('name'=>'Myst Cost', 'val'=>'25'),
 			array ('name'=>'Health Cost', 'val'=>''),
 			array ('name'=>'dp', 'val'=>true), //damage point // 't=direct' 'f=indirect'
 			array ('name'=>'cd', 'val'=>'FREEFORM'), //cast design // 'freeform' 'stationary'
@@ -136,7 +138,7 @@
 			);
 		$charsk1aug = array (
 			array ('name' => "Speed Blast",
-				'des'=>"Decreases Aqua Blast's cooldown to 2 seconds while increasing its Myst cost to 60 and 15 if cast on water."),
+				'des'=>"Decreases Aqua Blast's cooldown to 2 seconds while increasing its Myst cost to 50 and 15 if cast on water."),
 			array ('name' => "Pocket Of Stones",
 				'des'=>"Aqua Blast now leaves a 25% |slow| on the target for 3 seconds."),
 			array ('name' => "Hydro Bubble",
@@ -173,7 +175,7 @@
 				'des'=>"Gives Whirlpool's hits a 65% |slow| effect which lasts for 0.75 seconds."),
 			array ('name' => "Everybody Do The Twist",
 				'des'=>"Casting Whirlpool will cause all of Moon's |clone|-s to also cast Whirlpool at the cost of increasing Whirlpool's Myst cost to 160."),
-			array ('name' => "Vanity Blades",
+			array ('name' => "Spin To Win",
 				'des'=>"Whirlpool's now |reflect|-s 100% of incoming damage."), 
 			);
 		// ------------------------------------------------------------ //
@@ -236,29 +238,27 @@
 		// ------------------------------------------------------------ //
 		// EXTRA
 		// ------------------------------------------------------------ //
+
 		$charextstats = array (
-			array ('name'=>'Damage', 'val'=>'85 + 10% Physical Damage', 'ext'=>'aer'),
-			array ('name'=>'Area of Effect', 'val'=>'250', 'ext'=>''),
-			array ('name'=>'Delay', 'val'=>'2s', 'ext'=>''),
-			array ('name'=>'Puddle Duration', 'val'=>'8s', 'ext'=>''),
-			array ('name'=>'stun Duration', 'val'=>'1.5s', 'ext'=>''),
+			array ('name'=>'Charges', 'val'=>'3', 'ext'=>''),
+			array ('name'=>'clone Duration', 'val'=>'7s', 'ext'=>''),
 			);
 		$charextmcdm = array (
-			array ('name'=>'Recharge Rate', 'val'=>''),
-			array ('name'=>'Cooldown', 'val'=>'20s'),
-			array ('name'=>'Myst Cost', 'val'=>'90'),
+			array ('name'=>'Recharge Rate', 'val'=>'45s'),
+			array ('name'=>'Cooldown', 'val'=>''),
+			array ('name'=>'Myst Cost', 'val'=>'20'),
 			array ('name'=>'Health Cost', 'val'=>''),
-			array ('name'=>'dp', 'val'=>false), //damage point // 't=direct' 'f=indirect'
+			// array ('name'=>'dp', 'val'=>false), //damage point // 't=direct' 'f=indirect'
 			array ('name'=>'cd', 'val'=>'FREEFORM'), //cast design // 'freeform' 'stationary'
-			array ('name'=>'sd', 'val'=>'ACTIVE'), //skill design // 'active' 'passive' 'channeling' 'toggle'
+			array ('name'=>'sd', 'val'=>''), //skill design // 'active' 'passive' 'channeling' 'toggle'
 			array ('name'=>'ml', 'val'=>true), //constraints
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "Hydroxplosion",
-				'des'=>"Removes the delay of Geyser while increasing its area of effect to 800. Also replaces its |stun| with a 30% |slow| which lasts for 5 seconds."),
-			array ('name' => "Mirror Dome",
-				'des'=>"Creates a mirror dome at the area after Geyser's eruption. The mirror dome will block anyone who isn't Moon from going in or out of it while also continuously creating |clone|-s of Moon every second as long as he is inside it. The dome will lasts for 3 seconds."), 
+			array ('name' => "Perfect Copy",
+				'des'=>"Turns Water Image's |clone|-s of Moon into a perfect copy of himself. Decreases their duration to 4 seconds."),
+			array ('name' => "Moon Party",
+				'des'=>"Gives Moon a passive 30% chance of creating a |clone| of himself when he attacks with Aquadextrius, Whirlpool, or Percutiens Aerugo. Decreases Water Image's charges to 1."), 
 			);
 	?>
 @stop 

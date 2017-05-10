@@ -209,7 +209,7 @@
 			array ('name' => "Hit Pulse",
 				'des'=>"Causes the tower to heal all allied units in the area by 50% of its heal every time it's hit."),
 			array ('name' => "Empower",
-				'des'=>"Applies a 5% |amplify| to all allied units in range."),  
+				'des'=>"Applies a 5% physical and mystical |amplify| to all allied units in range."),  
 			);
 
 		// ------------------------------------------------------------ //

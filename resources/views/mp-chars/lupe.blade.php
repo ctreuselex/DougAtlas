@@ -62,7 +62,7 @@
 				'des'=>"Lupe's mastery of morphing himself allowed him to try |morph|-ing other people. Makes him laugh whenever they try to flap their chicken wings or when they stop breathing because they're now a fish out of water."),
 
 			array ('name'=>"The Wolf Within", 'sk'=>'ext',
-				'des'=>"Lupe fully transforms himself into a giant wolf effectively giving him high physical |amplify|, |haste|, and physical |fortify|."),
+				'des'=>"Lupe fully transforms himself into a giant wolf effectively giving him high physical |amplify|, |haste|, and physical |fortify|. Lupe also cannot be |disarm|-ed while in Werewolf form, cause obviously, his a wolf now, he needs no wrenches to wreck."),
 			);
 
 		// ------------------------------------------------------------ //
@@ -120,11 +120,11 @@
 		// ------------------------------------------------------------ //
 		// SK1
 		// ------------------------------------------------------------ //
-		$charsk1stats = array (
+		$charsk1stats = array (	
 			array ('name'=>'Damage', 'val'=>'160% Physical Damage', 'ext'=>'lum'),
 			array ('name'=>'Area of Effect', 'val'=>'200', 'ext'=>''),
 			array ('name'=>'Distance', 'val'=>'600', 'ext'=>''),
-			array ('name'=>'Delay', 'val'=>'1s', 'ext'=>''),
+			array ('name'=>'Cast Time', 'val'=>'1s', 'ext'=>''),
 			array ('name'=>'stun Duration', 'val'=>'1s', 'ext'=>''),
 			);
 		$charsk1mcdm = array (
@@ -139,14 +139,14 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "Force Of A Samson",
+			array ('name' => "Samson Force",
 				'des'=>"Allows Bull Rush to be cast again, stopping Lupe's dash and follow with a horn strike which knockbacks and deals double of Bull Rush's damage and the duration of its |stun|."),
-			array ('name' => "Like A Wrecking Ball",
-				'des'=>"Bull Rush now also causes |disarm|."),
+			array ('name' => "Red Like Blood",
+				'des'=>"Attacking an enemy unit affected by |bleed|-ing has 20% chance of inflicting a 1 second |stun|."), 
 			array ('name' => "Stampede",
 				'des'=>"Gives a 30% |haste|, which lasts for 5 seconds, to all allied units Lupe ran through with Bull Rush."),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "Not In The Eye",
+				'des'=>"Getting hit in a critical spot allows Lupe to cast Bull Rush with 25 Myst cost while also ignoring its cooldown for 4 seconds."),
 			);
 		// ------------------------------------------------------------ //
 		// SK2
@@ -175,8 +175,8 @@
 				'des'=>"Increases the effects of Ursine Roar by 50% if there are no nearby allies around Lupe."),
 			array ('name' => "Mauling Sleuth",
 				'des'=>"Gives nearby allies 50% of the buffs given by Ursine Roar."),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "Growl Of Annoyance",
+				'des'=>"Passively grants 10% of Ursine Roar's effects to Lupe and all nearby allies. Stacks with Ursine Roar's actual effects."), 
 			);
 		// ------------------------------------------------------------ //
 		// SK3
@@ -199,10 +199,10 @@
 		$charsk3aug = array (
 			array ('name' => "Savagery",
 				'des'=>"Lupe's attacks, while affected by Bloodthirst, now also inflict |bleed|-ing for 2 seconds."),
-			array ('name' => "",
-				'des'=>""),
 			array ('name' => "The Weak Left Behind",
-				'des'=>"Having a |morph|-ed unit within the 500 radius of an allied unit affected by Bloddthirst, increases its |leech| to 40%."),
+				'des'=>"Having a |morph|-ed unit within the 500 radius of a unit affected by Bloodthirst, increases its |leech| to 40%."),
+			array ('name' => "Sweet Return",
+				'des'=>"Allows Lupe to cast Bloodthirst with no Myst cost while his health is below 40%."),
 			array ('name' => "Wolf Pack",
 				'des'=>"Bloodthirst now also affects allied units within a 300 area of effect around Lupe."),  
 			);
@@ -228,8 +228,8 @@
 		$charultaug = array (
 			array ('name' => "Party Animal",
 				'des'=>"Allows for multiple |morph|-ing of enemy units with a 400 area of effect. Reduces duration to 3 seconds."),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "The Wolves Among Us",
+				'des'=>"Targets an ally, and morphs them into the likes of Lupe's Werewolf form, giving them half its benefits for twice the duration of Polymorph."), 
 			);
 		// ------------------------------------------------------------ //
 		// EXTRA
@@ -245,17 +245,17 @@
 			array ('name'=>'Cooldown', 'val'=>''),
 			array ('name'=>'Myst Cost', 'val'=>'10/s'),
 			array ('name'=>'Health Cost', 'val'=>''),
-			array ('name'=>'dp', 'val'=>false), //damage point // 't=direct' 'f=indirect'
+			// array ('name'=>'dp', 'val'=>false), //damage point // 't=direct' 'f=indirect'
 			array ('name'=>'cd', 'val'=>'STATIONARY'), //cast design // 'freeform' 'stationary'
 			array ('name'=>'sd', 'val'=>'TOGGLE'), //skill design // 'active' 'passive' 'channeling' 'toggle'
 			array ('name'=>'ml', 'val'=>true), //constraints
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "Huff And Puff",
+				'des'=>"Doubles the |stun| duration of Bull Rush, |amplify| of Ursine Roar, and |leech| of Bloodthirst while Lupe is in Werewolf form."),
+			array ('name' => "The Degenerate",
+				'des'=>"Replace Werewolf form's Myst cost with 15 Health cost every second. Forces Lupe to transform back to his human form whenever his health reaches 15%."), 
 			);
 	?>
 @stop

@@ -62,7 +62,7 @@
 				'des'=>"Chance's chances of hitting things is ultimately low, good thing is, he can cheat the universe and cause his bullets to always hit the target, at the cost of taking extra damage."),
 
 			array ('name'=>"Counter Strike", 'sk'=>'ext',
-				'des'=>"A counter that stuns all enemies in front of Chance when triggered while also blocking a percentage of the direct damage countered."),
+				'des'=>"A counter that stuns all enemies in front of Chance when triggered while also blocking a percentage of the direct damage countered. It is also a references, if that's not obvious enough."),
 			);
 
 		// ------------------------------------------------------------ //

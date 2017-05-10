@@ -74,7 +74,8 @@
         <br>[really heavy breathing]
         <br>
         <br>Did you really just ran away?
-        <br>HAHAHAHAHA... Someday, I want to be as suave as you, Daud. Maybe as fast at running as well.
+        <br>HAHAHAHAHA... Someday, I want to be as suave as you, Daud.
+        <br>Maybe as fast at running too.
         <br>
         <br>Shut it Avery!
         <br>

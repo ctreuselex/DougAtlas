@@ -175,8 +175,8 @@
 			array ('name'=>'Range', 'val'=>'300', 'ext'=>''),
 			array ('name'=>'Duration', 'val'=>'4s', 'ext'=>''),
 
-			array ('name'=>'weaken', 'val'=>'-70% Physical & Mystical Damage', 'ext'=>''),
-			array ('name'=>'slow', 'val'=>'-60% Movement', 'ext'=>''),
+			array ('name'=>'weaken', 'val'=>'70% Physical & Mystical Damage', 'ext'=>''),
+			array ('name'=>'slow', 'val'=>'60%', 'ext'=>''),
 			array ('name'=>'morph Duration', 'val'=>'2s', 'ext'=>''),
 			array ('name'=>'myst-lock Duration', 'val'=>'3s', 'ext'=>''),
 			array ('name'=>'Activation Range', 'val'=>'100', 'ext'=>''),
@@ -191,13 +191,13 @@
 			);
 		$charsk3aug = array (
 			array ('name' => "Weakened By The Sight Of You",
-				'des'=>"Increases chance of Brittle and it's effect to -90%."),
+				'des'=>"Increases chance of |weaken| and  increases its effect to 80%."),
 			array ('name' => "Taking It Slow",
-				'des'=>"Increases chance of Sluggish and it's effect to -50% movement speed and attack speed."), 
-			array ('name' => "Beastiality",
-				'des'=>"Increases chance of Sheeple and it's duration to 5 seconds. Does not affect the duration of other curses."),
-			array ('name' => "Please No Hurt",
-				'des'=>"Increases chance of Avert and it's duration to 5 seconds. Does not affect the duration of other curses."),
+				'des'=>"Increases chance of |slow| and increases its effect to 85%."), 
+			array ('name' => "People Are Sheeple",
+				'des'=>"Increases chance of |morph| and its duration to 4 seconds. Does not affect the duration of other curses."),
+			array ('name' => "Power Of Love",
+				'des'=>"Increases chance of |myst-lock| and its duration to 4 seconds. Does not affect the duration of other curses."),
 			);
 
 		// ------------------------------------------------------------ //

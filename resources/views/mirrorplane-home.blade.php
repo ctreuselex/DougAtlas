@@ -42,6 +42,7 @@
 	@include('inc/navigation')
 
     <?php
+        $curPage = 'home';
         $Color = '#18FF81';
         $cityname = 'Mirrorplane';
         // $ColorSub = '#18FF81';

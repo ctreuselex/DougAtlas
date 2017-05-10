@@ -81,10 +81,12 @@ $(function() {
         $('.ad-dash div a#' + location.pathname.split("/")[2]).addClass('active');
 
         if(location.pathname.split("/")[2]!='') {
-          var currentli = $('.ad-dash div a#' + location.pathname.split("/")[2]).position().top;
-          $('.ad-dash').animate({
-              scrollTop: currentli
-          }, '3000');
+          if(location.pathname.split("/")[2]!='cts-timeline'&&location.pathname.split("/")[2]!='the-story') {
+            var currentli = $('.ad-dash div a#' + location.pathname.split("/")[2]).position().top;
+            $('.ad-dash').animate({
+                scrollTop: currentli
+            }, '3000');  
+          }
         }
     }
 });

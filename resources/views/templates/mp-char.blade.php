@@ -42,16 +42,19 @@
 	@include('inc/navigation')
 
     <?php 
+        $curPage = 'char';
         $charTexture = url('img/hex-bg-l.png'); 
         // $charTexture = url('img/mp-char/texture/'.$charname.'.jpg'); 
         $pageNotes = array (
             array('ord'=>'', 'n'=>"Game Stats",'v'=>"I have no idea why these people have stats."),
             array('ord'=>'', 'n'=>"Skillset",'v'=>"Skill sets seem reasonable, calculating damage and effect output of each is over-the-top ridiculous, however."),
 
+            array('ord'=>'jeanne', 'n'=>"Joan is that you?",'v'=>"She's the Joan of Arc. Noah as well. Add in Siegfried to Valkyr's Brynhildr for good measure."),
             array('ord'=>'kianna', 'n'=>"Let It Go",'v'=>"Nope. has a thing for keeping things concealed and not being felt."),
             array('ord'=>'maximus', 'n'=>"Old Self",'v'=>"The guy used to not be human, and then he became a non-stereotypical genius bully. Which is still close to being inhuman."),
             array('ord'=>'moon', 'n'=>"Natural Satellite",'v'=>"It's a really stupid name until you realize its connection. There isn't any. But we can still make stuff up."),
             array('ord'=>'seline', 'n'=>"Domination",'v'=>"Hey kid, are you interested in some form of pain and pleasure?"),
+            array('ord'=>'valkyr', 'n'=>"Inception",'v'=>"\"Stop it, Val! Stop it! lol. It's too late anyway! haha.\" - says Jeanne as they reanact the Inception movie, or Joan of Arc, or Noah's Tale, or the Volsunga Saga."),
             array('ord'=>'vriskvin', 'n'=>"Naiademn",'v'=>"Everyone recognizes it, nobody knows what it is."),
             );
     ?>
@@ -184,12 +187,14 @@
             </div>
     	</div>
 
-        <div class="col-xs-12" style="padding: 5px; color: white;
-            background: {{ $charColor }};
-            background: -moz-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
-            background: -webkit-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
-            background: linear-gradient(to right, {{ $charColor }} 0%, {{ $charColorSub }} 100%); 
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ $charColor }}', endColorstr=' {{ $charColorSub }}',GradientType=1 );"> <center>{{ $charColor }} | <b>COLOR</b> SCHEME | {{ $charColorSub }}</center>
+        <div class="col-xs-12">
+            <div style="padding: 5px; color: white;
+                background: {{ $charColor }};
+                background: -moz-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
+                background: -webkit-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
+                background: linear-gradient(to right, {{ $charColor }} 0%, {{ $charColorSub }} 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ $charColor }}', endColorstr=' {{ $charColorSub }}',GradientType=1 );"> <center>{{ $charColor }} | <b>COLOR</b> SCHEME | {{ $charColorSub }}</center>
+            </div>
         </div>
 
         <div class="row">
@@ -226,7 +231,7 @@
                         <ul class="char-logs">
                             <li>Full Name: <b>{{ $mcharNam }}</b><span></li>
                             <li>Age: <b>{{ 1699-$mcharAge }} | {{ $mcharAge }}</b></li>
-                            <li>Relatives: <b>{{ $mcharFam }}</b></li>
+                            <!-- <li>Relatives: <b>{{ $mcharFam }}</b></li> -->
                             <li>Home Division: 
                                 @if ($mcharDiv == 'Luminos')
                                     <img src="{{ url('img/lum.png') }}" width="30px">

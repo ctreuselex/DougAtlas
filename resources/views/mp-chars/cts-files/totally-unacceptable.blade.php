@@ -33,7 +33,7 @@
         <br><span class="cts-chance"></span>: ORCULLO! PRCULLO! ORCLSOI!
         <br><span class="cts-rustom"></span>: Sir, can you please shu- hi-
         <br>
-        <br>[USER: <span class="cts-rustom"></span> has been kicked by C.Linus]
+        <br>[USER: <span class="cts-rustom"></span> has been kicked by <span class="cts-chance"></span>]
         <br>
         <br><span class="cts-chance"></span>: ORCULLO! DO SOMETHING ABOUT THIS MESS OR MY-
         <br><span class="cts-theodore"></span>: Your what?

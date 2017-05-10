@@ -36,7 +36,7 @@
         <br>Are you an assassin?
         <br>Who's your target?
         <br>
-        <br>That would be you if you dont shut. up.
+        <br>That would be you if you don't shut. up.
         <br>
         <br>Okay. Right.
         <br>
@@ -63,7 +63,7 @@
         <br>That would also be you if you don't stop talking.
         <br>
         <br>But... that wouldn't be the kind of drifting away we were talking about is it?
-        <br>Pretty sure if that's it then you already succeed in drifting away from who ever it is on your mind.
+        <br>Pretty sure if that's it then you already succeeded in drifting away from who ever it is on your mind.
         <br>
         <br>I really hate you. But... well... you're kinda right.
         <br>So... there's this... man... who took me in since I was little. He raised me to become who I am. He told me that what I do, no matter how little it affected the city, our people, me, it will be for the better of us. But-

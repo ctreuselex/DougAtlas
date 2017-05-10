@@ -21,7 +21,7 @@
 	        	@if ($char['ico']!='' && $char['color']!='')
 	        		@if ($char['name']=='moon')
 	        			<a id="djerick" href="/mirrorplane/djerick" class="list-group-item">{{ $char['name'] }}<i class="{{ $char['ico'] }}"></i></a>
-	        		@elseif ($char['name']!='djerick')
+	        		@elseif ($char['name']!='djerick' && $char['name']!='dom' && $char['name']!='cin')
 	        			<a id="{{ $char['name'] }}" href="/mirrorplane/{{ $char['name'] }}" class="list-group-item">{{ $char['name'] }}<i class="{{ $char['ico'] }}"></i></a>
 	        		@endif
 	        	@endif

@@ -52,7 +52,7 @@
     <li>
         <img class="mp-img" src="{{ url('img/tas.png') }}" width="125px">
         <b class="mp-title">Tauroscene Corporation</b> | "From the smiths of Skyforge!"
-        <br>Founded in 1640 by Helios Skyforge.
+        <br>Founded in 1640 by Helios Skyforge, in guidance of his father, Jupiter Skyforge.
         <br>
         <br>Tauroscene Corp. is a Mystic custom weapon creator since it's inception, hailing Helios Skyforge for his use of his father's famed smithery and creative weapon designs. However, due to pride, and basically, their whole business premise, Tauroscene only make their weapons once and based it whole on their client's fighting style, making them unique, one-of-a-kind, and out-of-this-world ultra expensive.
         <br>
@@ -81,27 +81,38 @@
     </li>
     <li>
         <img class="mp-img" src="{{ url('img/cam.png') }}" width="125px">
-        <b class="mp-title">The Carnival of Madness</b> | "The tragedy of madness!"
+        <b class="mp-title">Carnival of Madness</b> | "The tragedy of madness!"
         <br>The remembrace of the Great Fire of Aeros that happened on 1666, in the Middle and Lower of Aeros.
         <br>
-        <br>The Carnival of Madness is a group of people from all over Mirrorplane that reminds the people of Mirrorplane about the horrors of Myst Manipulations and its effects on their tiny city. They held a Carnival in the Heart of the Fire, which is still in ashes even for today, every two reccurences.  
+        <br>The Carnival of Madness is a group of people from all over Mirrorplane that reminds the people of Mirrorplane about the horrors of Myst Manipulations and its effects on their tiny city. They held a Carnival in the Heart of the Fire, which is still in ashes even for today, every two cycles.  
         <br>
-        <br>The Carnival is attracts almost everyone and features what they call the 'abominations of Myst'. 
+        <br>The Carnival attracts almost everyone and features what they call the 'abominations of Myst'. 
+        <div class="clear"></div>
+    </li>
+    <li>
+        <img class="mp-img" src="{{ url('img/how.png') }}" width="125px">
+        <b class="mp-title">Howlers</b> | "The moon never sets."
         <div class="clear"></div>
     </li>
     <li>
         <img class="mp-img" src="{{ url('img/orv.png') }}" width="125px">
-        <b class="mp-title">Howlers</b> | "..."
-        <div class="clear"></div>
-    </li>
-    <li>
-        <img class="mp-img" src="{{ url('img/orv.png') }}" width="125px">
-        <b class="mp-title">The Order of the Void</b> | "..."
+        <b class="mp-title">The Order of the Void</b> | "What is below?"
         <div class="clear"></div>
     </li>
     <li>
         <img class="mp-img" src="{{ url('img/ark.png') }}" width="125px">
-        <b class="mp-title">The Ark</b> | "..."
+        <b class="mp-title">The Ark</b> | "Sailing for freedom!"
+        <br>Is a rebel organization lead by an unknown leader. Who or when it was founded is also unknown but their influence began to solidify in the late 1680s.
+        <br>
+        <br>The Ark is bent on proving the existence of the outside world and that the Myst Core is responsible for the 'Wall' which separates the city from it. They are also convinced that the Dominion and its previous form - whatever it was before its formation in the 1500s - are the ones responsible for Mirrorplane's isolation. For the past cycles, however, the Ark has never made any direct attack on the Dominion itself, but rather attack weapon manufacturers such as the Tauroscene Corp and the Landar Industries. It is believed that they are trying to diminish the power from the Dominion by stealing their weaponry, it is regarded as "foolish" by most though, due to Myst Manipulation, and the fact that the higher ring and the Dominion have the most Mystics, and the need for weapons in combat is very minimal. 
+        <div class="clear"></div>
+    </li>
+    <li>
+        <img class="mp-img" src="{{ url('img/tdc.png') }}" width="125px">
+        <b class="mp-title">Dark Crusade</b> | "Shun the non-believers"
+        <br>The brother organization of the Ark. Its formation was due to the limited access to the main circle of its older brother, and due to the poeple of the lower ring's belief that the city is totally unfair.
+        <br>
+        <br>The Ark speaks nothing of the presence of the Dark Crusade and they might be trying to deny its creation due to the crusades violent nature. The crusade is well known within the lower ring and even if its purely composed of its people, they are afraid of it, as it represents the ring's absence of humanity. 
         <div class="clear"></div>
     </li>
 </ul>

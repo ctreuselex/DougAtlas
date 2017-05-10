@@ -26,9 +26,8 @@
         <br>
         <br>YOU DIDN'T LIVE YOUR WHOLE LIFE IN THE STREET YOU UNGRATEFUL FUKC!!! YOU HAD A FAMILY THAT CARES FOR YOU!
         <br>Sorry. Just taking it out of my system. but SERIOUSLY?
-        <br>It's been who knows how long since you ran away from your parents because of whatever reason you may have. And I've met them! They're really great people. They're like someone like me would have dreamed of having as parents! LIKE MAN! I would've have killed you to the have them as my parents!
+        <br>It's been who knows how long since you ran away from your parents because of whatever reason you may have. And I've met them! They're really great people. They're like someone like me would have dreamt of having as parents! LIKE MAN! I would've have killed you to the have them as my parents!
         <br>
-        <br>Ok now I'm being really hard on you.
         <br>Anyway, your parents has been together for a really long time, maybe since childhood. They also hasn't broke up, unlike mine who decided it's okay to kill one another, but the point is that maybe... you can talk to them? get some advice? reconnect? because you telling me this things makes me feel all awkward inside and gets me all the urge to punch you in the nuts.
         <hr>
         Text Message by <span class="cts-kuzma"></span> to <span class="cts-riza"></span>

@@ -15,7 +15,7 @@
         <br>Nope. Not recording. Go on.
         <br>
         <br>Fine. For your sake!
-        <br>Daud... I- eh... I'm sorry I said your hair sucks. It probably doesn't. Maybe just a litt-
+        <br>Daud... I- eh... I'm sorry I said your hair sucks. It probably doesn't. But isn't that why you always wear a cap? So maybe just a litt-
         <br>
         <br>Max...
         <br>

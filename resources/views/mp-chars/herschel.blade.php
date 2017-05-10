@@ -23,14 +23,14 @@
 		$mcharSty = "Exnihille | Voiding";
 		$mcharWoc = "Tauroscene's Starshooter";
 
-		$charthemes = 'Longshots, Blindshots, Ghosts, Stars, Ethereal Perfectionist';
+		$charthemes = 'Longshots, Blindshots, Ghosts, Stars, Aiming Perfectionist, Super Tall';
 		$cityname = 'Lies';
 
-		$lum = 4;
+		$lum = 5;
 		$lumPlus = 20;
 		$lumTotal = $lum+$lumPlus;
 
-		$aer = 12;
+		$aer = 11;
 		$aerPlus = 35;
 		$aerTotal = $aer+$aerPlus;
 

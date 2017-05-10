@@ -53,7 +53,7 @@
 				'des'=>"Dashes forward through the wind, leaving all enemies he passed through, |disarm|-ed and |root|-ed."), 
 
 			array ('name'=>"Trailblazer", 'sk'=>'sk2',
-				'des'=>"Creates a vector arrow at Daud's current position causing him or any ally to gain |haste| whenever they step on it. The Trail's |haste| buff stacks with each other but each can only affect a unit once."),  
+				'des'=>"Creates a vector arrow at Daud's current position causing him or any ally to gain |haste| whenever they step on it. The Trail's |haste| buff stacks with each other but each can only affect the same unit once."),  
 
 			array ('name'=>"Friction Blast", 'sk'=>'sk3',
 				'des'=>"George does not understand how this works, neither does Daud, but he dances around and then come a powerful shockwave that |stun|-s all nearby crooked-footed enemies with amazing-ness."),
@@ -157,7 +157,7 @@
 			array ('name'=>'Duration', 'val'=>'5s', 'ext'=>''),
 			array ('name'=>'Charges', 'val'=>'3', 'ext'=>''),
 
-			array ('name'=>'haste', 'val'=>'+25', 'ext'=>''),
+			array ('name'=>'haste', 'val'=>'+15%', 'ext'=>''),
 			array ('name'=>'haste Duration', 'val'=>'3s', 'ext'=>''),
 			);
 		$charsk2mcdm = array (

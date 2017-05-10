@@ -25,7 +25,7 @@
             'des'=>'Prevents any action. -60% physical defense. Removed on hit or struggling.'),
         array ('name'=>'root', 'purge'=>true, 'ico'=>'ra ra-thorny-vine',
             'des'=>'Prevents moving. Instantly removed on dash, blink, teleport.'),
-        array ('name'=>'stun', 'purge'=>true, 'ico'=>'ra ra-doubled',
+        array ('name'=>'stun', 'purge'=>false, 'ico'=>'ra ra-doubled',
             'des'=>'Disables all actions.'),
         array ('name'=>'pause', 'purge'=>false, 'ico'=>'ra ra-clockwork',
             'des'=>'Disables everything. Delays healing, damage, and other effects until removed.'),
@@ -35,21 +35,23 @@
         array ('name'=>'blind', 'purge'=>true, 'ico'=>'ra ra-bleeding-eye',
             'des'=>'Fills screen with darkness.'),
         array ('name'=>'bleed', 'purge'=>true, 'ico'=>'ra ra-dripping-blade',
-            'des'=>'Prevents any form of healing. Deals 1% of remaining health as physical damage every second.'),
+            'des'=>'Prevents any form of healing. Deals 0.5% of remaining health as physical damage every second.'),
         array ('name'=>'burn', 'purge'=>true, 'ico'=>'ra ra-fire',
-            'des'=>'Deals 7/15/23 physical damage every second. Increases damage for every instance, maximum of 3. Removed on water.'),
-        array ('name'=>'drench', 'purge'=>true, 'ico'=>'ra ra-droplet',
+            'des'=>'Deals 7/15/23 physical damage every second. Increases damage for every instance, maximum of 3. Removed by being drenched.'),
+        array ('name'=>'drench', 'purge'=>false, 'ico'=>'ra ra-droplet',
             'des'=>'Decreases movement speed and attack rate by 10%. Decreases damage from Burn by 50%. Lasts for 3 seconds out of water.'),
         array ('name'=>'expose', 'purge'=>true, 'ico'=>'ra ra-targeted',
-            'des'=>'Increases the next critical hit damage by 15% along with a 1 second disable. Removed on critical hit. Also, opens crotch shots. Yep. Crotch shots.'),
+            'des'=>'Increases the next critical hit damage by 15% along with a 1 second stun. Removed on critical hit. Also, opens crotch shots. Yep. Crotch shots.'),
         array ('name'=>'myst-lock', 'purge'=>false, 'ico'=>'fa fa-eercast',
             'des'=>'Disables certain abilities. Mixed damage deals 50% less damage.'),
         array ('name'=>'myst-leak', 'purge'=>true, 'ico'=>'ra ra-bottle-vapors',
             'des'=>'Prevents myst regeneration and any form of replenishing myst.'),
         array ('name'=>'poison', 'purge'=>true, 'ico'=>'ra ra-skull',
             'des'=>'Deals damage every second. Removed by healing, if healing done is equal or greater than periodic damage.'),
-        array ('name'=>'thundershock', 'purge'=>true, 'ico'=>'ra ra-lightning-trio',
-            'des'=>'Disables all actions for 1 second. Has a 20% chance of jumping to nearby units on impact, 100% chance if the unit is drenched.'),
+        array ('name'=>'sleep', 'purge'=>true, 'ico'=>'ra ra-player-despair',
+            'des'=>'Disables all actions until duration ends or damaged by more than 4% of their maximum health.'),
+        array ('name'=>'thundershock', 'purge'=>false, 'ico'=>'ra ra-lightning-trio',
+            'des'=>'Disables all actions for half a second. Has a 20% chance of jumping to nearby units on impact, 100% chance if the unit is drenched.'),
         array ('name'=>'morph', 'purge'=>true, 'ico'=>'ra ra-sheep',
             'des'=>'Turns into a critter and prevents all actions but moving. Can only move at 20% of normal movement speed.'),
         
@@ -120,6 +122,7 @@
         background-color: {{ $charColor }};
         transition: 0.3s;
     }*/
+    .skill-name, .aug b { text-transform: capitalize; }
 
     .aug.{{ $charname }} i {
         color: {{ $charColor }};

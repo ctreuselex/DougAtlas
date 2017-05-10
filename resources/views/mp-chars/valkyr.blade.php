@@ -14,16 +14,16 @@
 			}
 		}
 
-		$mcharNam = "Valkyr 'Phoenix' Soltaire";
+		$mcharNam = "Valkyr Soltaire";
 		$mcharFam = "Adoptive Parents: Gene Salatiel & Mig Salatiel";
 		$mcharDiv = "Aeros";
 		$mcharAff = "None";
 		
-		$mcharAft = "Fire | Phoenix";
+		$mcharAft = "Fire";
 		$mcharSty = "Maximo | Exnihille";
 		$mcharWoc = "Myst-based Chain Blades";
 
-		$charthemes = 'Firebirds, Ultimate Powah, Immortality, Dad Puns, I Like Boats';
+		$charthemes = 'Firebirds, Ultimate Powah, Chains and Blades, Immortality, Dad Puns, I Like Boats';
 		$cityname = 'Walls';
 
 		$lum = 7;
@@ -149,7 +149,7 @@
 			array ('name' => "Hotfoot",
 				'des'=>"Phoenix Dive gives Valkyr a 80% |health-regen| and a 10% |haste| which lasts for 6 seconds."),
 			array ('name' => "Sick Landing",
-				'des'=>"Phoenix Dive allows Valkyr to use Chain Blades for 5 seconds after landing while also granting him additional 20% |frenzy| for 5 seconds."),
+				'des'=>"Phoenix Dive allows Valkyr to use Chain Blades for 8 seconds after landing while also granting him additional 30% |frenzy| for 5 seconds."),
 			array ('name' => "Fire Wall",
 				'des'=>"Phoenix Dive leaves a scorched area through its path that lasts for 6 seconds, inflicts |burn| on enemy units standing on it."), 
 			);
@@ -207,7 +207,7 @@
 			array ('name' => "Quick Jabs",
 				'des'=>"Decreases Flame Bolt's delay to 0.25 and cooldown to 3 while increasing its Myst cost to 80 and health cost to 5% of remaining health."),
 			array ('name' => "Right to Bear Firearms",
-				'des'=>"Casting Flame Bolt leaves a 30% |frenzy| buff which lasts for 8 seconds."),
+				'des'=>"Casting Flame Bolt leaves a 20% |frenzy| buff which lasts for 5 seconds."),
 			array ('name' => "The Offering",
 				'des'=>"Allow Flame Bolt to |leech| 5% of enemies' remaining health and gives it to Valkyr on impact before exploding."),  
 			);

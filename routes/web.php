@@ -45,4 +45,5 @@ Route::get('/mirrorplane/vines', 'MirrorplaneController@vines');
 Route::get('/mirrorplane/vriskvin', 'MirrorplaneController@vriskvin');
 Route::get('/mirrorplane/zedrik', 'MirrorplaneController@zedrik');
 
+Route::get('/mirrorplane/the-story', 'MirrorplaneController@thestory');
 Route::get('/mirrorplane/cts-timeline', 'MirrorplaneController@ctstime');

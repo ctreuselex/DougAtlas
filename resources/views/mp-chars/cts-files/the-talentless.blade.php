@@ -21,7 +21,7 @@
         <br>
         <br>He's also recommended by our Ice Queen, which you've guessed, is his mother. She mentioned that she felt a very powerful special talent that lies beneath Djerick's thick skin that is yet to be unleashed. Something unique. Something that we have never seen before. And something within the range of lame excuses a mother would say just so we would hire her son.
         <br>
-        <br>CONCLUSION: Let's hire him, he's a pretty cool kid, mediocre Armagus with extra impressive dance moves, but he did punched me once in the face and left a bluish, painful mark on my left eye - I'll wear an eye patch from now on. Because I think it's rad.
+        <br>CONCLUSION: Let's hire him, he's a pretty cool kid, mediocre Armagus - assuming that he's responsible for my water bottle randomly dropping to the floor - with extra impressive dance moves, but he did punched me once in the face and left a bluish, painful mark on my left eye - I'll wear an eye patch from now on. Because I think it's rad.
         
         <hr>
         Text Message by <span class="cts-george"></span> to <span class="cts-thomas"></span>

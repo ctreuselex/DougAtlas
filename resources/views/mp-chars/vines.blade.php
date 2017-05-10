@@ -233,7 +233,7 @@
 			array ('name' => "Multi-Color",
 				'des'=>"Allows the cannon to randomly shoots all kinds of different colored strokes on every hit instead of just one. Increases cast time to 2 seconds."),
 			array ('name' => "Concentration",
-				'des'=>"The cannon now releases two Freestrokes strikes for every hit instead of jsut one."), 
+				'des'=>"The cannon now releases three Freestroke strikes for every hit instead of two."), 
 			);
 		// ------------------------------------------------------------ //
 		// EXTRA
@@ -255,9 +255,9 @@
 			);
 		$charextaug = array (
 			array ('name' => "Voidspell",
-				'des'=>"White Space now also applies a 3 second |immunity| after it disperses."),
+				'des'=>"White Space now also applies a 3 second |immunity| after it disperses or whenever a unit leaves its area."),
 			array ('name' => "Voidstroke",
-				'des'=>"Creates a white stroke for Freestrokes which then |purge|-s enemy units it hits. Can be applied to Vine's other abilities."), 
+				'des'=>"Creates a white stroke for Freestroke which then |purge|-s enemy units it hits. Can be applied to Vine's other abilities, it is however, ignored, unless White Space is active."), 
 			);
 	?>
 @stop

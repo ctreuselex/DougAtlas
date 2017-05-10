@@ -37,7 +37,7 @@
         <br><span class="cts-seline"></span>: Being embarrassingly short but sort of attractive is a close second.
         <br><span class="cts-seline"></span>: Being a talentless whelp with no place in our society is the ultimate third.
         <br><span class="cts-llaxine"></span>: Can you please stop that.
-        <br><span class="cts-seline"></span>: Stop what?bhbbhb
+        <br><span class="cts-seline"></span>: Stop what?
         <br><span class="cts-llaxine"></span>: Being an elitist.
         <br><span class="cts-seline"></span>: Oh no... WHO DRAINED YOU OF YOUR PURITY?
         <br><span class="cts-llaxine"></span>: Purity? That's a BIIIG word coming from you!
