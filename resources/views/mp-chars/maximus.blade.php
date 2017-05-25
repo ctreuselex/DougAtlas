@@ -23,7 +23,7 @@
 		$mcharSty = "Exnihille";
 		$mcharWoc = "Landar Industries' MMGA Tech Prototype";
 
-		$charthemes = 'Shields, Tethers, Technology, Jock Nerd Combo';
+		$charthemes = 'Shields, Tethers, Technology, Armor, Nerd in a Bully Costume';
 		$cityname = 'Design';
 
 		$lum = 2;
@@ -69,7 +69,7 @@
 		// PRIMARY
 		// ------------------------------------------------------------ //
 		$charpristats = array (
-			array ('name'=>'Damage', 'val'=>'85% Physical Damage', 'ext'=>'lum'),
+			array ('name'=>'Damage', 'val'=>'100% Physical Damage', 'ext'=>'lum'),
 			array ('name'=>'Attack Rate', 'val'=>'120%', 'ext'=>''),
 			array ('name'=>'Range', 'val'=>'90 radius cone', 'ext'=>''),
 			);
@@ -201,7 +201,7 @@
 			array ('name' => "Consistent Bullying",
 				'des'=>"Causes Mystbind Shield to zap enemy units within the 275 radius of Max dealing 3% of his remaining myst as mystical damage every 2 seconds when active."),
 			array ('name' => "The Protector",
-				'des'=>"Allow Mystbind |shield| to also affect the tethered unit. Uses Max's own Myst Pool for both units."),  
+				'des'=>"Allow Mystbind |shield| to also affect the tethered unit. Uses Max's own Myst Pool for both units, unless, with Dual Core."),  
 			);
 
 		// ------------------------------------------------------------ //

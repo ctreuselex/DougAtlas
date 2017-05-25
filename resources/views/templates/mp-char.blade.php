@@ -49,7 +49,10 @@
             array('ord'=>'', 'n'=>"Game Stats",'v'=>"I have no idea why these people have stats."),
             array('ord'=>'', 'n'=>"Skillset",'v'=>"Skill sets seem reasonable, calculating damage and effect output of each is over-the-top ridiculous, however."),
 
+            array('ord'=>'daud', 'n'=>"Quicksilver",'v'=>"More like a discount Flash. But with hair loss and cat allergy."),
             array('ord'=>'jeanne', 'n'=>"Joan is that you?",'v'=>"She's the Joan of Arc. Noah as well. Add in Siegfried to Valkyr's Brynhildr for good measure."),
+            array('ord'=>'jeanne', 'n'=>"Naiademn",'v'=>"Everyone recognizes it, nobody knows what it is."),
+            array('ord'=>'kalli', 'n'=>"Naiademn",'v'=>"Everyone recognizes it, nobody knows what it is."),
             array('ord'=>'kianna', 'n'=>"Let It Go",'v'=>"Nope. has a thing for keeping things concealed and not being felt."),
             array('ord'=>'maximus', 'n'=>"Old Self",'v'=>"The guy used to not be human, and then he became a non-stereotypical genius bully. Which is still close to being inhuman."),
             array('ord'=>'moon', 'n'=>"Natural Satellite",'v'=>"It's a really stupid name until you realize its connection. There isn't any. But we can still make stuff up."),

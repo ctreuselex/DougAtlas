@@ -56,7 +56,7 @@
 				'des'=>"Fires three poison darts at a direction with deals a small amount of damage and latches on the target for 2 seconds. After that, it then releases toxins which causes the target to be inflicted with |poison|."),  
 
 			array ('name'=>"Oak Skin", 'sk'=>'sk3',
-				'des'=>"Covers a target or Noemi herself with bark which gives a significant physical |fortify|."),
+				'des'=>"Covers a target or Noemi herself with bark which gives a significant physical |fortify| while also preventing them from getting |thundershock|."),
 
 			array ('name'=>"Keeper of the Grove", 'sk'=>'ult',
 				'des'=>"Noemi summons a treant out of the forest - even if there's no forest in sight - to fight her battles. The treant is also in the shape of a lion, just because she likes big cats."),
@@ -168,14 +168,14 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "Sleep Dart",
-				'des'=>"Causes darts to inflict |sleep|-iness into their target for 4 seconds."),
 			array ('name' => "Maddening Toxin",
 				'des'=>"Units affected by Poison Dart's |poison| will become mad giving them +10% physical |amplify| and -20% |break|."),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "Firefly Kiss",
+				'des'=>"Charging Poison Dart for 2 seconds before releasing will cause it to combust into fiery projectile and deal 200% of its damage, causes |burn|, but removes its poison effect."),
+			array ('name' => "Sleep Dart",
+				'des'=>"Causes darts to inflict |sleep|-iness into their target for 4 seconds."),
+			array ('name' => "Poison Cloud",
+				'des'=>"Darts will now explode into a poison cloud inflicting its |poison| to all enemy units for 3 second before disappearing. With Firefly Kiss, poison cloud will then become an explosion similar to that of Myst Bulbs."), 
 			);
 		// ------------------------------------------------------------ //
 		// SK3
@@ -202,7 +202,7 @@
 			array ('name' => "Walking Sequoia",
 				'des'=>"Using Oak Skin on a keeper will reset it's duration and sets its health to full."),
 			array ('name' => "Impenetrable",
-				'des'=>"Oak Skin's |fortify| will give +100% for both of its aspects then goes back to its original values after the initial 3 seconds."),
+				'des'=>"Oak Skin's |fortify| will give +80% for both of its aspects then goes back to its original values after the initial 3 seconds."),
 			array ('name' => "Mystical Oak Tree",
 				'des'=>"Adds a layer of mystical |fortify| which adds +20% myst resistance."),  
 			);
@@ -231,7 +231,7 @@
 			);
 		$charultaug = array (
 			array ('name' => "Wrath of Nature",
-				'des'=>"if the keeper gets a hit which damages it for more that 5% of its maximum health at once, the keeper will slam the ground dealing 250% of its damage to all nearby enemy units while also creating a smaller Undergrowth around it."),
+				'des'=>"If the keeper gets a hit which damages it for more that 5% of its maximum health at once, the keeper will slam the ground dealing 250% of its damage to all nearby enemy units while also creating a smaller Undergrowth around it."),
 			array ('name' => "The Giving Tree",
 				'des'=>"The Keeper releases a healing aura which restores 25 health to all nearby friendly units."), 
 			);
