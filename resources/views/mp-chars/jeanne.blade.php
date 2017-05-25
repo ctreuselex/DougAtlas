@@ -44,7 +44,7 @@
 
 		$charability = array(
 			array ('name'=>"Espada Ropera", 'sk'=>'pri',
-				'des'=>"Jeanne rapidly thrusts her enemies with Capo Ferro with extreme precision, allowing her to utilize her damage through critical strikes."),
+				'des'=>"Jeanne rapidly stabs her enemies with Capo Ferro with extreme precision, allowing her to utilize her damage through critical strikes."),
 
 			array ('name'=>"True Strike", 'sk'=>'sec',
 				'des'=>"A forward strike that dashes Jeanne a short distance, closing the distance between her and her target whilst inflicting a physical |break| for a few seconds."), 
