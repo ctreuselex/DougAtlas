@@ -26,6 +26,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
+    <!-- jQuery -->
+    <script src="{{ url('js/jquery.js') }}"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -185,6 +188,28 @@
 
     <div class="col-sm-10 col-sm-offset-2" style="padding: 15px;">
         
+        <!-- <div style="
+            width: calc(100% + 30px); height: 100vh;
+            background: url('{{ url('img/mirrorplane-poster.png') }}');
+            background-position: center;
+            background-size: cover;
+            margin-left: -15px;
+            margin-top: -15px;
+        "></div> -->
+
+        <img src="{{ url('img/mirrorplane-wallpaper.jpg') }}" style="
+            width: calc(100% + 30px);
+            border: 7px solid black;
+            border-left: 0; border-right: 0;
+            margin-left: -15px;
+            margin-top: -15px;">
+        <!-- <img src="{{ url('img/mirrorplane-poster.png') }}" style="
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            margin-top: -15px;">-->
+
+        @include('mirrorplane-map')
+
         <p><span class="char-name">The City</span> | The World, the Universe</p>
         <ul class="mp-cont">
             <li>
@@ -227,8 +252,6 @@
 
     @include('mp-inc/foot')
 
-    <!-- jQuery -->
-    <script src="{{ url('js/jquery.js') }}"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ url('js/bootstrap.min.js') }}"></script>
 

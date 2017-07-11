@@ -360,8 +360,7 @@ class MirrorplaneController extends Controller
             array ( 'y'=>1678, 's'=>3, 'd'=>'53', 'ord'=>'vriskvin', 'logn'=>1, 'name'=>'Just About Time'),
             array ( 'y'=>1687, 's'=>1, 'd'=>'32', 'ord'=>'vriskvin', 'logn'=>2, 'name'=>'Stopping Continuity'),
             array ( 'y'=>1693, 's'=>1, 'd'=>'54', 'ord'=>'vriskvin', 'logn'=>3, 'name'=>'Inheritance'),
-            array ( 'y'=>1696, 's'=>1, 'd'=>'2', 'ord'=>'vriskvin', 'logn'=>4, 'name'=>'Hitting 12 O\'Clock'),
-            array ( 'y'=>1697, 's'=>1, 'd'=>'18', 'ord'=>'vriskvin', 'logn'=>5, 'name'=>'Mind\'s Eye'),
+            array ( 'y'=>1697, 's'=>1, 'd'=>'18', 'ord'=>'vriskvin', 'logn'=>4, 'name'=>'Mind\'s Eye'),
 
             array ( 'y'=>1679, 's'=>3, 'd'=>'3', 'ord'=>'kianna', 'logn'=>1, 'name'=>'Writings Of The Cold Hearted'),
             array ( 'y'=>1685, 's'=>3, 'd'=>'1', 'ord'=>'kianna', 'logn'=>2, 'name'=>'Another Rising'),
@@ -402,6 +401,7 @@ class MirrorplaneController extends Controller
 
             array ( 'y'=>1687, 's'=>4, 'd'=>'29', 'ord'=>'chance', 'logn'=>1, 'name'=>'Sorry, Not Sorry'),
             array ( 'y'=>1693, 's'=>2, 'd'=>'5', 'ord'=>'chance', 'logn'=>2, 'name'=>'Totally Unacceptable'),
+            array ( 'y'=>1696, 's'=>1, 'd'=>'2', 'ord'=>'chance', 'logn'=>3, 'name'=>'Hitting 12 O\'Clock'),
 
             array ( 'y'=>1686, 's'=>2, 'd'=>'11', 'ord'=>'avery', 'logn'=>1, 'name'=>'Paperman'),
             array ( 'y'=>1689, 's'=>3, 'd'=>'22', 'ord'=>'avery', 'logn'=>2, 'name'=>'Time Keeper, Hey!'),

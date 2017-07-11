@@ -19,7 +19,7 @@
 		$mcharDiv = "Geios";
 		$mcharAff = "Dominion | Institute";
 		
-		$mcharAft = "Raw Myst | Color";
+		$mcharAft = "Water";
 		$mcharSty = "Armagus";
 		$mcharWoc = "Tauroscene's Sherwillon";
 

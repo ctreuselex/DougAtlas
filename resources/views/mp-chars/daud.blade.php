@@ -44,9 +44,9 @@
 
 		$charability = array(
 			array ('name'=>"Kick Boxing", 'sk'=>'pri',
-				'des'=>"Daud's mastery of using his fists in conjunction with his legs in combat makes him a very effective close-combat fighter."),
+				'des'=>"Daud's mastery of using his fists and BPD bat in conjunction with his legs in combat makes him a very effective close-combat fighter."),
 
-			array ('name'=>"Backup Pistol", 'sk'=>'sec',
+			array ('name'=>"Myst Pistol", 'sk'=>'sec',
 				'des'=>"Getting an ACMA Tech Mini Pistol from Max can serve to be usefull at mid-range assaults and not just suicide."), 
 
 			array ('name'=>"Mad Dash", 'sk'=>'sk1',
@@ -55,8 +55,8 @@
 			array ('name'=>"Trailblazer", 'sk'=>'sk2',
 				'des'=>"Creates a vector arrow at Daud's current position causing him or any ally to gain |haste| whenever they step on it. The Trail's |haste| buff stacks with each other but each can only affect the same unit once."),  
 
-			array ('name'=>"Friction Blast", 'sk'=>'sk3',
-				'des'=>"George does not understand how this works, neither does Daud, but he dances around and then come a powerful shockwave that |stun|-s all nearby crooked-footed enemies with amazing-ness."),
+			array ('name'=>"Kinetic Control", 'sk'=>'sk3',
+				'des'=>"Daud takes control of every objects' velocity in the area and throws them off to a direction. A unit thrown by Kinetic Control will damage other units it comes in contact with and well as damage itself. Projectiles thrown will act like it's |reflect|-ed."),
 
 			array ('name'=>"Cutting Wind", 'sk'=>'ult',
 				'des'=>"Daud repeatedly dashes towards an enemy then jumps towards another nearby, damaging and |blind|-ing them for the duration. Daud is under |invulnerability| for the duration of the skill."),
@@ -86,9 +86,9 @@
 			);
 		$charpriaug = array (
 			array ('name' => "The Speedster",
-				'des'=>"Adds 10% of Daud's movement speed to Kick Boxing's damage."),
+				'des'=>"Adds 15% of Daud's movement speed to Kick Boxing's damage."),
 			array ('name' => "Leg Day",
-				'des'=>"Increases Kick Boxing's damage by 15% and Daud's movement speed by 10%."), 
+				'des'=>"Increases Kick Boxing's damage by 25% whenever he does a kick attack and passively increases Daud's movement speed by 10%."), 
 			);
 		// ------------------------------------------------------------ //
 		// SECONDARY
@@ -185,31 +185,32 @@
 		// SK3
 		// ------------------------------------------------------------ //
 		$charsk3stats = array (
-			array ('name'=>'Area of Effect', 'val'=>'300', 'ext'=>''),
+			array ('name'=>'Throw Damage', 'val'=>'150% Physical Damage', 'ext'=>'lum'),
+			array ('name'=>'Area of Effect', 'val'=>'125', 'ext'=>''),
+			array ('name'=>'Distance', 'val'=>'400', 'ext'=>''),
 			array ('name'=>'Cast Time', 'val'=>'1.5s', 'ext'=>''),
-
-			array ('name'=>'stun Duration', 'val'=>'2s', 'ext'=>''),
+			array ('name'=>'|reflect|', 'val'=>'100%', 'ext'=>''),
 			);
 		$charsk3mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
-			array ('name'=>'Cooldown', 'val'=>'16s'),
+			array ('name'=>'Cooldown', 'val'=>'22s'),
 			array ('name'=>'Myst Cost', 'val'=>'100'),
 			array ('name'=>'Health Cost', 'val'=>''),
 			// array ('name'=>'dp', 'val'=>false), //damage point // 't=direct' 'f=indirect'
 			array ('name'=>'cd', 'val'=>'FREEFORM'), //cast design // 'freeform' 'stationary'
 			array ('name'=>'sd', 'val'=>'ACTIVE'), //skill design // 'active' 'passive' 'channeling' 'toggle'
-			array ('name'=>'ml', 'val'=>false), //constraints
+			array ('name'=>'ml', 'val'=>true), //constraints
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
 			array ('name' => "Speed Is My Element",
 				'des'=>"Reduces cast time to 0.50 seconds if Daud is affected by a |haste| buff."),
-			array ('name' => "Look At You Go",
-				'des'=>"Friction Blast now also knocks back enemy units by 200."),
-			array ('name' => "Friendly Spinner Mushroom",
-				'des'=>"Replenishes Myst of Daud and all nearby allied units by 5% their maximum Myst pool."),
+			array ('name' => "Knocking Heads Together",
+				'des'=>"Applies a 1 second |stun| to units hitting each other."),
+			array ('name' => "Pythagoras Fan",
+				'des'=>"Using Vector Master's dash upon throw will cause all thrown units and projectiles to change direction, as well as giving Daud a 15% |haste| which lasts for 4 seconds."),
 			array ('name' => "High Velocity",
-				'des'=>"Buffs Daud and all nearby allied units which removes |slow| and |limp| and prevents them from being |slow|-ed and |limp|-ed by anything for 3 seconds."),  
+				'des'=>"If applied on allies, buffs them which removes |slow| and |limp| and prevents them from being |slow|-ed and |limp|-ed by anything for 3 seconds."),  
 			);
 
 		// ------------------------------------------------------------ //
