@@ -90,9 +90,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charpriaug = array (
-			array ('name' => "Heat Mark",
+			array ('name' => "Heat Mark", 'ico' => "ra-fire-symbol",
 				'des'=>"Tags a unit hit by Cinder Blast that last for 5 seconds. Allows Valkyr to use Chain Blades as long as the tagged unit is within his range."),
-			array ('name' => "Salt the Burn",
+			array ('name' => "Salt the Burn", 'ico' => "ra-burning-eye",
 				'des'=>"Valkyr |leech|-es 30% of Cinder Blasts' damage every time it hits an enemy unit."), 
 			);
 		// ------------------------------------------------------------ //
@@ -116,9 +116,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsecaug = array (
-			array ('name' => "Double Wammie",
+			array ('name' => "Double Wammie", 'ico' => "ra-two-dragons",
 				'des'=>"Turns every third attack of Chain Blade's combo into a double chain blade attack that deals additional 130% damage."),
-			array ('name' => "Death Eater",
+			array ('name' => "Death Eater", 'ico' => "ra-insect-jaws",
 				'des'=>"Adds 2% of Valkyr's remaining health as additional damage to Chain Blades, while also allowing it to |leech| 25% of it's damage."), 
 			);
 
@@ -144,13 +144,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "Heat Up",
+			array ('name' => "Heat Up", 'ico' => "ra-flame-symbol",
 				'des'=>"Increases Phoenix Dive's damage by 15% and distance to 1200."),
-			array ('name' => "Hotfoot",
+			array ('name' => "Hotfoot", 'ico' => "ra-footprint",
 				'des'=>"Phoenix Dive gives Valkyr a 80% |health-regen| and a 10% |haste| which lasts for 6 seconds."),
-			array ('name' => "Sick Landing",
+			array ('name' => "Sick Landing", 'ico' => "ra-bird-claw",
 				'des'=>"Phoenix Dive allows Valkyr to use Chain Blades for 8 seconds after landing while also granting him additional 30% |frenzy| for 5 seconds."),
-			array ('name' => "Fire Wall",
+			array ('name' => "Fire Wall", 'ico' => "ra-burning-embers",
 				'des'=>"Phoenix Dive leaves a scorched area through its path that lasts for 6 seconds, inflicts |burn| on enemy units standing on it."), 
 			);
 		// ------------------------------------------------------------ //
@@ -173,13 +173,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "Myst on Fire",
+			array ('name' => "Myst on Fire", 'ico' => "ra-frostfire",
 				'des'=>"Affected unit will be |myst-lock|-ed for the duration of Fiery Bind."),
-			array ('name' => "Take Out",
+			array ('name' => "Take Out", 'ico' => "ra-meat-hook",
 				'des'=>"Causes Fiery Bind to now pull the binded unit towards Valkyr."),
-			array ('name' => "Chaining Chains",
+			array ('name' => "Chaining Chains", 'ico' => "ra-chain",
 				'des'=>"Fiery Bind allows Valkyr to use Chain Blades for 5 seconds after casting while also granting him additional 20% |amplify| for 3 seconds."),
-			array ('name' => "Life Leech",
+			array ('name' => "Life Leech", 'ico' => "ra-gear-heart",
 				'des'=>"Fiery Bind now |leech|-es 1.50% of the affected unit's maximum health per second and gives it to Valkyr."), 
 			);
 		// ------------------------------------------------------------ //
@@ -202,13 +202,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
-			array ('name' => "Triple Volley",
+			array ('name' => "Triple Volley", 'ico' => "ra-hydra",
 				'des'=>"Causes Flame Bolt to conjure 2 additional bolts but lessens the damage of each bolt by 20%."),
-			array ('name' => "Quick Jabs",
+			array ('name' => "Quick Jabs", 'ico' => "ra-blaster",
 				'des'=>"Decreases Flame Bolt's delay to 0.25 and cooldown to 3 while increasing its Myst cost to 80 and health cost to 5% of remaining health."),
-			array ('name' => "Right to Bear Firearms",
+			array ('name' => "Right to Bear Firearms", 'ico' => "ra-musket",
 				'des'=>"Casting Flame Bolt leaves a 20% |frenzy| buff which lasts for 5 seconds."),
-			array ('name' => "The Offering",
+			array ('name' => "The Offering", 'ico' => "ra-explosion",
 				'des'=>"Allow Flame Bolt to |leech| 5% of enemies' remaining health and gives it to Valkyr on impact before exploding."),  
 			);
 
@@ -237,9 +237,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charultaug = array (
-			array ('name' => "Rock and Rollin'",
+			array ('name' => "Rock and Rollin'", 'ico' => "ra-burning-meteor",
 				'des'=>"Removes Dual Ignition's Myst cost but increases Health cost to 25% of remaining Health."),
-			array ('name' => "Four Horned Handsome Devil",
+			array ('name' => "Four Horned Handsome Devil", 'ico' => "ra-flaming-claw",
 				'des'=>"With Dual Ignition active, Valkyr attacks with Cinder Blast and Chain Blade at the same time. Increases Dual Ignition's duration to 12 seconds."), 
 			);
 		// ------------------------------------------------------------ //
@@ -264,7 +264,7 @@
 		$charextaug = array (
 			array ('name' => "Like a Phoenix",
 				'des'=>"Increases health regeneration to +4 and myst regeneration to -2 every threshold."),
-			array ('name' => "Fair Trade",
+			array ('name' => "Fair Trade", 'ico' => "ra-lit-candelabra",
 				'des'=>"Passively decreases the Myst cost of all of Valkyr's abilities by 30% and causes them to cost 5% more health based on their normal health cost."), 
 			);
 	?>

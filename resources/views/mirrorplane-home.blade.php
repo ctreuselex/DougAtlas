@@ -196,7 +196,6 @@
             margin-left: -15px;
             margin-top: -15px;
         "></div> -->
-
         <img src="{{ url('img/mirrorplane-wallpaper.jpg') }}" style="
             width: calc(100% + 30px);
             border: 7px solid black;
@@ -207,8 +206,6 @@
             width: calc(100% + 30px);
             margin-left: -15px;
             margin-top: -15px;">-->
-
-        @include('mirrorplane-map')
 
         <p><span class="char-name">The City</span> | The World, the Universe</p>
         <ul class="mp-cont">

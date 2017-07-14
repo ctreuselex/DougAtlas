@@ -82,9 +82,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charpriaug = array (
-			array ('name' => "Sucker For Love",
+			array ('name' => "Sucker For Love", 'ico' => "ra-bleeding-hearts",
 				'des'=>"Causes Fume Spray to absorb Myst from affected units equivalent to 70% of it's damage."),
-			array ('name' => "Sticky Load",
+			array ('name' => "Sticky Load", 'ico' => "ra-fizzing-flask",
 				'des'=>"Fume Spray inflicts a 25% |slow| for 2 seconds."), 
 			);
 		// ------------------------------------------------------------ //
@@ -111,7 +111,7 @@
 		$charsecaug = array (
 			array ('name' => "Two Timer",
 				'des'=>"Allow two Paper Cranes at the same time."),
-			array ('name' => "Really Attached",
+			array ('name' => "Really Attached", 'ico' => "ra-two-hearts",
 				'des'=>"Every time Paper Crane hits a target, decreases 1 second off Lifetread Jinx's cooldown."), 
 			);
 
@@ -133,13 +133,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "Damn Paper Cuts",
+			array ('name' => "Damn Paper Cuts", 'ico' => "ra-cut-palm",
 				'des'=>"Causes the charm to inflict the worst paper can do, which is |bleed|-ing, upon activation."),
-			array ('name' => "Health Benefits",
+			array ('name' => "Health Benefits", 'ico' => "ra-heart-bottle",
 				'des'=>"Increases the damage dealt by Lifetread Jinx and Toxic Field to the unit affected by Devourer's Charm."), 
-			array ('name' => "Myst Leeching",
+			array ('name' => "Myst Leeching", 'ico' => "ra-bottle-vapors",
 				'des'=>"Increases Myst Absorbed to 25 per tick."),
-			array ('name' => "No Strings Attached",
+			array ('name' => "No Strings Attached", 'ico' => "ra-chain",
 				'des'=>"Causes |slow| the farther the distance the unit traveled from the point the charm took effect. Starts at -10% to -90% at 300."),
 			);
 		// ------------------------------------------------------------ //
@@ -159,13 +159,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "A Difference In Status",
-				'des'=>"In contact, the jinx first heals Avery for 5% of his maximum health and damages the target for 5% of their maximum health if Avery's remaining health is lower than the target, the effect is reversed. Only takes effect if the target is under Devourer's Charm."),
-			array ('name' => "Always A Win",
-				'des'=>"Causes the jinx to heal Avery for its damage instead if Avery's remaining health is lower than the target."), 
-			array ('name' => "Hitting That Sweet Spot",
+			array ('name' => "A Difference In Status", 'ico' => "ra-heart-tower",
+				'des'=>"In contact, the jinx first heals Avery for 5% of his maximum health and damages the target for 5% of their maximum health. If Avery's remaining health is lower than the target, the effect is reversed. Only takes effect if the target is under Devourer's Charm."),
+			array ('name' => "Always A Win", 'ico' => "ra-crowned-heart",
+				'des'=>"if Avery's remaining health is lower than the target, the jinx then heals Avery for its supposed damage instead of damaging the target."), 
+			array ('name' => "Hitting That Sweet Spot", 'ico' => "ra-targeted",
 				'des'=>"Increases damage by 30% if the jinx hits a critical spot."),
-			array ('name' => "Cheap Hooker",
+			array ('name' => "Cheap Hooker", 'ico' => "ra-meat-hook",
 				'des'=>"Decreases Myst cost to 190."),
 			);
 		// ------------------------------------------------------------ //
@@ -190,13 +190,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
-			array ('name' => "Weakened By The Sight Of You",
+			array ('name' => "Weakened By The Sight Of You", 'ico' => "ra-bleeding-eye",
 				'des'=>"Increases chance of |weaken| and  increases its effect to 80%."),
-			array ('name' => "Taking It Slow",
+			array ('name' => "Taking It Slow", 'ico' => "ra-player-despair",
 				'des'=>"Increases chance of |slow| and increases its effect to 85%."), 
-			array ('name' => "People Are Sheeple",
+			array ('name' => "People Are Sheeple", 'ico' => "ra-sheep",
 				'des'=>"Increases chance of |morph| and its duration to 4 seconds. Does not affect the duration of other curses."),
-			array ('name' => "Power Of Love",
+			array ('name' => "Power Of Love", 'ico' => "ra-glass-heart",
 				'des'=>"Increases chance of |myst-lock| and its duration to 4 seconds. Does not affect the duration of other curses."),
 			);
 
@@ -220,9 +220,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charultaug = array (
-			array ('name' => "Acid Rain",
+			array ('name' => "Acid Rain", 'ico' => "ra-poison-cloud",
 				'des'=>"Having a Paper Crane on top of the field will inflict a 400% |frenzy| to it."),
-			array ('name' => "Tough Love",
+			array ('name' => "Tough Love", 'ico' => "ra-shot-through-the-heart",
 				'des'=>"Increases Toxic Field's damage by 120% which then diminishes by 5% every second."),
 			);
 		// ------------------------------------------------------------ //
@@ -241,9 +241,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charextaug = array (
-			array ('name' => "Toxic Fumes",
+			array ('name' => "Toxic Fumes", 'ico' => "ra-acid",
 				'des'=>"Zooming through enemy units inflicts Paper Crane's |poison|."),
-			array ('name' => "Charms & Hexes",
+			array ('name' => "Charms & Hexes", 'ico' => "ra-bone-bite",
 				'des'=>"Hitting a unit under Devourer's Charm while flying will leave a Dreaded Hex in his position."),
 			);
 	?>

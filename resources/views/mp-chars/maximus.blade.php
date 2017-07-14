@@ -85,9 +85,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charpriaug = array (
-			array ('name' => "Crystal Edge",
+			array ('name' => "Crystal Edge", 'ico' => "ra-crystal-cluster",
 				'des'=>"Max's attacks leaves a 6% |frangible| on the target for 1 second."),
-			array ('name' => "Offensive Core",
+			array ('name' => "Offensive Core", 'ico' => "ra-alien-fire",
 				'des'=>"Converts 3% of Max's remaining Myst into Crystal Fists' extra damage."), 
 			);
 		// ------------------------------------------------------------ //
@@ -108,9 +108,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsecaug = array (
-			array ('name' => "Dual Core",
+			array ('name' => "Dual Core", 'ico' => "ra-site",
 				'des'=>"The tethered unit's Mystbind |shield| now make use of the their own Myst pool."),
-			array ('name' => "Over-Overcharge",
+			array ('name' => "Over-Overcharge", 'ico' => "ra-defibrilate",
 				'des'=>"Casting Overcharge will now also cause the tethered unit to cast Overcharge but without the after effect. Over-Overcharge's total damage is added from both units then distributed."), 
 			);
 
@@ -135,13 +135,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "No Trespassing",
+			array ('name' => "No Trespassing", 'ico' => "ra-interdiction",
 				'des'=>"Increases Mystbind Push's range to 900 and causes it to inflict |disarm|."),
-			array ('name' => "Efficient Bullying",
+			array ('name' => "Efficient Bullying", 'ico' => "ra-laser-site",
 				'des'=>"Mystbind Push now deals additional 45 damage, while also inflicting |myst-leak| for 5 seconds."),
-			array ('name' => "Compassion Spray",
+			array ('name' => "Compassion Spray", 'ico' => "ra-fizzing-flask",
 				'des'=>"Allied units caught in Mystbind Push's path are healed for 75% of its damage."),
-			array ('name' => "Effective Punching",
+			array ('name' => "Effective Punching", 'ico' => "ra-muscle-up",
 				'des'=>"Decreases Mystbind Push's cooldown to 6 and Myst cost to 8% of remaining Myst."), 
 			);
 		// ------------------------------------------------------------ //
@@ -165,13 +165,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "Nobody Runs Away",
+			array ('name' => "Nobody Runs Away", 'ico' => "ra-footprint",
 				'des'=>"Mystbind Pull leaves a 20% |slow| to all units affected for 4 seconds."),
-			array ('name' => "Far Reach",
+			array ('name' => "Far Reach", 'ico' => "ra-heavy-fall",
 				'des'=>"Increases Mystbind Pull's range to 800."),
-			array ('name' => "Life Pull",
+			array ('name' => "Life Pull", 'ico' => "ra-shot-through-the-heart",
 				'des'=>"Mystbind Pull now also absorbs 6% of the target's maximum health and gives it to Max."),
-			array ('name' => "Strategic Bullying",
+			array ('name' => "Strategic Bullying", 'ico' => "ra-targeted",
 				'des'=>"Removes Mystbind Pull's ability to drag along other enemy units and increases Myst Absorbed to 12%."), 
 			);
 		// ------------------------------------------------------------ //
@@ -194,13 +194,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
-			array ('name' => "Thicker Hexagons",
+			array ('name' => "Thicker Hexagons", 'ico' => "ra-hive-emblem",
 				'des'=>"Increases the Mystbind |shield|'s damage absorption by to 70%."),
 			array ('name' => "Landar's Generators",
 				'des'=>"Increases Mystbind Shield's |myst-regen| when deactivated to 12."),
-			array ('name' => "Consistent Bullying",
+			array ('name' => "Consistent Bullying", 'ico' => "ra-energise",
 				'des'=>"Causes Mystbind Shield to zap enemy units within the 275 radius of Max dealing 3% of his remaining myst as mystical damage every 2 seconds when active."),
-			array ('name' => "The Protector",
+			array ('name' => "The Protector", 'ico' => "ra-heavy-shield",
 				'des'=>"Allow Mystbind |shield| to also affect the tethered unit. Uses Max's own Myst Pool for both units, unless, with Dual Core."),  
 			);
 
@@ -224,9 +224,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charultaug = array (
-			array ('name' => "Quick Recharge",
+			array ('name' => "Quick Recharge", 'ico' => "ra-gear-hammer",
 				'des'=>"Decreases Max's 3 second |disable| on himself to 1 second by decreasing Overcharge's total damage output by 15%."),
-			array ('name' => "Dramatic Flair",
+			array ('name' => "Dramatic Flair", 'ico' => "ra-explosive-materials",
 				'des'=>"Allow Max to dash for a maximum of 600 range to a point in which he can begin casting Overcharge."), 
 			);
 		// ------------------------------------------------------------ //
@@ -249,9 +249,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "Sharing Is Caring",
+			array ('name' => "Sharing Is Caring", 'ico' => "ra-gears",
 				'des'=>"Reinforced Battery now also triggers through the tethered unit. Doubles cooldown speed when tethered."),
-			array ('name' => "Myst Paradox",
+			array ('name' => "Myst Paradox", 'ico' => "ra-tesla",
 				'des'=>"Every time Reinforced Battery is triggered, it replenishes Max's Myst pool by 100% of the supposed damage that was blocked."), 
 			);
 	?>

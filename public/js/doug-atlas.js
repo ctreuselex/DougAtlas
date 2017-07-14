@@ -78,47 +78,67 @@ $(document).ready(function() {
 $(function() {
     if(location.pathname.split("/")[1] == "mirrorplane") {
         $('#mirrorplane-nav').addClass('mirrorplane-nactive');
-        $('.ad-dash div a#' + location.pathname.split("/")[2]).addClass('active');
+        $('.ad-dash div a#' + location.pathname.split("/")[3]).addClass('active');
 
-        if(location.pathname.split("/")[2]!='') {
-          if(location.pathname.split("/")[2]!='cts-timeline'&&location.pathname.split("/")[2]!='the-story') {
-            var currentli = $('.ad-dash div a#' + location.pathname.split("/")[2]).position().top;
-            $('.ad-dash').animate({
-                scrollTop: currentli
-            }, '3000');  
-          }
+        if(location.pathname.split("/")[2]=="profile") {
+          console.log(location.pathname.split("/")[3]);
+          var currentli = $('.ad-dash div a#' + location.pathname.split("/")[3]).position().top;
+          $('.ad-dash').animate({
+              scrollTop: currentli
+          }, '3000');  
         }
     }
 });
 
 /*=========== FIX HEIGHT ===========*/
-$(document).ready(function() {
+// var checkELEHInterval;
+// checkELEHInterval = setInterval(skiTop, 3000);
+// checkELEHInterval = setInterval(skiBase, 3000);
+// checkELEHInterval = setInterval(skiBot, 3000);
+
+$(window).load(function(){
+  skiTop(); skiBase(); skiBot();
+});
+
+function skiTop() {
+  $('.ski-top').css("minHeight", "auto");
+  
   var elementHeights = $('.ski-top').map(function() {
     return $(this).height();
   }).get();
 
   var maxHeight = Math.max.apply(null, elementHeights);
 
-  $('.ski-top').height(maxHeight+15);
-});
+  // $('.ski-top').height(maxHeight);
+  $('.ski-top').css("minHeight", maxHeight+20);
+  $('.aug-anim-ski-top').css("minHeight", maxHeight+50);
 
+  // $('.ski-top').animate({ minHeight: maxHeight+20 },300);
+  // $('.aug-anim-ski-top').animate({ minHeight: maxHeight+50 },300);
+}
 
-$(document).ready(function() {
+function skiBase() {
+  $('.ski-base').css("minHeight", "auto");
   var elementHeights = $('.ski-base').map(function() {
     return $(this).height();
   }).get();
 
   var maxHeight = Math.max.apply(null, elementHeights);
 
-  $('.ski-base').height(maxHeight+15);
-});
+  // $('.ski-base').height(maxHeight);
+  $('.ski-base').css("minHeight", maxHeight+20);
+  $('.aug-anim-ski-base').css("minHeight", maxHeight+50);
+}
 
-$(document).ready(function() {
+function skiBot() {
+  $('.ski-bot').css("minHeight", "auto");
   var elementHeights = $('.ski-bot').map(function() {
     return $(this).height();
   }).get();
 
   var maxHeight = Math.max.apply(null, elementHeights);
 
-  $('.ski-bot').height(maxHeight+15);
-});
+  // $('.ski-bot').height(maxHeight);
+  $('.ski-bot').css("minHeight", maxHeight+20);
+  $('.aug-anim-ski-bot').css("minHeight", maxHeight+50);
+}

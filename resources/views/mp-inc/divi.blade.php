@@ -24,7 +24,7 @@
                                 $charico="fa fa-user"; 
                                 if($char['ico']!='') $charico=$char['ico'];  
                             ?>
-                            <a href="/mirrorplane/{{$charlink}}">
+                            <a href="/mirrorplane/profile/{{$charlink}}">
                                 <li id="{{ $char['name'] }}" class="li-hvr">
                                     <b class="col-xs-8 col-xs-offset-1 capitalize"><i class="{{ $charico }}"></i> {{ $char['name'] }} {{ $char['sur'] }}</b>
                                     <span class="col-xs-3 right">
@@ -54,7 +54,7 @@
                                         $charlink = strtolower($char['name']);
                                         if ($char['name']=='moon') $charlink = 'djerick';
                                     ?>
-                                    <a href="/mirrorplane/{{$charlink}}">
+                                    <a href="/mirrorplane/profile/{{$charlink}}">
                                         <li id="{{ $char['name'] }}" class="li-hvr">
                                             <b class="col-xs-11 col-xs-offset-1 capitalize"><i class="{{ $charico }}"></i> {{ $char['name'] }} {{ $char['sur'] }}</b>
                                         </li>
@@ -96,7 +96,7 @@
                                 $charico="fa fa-user"; 
                                 if($char['ico']!='') $charico=$char['ico'];  
                             ?>
-                            <a href="/mirrorplane/{{$charlink}}">
+                            <a href="/mirrorplane/profile/{{$charlink}}">
                                 <li id="{{ $char['name'] }}" class="li-hvr">
                                     <b class="col-xs-8 col-xs-offset-1 capitalize"><i class="{{ $charico }}"></i> {{ $char['name'] }} {{ $char['sur'] }}</b>
                                     <span class="col-xs-3 right">
@@ -126,7 +126,7 @@
                                         $charlink = strtolower($char['name']);
                                         if ($char['name']=='moon') $charlink = 'djerick';
                                     ?>
-                                    <a href="/mirrorplane/{{$charlink}}">
+                                    <a href="/mirrorplane/profile/{{$charlink}}">
                                         <li id="{{ $char['name'] }}" class="li-hvr">
                                             <b class="col-xs-11 col-xs-offset-1 capitalize"><i class="{{ $charico }}"></i> {{ $char['name'] }} {{ $char['sur'] }}</b>
                                         </li>
@@ -170,7 +170,7 @@
                                 $charico="fa fa-user"; 
                                 if($char['ico']!='') $charico=$char['ico'];  
                             ?>
-                            <a href="/mirrorplane/{{$charlink}}">
+                            <a href="/mirrorplane/profile/{{$charlink}}">
                                 <li id="{{ $char['name'] }}" class="li-hvr">
                                     <b class="col-xs-8 col-xs-offset-1 capitalize"><i class="{{ $charico }}"></i> {{ $char['name'] }} {{ $char['sur'] }}</b>
                                     <span class="col-xs-3 right">
@@ -200,7 +200,7 @@
                                         $charlink = strtolower($char['name']);
                                         if ($char['name']=='moon') $charlink = 'djerick';
                                     ?>
-                                    <a href="/mirrorplane/{{$charlink}}">
+                                    <a href="/mirrorplane/profile/{{$charlink}}">
                                         <li id="{{ $char['name'] }}" class="li-hvr">
                                             <b class="col-xs-11 col-xs-offset-1 capitalize"><i class="{{ $charico }}"></i> {{ $char['name'] }} {{ $char['sur'] }}</b>
                                         </li>
@@ -244,7 +244,7 @@
                                 $charico="fa fa-user"; 
                                 if($char['ico']!='') $charico=$char['ico'];  
                             ?>
-                            <a href="/mirrorplane/{{$charlink}}">
+                            <a href="/mirrorplane/profile/{{$charlink}}">
                                 <li id="{{ $char['name'] }}" class="li-hvr">
                                     <b class="col-xs-8 col-xs-offset-1 capitalize"><i class="{{ $charico }}"></i> {{ $char['name'] }} {{ $char['sur'] }}</b>
                                     <span class="col-xs-3 right">
@@ -274,7 +274,7 @@
                                         $charlink = strtolower($char['name']);
                                         if ($char['name']=='moon') $charlink = 'djerick';
                                     ?>
-                                    <a href="/mirrorplane/{{$charlink}}">
+                                    <a href="/mirrorplane/profile/{{$charlink}}">
                                         <li id="{{ $char['name'] }}" class="li-hvr">
                                             <b class="col-xs-11 col-xs-offset-1 capitalize"><i class="{{ $charico }}"></i> {{ $char['name'] }} {{ $char['sur'] }}</b>
                                         </li>

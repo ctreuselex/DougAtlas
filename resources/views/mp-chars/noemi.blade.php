@@ -47,10 +47,10 @@
 				'des'=>"Noemi whips around a thorn whip which damages any fool who tries to get close to her. She doesn't even have to aim it."),
 
 			array ('name'=>"Vine Hold", 'sk'=>'sec',
-				'des'=>"Causes thorned vines to burst out of the ground catching every enemy caught in its radius, leaving them |root|-ed for the first 3 seconds, then completely |disable|-d after."), 
+				'des'=>"Causes thorned vines to burst out of the ground catching every enemy caught in its radius, leaving them |root|-ed for the first 3 seconds, then completely |disable|-d after. Removed if the target is affected by |burn|."), 
 
 			array ('name'=>"Myst Bulb", 'sk'=>'sk1',
-				'des'=>"Plants a bulb full of myst which restores massive amount of Myst to allies that grabs it. The plant can be attacked and goes back to the ground if it dies, it can also explode if affected by |burn|."), 
+				'des'=>"Plants a bulb full of Myst which restores massive amount of Myst to allies that grabs it. The plant can be attacked and goes back to the ground if it dies, it can also explode if affected by |burn|."), 
 
 			array ('name'=>"Poison Dart", 'sk'=>'sk2',
 				'des'=>"Fires three poison darts at a direction with deals a small amount of damage and latches on the target for 2 seconds. After that, it then releases toxins which causes the target to be inflicted with |poison|."),  
@@ -85,9 +85,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charpriaug = array (
-			array ('name' => "Whipping Fun",
+			array ('name' => "Whipping Fun", 'ico' => "ra-spiked-tentacle",
 				'des'=>"Doubles the thorn whip Noemi uses."),
-			array ('name' => "Burning Passion",
+			array ('name' => "Burning Passion", 'ico' => "ra-heartburn",
 				'des'=>"Causes Thorn Whip to inflict |burn| for 3 seconds if Noemi herself is affected by |burn|."), 
 			);
 		// ------------------------------------------------------------ //
@@ -110,9 +110,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsecaug = array (
-			array ('name' => "Prolonged Hold",
+			array ('name' => "Prolonged Hold", 'ico' => "ra-player-teleport",
 				'des'=>"Allows Noemi to hold enemies in position longer by increasing Vine Hold's duration to 8s."),
-			array ('name' => "Overgrowth",
+			array ('name' => "Overgrowth", 'ico' => "ra-sprout",
 				'des'=>"If used over an Undergrowth, every second while holding an enemy has a 20% chance of sprouting a Myst Bulb nearby the target."), 
 			);
 
@@ -137,13 +137,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "Watch Your Step",
+			array ('name' => "Watch Your Step", 'ico' => "ra-boot-stomp",
 				'des'=>"Bulbs become resistant to |burn| and now explode in contact with enemy units."),
-			array ('name' => "Forest Fire",
+			array ('name' => "Forest Fire", 'ico' => "ra-fire",
 				'des'=>"Increases explosion damage by 60% and area of effect to 450."),
 			array ('name' => "Bulb Spores",
-				'des'=>"If the bulb's duration ends without anyone grabbing it or killing it, it releases three floating, wandering spores which has the same effects as a bulb."),
-			array ('name' => "Healing Fog",
+				'des'=>"If the bulb's duration ends without anyone grabbing it or killing it, it releases three floating, wandering spores which has the same effects as a bulb. The spores will lasts for 20 seconds."),
+			array ('name' => "Healing Fog", 'ico' => "ra-level-three-advanced",
 				'des'=>"If affected by |poison|, the bulb explodes into a healing myst which gives +100% |health-regen| to all nearby allies for 10 seconds."), 
 			);
 		// ------------------------------------------------------------ //
@@ -168,13 +168,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "Maddening Toxin",
+			array ('name' => "Maddening Toxin", 'ico' => "ra-biohazard",
 				'des'=>"Units affected by Poison Dart's |poison| will become mad giving them +10% physical |amplify| and -20% |break|."),
-			array ('name' => "Firefly Kiss",
+			array ('name' => "Firefly Kiss", 'ico' => "ra-flame-symbol",
 				'des'=>"Charging Poison Dart for 2 seconds before releasing will cause it to combust into fiery projectile and deal 200% of its damage, causes |burn|, but removes its poison effect."),
-			array ('name' => "Sleep Dart",
+			array ('name' => "Sleep Dart", 'ico' => "ra-diving-dagger",
 				'des'=>"Causes darts to inflict |sleep|-iness into their target for 4 seconds."),
-			array ('name' => "Poison Cloud",
+			array ('name' => "Poison Cloud", 'ico' => "ra-poison-cloud",
 				'des'=>"Darts will now explode into a poison cloud inflicting its |poison| to all enemy units for 3 second before disappearing. With Firefly Kiss, poison cloud will then become an explosion similar to that of Myst Bulbs."), 
 			);
 		// ------------------------------------------------------------ //
@@ -197,13 +197,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
-			array ('name' => "Covered By Ivy",
+			array ('name' => "Covered By Ivy", 'ico' => "ra-trefoil-lily",
 				'des'=>"Enemies attacking a unit affected by Oak Skin at melee range will be inflicted by Poison Dart's |poison|."),
-			array ('name' => "Walking Sequoia",
+			array ('name' => "Walking Sequoia", 'ico' => "ra-dead-tree",
 				'des'=>"Using Oak Skin on a keeper will reset it's duration and sets its health to full."),
-			array ('name' => "Impenetrable",
+			array ('name' => "Impenetrable", 'ico' => "ra-shield",
 				'des'=>"Oak Skin's |fortify| will give +80% for both of its aspects then goes back to its original values after the initial 3 seconds."),
-			array ('name' => "Mystical Oak Tree",
+			array ('name' => "Mystical Oak Tree", 'ico' => "ra-bottle-vapors",
 				'des'=>"Adds a layer of mystical |fortify| which adds +20% myst resistance."),  
 			);
 
@@ -230,9 +230,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charultaug = array (
-			array ('name' => "Wrath of Nature",
-				'des'=>"If the keeper gets a hit which damages it for more that 5% of its maximum health at once, the keeper will slam the ground dealing 250% of its damage to all nearby enemy units while also creating a smaller Undergrowth around it."),
-			array ('name' => "The Giving Tree",
+			array ('name' => "Wrath of Nature", 'ico' => "ra-arcane-mask",
+				'des'=>"If the keeper gets hit which damages it for more that 5% of its maximum health at once, the keeper will slam the ground dealing 250% of its damage to all nearby enemy units while also creating a smaller Undergrowth around it."),
+			array ('name' => "The Giving Tree", 'ico' => "ra-pine-tree",
 				'des'=>"The Keeper releases a healing aura which restores 25 health to all nearby friendly units."), 
 			);
 		// ------------------------------------------------------------ //
@@ -259,9 +259,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "Thorn Field",
+			array ('name' => "Thorn Field", 'ico' => "ra-spikeball",
 				'des'=>"Causes all enemy units that stand on the Undergrowth to be |slow|-ed by 15%."),
-			array ('name' => "Cotton Field",
+			array ('name' => "Cotton Field", 'ico' => "ra-clover",
 				'des'=>"Gives all allied units that stand on the Undergrowth a 40% |health-regen|."), 
 			);
 	?>

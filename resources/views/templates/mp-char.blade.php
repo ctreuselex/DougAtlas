@@ -26,6 +26,10 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
+    <!-- jQuery -->
+    <script src="{{ url('js/jquery.js') }}"></script>
+    <script src="{{ url('js/jquery-ui.min.js') }}"></script>
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -64,7 +68,6 @@
 
     @yield('char-meta')
 
-
     <style type="text/css">
         .ad-dash .list-group a.list-group-item.active, .ad-dash .list-group a.list-group-item.active:focus, .ad-dash .list-group a.list-group-item.active:hover { background-color: {{ $charColor }}; }
         .list-group-item.active i { color: {{ $charColorSub }};}
@@ -98,6 +101,9 @@
         .bot-scro a.mid:hover, .bot-scro a.mid.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; } 
         .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
         .notes ul li b { background: {{ $charColor }}; }
+
+        .log-name { border-left: 1px solid rgba(0,0,0,0.3); }
+        li:hover .log-name { border-left: 1px solid white; }
 
         @foreach ($mirChars as $char)
             /*span#ctslog-{{ $char['name'] }} i {
@@ -219,7 +225,7 @@
 
                                     <a href="" type="button" id="cts-{{ $ctsnum }}" data-toggle="modal" data-target="#{{ $datatar }}"><li>
                                         <span class="col-xs-2" style="padding: 0;">{{ $logs['y'] }}</span>
-                                        <b class="col-xs-10" style="border-left: 1px solid rgba(0,0,0,0.3)">{{ $logs['name'] }}</b>
+                                        <b class="col-xs-10 log-name">{{ $logs['name'] }}</b>
                                     </li></a>
 
                                     @include("mp-chars/cts-files/{$datatar}")

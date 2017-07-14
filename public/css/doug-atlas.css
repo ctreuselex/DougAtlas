@@ -512,6 +512,12 @@ a, a:hover, a:focus, a:active {
 	.mirrorplane-nactive { background: #18ff81; }
 	.birdwatch-nactive { background: #ca01f5; }
 
+/*---------------------------- ANIMATIONS ----------------------------*/
+
+@keyframes rotating {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360); }
+}
 
 /*---------------------------- RANDOMSSS ----------------------------*/
 

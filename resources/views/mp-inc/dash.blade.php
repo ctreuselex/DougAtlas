@@ -20,9 +20,9 @@
 	        @foreach ($mirChars as $char)
 	        	@if ($char['ico']!='' && $char['color']!='')
 	        		@if ($char['name']=='moon')
-	        			<a id="djerick" href="/mirrorplane/djerick" class="list-group-item">{{ $char['name'] }}<i class="{{ $char['ico'] }}"></i></a>
+	        			<a id="djerick" href="/mirrorplane/profile/djerick" class="list-group-item">{{ $char['name'] }}<i class="{{ $char['ico'] }}"></i></a>
 	        		@elseif ($char['name']!='djerick' && $char['name']!='dom' && $char['name']!='cin')
-	        			<a id="{{ $char['name'] }}" href="/mirrorplane/{{ $char['name'] }}" class="list-group-item">{{ $char['name'] }}<i class="{{ $char['ico'] }}"></i></a>
+	        			<a id="{{ $char['name'] }}" href="/mirrorplane/profile/{{ $char['name'] }}" class="list-group-item">{{ $char['name'] }}<i class="{{ $char['ico'] }}"></i></a>
 	        		@endif
 	        	@endif
 	        @endforeach

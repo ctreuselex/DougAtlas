@@ -85,9 +85,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charpriaug = array (
-			array ('name' => "Ice Fan",
+			array ('name' => "Ice Fan", "ico" => "ra-sapphire",
 				'des'=>"Causes Kianna to shoot three icicles in a fan instead of a single one."),
-			array ('name' => "Snowball Fighter",
+			array ('name' => "Snowball Fighter", "ico" => "ra-frost-emblem",
 				'des'=>"Allows critical hits with Icicle to knock back the target. Reduces damage by 15%."), 
 			);
 		// ------------------------------------------------------------ //
@@ -110,9 +110,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsecaug = array (
-			array ('name' => "Snow Angel",
+			array ('name' => "Snow Angel", "ico" => "ra-angel-wings",
 				'des'=>"Removes Hail's |freeze|-ing effect and replaces it with a healing effect that heals allies for 60% Kianna's Mystical damage per second."),
-			array ('name' => "Hard as Ice",
+			array ('name' => "Hard as Ice", "ico" => "ra-ice-cube",
 				'des'=>"Hail now damages enemy units caught within range for 120% mystical damage per second. Increases Myst Cost to 9 per second."), 
 			);
 
@@ -138,13 +138,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "Piercing Shard",
+			array ('name' => "Piercing Shard", "ico" => "ra-drill",
 				'des'=>"Causes Glacier Shard to pierce through enemies instead of being destroyed at first contact. Increases Range to 1200."),
 			array ('name' => "Won't Let Them Go",
 				'des'=>"Decreases Glacier Shard's cooldown to 3 and Myst cost to 80."),
-			array ('name' => "Pure Catalyst",
+			array ('name' => "Pure Catalyst", "ico" => "ra-frostfire",
 				'des'=>"Glacier Shard now deals pure damage which ignores physical defense and Myst resistance."),
-			array ('name' => "Offense Is Best Defense",
+			array ('name' => "Offense Is Best Defense", "ico" => "ra-circular-saw",
 				'des'=>"Allows Glacier Shard to be charged for 2 seconds which increases it's damage by 10% every 0.50 second."), 
 			);
 		// ------------------------------------------------------------ //
@@ -170,13 +170,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "Healing Waters",
+			array ('name' => "Healing Waters", "ico" => "ra-droplet",
 				'des'=>"Allied units within the Frost Cloud are healed."),
-			array ('name' => "Absolute Zero",
+			array ('name' => "Absolute Zero", "ico" => "ra-brain-freeze",
 				'des'=>"Decreases the time it takes to |freeze| enemies to 1.50 seconds."),
-			array ('name' => "Forever Winter",
+			array ('name' => "Forever Winter", "ico" => "ra-crystal-cluster",
 				'des'=>"|freeze|-d enemy units will remain |freeze|-d for as long as Kianna is channeling the Frost Cloud."),
-			array ('name' => "No Interruptions",
+			array ('name' => "No Interruptions", "ico" => "ra-gem-pendant",
 				'des'=>"Prevents Kianna from being |stun|-ned while channeling Frost Cloud."), 
 			);
 		// ------------------------------------------------------------ //
@@ -200,13 +200,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
-			array ('name' => "Divinity",
+			array ('name' => "Divinity", "ico" => "ra-hospital-cross",
 				'des'=>"Increases Purify's healing by 40%."),
-			array ('name' => "Frost Bites",
+			array ('name' => "Frostbite", "ico" => "ra-shark",
 				'des'=>"Can now target enemy units which instead of healing them, damages them while also |purge|-ing all status effects currently affecting them."),
-			array ('name' => "Oh Golly",
+			array ('name' => "Oh Golly", "ico" => "ra-crowned-heart",
 				'des'=>"The target will now instantly receive all of Purify's heal or damage."),
-			array ('name' => "Snow Party",
+			array ('name' => "Snow Party", "ico" => "ra-lantern-flame",
 				'des'=>"Cause Purify to affect multiple units within a 250 area of effect around the main target."),  
 			);
 
@@ -232,9 +232,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charultaug = array (
-			array ('name' => "Give Me More Time",
+			array ('name' => "Give Me More Time", "ico" => "ra-hourglass",
 				'des'=>"Increases the duration of Frost Guard to 8 seconds for both phases."),
-			array ('name' => "Myst, The Gathering",
+			array ('name' => "Myst, The Gathering", "ico" => "ra-cubes",
 				'des'=>"Unit affected by Frost Guard will have a 80% mystical |amplify| for the whole duration of the spell."), 
 			);
 		// ------------------------------------------------------------ //
@@ -256,9 +256,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "Revenge Served Cold",
+			array ('name' => "Revenge Served Cold", "ico" => "ra-explosion",
 				'des'=>"When dying, Kianna burst into a freezing wave that |freeze|-s all enemy units around a 600 radius for 3 seconds."),
-			array ('name' => "Public Servant",
+			array ('name' => "Public Servant", "ico" => "ra-queen-crown",
 				'des'=>"Nearby allied units within 1600 radius also receives All Around Queen's benefit but cuts the additional Myst pool to 275 and Myst regeneration to 2."), 
 			);
 	?>

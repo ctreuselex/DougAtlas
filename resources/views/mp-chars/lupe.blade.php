@@ -85,9 +85,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charpriaug = array (
-			array ('name' => "Feral Strength",
+			array ('name' => "Feral Strength", "ico" => "ra-lion",
 				'des'=>"Increases Savage Strike's damage by 5% of Lupe's remaining health."),
-			array ('name' => "Feral Agility",
+			array ('name' => "Feral Agility", "ico" => "ra-rabbit",
 				'des'=>"Passively increases Lupe's attack rate by 20%."), 
 			);
 		// ------------------------------------------------------------ //
@@ -111,9 +111,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsecaug = array (
-			array ('name' => "Brittle Footing",
+			array ('name' => "Brittle Footing", "ico" => "ra-boot-stomp",
 				'des'=>"Leaves an area effect that lasts for 3 seconds which |slow|-s everyone standing on it by 25%."),
-			array ('name' => "Not On My Ground",
+			array ('name' => "Not On My Ground", "ico" => "ra-groundbreaker",
 				'des'=>"Increases area of effect to 300 and  knockback to 450."), 
 			);
 
@@ -139,13 +139,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "Samson Force",
+			array ('name' => "Samson Force", "ico" => "ra-horns",
 				'des'=>"Allows Bull Rush to be cast again, stopping Lupe's dash and follow with a horn strike which knockbacks and deals double of Bull Rush's damage and the duration of its |stun|."),
-			array ('name' => "Red Like Blood",
+			array ('name' => "Red Like Blood", "ico" => "ra-burst-blob",
 				'des'=>"Attacking an enemy unit affected by |bleed|-ing has 20% chance of inflicting a 1 second |stun|."), 
-			array ('name' => "Stampede",
+			array ('name' => "Stampede", "ico" => "ra-desert-skull",
 				'des'=>"Gives a 30% |haste|, which lasts for 5 seconds, to all allied units Lupe ran through with Bull Rush."),
-			array ('name' => "Not In The Eye",
+			array ('name' => "Not In The Eye", "ico" => "ra-site",
 				'des'=>"Getting hit in a critical spot allows Lupe to cast Bull Rush with 25 Myst cost while also ignoring its cooldown for 4 seconds."),
 			);
 		// ------------------------------------------------------------ //
@@ -169,13 +169,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "Grizzly Bellow",
+			array ('name' => "Grizzly Bellow", "ico" => "ra-muscle-fat",
 				'des'=>"Ursine Roar now inflicts a 7% |frangible| to all enemy units caught in its radius."),
-			array ('name' => "Lone Hunter",
+			array ('name' => "Lone Hunter", "ico" => "ra-fox",
 				'des'=>"Increases the effects of Ursine Roar by 50% if there are no nearby allies around Lupe."),
-			array ('name' => "Mauling Sleuth",
+			array ('name' => "Mauling Sleuth", "ico" => "ra-decapitation",
 				'des'=>"Gives nearby allies 50% of the buffs given by Ursine Roar."),
-			array ('name' => "Growl Of Annoyance",
+			array ('name' => "Growl Of Annoyance", "ico" => "ra-burning-eye",
 				'des'=>"Passively grants 10% of Ursine Roar's effects to Lupe and all nearby allies. Stacks with Ursine Roar's actual effects."), 
 			);
 		// ------------------------------------------------------------ //
@@ -197,13 +197,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
-			array ('name' => "Savagery",
+			array ('name' => "Savagery", "ico" => "ra-shark",
 				'des'=>"Lupe's attacks, while affected by Bloodthirst, now also inflict |bleed|-ing for 2 seconds."),
-			array ('name' => "The Weak Left Behind",
+			array ('name' => "The Weak Left Behind", "ico" => "ra-sheep",
 				'des'=>"Having a |morph|-ed unit within the 500 radius of a unit affected by Bloodthirst, increases its |leech| to 40%."),
-			array ('name' => "Sweet Return",
+			array ('name' => "Sweet Return", "ico" => "ra-insect-jaws",
 				'des'=>"Allows Lupe to cast Bloodthirst with no Myst cost while his health is below 40%."),
-			array ('name' => "Wolf Pack",
+			array ('name' => "Wolf Pack", "ico" => "ra-wolf-head",
 				'des'=>"Bloodthirst now also affects allied units within a 300 area of effect around Lupe."),  
 			);
 
@@ -226,7 +226,7 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charultaug = array (
-			array ('name' => "Party Animal",
+			array ('name' => "Party Animal", "ico" => "ra-seagull",
 				'des'=>"Allows for multiple |morph|-ing of enemy units with a 400 area of effect. Reduces duration to 3 seconds."),
 			array ('name' => "The Wolves Among Us",
 				'des'=>"Targets an ally, and morphs them into the likes of Lupe's Werewolf form, giving them half its benefits for twice the duration of Polymorph."), 
@@ -252,9 +252,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "Huff And Puff",
+			array ('name' => "Huff And Puff", "ico" => "ra-demolish",
 				'des'=>"Doubles the |stun| duration of Bull Rush, |amplify| of Ursine Roar, and |leech| of Bloodthirst while Lupe is in Werewolf form."),
-			array ('name' => "The Degenerate",
+			array ('name' => "The Degenerate", "ico" => "ra-bone-bite",
 				'des'=>"Replace Werewolf form's Myst cost with 15 Health cost every second. Forces Lupe to transform back to his human form whenever his health reaches 15%."), 
 			);
 	?>

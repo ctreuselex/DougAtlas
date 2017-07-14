@@ -60,7 +60,7 @@
 				'des'=>"Riza places a ulitity tower at her position that grants healing, along with other benefits for all surrounding allies."),
 
 			array ('name'=>"Aero Dynamics", 'sk'=>'ult',
-				'des'=>"Riza equips her jet pack that allows her to temporarily fly over the city like a glorious figher jet. While active, Nano Smoke's cooldown is reduced which allows for dropping bombs below."),
+				'des'=>"Riza equips her jet pack that allows her to temporarilly fly over the city like a glorious fighter jet. While active, Nano Smoke's cooldown is reduced which allows for dropping bombs below."),
 
 			array ('name'=>"Statis Trap", 'sk'=>'ext',
 				'des'=>"Running and hiding allowed Riza to stay away from all the other nonsense around Mirrorplane, what allowed her to do this for all time now is, well. trapping everyone who tried to follow her into dark alleways."),
@@ -87,9 +87,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charpriaug = array (
-			array ('name' => "This Shit Can Heal?",
+			array ('name' => "This Shit Can Heal?", 'ico' => "ra-level-four-advanced",
 				'des'=>"Firing rounds of Gatling Fire to allies will heal them for it's supposed damage."),
-			array ('name' => "Oh, I have a Wrench",
+			array ('name' => "Oh, I have a Wrench", 'ico' => "ra-wrench",
 				'des'=>"Allows Riza to attack with her wrench for 100% physical damage at 100% attack rate, whenever Hawk Turret is in Sentry Mode or she's |myst-lock|-ed or |disarm|-ed."), 
 			);
 		// ------------------------------------------------------------ //
@@ -98,9 +98,9 @@
 		$charsecstats = array (
 			array ('name'=>'Range', 'val'=>'400', 'ext'=>''),
 
-			array ('name'=>'Turrent Range', 'val'=>'800', 'ext'=>''),
-			array ('name'=>'Turrent Reload', 'val'=>'Every 3s', 'ext'=>''),
-			array ('name'=>'Turrent Shield', 'val'=>'400', 'ext'=>''),
+			array ('name'=>'Turret Range', 'val'=>'800', 'ext'=>''),
+			array ('name'=>'Turret Reload', 'val'=>'Every 3s', 'ext'=>''),
+			array ('name'=>'Turret Shield', 'val'=>'400', 'ext'=>''),
 			);
 		$charsecmcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
@@ -114,10 +114,10 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsecaug = array (
-			array ('name' => "Front Liner",
+			array ('name' => "Front Liner", 'ico' => "ra-heavy-shield",
 				'des'=>"Grants Hawk Turret an additional 150 shield that blocks incoming damage from the front."),
-			array ('name' => "Who's Your Guardian",
-				'des'=>"Allow Riza to attach Hawk Turret on allied units applying the its |shield| to the target itself."), 
+			array ('name' => "Who's Your Guardian", 'ico' => "ra-knight-helmet",
+				'des'=>"Allow Riza to attach Hawk Turret on allied units applying its |shield| to the target itself."), 
 			);
 
 		// ------------------------------------------------------------ //
@@ -142,13 +142,13 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk1aug = array (
-			array ('name' => "Corrupted Bots",
+			array ('name' => "Corrupted Bots", 'ico' => "ra-robot-arm",
 				'des'=>"Causes the smoke to deal 50% mystical damage to enemy units every second."),
-			array ('name' => "Myst Eater",
+			array ('name' => "Myst Eater", 'ico' => "ra-food-chain",
 				'des'=>"|myst-lock|-s all enemy units inside the smoke for 1 second everytime they get |blind|-ed by the smoke."),
-			array ('name' => "Nano Boost",
+			array ('name' => "Nano Boost", 'ico' => "ra-crystals",
 				'des'=>"Applies a 6% mystical |amplify| to allies inside the smoke."),
-			array ('name' => "Ultra Microscopical",
+			array ('name' => "Ultra Microscopical", 'ico' => "ra-repair",
 				'des'=>"Decreases Myst cost to 40 and cooldown to 12 seconds."), 
 			);
 		// ------------------------------------------------------------ //
@@ -170,13 +170,13 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk2aug = array (
-			array ('name' => "Semi Time Manipulator",
+			array ('name' => "Semi Time Manipulator", 'ico' => "ra-clockwork",
 				'des'=>"Units affected by Kinetic Field are now affected by a 30% |slow| for 3 seconds after the field disperses."),
-			array ('name' => "Bots Stuck In Time",
+			array ('name' => "Bots Stuck In Time", 'ico' => "ra-stopwatch",
 				'des'=>"Placing Kinetic Field on top of Nano Smoke will cause the smoke to reset its duration."),
-			array ('name' => "I Didn't Know It Can Do That",
+			array ('name' => "I Didn't Know It Can Do That", 'ico' => "ra-aura",
 				'des'=>"Now causes allies to get maximum movement and attack speed in the field instead of getting paused."),
-			array ('name' => "After Shock",
+			array ('name' => "After Shock", 'ico' => "ra-groundbreaker",
 				'des'=>"Hawk Turret's Sentry Mode's shield depleting and Utility Tower being destroyed now creates a Kinetic field in their place."), 
 			);
 		// ------------------------------------------------------------ //
@@ -185,7 +185,7 @@
 		$charsk3stats = array (
 			array ('name'=>'Damage', 'val'=>'', 'ext'=>''),
 			array ('name'=>'Heal', 'val'=>'60% of Mystical Damage /s', 'ext'=>'mys'),
-			array ('name'=>'Attack Rate', 'val'=>'500', 'ext'=>''),
+			array ('name'=>'Area of Effect', 'val'=>'500', 'ext'=>''),
 			array ('name'=>'Duration', 'val'=>'10s', 'ext'=>''),
 
 			array ('name'=>'Tower Health', 'val'=>'300', 'ext'=>''),
@@ -202,13 +202,13 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk3aug = array (
-			array ('name' => "Bio Distrupter",
+			array ('name' => "Bio Distrupter", 'ico' => "ra-skull-trophy",
 				'des'=>"Applies a 9% physical |weaken|, 6% physical |break|, and 60% |health-degen| to all enemy units in range."),
-			array ('name' => "Reflective Shells",
+			array ('name' => "Reflective Shells", 'ico' => "ra-divert",
 				'des'=>"Applies a 50% |reflect| to the utility tower."),
-			array ('name' => "Hit Pulse",
+			array ('name' => "Hit Pulse", 'ico' => "ra-health",
 				'des'=>"Causes the tower to heal all allied units in the area by 50% of its heal every time it's hit."),
-			array ('name' => "Empower",
+			array ('name' => "Empower", 'ico' => "ra-all-for-one",
 				'des'=>"Applies a 5% physical and mystical |amplify| to all allied units in range."),  
 			);
 
@@ -233,9 +233,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charultaug = array (
-			array ('name' => "Night Witch",
+			array ('name' => "Night Witch", 'ico' => "ra-jetpack",
 				'des'=>"While active, casting Nano Smoke allows it to deals an initial 150% mystical damage."),
-			array ('name' => "Lower Ring Engineering",
+			array ('name' => "Lower Ring Engineering", 'ico' => "ra-gear-heart",
 				'des'=>"Lower Myst cost to 20 per second but increases cast time to 2 seconds."), 
 			);
 		// ------------------------------------------------------------ //
@@ -261,9 +261,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charextaug = array (
-			array ('name' => "Interconnected",
+			array ('name' => "Interconnected", 'ico' => "ra-nodular",
 				'des'=>"Causes all Statis Traps to always trigger at the same time, increasing each damage by 20% but prevents their damage from stacking over each other."),
-			array ('name' => "Field Awareness",
+			array ('name' => "Field Awareness", 'ico' => "ra-uncertainty",
 				'des'=>"Enemy units triggering Statis Traps now alerts Riza and her allies."), 
 			);
 	?>

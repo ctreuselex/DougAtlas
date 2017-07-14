@@ -85,9 +85,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charpriaug = array (
-			array ('name' => "Ballerina",
+			array ('name' => "Ballerina", "ico" => "ra-flower",
 				'des'=>"Grants Llaxine with 15% |haste| that lasts for 1 second whenever she attacks with Spike Bracelets."),
-			array ('name' => "Summer Heat",
+			array ('name' => "Summer Heat", "ico" => "ra-sun",
 				'des'=>"Adds 30% Mystical damage to Spike Bracelets while also causing it to inflict |burn| which lasts for 2 seconds."), 
 			);
 		// ------------------------------------------------------------ //
@@ -110,7 +110,7 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsecaug = array (
-			array ('name' => "Girl Accessories",
+			array ('name' => "Girl Accessories", "ico" => "ra-daggers",
 				'des'=>"Prevents Llaxine from being |disarm|-ed by Diamond Strike or any other sources."),
 			array ('name' => "Light Weight",
 				'des'=>"Allow Llaxine to gain 50% more movement speed while |disarm|-ed."), 
@@ -138,13 +138,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "Evanescent",
+			array ('name' => "Evanescent", "ico" => "ra-candle",
 				'des'=>"Celestial Apparition now knock backs Llaxine for 125 causing the apparition to move faster."),
-			array ('name' => "Lissome",
+			array ('name' => "Lissome", "ico" => "ra-hood",
 				'des'=>"Llaxine and allied units become |invisible| whenever they are within 200 radius of the apparition."),
-			array ('name' => "Light Giver",
+			array ('name' => "Light Giver", "ico" => "ra-light-bulb",
 				'des'=>"Allied units staying within the apparition's 200 radius are healed by 80% of the apparition's supposed damage every second."),
-			array ('name' => "Ghost Sigil",
+			array ('name' => "Ghost Sigil", "ico" => "ra-circular-shield",
 				'des'=>"Allows casting of Celestial Apparition while Myst Locked at an increased Myst cost of 120."), 
 			);
 		// ------------------------------------------------------------ //
@@ -167,13 +167,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "Opulent Light",
+			array ('name' => "Opulent Light", "ico" => "ra-explosion",
 				'des'=>"Increases Celestial Strike's damage by 30%."),
-			array ('name' => "Serendipity",
+			array ('name' => "Serendipity", "ico" => "ra-spawn-node",
 				'des'=>"Casts another Celestial Strike at the unit Diamond Strike is attached to whenever Llaxine casts Celestial Strike."),
-			array ('name' => "Hard Light",
+			array ('name' => "Hard Light", "ico" => "ra-tower",
 				'des'=>"Celestial Strike now |stun|-s affected units for 1.50 seconds."),
-			array ('name' => "Sun Sigil",
+			array ('name' => "Sun Sigil", "ico" => "ra-circular-saw",
 				'des'=>"Allows casting of Celestial Strike while Myst Locked at an increased Myst cost of 140."), 
 			);
 		// ------------------------------------------------------------ //
@@ -196,14 +196,14 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk3aug = array (
-			array ('name' => "Heaven's Light",
+			array ('name' => "Heaven's Light", "ico" => "ra-angel-wings",
 				'des'=>"Causes Light Orb to heal allied units for 80% of its supposed damage."),
-			array ('name' => "Luminescent",
+			array ('name' => "Luminescent", "ico" => "ra-alien-fire",
 				'des'=>"Creates an apparition that charges Light Orb for Llaxine. Increases cooldown to 8 seconds."),
-			array ('name' => "Shia Surprise",
+			array ('name' => "Shia Surprise", "ico" => "ra-defibrilate",
 				'des'=>"Casting Light Orb now turns Llaxine |invisible| for the duration of the charging."),
-			array ('name' => "The Prism",
-				'des'=>"When Light Orb hits a unit which Diamond Strike is attached to, the damage to doubled for every unit hit."),  
+			array ('name' => "The Prism", "ico" => "ra-overmind",
+				'des'=>"When Light Orb hits a unit which Diamond Strike is attached to; the damage is doubled for every unit hit."),  
 			);
 
 		// ------------------------------------------------------------ //
@@ -226,9 +226,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charultaug = array (
-			array ('name' => "Not A Hater",
+			array ('name' => "Not A Hater", "ico" => "ra-fire-symbol",
 				'des'=>"Increases Divine Mercy's damage and heal by 35%."),
-			array ('name' => "Heaven Sigil",
+			array ('name' => "Heaven Sigil", "ico" => "ra-sun-symbol",
 				'des'=>"Allows casting of Divine Mercy while Myst Locked at an increased Myst cost of 210."), 
 			);
 		// ------------------------------------------------------------ //
@@ -249,9 +249,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "Can't Touch This",
+			array ('name' => "Can't Touch This", "ico" => "ra-crystals",
 				'des'=>"Reduces Shift's cooldown to 4 seconds."),
-			array ('name' => "Immunity",
+			array ('name' => "Immunity", "ico" => "ra-gem-pendant",
 				'des'=>"Grants Llaxine |immunity| for 2 seconds after she gets out of Shift."), 
 			);
 	?>

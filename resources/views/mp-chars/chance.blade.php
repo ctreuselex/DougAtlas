@@ -93,9 +93,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charpriaug = array (
-			array ('name' => "Trigger Happy",
+			array ('name' => "Trigger Happy", 'ico' => "ra-crossed-pistols",
 				'des'=>"Reduces reload time to 1 second while also passively increasing Chance's attack rate by 10%."),
-			array ('name' => "Massive Package",
+			array ('name' => "Massive Package", 'ico' => "ra-eggplant",
 				'des'=>"Increases the total amount of rounds per reload to 18."), 
 			);
 		// ------------------------------------------------------------ //
@@ -117,9 +117,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsecaug = array (
-			array ('name' => "Three Stones With One Bird",
+			array ('name' => "Three Stones With One Bird", 'ico' => "ra-lightning-trio",
 				'des'=>"Allows Charged shot to bounce to 2 additional targets upon hitting its first target. Decreases damage and heal by 25% per bounce. Bounces off walls."),
-			array ('name' => "Sleek Foot",
+			array ('name' => "Sleek Foot", 'ico' => "ra-boot-stomp",
 				'des'=>"Makes Charged Shot freeform, allowing it to be cast while moving."), 
 			);
 
@@ -152,11 +152,11 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "I Got a Stun Gun",
+			array ('name' => "I Got a Stun Gun", 'ico' => "ra-energise",
 				'des'=>"Removes the |root| effect and replaces it with another 1 second |stun|. Chance is now free after the first |stun|."),
-			array ('name' => "Infinity Rope",
+			array ('name' => "Infinity Rope", 'ico' => "ra-grappling-hook",
 				'des'=>"Increases range to 900 and Myst cost to 125."),
-			array ('name' => "Priority Target",
+			array ('name' => "Priority Target", 'ico' => "ra-targeted",
 				'des'=>"Inflicts a 15% |frangible| on the target for the whole duration."),
 			array ('name' => "Iron Curtain",
 				'des'=>"Removes the |expose| effect Grab Hold leaves on Chance while also leaving a 15% physical |fortify| on him for the duration."), 
@@ -189,13 +189,13 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk2aug = array (
-			array ('name' => "The Spicy One",
+			array ('name' => "The Spicy One", 'ico' => "ra-fire-bomb",
 				'des'=>"Increases damage by 15% while also causing it to inflict |burn| for 6 seconds."),
-			array ('name' => "Kinda Icky",
+			array ('name' => "Kinda Icky", 'ico' => "ra-fizzing-flask",
 				'des'=>"Causes Compound Flask to inflict |poison| that deals 90 damage over 5 seconds."),
-			array ('name' => "Sweet and Savory",
+			array ('name' => "Sweet and Savory", 'ico' => "ra-heart-bottle",
 				'des'=>"Compound Flask now heals allies instead of damaging them."),
-			array ('name' => "Feels Like Nothing At All",
+			array ('name' => "Feels Like Nothing At All", 'ico' => "ra-bottle-vapors",
 				'des'=>"Allow Compound Flask to replenish a total of 250 Myst which is shared to all affected allied units."), 
 			);
 		// ------------------------------------------------------------ //
@@ -228,13 +228,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
-			array ('name' => "Oops, Souvenir",
+			array ('name' => "Oops, Souvenir", 'ico' => "ra-broken-bottle",
 				'des'=>"Leaves a Compound Flask on Chance's position before rolling which triggers after a 1 second delay. No effect when |disarm|-ed."),
-			array ('name' => "Offensive Rolling",
+			array ('name' => "Offensive Rolling", 'ico' => "ra-underhand",
 				'des'=>"Adds a 20% mystical |amplify| buff in addition to the movement speed buff."),
-			array ('name' => "Defensive Rolling",
+			array ('name' => "Defensive Rolling", 'ico' => "ra-overhead",
 				'des'=>"Adds a 10% physical |fortify| buff in addition to the movement speed buff."),
-			array ('name' => "Emergency Exit",
+			array ('name' => "Emergency Exit", 'ico' => "ra-player-dodge",
 				'des'=>"Gain a charge of Rollover every time Dual ACMA reloads."),  
 			);
 
@@ -266,9 +266,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charultaug = array (
-			array ('name' => "Rush B",
+			array ('name' => "Rush B", 'ico' => "ra-mp5",
 				'des'=>"Passively increases Chance's critical multiplier by 1."),
-			array ('name' => "The Turret",
+			array ('name' => "The Turret", 'ico' => "ra-sattelite",
 				'des'=>"Replaces |frangible| with |invulnerability| but shortens the duration to 4 seconds in which Chance is also forced to become stationary."), 
 			);
 		// ------------------------------------------------------------ //
@@ -291,9 +291,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charextaug = array (
-			array ('name' => "Cheap Shot",
+			array ('name' => "Cheap Shot", 'ico' => "ra-ball",
 				'des'=>"Reduces cooldown to 2 seconds if Counter Strike is not triggered."),
-			array ('name' => "Es-ca-peh",
+			array ('name' => "Es-ca-peh", 'ico' => "ra-footprint",
 				'des'=>"Gain a charge of Rollover if Counter Strike is triggered."), 
 			);
 	?>

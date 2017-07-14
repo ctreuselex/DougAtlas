@@ -20,7 +20,7 @@
             'des'=>'Decreases attact rate.'),
         //stuns
         array ('name'=>'disarm', 'purge'=>false, 'ico'=>'fa fa-sign-language',
-            'des'=>'Disables certain abilities. Instantly ends on weapon retrieval.'),
+            'des'=>'Throws weapon out of hand and disables certain abilities. Instantly ends on weapon retrieval.'),
         array ('name'=>'freeze', 'purge'=>true, 'ico'=>'ra ra-frost-emblem',
             'des'=>'Prevents any action. -60% physical defense. Removed on hit or struggling.'),
         array ('name'=>'root', 'purge'=>true, 'ico'=>'ra ra-thorny-vine',
@@ -109,26 +109,57 @@
 
 <style type="text/css">
 
+    .row-skill-stat-btn {
+        width: 100%;
+        background: {{ $charColorSub }}; color: white;
+        text-align: center;
+        font-weight: bolder;
+        cursor: pointer;
+        padding: 5px 0;
+        transition: 0.5s; }
+    .row-skill-stat-btn:hover {
+        background: {{ $charColor }};
+        transition: 0.3s; }
     .row-skill-stat {
         display: -webkit-box;
-        /*background: url({{ $charTexture }}); 
-        background-size: 300px;
-        background-blend-mode: overlay;
-        background-color: {{ $charColorSub }};*/
-        transition: 0.5s;
-    }
-    /*.skill-box:hover div .row .row-skill-stat {
-        background-blend-mode: overlay;
-        background-color: {{ $charColor }};
-        transition: 0.3s;
-    }*/
+        /*display: none;*/
+        transition: 0.5s; }
     .skill-name, .aug b { text-transform: capitalize; }
 
+    .aug-plus {
+        display: flex; align-items: center;
+        position: absolute; top: 10px;
+        height: 30px; width: 30px;
+        background: white;
+        color: white;    
+        border-top: 30px solid {{ $charColor }};
+        border-right: 1px solid #eeeeee;
+        cursor: pointer;
+        transition: 0.5s; }
+    .aug-plus i {
+        margin: -30px auto 0;
+        font-size: 20px;
+        transition: 0.5s; }
+
+    .aug-plus.active {
+        border-top: 0 solid {{ $charColor }};
+        color: {{ $charColorSub }};
+        transition: 0.3s; }
+    .aug-plus.active i {
+        margin: 0 auto;
+        transition: 0.3s; }
+
+    .aug { display: none; }
     .aug.{{ $charname }} i {
-        color: {{ $charColor }};
-        font-size: 18px;
         position: relative;
-    }
+        color: {{ $charColorSub }};
+        font-size: 18px; }
+
+    .aug-anim-ski-top, .aug-anim-ski-base, .aug-anim-ski-bot {
+        display: none;
+        position: absolute; top: 10px; left: 10px;
+        width: 5px; height: 100px;
+        background: {{ $charColorSub }} }
 
     @foreach ($statusEffects as $se)
         <?php
@@ -136,8 +167,7 @@
         ?>
         .inf-{{ $se['name'] }} {
             text-transform: capitalize;
-            /*font-weight: bold;*/
-        }
+            /*font-weight: bold;*/ }
         .inf-{{ $se['name'] }}:before {
             position: absolute;
             background: white;  
@@ -146,9 +176,8 @@
             font-size: 12px;
             padding: 5px;
             z-index: 9999;     
-            opacity: 0;                   
-            transition: 0.5s;
-        }
+            opacity: 0;                  
+            transition: 0.5s; }
         .inf-{{ $se['name'] }}:hover:before {
             content: "{{ $se['des'] }}";
             opacity: 1;
@@ -157,8 +186,7 @@
             width: 150px;                   
             border: 1px solid #d5d5d5;   
             box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-            transition: 0.3s;
-        }
+            transition: 0.3s; }
         .inf-{{ $se['name'] }} i {
             position: static;
             font-size: 12px !important;
@@ -166,9 +194,24 @@
             background-color: #a5a5a5;
             border-radius: 3px;
             padding: 2px;
-            margin-right: 2px; 
-        }
-    @endforeach 
+            margin-right: 2px;  }
+    @endforeach
+
+    .skill-augs {
+        /*display: none;*/
+        position: fixed; bottom: 20px; left: 245px;
+        background: white; color: green;
+        font-weight: bold;
+        padding: 5px 10px;
+        border: 1px solid green;
+        box-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+        transition: 0.5s; }
+    .skill-augs span {
+        font-size: 18px; }
+    .skill-augs.error {
+        color: red;
+        border: 1px solid red;
+        transition: 0.5s; }
 </style>
 
 <!-- <div class="row"> -->
@@ -203,10 +246,27 @@
 
     <div class="col-sm-{{ $rowdiv }}">
         <div class="skill-box {{ $rowpos }}">
+            <div class="aug-anim-{{ $rowpos }} skill-{{ $ability['sk'] }}"></div>
             <div class="col-xs-12">
                 <p class="skill-name" style="border-bottom: 2px solid {{ $charColor }}"> {{ $abilityprefix }} <b>{{ $ability['name'] }}</b> </p>
             </div>
-            <img class="skill-img" src="{{ url('img/mp-char/skills/'.$charname.'/'.$ability['sk'].'.png') }}" width="120px">
+            <img class="skill-img" src="{{ url('img/mp-char/skills/'.$charname.'/'.$ability['sk'].'.png') }}" width="120px" alt="">
+            <?php $augpos=15; ?>
+            @foreach ($abilityaug as $aug)
+                <?php $augname = strtolower($aug['name']);
+                    $augname = str_replace(" ","-",$augname);
+                    $augname = str_replace(".","",$augname);
+                    $augname = str_replace(",","",$augname);
+                    $augname = str_replace("'","",$augname);
+                    $augname = str_replace("!","",$augname);
+                    $augname = str_replace("?","",$augname);
+                    $augname = str_replace("&","",$augname);
+                    $abilitysk = $ability['sk']; ?>
+                <div id="btn-aug-{{ $augname }}" class="aug-plus" style="left:{{ $augpos }}px;" onclick="showaug('aug-{{ $augname }}', 'skill-{{ $abilitysk }}')">
+                    <?php if(isset($aug["ico"])) { echo "<i class='ra ".$aug["ico"]."'></i>"; } else { echo "<i class='".$charIco."'></i>"; } ?>
+                </div>
+                <?php $augpos+=30; ?>
+            @endforeach
             <div class="col-xs-12"> 
                 <div class="row"> 
                     <div class="col-xs-12">
@@ -307,15 +367,16 @@
             <div class="col-xs-12">
                 <ul class="skill-args">
                     @foreach ($abilityaug as $aug)
-                        <li class="aug {{ $charname }}">
-                            <i class="fa fa-superpowers" aria-hidden="true" 
-                                style="position: absolute;
-                                    font-size: 20px;
-                                    margin-top: 0px;
-                                    margin-left: -1px;
-                                    opacity: 0.5;
-                                    color: {{ $charColorSub }}"></i>
-                            <i class="{{ $charIco }}" aria-hidden="true"></i>
+                        <?php $augname = strtolower($aug['name']);
+                            $augname = str_replace(" ","-",$augname);
+                            $augname = str_replace(".","",$augname);
+                            $augname = str_replace(",","",$augname);
+                            $augname = str_replace("'","",$augname);
+                            $augname = str_replace("!","",$augname);
+                            $augname = str_replace("?","",$augname);
+                            $augname = str_replace("&","",$augname);  ?>
+                        <li id="aug-{{ $augname }}" class="aug {{ $charname }}">
+                            <?php if(isset($aug["ico"])) { echo "<i class='ra ".$aug["ico"]."'></i>"; } else { echo "<i class='".$charIco."'></i>"; } ?>
                             <b>{{ $aug['name'] }}: </b>
                             <?php
                                 $des = explode("|", $aug['des']); 
@@ -347,4 +408,48 @@
         </div>
     </div>
 @endforeach
+
+<div class="skill-augs">
+    Augment Points: <span id="aug-points"><i class="fa fa-eercast"></i></span>
+</div>
+
 <!-- </div> -->
+
+<script type="text/javascript">
+    var activeAugs = 10;
+    function showaug(augname, sk) {
+        if (activeAugs > 0) {
+            if($('#btn-'+augname).hasClass("active")) { 
+                activeAugs++;
+                $('#btn-'+augname).removeClass("active"); 
+                $('#aug-points').html(activeAugs); 
+            } else { 
+                activeAugs--; 
+                $('#btn-'+augname).addClass("active");
+                $('#aug-points').html(activeAugs);  
+            }
+
+            $('#'+augname).slideToggle(300, function() {
+                skiTop(); skiBase(); skiBot();
+                // $('.'+sk).slideToggle(300);
+            });
+
+            $('.skill-augs').removeClass("error");
+        } else if ($('#btn-'+augname).hasClass("active")) {
+            activeAugs++;
+            $('#btn-'+augname).removeClass("active"); 
+            $('#aug-points').html(activeAugs);  
+            
+            $('#'+augname).slideToggle(300, function() {
+                skiTop(); skiBase(); skiBot();
+                // $('.'+sk).slideToggle(300);
+            });
+
+            $('.skill-augs').removeClass("error");
+        }
+
+        if(activeAugs==0) {
+            $('.skill-augs').addClass("error");
+        } 
+    }
+</script>

@@ -197,7 +197,7 @@
                 @foreach ($mirLogs as $log)
                     <?php if($yearbr>$log['y']) { $yearbr=$log['y']; echo '<div class="year-div">'.$yearbr.'</div>'; } ?>
                     <?php $ordlink = strtolower($log['ord']); if($ordlink=='moon') $ordlink = 'djerick'; ?>
-                    <a href="/mirrorplane/{{$ordlink}}?cts={{$log['logn']}}">
+                    <a href="/mirrorplane/profile/{{$ordlink}}?cts={{$log['logn']}}">
                         @foreach ($mirChars as $char)
                             @if ($log['ord']==$char['name'])
                                 <li id="{{ $char['name'] }}" name="{{ $log['name']  }}" class="li-hvr">
@@ -303,7 +303,7 @@
                                 }
                             }
                         ?>
-                        <a href="/mirrorplane/{{$charlink}}">
+                        <a href="/mirrorplane/profile/{{$charlink}}">
                             <li id="{{ $char['name'] }}" class="li-hvr">
                                 <div class="char-hvr">
                                     @if($charyr>0) <b class="capitalize">{{ $charin }}:</b> <br>{{ $charyr }} | {{ $charyr-$char['year'] }}<br> @endif
@@ -343,7 +343,7 @@
                                 $charico="fa fa-user"; 
                                 if($char['ico']!='') $charico=$char['ico'];  
                             ?>
-                            <a href="/mirrorplane/{{$charlink}}">
+                            <a href="/mirrorplane/profile{{$charlink}}">
                                 <li id="{{ $char['name'] }}" class="li-hvr">
                                     <b class="col-xs-8 col-xs-offset-1 capitalize"><i class="{{ $charico }}"></i> {{ $char['name'] }} {{ $char['sur'] }}</b>
                                     <span class="col-xs-3 right">
@@ -371,7 +371,7 @@
                                         $charlink = strtolower($char['name']);
                                         if ($char['name']=='moon') $charlink = 'djerick';
                                     ?>
-                                    <a href="/mirrorplane/{{$charlink}}">
+                                    <a href="/mirrorplane/profile/{{$charlink}}">
                                         <li id="{{ $char['name'] }}" class="li-hvr">
                                             <b class="col-xs-11 col-xs-offset-1 capitalize"><i class="{{ $charico }}"></i> {{ $char['name'] }} {{ $char['sur'] }}</b>
                                         </li>
@@ -403,27 +403,27 @@
             // alert($(this).val()); 
 
             var searchq = $(this).val().toLowerCase();
-            $('#log-list a li').hide();
+            $('#log-list a li').fadeOut();
 
             if($(this).val().indexOf('+') >= 0) {
                 var searchq = searchq.split('+');
                 for (var i=0; i<searchq.length; i++) {
                     $('#log-list a li').each(function() {
                         if(this.id.toLowerCase().indexOf(searchq[i]) >= 0) {
-                            $(this).show();
+                            $(this).slideDown();
                         }
                         if($(this).attr('name').toLowerCase().indexOf(searchq[i]) >= 0) {
-                            $(this).show();
+                            $(this).slideDown();
                         }
                     });
                 }
             } else {
                 $('#log-list a li').each(function() {
                     if(this.id.toLowerCase().indexOf(searchq) >= 0) {
-                        $(this).show();
+                        $(this).slideDown();
                     }
                     if($(this).attr('name').toLowerCase().indexOf(searchq) >= 0) {
-                        $(this).show();
+                        $(this).slideDown();
                     }
                 });
             }

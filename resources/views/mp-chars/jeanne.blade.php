@@ -86,10 +86,10 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charpriaug = array (
-			array ('name' => "Void Strike",
+			array ('name' => "Void Strike", "ico" => "ra-blade-bite",
 				'des'=>"A hit with a Void Door underneath the target will cause a 1.5 second |stun|."),
-			array ('name' => "Armor Breaker",
-				'des'=>"Jeanne's attack now removes every |fortify| buffs from her targets."), 
+			array ('name' => "Armor Breaker", "ico" => "ra-broken-shield",
+				'des'=>"Jeanne's attack now removes every physical |fortify| buffs from her targets."), 
 			);
 		// ------------------------------------------------------------ //
 		// SECONDARY
@@ -113,9 +113,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsecaug = array (
-			array ('name' => "Molinetto",
+			array ('name' => "Molinetto", "ico" => "ra-spinning-sword",
 				'des'=>"If surrounded by more than one enemy, Jeanne performs a circular True Strike which affects all nearby enemy units while dashing."),
-			array ('name' => "Riposte",
+			array ('name' => "Riposte", "ico" => "ra-divert",
 				'des'=>"If Jeanne hasn't attack or damaged for 5 seconds, allows her to quicky parry the next incoming direct melee attack and respond with a True Strike. Only applies if Jeanne is facing the attacker."), 
 			);
 
@@ -138,13 +138,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "Taglio",
+			array ('name' => "Taglio",  "ico" => "ra-dripping-blade",
 				'des'=>"When switching places with an enemy, Jeanne clips in a cut which damages the target for 100% physical damage while also inflicting |bleed|-ing for 2 seconds."),
-			array ('name' => "Trovar di Spada",
+			array ('name' => "Trovar di Spada",  "ico" => "ra-crossed-swords",
 				'des'=>"When affected by a |fortify| buff, switching places with an enemy is replaced by teleporting both into the middle of their positions, allowing Jeanne to inflict a 1.5 second |stun| on the target."),
-			array ('name' => "Tactical Minds",
+			array ('name' => "Tactical Minds",  "ico" => "ra-beer",
 				'des'=>"Increases range to 900 and reduces cast time to 0.5 seconds."),
-			array ('name' => "Cavazione",
+			array ('name' => "Cavazione",  "ico" => "ra-cycle",
 				'des'=>"Switching with an enemy gives Jeanne a 30% |partial-immunity| for 5 seconds."), 
 			);
 		// ------------------------------------------------------------ //
@@ -166,13 +166,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "Coup de Grace",
+			array ('name' => "Coup de Grace", "ico" => "ra-scythe",
 				'des'=>"|root|-ing a opponent under 20% of their maximum health will cause them to take damage and die within the duration of the |root|."),
-			array ('name' => "Eye Gouging",
+			array ('name' => "Eye Gouging", "ico" => "ra-bleeding-eye",
 				'des'=>"Causes Void Root to inflict |blind| for 2 seconds."),
-			array ('name' => "Dark Matter",
+			array ('name' => "Dark Matter", "ico" => "ra-broken-skull",
 				'des'=>"Catching more than 2 enemy units with Void Root replenishes 1 charge of Void Door."),			
-			array ('name' => "Root Door",
+			array ('name' => "Root Door", "ico" => "ra-arena",
 				'des'=>"Allows Jeanne to use any |root|-ed enemies as Void Doors. Removes the |root| effect if used and does not activates other Void Door effects."), 
 			);
 		// ------------------------------------------------------------ //
@@ -195,13 +195,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
-			array ('name' => "Team Player",
+			array ('name' => "Team Player", "ico" => "ra-all-for-one",
 				'des'=>"Having a nearby allied unit doubles Void Door's recharge rate."),
-			array ('name' => "prioritization",
+			array ('name' => "Prioritization", "ico" => "ra-targeted",
 				'des'=>"Causes Jeanne's attacks to inflict 10% |frangible|-ility for 2 seconds, whenever an allied unit is nearby."),
-			array ('name' => "En Garde",
+			array ('name' => "En Garde", "ico" => "ra-eye-shield",
 				'des'=>"Gives Jeanne and all nearby allies a 20% physical and 15% mystical |fortify| upon first encountering an enemy. Lasts for 5 seconds."),
-			array ('name' => "La Destreza",
+			array ('name' => "La Destreza", "ico" => "ra-player-teleport",
 				'des'=>"Adds a 15% movement speed and 5% attack rate buff to Leadership."),  
 			);
 
@@ -223,9 +223,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charultaug = array (
-			array ('name' => "First Blood",
+			array ('name' => "First Blood", "ico" => "ra-bleeding-hearts",
 				'des'=>"Whoever gets damaged first whilst entering the Duel will be affected by a 40% |frangible|-ility which lasts for the whole Duel."),
-			array ('name' => "The Victor Goes Out",
+			array ('name' => "The Victor Goes Out", "ico" => "ra-trophy",
 				'des'=>"Grants whoever wins the Duel with 50% physical and mystical |amplify| for 10 seconds. Does not take effect if no one dies/wins in the Duel."), 
 			);
 		// ------------------------------------------------------------ //
@@ -247,7 +247,7 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "Dark Bite",
+			array ('name' => "Dark Bite", "ico" => "ra-spider-face",
 				'des'=>"Closing a Void Door, either by using it or ending it's duration, will cause it to inflict a 30% |slow| to all nearby enemy units for 3 seconds."),
 			array ('name' => "Thinking With Portals",
 				'des'=>"Opening a Void Door inflicts |expose| to all nearby enemy units for 3 seconds."), 

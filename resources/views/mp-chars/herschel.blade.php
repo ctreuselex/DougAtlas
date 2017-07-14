@@ -85,9 +85,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charpriaug = array (
-			array ('name' => "Partially Phased",
+			array ('name' => "Partially Phased", "ico" => "ra-zebra-shield",
 				'des'=>" Using Sweep buffs Herschel with a 15% |partial-immunity| for 1 second."),
-			array ('name' => "Out of Thin Air",
+			array ('name' => "Out of Thin Air", "ico" => "ra-incense",
 				'des'=>"Every third swing with Sweep generates 1 myst arrow charge for Starshooter which deals additional 60% mystical damage"), 
 			);
 		// ------------------------------------------------------------ //
@@ -112,7 +112,7 @@
 		$charsecaug = array (
 			array ('name' => "Masksmanship",
 				'des'=>"Increases Starshooter's critical multiplier by 1."),
-			array ('name' => "Incapacitator",
+			array ('name' => "Incapacitator", "ico" => "ra-dripping-blade",
 				'des'=>"Starshooter's arrows causes a 20% |slow| for 2 seconds whenever she lands a critical hit. Reduces Starshooter's recharge rate by 10."), 
 			);
 
@@ -139,13 +139,13 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk1aug = array (
-			array ('name' => "Flash Quick",
+			array ('name' => "Flash Quick",  "ico" => "ra-broadhead-arrow",
 				'des'=>"Removes the delay it takes for the arrows to hit the targets' position."),
-			array ('name' => "Helm Piercing",
+			array ('name' => "Helm Piercing",  "ico" => "ra-cracked-helm",
 				'des'=>"Causes Arrow Storm to inflict |expose| on units hit for 3 seconds."),
-			array ('name' => "Shooting Entertainment",
+			array ('name' => "Shooting Entertainment",  "ico" => "ra-player-shot",
 				'des'=>"Landing a critical hit with Starshooter decreases Arrow Storm's cooldown by 2 seconds."),
-			array ('name' => "Second Round",
+			array ('name' => "Second Round",  "ico" => "ra-arrow-flights",
 				'des'=>"Casting Arrow Storm is now followed by another wave after a 1 second delay. Second Round does not drain any arrow charges."), 
 			);
 		// ------------------------------------------------------------ //
@@ -168,13 +168,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "Putrefaction",
+			array ('name' => "Putrefaction", "ico" => "ra-circular-saw",
 				'des'=>"Causes Uncloud to damage enemy units equal to 15% of their remaining Myst. Deals indirect mystical damage."),
-			array ('name' => "Unarmored",
+			array ('name' => "Unarmored", "ico" => "ra-broken-shield",
 				'des'=>"Inflicts a mystical |break| which reduces the affected units' myst resistance to 0%."),
-			array ('name' => "Panorama",
+			array ('name' => "Panorama", "ico" => "ra-explosion",
 				'des'=>"Increases Uncloud's Area of Effect to 600."),
-			array ('name' => "Initiation",
+			array ('name' => "Initiation", "ico" => "ra-arrow-cluster",
 				'des'=>"Increases the next attack by Sweep or Starshooter by 5% per units hit by Uncloud. Lasts for 4 seconds if not used."), 
 			);
 		// ------------------------------------------------------------ //
@@ -198,13 +198,13 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk3aug = array (
-			array ('name' => "Quick Return",
+			array ('name' => "Quick Return", "ico" => "ra-chemical-arrow",
 				'des'=>"Casting Myst Propulsion generates a myst arrow charge for Starshooter which deals additional 60% myst damage."),
-			array ('name' => "Stupefy",
+			array ('name' => "Stupefy", "ico" => "ra-decapitation",
 				'des'=>"Enemy units hit by Myst Propulsion will be |stun|-ned for 2 seconds."),
-			array ('name' => "Elusive",
+			array ('name' => "Elusive", "ico" => "ra-player-dodge",
 				'des'=>"Applies a 40% |haste| for 2 seconds after landing."),
-			array ('name' => "Spinnerette",
+			array ('name' => "Spinnerette", "ico" => "ra-regeneration",
 				'des'=>"Herschel swings her blade which damages all enemy units around her during her jump for 100% of Sweep's damage."),  
 			);
 
@@ -231,9 +231,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charultaug = array (
-			array ('name' => "Devoid",
+			array ('name' => "Devoid", "ico" => "ra-death-skull",
 				'des'=>"Ethereal Shot now casts Uncloud along its path. Increases its Myst cost to 230."),
-			array ('name' => "Penetrating Arrow",
+			array ('name' => "Penetrating Arrow", "ico" => "ra-thorn-arrow",
 				'des'=>"Allow Ethereal Shot to pass through walls while also increasing it's damage by 15%. Increases its Myst cost to 230."), 
 			);
 		// ------------------------------------------------------------ //
@@ -258,9 +258,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "Fast Transition",
+			array ('name' => "Fast Transition", "ico" => "ra-spawn-node",
 				'des'=>"Removes Phase's cooldown and Myst cost."),
-			array ('name' => "Myst Amplification",
+			array ('name' => "Myst Amplification", "ico" => "ra-targeted",
 				'des'=>"Increases Herschel's Mystical damage by 40% and reduces Myst resistance further more by 20% whenever she is on Phase."), 
 			);
 	?>

@@ -87,9 +87,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charpriaug = array (
-			array ('name' => "Bouncy Blade",
+			array ('name' => "Bouncy Blade", 'ico' => "ra-divert",
 				'des'=>"Glaives now bounces trice to the closest enemy upon hitting its first target. Resets duration and decreases damage by 15% per bounce."),
-			array ('name' => "Twin Blades",
+			array ('name' => "Twin Blades", 'ico' => "ra-doubled",
 				'des'=>"Seline now throws two glaives per throw. Decreases damage by 20% per glaive."), 
 			);
 		// ------------------------------------------------------------ //
@@ -112,9 +112,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsecaug = array (
-			array ('name' => "Femme Fatale",
+			array ('name' => "Femme Fatale", 'ico' => "ra-bleeding-hearts",
 				'des'=>"Increases Combat Heel's critical multiplier by 1 and inflicts |expose| for 2 seconds for every 3 consecutive hits."),
-			array ('name' => "Heel Blades",
+			array ('name' => "Heel Blades", 'ico' => "ra-boot-stomp",
 				'des'=>"Increases Combat Heel's damage by 25% and range to 120 radius cone."), 
 			);
 
@@ -139,13 +139,13 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk1aug = array (
-			array ('name' => "Twist It",
+			array ('name' => "Twist It", 'ico' => "ra-circular-saw",
 				'des'=>"Increases Lightning Vortex's damage by 40% and Myst cost to 140."),
-			array ('name' => "Hurricane",
+			array ('name' => "Hurricane", 'ico' => "ra-lightning-storm",
 				'des'=>"Adds 3 seconds to Lightning Vortex's duration and 75 to area of effect."),
-			array ('name' => "Leg Split",
+			array ('name' => "Leg Split", 'ico' => "ra-bear-trap",
 				'des'=>"Units affected by Lightning Vortex will be affected by a 45% |slow|."),
-			array ('name' => "Disco Panic",
+			array ('name' => "Disco Panic", 'ico' => "ra-falling",
 				'des'=>"Units affected by Lightning Vortex will be |myst-lock|-ed."), 
 			);
 		// ------------------------------------------------------------ //
@@ -168,13 +168,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "Shock From Pain",
+			array ('name' => "Shock From Pain", 'ico' => "ra-lightning-trio",
 				'des'=>"Units are |disarm|-ed by Static Discharge. Increases cooldown to 4."),
-			array ('name' => "Not A Sadist",
+			array ('name' => "Not A Sadist", 'ico' => "ra-glass-heart",
 				'des'=>"Prevents allied units from being damaged and |disarm|-ed but still get |purge|-d."),
-			array ('name' => "One Is Enough",
+			array ('name' => "One Is Enough", 'ico' => "ra-double-team",
 				'des'=>"Static Discharge now instantly destroys enemy |clone|-s."),
-			array ('name' => "No Refunds, No Bonuses",
+			array ('name' => "No Refunds, No Bonuses", 'ico' => "ra-player-pain",
 				'des'=>"Static Discharge's damage will not heal back while also inflicting |myst-leak| for 3 seconds."), 
 			);
 		// ------------------------------------------------------------ //
@@ -198,13 +198,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
-			array ('name' => "Intimate And Up Close",
+			array ('name' => "Intimate And Up Close", 'ico' => "ra-tentacle",
 				'des'=>"Grants Seline a 45% |frenzy| for 4 seconds after using Spark."),
-			array ('name' => "Your Strength",
+			array ('name' => "Your Strength", 'ico' => "ra-ball",
 				'des'=>"Spark absorbs 35% physical damage from the target and gives it to Seline for 5 seconds. Does not work on allies."),
-			array ('name' => "Squeezed Tight",
+			array ('name' => "Squeezed Tight", 'ico' => "ra-bone-bite",
 				'des'=>"Causes |expose| and a 30% |slow| for 3 seconds."),
-			array ('name' => "Early Climax",
+			array ('name' => "Early Climax", 'ico' => "ra-bomb-explosion",
 				'des'=>"Increases Spark's damage by 35%."),  
 			);
 
@@ -231,7 +231,7 @@
 		$charultaug = array (
 			array ('name' => "No Need To Flatter",
 				'des'=>"Allows Seline to remain in Mist Cloud's |invisible|-lity and applies a 15% |partial-immunity| on her while channeling Lightning Storm."),
-			array ('name' => "Missionary",
+			array ('name' => "Missionary", 'ico' => "ra-hospital-cross",
 				'des'=>"Every 2 seconds while channeling Lightning Storm, every unit in the area of Lightning Storm will be |expose|-d for 1 second."), 
 			);
 		// ------------------------------------------------------------ //
@@ -254,9 +254,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "Extra Thick",
+			array ('name' => "Extra Thick", 'ico' => "ra-spiked-mace",
 				'des'=>"Causes |invisible|-lity to return after 1 second after being broken as long as it does not exceed Mist Cloud's duration."),
-			array ('name' => "Extra Long.",
+			array ('name' => "Extra Long.", 'ico' => "ra-relic-blade",
 				'des'=>"Increases Mist Cloud's duration to 14 seconds."), 
 			);
 	?>
