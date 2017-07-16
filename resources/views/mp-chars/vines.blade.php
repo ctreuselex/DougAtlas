@@ -90,9 +90,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charpriaug = array (
-			array ('name' => "Double Coating",
+			array ('name' => "Double Coating", 'ico' => "ra-burning-book",
 				'des'=>"Increases damage dealt by the stroke by 40% if the unit is covered in that color's related status effect."),
-			array ('name' => "Girl With The Purple Hair",
+			array ('name' => "Girl With The Purple Hair", 'ico' => "ra-focused-lightning",
 				'des'=>"Adds a purple stroke, which has a 20% chance to |thundershock|."), 
 			);
 		// ------------------------------------------------------------ //
@@ -115,9 +115,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsecaug = array (
-			array ('name' => "Heavy Impact",
+			array ('name' => "Heavy Impact", 'ico' => "ra-bomb-explosion",
 				'des'=>"Doubles the damage dealt by Grand Line."),
-			array ('name' => "Lasting Impact",
+			array ('name' => "Lasting Impact", 'ico' => "ra-suckered-tentacle",
 				'des'=>"Causes Grand Line to leave a trail of color on the ground which lasts of 3 seconds and inflicts it's respective status effect on enemies that stand on it."), 
 			);
 
@@ -142,13 +142,13 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk1aug = array (
-			array ('name' => "Around The World",
+			array ('name' => "Around The World", 'ico' => "ra-compass",
 				'des'=>"Increases Freestroke Spin area of effect to 350."),
-			array ('name' => "Rainbow Of Doom",
+			array ('name' => "Rainbow Of Doom", 'ico' => "ra-kaleidoscope",
 				'des'=>"Freestroke Spin now uses all colors of strokes instead of using the last color of Freestroke. Decreases Spin duration to 2 seconds."),
-			array ('name' => "Open For Business",
+			array ('name' => "Open For Business", 'ico' => "ra-wooden-sign",
 				'des'=>"Enemies hit by the Freestroke Spin will also be |expose|-ed."),
-			array ('name' => "Refund Dialog",
+			array ('name' => "Refund Dialog", 'ico' => "ra-speech-bubbles",
 				'des'=>"Vines gets back the Myst she used if the counter is not triggered."), 
 			);
 		// ------------------------------------------------------------ //
@@ -171,13 +171,13 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk2aug = array (
-			array ('name' => "Paint Phalanx",
+			array ('name' => "Paint Phalanx", 'ico' => "ra-round-shield",
 				'des'=>"Leaves a block of paint after a successful counter which prevents incoming projectiles for 3 seconds."),
-			array ('name' => "My Favorite Color",
+			array ('name' => "My Favorite Color", 'ico' => "ra-mass-driver",
 				'des'=>"All three counter strikes now uses the same color from the last color of Freestroke."), 
-			array ('name' => "Two More For Thanks",
+			array ('name' => "Two More For Thanks", 'ico' => "ra-kitchen-knives",
 				'des'=>"Adds two more strikes to the counter."),
-			array ('name' => "The Excitement",
+			array ('name' => "The Excitement", 'ico' => "ra-arcane-mask",
 				'des'=>"Gives Vines a 20% |haste| for 3 seconds when she succesfully counters with Splash Response."), 
 			);
 		// ------------------------------------------------------------ //
@@ -200,14 +200,14 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk3aug = array (
-			array ('name' => "Burn It Down",
+			array ('name' => "Burn It Down", 'ico' => "ra-burning-embers",
 				'des'=>"Increases inflicted |burn| duration to 5s."),
-			array ('name' => "Familiar Taste Of Poison",
+			array ('name' => "Familiar Taste Of Poison", 'ico' => "ra-blade-bite",
 				'des'=>"Increases damage by |poison| to 70% of Mystical Damage"),
-			array ('name' => "Fortress Of Solitude",
+			array ('name' => "Fortress Of Solitude", 'ico' => "ra-cold-heart",
 				'des'=>"Increases chance of inflicting |freeze| to 50%."),
-			array ('name' => "Ride The Lightning",
-				'des'=>"Increases chance of inflicting |thundershock| to 30%."), 
+			array ('name' => "Ride The Lightning", 'ico' => "ra-lightning-storm",
+				'des'=>"Increases chance of inflicting |thundershock| to 30%. Have no effect without 'Girl With The Purple Hair' augment."), 
 			);
 
 		// ------------------------------------------------------------ //
@@ -230,9 +230,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charultaug = array (
-			array ('name' => "Multi-Color",
+			array ('name' => "Multi-Color", 'ico' => "ra-sunbeams",
 				'des'=>"Allows the cannon to randomly shoots all kinds of different colored strokes on every hit instead of just one. Increases cast time to 2 seconds."),
-			array ('name' => "Concentration",
+			array ('name' => "Concentration", 'ico' => "ra-fire-breath",
 				'des'=>"The cannon now releases three Freestroke strikes for every hit instead of two."), 
 			);
 		// ------------------------------------------------------------ //
@@ -254,9 +254,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charextaug = array (
-			array ('name' => "Voidspell",
+			array ('name' => "Voidspell", 'ico' => "ra-gem-pendant",
 				'des'=>"White Space now also applies a 3 second |immunity| after it disperses or whenever a unit leaves its area."),
-			array ('name' => "Voidstroke",
+			array ('name' => "Voidstroke", 'ico' => "ra-dragon-breath",
 				'des'=>"Creates a white stroke for Freestroke which then |purge|-s enemy units it hits. Can be applied to Vine's other abilities, it is however, ignored, unless White Space is active."), 
 			);
 	?>

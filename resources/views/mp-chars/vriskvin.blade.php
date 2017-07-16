@@ -88,9 +88,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charpriaug = array (
-			array ('name' => "Psychic Frenzy",
+			array ('name' => "Psychic Frenzy", 'ico'=>'ra-brain-freeze',
 				'des'=>"For every third swing, Myst Hammer deals additional 125% mixed damage and reduces 20 seconds off Psyblade's recharge time."),
-			array ('name' => "Resistance Is Futile",
+			array ('name' => "You Have No Chance", 'ico'=>'ra-mining-diamonds',
 				'des'=>"Myst Hammer inflicts 2% |frangible| per hit. Stacks 5 times and lasts for 5 seconds."), 
 			);
 		// ------------------------------------------------------------ //
@@ -118,9 +118,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsecaug = array (
-			array ('name' => "Denser Pools",
+			array ('name' => "Denser Pools", 'ico'=>'ra-site',
 				'des'=>"Increases each Psyblade's Myst Pool by 100% of Vriskvin's mixed damage."),
-			array ('name' => "Concentrated Blades",
+			array ('name' => "Concentrated Blades", 'ico'=>'ra-circular-saw',
 				'des'=>"Vriskvin instantly gives 100 Myst to Psyblades upon creation. Increases Myst Cost to 100."), 
 			);
 
@@ -146,13 +146,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "Kinetic Energy",
+			array ('name' => "Kinetic Energy", 'ico'=>'ra-bomb-explosion',
 				'des'=>"Prevents Psyblades from losing Myst by being used by Blade Rush."),
-			array ('name' => "Sharp Conversion",
+			array ('name' => "Sharp Conversion", 'ico'=>'ra-knife',
 				'des'=>"Increases Psyblade's Damage to 50% of Psyblade's Myst."),
 			array ('name' => "In Clock's Hand",
 				'des'=>"Enemy units hit by Blade Rush will be |pause|-d for 1 second."),
-			array ('name' => "Soul Penetration",
+			array ('name' => "Soul Penetration", 'ico'=>'ra-blade-bite',
 				'des'=>"Enemy units hit by Blade Rush will be inflicted by 10% |frangible| for 3 seconds,"), 
 			);
 		// ------------------------------------------------------------ //
@@ -178,13 +178,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "Defying Conservation of Energy",
+			array ('name' => "Defying Conservation of Energy", 'ico'=>'ra-explosion',
 				'des'=>"Psychic Burst explosions or implosions now deal 30% more damage."),
-			array ('name' => "Chain Reaction",
+			array ('name' => "Chain Reaction", 'ico'=>'ra-crystals',
 				'des'=>"Psyblades caught within the explosion or implosion of another Psyblade will also explode or implode after a 0.50 second delay."),
-			array ('name' => "Myst Savings",
+			array ('name' => "Myst Savings", 'ico'=>'ra-droplet-splash',
 				'des'=>"Psyblades' explosions or implosions will replenish Vriskvin and nearby allied units' Myst by 15% of the Psyblades' Myst"),
-			array ('name' => "Implosions Are Cooler",
+			array ('name' => "Implosions Are Cooler", 'ico'=>'ra-implosion',
 				'des'=>"Psychic Burst now causes Psyblades to implode after a 2 seconds delay dealing half the normal damage but |pause|-ing enemy units for 1.50 seconds"), 
 			);
 		// ------------------------------------------------------------ //
@@ -208,13 +208,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
-			array ('name' => "Efficiency",
+			array ('name' => "Efficiency", 'ico'=>'ra-reactor',
 				'des'=>"Reduces Myst Cost to 250 and Cooldown to 50 seconds."),
-			array ('name' => "Safe Distance",
+			array ('name' => "Safe Distance", 'ico'=>'ra-targeted',
 				'des'=>"Allows Psychic Rift to be cast from afar with a range of 650."),
-			array ('name' => "Point Of Singularity",
+			array ('name' => "Point Of Singularity", 'ico'=>'ra-radial-balance',
 				'des'=>"Psychic Rift now also sucks enemy units and inflicts 80% |slow| for 2 seconds after the rift. Reduces area of esffect to 300."),
-			array ('name' => "Assiduity",
+			array ('name' => "Assiduity", 'ico'=>'ra-circle-of-circles',
 				'des'=>"Psyblades affected by Psychic Rift will instantly have their Myst Pool at maximum. Increases duration to 2 seconds."),  
 			);
 
@@ -238,9 +238,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charultaug = array (
-			array ('name' => "Friendly Tap",
+			array ('name' => "Friendly Tap", 'ico'=>'ra-unplugged',
 				'des'=>"Prevents Time Tap from affecting allied units."),
-			array ('name' => "Speed Of Light",
+			array ('name' => "Speed Of Light", 'ico'=>'ra-fast-ship',
 				'des'=>"Allows Vriskvin to move freely after casting Time Tap without the need to channel it. Decreases duration to 3 seconds"), 
 			);
 		// ------------------------------------------------------------ //
@@ -264,9 +264,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "Proximity Warning",
+			array ('name' => "Proximity Warning", 'ico'=>'ra-ship-emblem',
 				'des'=>"Causes all nearby enemy units within 200 radius of Vriskvin and the source to be |pause|-ed when triggered."),
-			array ('name' => "Anti Myst Manipulation Law",
+			array ('name' => "Anti Myst Manipulation Law", 'ico'=>'ra-barrier',
 				'des'=>"Inflicts a 40% mystical |weaken| for 3 seconds upon triggering."), 
 			);
 	?>

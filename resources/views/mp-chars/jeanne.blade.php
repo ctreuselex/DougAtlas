@@ -196,7 +196,7 @@
 			);
 		$charsk3aug = array (
 			array ('name' => "Team Player", "ico" => "ra-all-for-one",
-				'des'=>"Having a nearby allied unit doubles Void Door's recharge rate."),
+				'des'=>"Having a nearby allied unit halves Void Door's recharge rate."),
 			array ('name' => "Prioritization", "ico" => "ra-targeted",
 				'des'=>"Causes Jeanne's attacks to inflict 10% |frangible|-ility for 2 seconds, whenever an allied unit is nearby."),
 			array ('name' => "En Garde", "ico" => "ra-eye-shield",

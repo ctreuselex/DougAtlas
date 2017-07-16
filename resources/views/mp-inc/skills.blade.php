@@ -155,11 +155,21 @@
         color: {{ $charColorSub }};
         font-size: 18px; }
 
+    @keyframes augLoad {
+        0% { top: -200px; }
+        35% { top: 100px; }
+        100% { top: 1000px; }
+    }
+
     .aug-anim-ski-top, .aug-anim-ski-base, .aug-anim-ski-bot {
         display: none;
         position: absolute; top: 10px; left: 10px;
-        width: 5px; height: 100px;
-        background: {{ $charColorSub }} }
+        width: 5px;
+        overflow: hidden; }
+    .anim-box {
+        position: absolute; top: 0; left: 0;
+        width: 5px; height: 200px;
+        background: {{ $charColorSub }}; }
 
     @foreach ($statusEffects as $se)
         <?php
@@ -246,7 +256,7 @@
 
     <div class="col-sm-{{ $rowdiv }}">
         <div class="skill-box {{ $rowpos }}">
-            <div class="aug-anim-{{ $rowpos }} skill-{{ $ability['sk'] }}"></div>
+            <div class="aug-anim-{{ $rowpos }} skill-{{ $ability['sk'] }}"><div class="anim-box"></div></div>
             <div class="col-xs-12">
                 <p class="skill-name" style="border-bottom: 2px solid {{ $charColor }}"> {{ $abilityprefix }} <b>{{ $ability['name'] }}</b> </p>
             </div>
@@ -422,16 +432,22 @@
             if($('#btn-'+augname).hasClass("active")) { 
                 activeAugs++;
                 $('#btn-'+augname).removeClass("active"); 
-                $('#aug-points').html(activeAugs); 
+                $('#aug-points').html(activeAugs);
             } else { 
                 activeAugs--; 
                 $('#btn-'+augname).addClass("active");
-                $('#aug-points').html(activeAugs);  
+                $('#aug-points').html(activeAugs);
+                
+                $('.'+sk).show();
+                $('.'+sk+' .anim-box').css("animation", "augLoad 2s infinite");
+                setTimeout( function() { 
+                    $('.'+sk+' .anim-box').css("animation", "");
+                    $('.'+sk).hide(); 
+                    }, 2000);   
             }
 
             $('#'+augname).slideToggle(300, function() {
                 skiTop(); skiBase(); skiBot();
-                // $('.'+sk).slideToggle(300);
             });
 
             $('.skill-augs').removeClass("error");
@@ -442,7 +458,6 @@
             
             $('#'+augname).slideToggle(300, function() {
                 skiTop(); skiBase(); skiBot();
-                // $('.'+sk).slideToggle(300);
             });
 
             $('.skill-augs').removeClass("error");

@@ -108,7 +108,7 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsecaug = array (
-			array ('name' => "Dual Core", 'ico' => "ra-site",
+			array ('name' => "Dual Core", 'ico' => "ra-honeycomb",
 				'des'=>"The tethered unit's Mystbind |shield| now make use of the their own Myst pool."),
 			array ('name' => "Over-Overcharge", 'ico' => "ra-defibrilate",
 				'des'=>"Casting Overcharge will now also cause the tethered unit to cast Overcharge but without the after effect. Over-Overcharge's total damage is added from both units then distributed."), 
