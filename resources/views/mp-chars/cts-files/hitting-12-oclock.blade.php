@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CT Audio Message Session: <span class="cts-chance"></span>, <span class="cts-vriskvin"></span>
         <br>TIME: 1696, SR 2nd Summer
         <br>
@@ -56,7 +55,6 @@
         <br><span class="cts-chance"></span>: [distant cursing]
         <br>
         <br>[<span class="cts-chance"></span> has ended the session]
-        </p>
 
         </div>
         <div class="modal-footer">

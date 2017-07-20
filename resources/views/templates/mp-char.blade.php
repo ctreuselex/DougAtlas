@@ -192,80 +192,87 @@
                     <span class="char-name">{{ $mcharNam }}</span>
                     <p>{{ $charthemes}}</p>
                 </div>
+                <div class="col-xs-6" style="padding:0;">
+                    <div class="col-xs-12 char-per"><p><b>Character</b></p><i class="{{ $charIco }}" aria-hidden="true"></i>
+                        <div class="col-xs-12">
+                            <ul class="char-logs">
+                                <!-- <li>Full Name: <b>{{ $mcharNam }}</b><span></li> -->
+                                <li>Age: <b>{{ 1699-$mcharAge }} | {{ $mcharAge }}</b></li>
+                                <!-- <li>Relatives: <b>{{ $mcharFam }}</b></li> -->
+                                <li>Home Division: 
+                                    @if ($mcharDiv == 'Luminos')
+                                        <img src="{{ url('img/lum.png') }}" width="30px">
+                                    @elseif ($mcharDiv == 'Aeros')
+                                        <img src="{{ url('img/aer.png') }}" width="30px">
+                                    @elseif ($mcharDiv == 'Mystos')
+                                        <img src="{{ url('img/mys.png') }}" width="30px">
+                                    @elseif ($mcharDiv == 'Geios')
+                                        <img src="{{ url('img/gei.png') }}" width="30px">
+                                    @endif
+                                    <b>{{ $mcharDiv }}</b>
+                                </li> <!-- Luminos | Aeros | Mystos | Geios -->
+                                <li>Affiliation: <b>{{ $mcharAff }}</b></li>
+                                <?php if(isset($mcharPos)) { ?><li>Current Rep: <b>{{ $mcharPos }}</b></li> <?php } ?>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 char-per"><p><b>Combat</b></p><i class="fa fa-gamepad" aria-hidden="true"></i>
+                        <div class="col-xs-12">
+                            <ul class="char-logs">
+                                <li>Material Affinity: <b>{{ $mcharAft }}</b></li> <!-- Fire | Water | Air | Electricity | Etc... -->
+                                <li>MM Style: <b>{{ $mcharSty }}</b></li> <!-- Armagi | Exnihille | Maximo | Cirkunesi -->
+                                <li>Weapon: <b>{{ $mcharWoc }}</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 char-per"><p><b>CTs Logs</b></p><i class="fa fa-inbox" aria-hidden="true"></i>
+                        <div class="col-xs-12">
+                            <ul class="char-logs per">
+                                <?php $ctsnum = 1; ?>
+                                @foreach ($mirLogs as $logs)
+                                    @if ($logs['ord']==$charname)
+                                        <?php 
+                                            $datatar = strtolower($logs['name']);
+                                            $datatar = str_replace(" ","-",$datatar);
+                                            $datatar = str_replace(",","",$datatar);
+                                            $datatar = str_replace("'","",$datatar);
+                                            $datatar = str_replace("!","",$datatar);
+                                            $datatar = str_replace("?","",$datatar);
+                                        ?>
+
+                                        <a href="" type="button" id="cts-{{ $ctsnum }}" data-toggle="modal" data-target="#{{ $datatar }}"><li>
+                                            <span class="col-xs-2" style="padding: 0;">{{ $logs['y'] }}</span>
+                                            <b class="col-xs-10 log-name">{{ $logs['name'] }}</b>
+                                        </li></a>
+
+                                        @include("mp-chars/cts-files/{$datatar}")
+                                        <?php $ctsnum++; ?>
+                                    @endif
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 @include('mp-inc/stats')
             </div>
     	</div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-xs-12">
+                
+                </div>
+            </div>
+        </div> -->
+        <div class="clear"></div>
 
         <div class="col-xs-12">
-            <div style="padding: 5px; color: white;
+            <div style="padding: 5px; margin-bottom: 5px; color: white;
                 background: {{ $charColor }};
                 background: -moz-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
                 background: -webkit-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
                 background: linear-gradient(to right, {{ $charColor }} 0%, {{ $charColorSub }} 100%); 
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ $charColor }}', endColorstr=' {{ $charColorSub }}',GradientType=1 );"> <center>{{ $charColor }} | <b>COLOR</b> SCHEME | {{ $charColorSub }}</center>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="col-xs-4 char-per"><p><b>CTs Logs</b></p><i class="fa fa-inbox" aria-hidden="true"></i>
-                    <div class="col-xs-12">
-                        <ul class="char-logs per">
-                            <?php $ctsnum = 1; ?>
-                            @foreach ($mirLogs as $logs)
-                                @if ($logs['ord']==$charname)
-                                    <?php 
-                                        $datatar = strtolower($logs['name']);
-                                        $datatar = str_replace(" ","-",$datatar);
-                                        $datatar = str_replace(",","",$datatar);
-                                        $datatar = str_replace("'","",$datatar);
-                                        $datatar = str_replace("!","",$datatar);
-                                        $datatar = str_replace("?","",$datatar);
-                                    ?>
-
-                                    <a href="" type="button" id="cts-{{ $ctsnum }}" data-toggle="modal" data-target="#{{ $datatar }}"><li>
-                                        <span class="col-xs-2" style="padding: 0;">{{ $logs['y'] }}</span>
-                                        <b class="col-xs-10 log-name">{{ $logs['name'] }}</b>
-                                    </li></a>
-
-                                    @include("mp-chars/cts-files/{$datatar}")
-                                    <?php $ctsnum++; ?>
-                                @endif
-                            @endforeach
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-4 char-per"><p><b>Character</b></p><i class="{{ $charIco }}" aria-hidden="true"></i>
-                    <div class="col-xs-12">
-                        <ul class="char-logs">
-                            <li>Full Name: <b>{{ $mcharNam }}</b><span></li>
-                            <li>Age: <b>{{ 1699-$mcharAge }} | {{ $mcharAge }}</b></li>
-                            <!-- <li>Relatives: <b>{{ $mcharFam }}</b></li> -->
-                            <li>Home Division: 
-                                @if ($mcharDiv == 'Luminos')
-                                    <img src="{{ url('img/lum.png') }}" width="30px">
-                                @elseif ($mcharDiv == 'Aeros')
-                                    <img src="{{ url('img/aer.png') }}" width="30px">
-                                @elseif ($mcharDiv == 'Mystos')
-                                    <img src="{{ url('img/mys.png') }}" width="30px">
-                                @elseif ($mcharDiv == 'Geios')
-                                    <img src="{{ url('img/gei.png') }}" width="30px">
-                                @endif
-                                <b>{{ $mcharDiv }}</b>
-                            </li> <!-- Luminos | Aeros | Mystos | Geios -->
-                            <li>Affiliation: <b>{{ $mcharAff }}</b></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-4 char-per"><p><b>Combat</b></p><i class="fa fa-gamepad" aria-hidden="true"></i>
-                    <div class="col-xs-12">
-                        <ul class="char-logs">
-                            <li>Material Affinity: <b>{{ $mcharAft }}</b></li> <!-- Fire | Water | Air | Electricity | Etc... -->
-                            <li>Myst Manipulation Style: <b>{{ $mcharSty }}</b></li> <!-- Armagi | Exnihille | Maximo | Cirkunesi -->
-                            <li>Weapon of Choice: <b>{{ $mcharWoc }}</b></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
 

@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         PSYINTERVIEW RECORD NO. 183
         <br>INTERVIEWER: <span class="cts-thomas"></span>
         <br>INTERVIEWEE: Maximus Seidlitz AGE: 13
@@ -35,7 +34,6 @@
         <br>Also, a bad point? Fine. I'll deduct one point from his total score because he's too awesome to be true. Have I mentioned it's because he can make guns?
         <br>
         <br>PS. Oh man! I didn't included the word 'gun' in his report! Georgie, remind me to revise this sometime later!
-        </p>
 
         </div>
         <div class="modal-footer">

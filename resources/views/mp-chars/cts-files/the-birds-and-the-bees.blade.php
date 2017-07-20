@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Audio Message by <span class="cts-riza"></span>
         <br>TIME: 1690, SR 3rd Fall
         <br>Saved in drafts
@@ -66,8 +65,6 @@
         <br>Yeah. And it smelled like rotten corpses.
         <br>All this really reminds me of your father!
         <br>I'm under qualified for all this shit!
-        </p>
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

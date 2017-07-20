@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CLOSING OF CORE TRANSIT ACCOUNT: <span class="cts-moon"></span>
         <br>TIME: 1696, SR 3rd Summer
         <br>REQUEST BY: <span class="cts-vriskvin"></span>
@@ -19,7 +18,6 @@
         <br>REASON #5: I'LL TRY MY BEST NOT TO MISS YOU
         <br>REASON #6: HOPEFULLY JUST SLEEPING
         <br>REASON #7: YOU'LL BE BACK. I KNOW YOU'LL BE BACK. SORRY.
-        </p>
 
         </div>
         <div class="modal-footer">

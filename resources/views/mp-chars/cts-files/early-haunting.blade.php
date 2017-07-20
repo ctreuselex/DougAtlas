@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         FORUM BOARD Title: <b>[REPORT] GHOSTS! BE AWARE!</b>
         <br>Hello Everybody,
         <br>I just want to make everyone aware of these two ghosts who has been haunting our neighborhood for the past week.
@@ -53,7 +52,6 @@
         <hr>
         I'm disappointed in all of you.
         <br><span class="cts-ivan-frm"></span> TIME: 1680, SR 16th Fall
-        </p>
 
         </div>
         <div class="modal-footer">

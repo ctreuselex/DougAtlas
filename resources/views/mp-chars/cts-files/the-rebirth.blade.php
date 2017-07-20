@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         MISSION REPORT by <span class="cts-gene"></span>
         <br>TO: <span class="cts-jon"></span>
         <br>TIME: 1666, SR 49th Spring
@@ -30,7 +29,6 @@
         <br>Well. Good luck with your new kid Gene. I already talked to the social workers so they will not give you problems with Sol and potentially loose our closest lead. Even if that lead is incredibly ridiculous. Like, a baby pointing clues? What? haha.
         <br>
         <br>PS. Also tell Mig that it is not healthy nor it is socially acceptable to feed his baby with super spicy food. And no, 'the baby seems to enjoy it' is not a valid excuse.
-        </p>
 
         </div>
         <div class="modal-footer">

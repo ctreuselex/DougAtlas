@@ -5,8 +5,7 @@
           <h5 class="modal-title" id="exampleModalLongTitle">{{ $logs['name'] }}</h5>
         </div>
         <div class="modal-body">
-          
-        <p>     
+              
         Audio Message by <span class="cts-demeter"></span>
         <br>TIME: 1693, SR 58th Summer
         <br>Saved in drafts
@@ -121,7 +120,6 @@
         <br>I really need to practice communicating with people.
         <br>
         <br>//Record Stopped
-        </p>
 
         </div>
         <div class="modal-footer">

@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         FORUM BOARD Title: <b>IM ALIVE BITCHES!</b>
         <br>Hey Everyone! Porlo here!
         <br>And yeess I'm aliveeeeee! I know there has been rumors of me being dead and enclosed in a fridge running around the cts for days, but worry no more! Becos I'm back! And I'm totally back into action! Busting theories, cracking wise phrases, and putting common sense into people's illogical logic!
@@ -69,7 +68,6 @@
         <hr>
         @theGreatMightyPorlo27 Ha! Glad they came back to haunt you.
         <br><span class="cts-lopushouse-frm"></span> TIME: 1690, SR 18th Summer
-        </p>
 
         </div>
         <div class="modal-footer">

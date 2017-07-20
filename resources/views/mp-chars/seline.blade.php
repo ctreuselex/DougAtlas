@@ -21,7 +21,7 @@
 		
 		$mcharAft = "Weather";
 		$mcharSty = "Armagus";
-		$mcharWoc = "Tauroscene's Titan & Myst-based Mini-Glaives";
+		$mcharWoc = "Tauroscene's Titan";
 
 		$charthemes = 'Storms, Mists, Elite, Purging, Genocide, Anything Sexy';
 		$cityname = 'Glamour';

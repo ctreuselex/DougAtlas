@@ -81,7 +81,7 @@ $(function() {
         $('.ad-dash div a#' + location.pathname.split("/")[3]).addClass('active');
 
         if(location.pathname.split("/")[2]=="profile") {
-          console.log(location.pathname.split("/")[3]);
+          // console.log(location.pathname.split("/")[3]);
           var currentli = $('.ad-dash div a#' + location.pathname.split("/")[3]).position().top;
           $('.ad-dash').animate({
               scrollTop: currentli

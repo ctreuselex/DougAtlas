@@ -18,10 +18,11 @@
 		$mcharFam = "Father: Thomas Dirk";
 		$mcharDiv = "Mystos";
 		$mcharAff = "Dominion | Institute";
+		$mcharPos = "Head of Geios";
 		
 		$mcharAft = "Time";
 		$mcharSty = "Exnihille | Cirkunesi";
-		$mcharWoc = "Myst-based Sledge Hammers & Psyblades";
+		$mcharWoc = "None";
 
 		$charthemes = 'Physics, Hammers, Saws, Eyepatches, Do Not Provoke, Total Hipster';
 		$cityname = 'Pawns';
@@ -213,7 +214,7 @@
 			array ('name' => "Safe Distance", 'ico'=>'ra-targeted',
 				'des'=>"Allows Psychic Rift to be cast from afar with a range of 650."),
 			array ('name' => "Point Of Singularity", 'ico'=>'ra-radial-balance',
-				'des'=>"Psychic Rift now also sucks enemy units and inflicts 80% |slow| for 2 seconds after the rift. Reduces area of esffect to 300."),
+				'des'=>"Psychic Rift now also sucks enemy units and inflicts 80% |slow| for 2 seconds after the rift. Reduces area of effect to 300."),
 			array ('name' => "Assiduity", 'ico'=>'ra-circle-of-circles',
 				'des'=>"Psyblades affected by Psychic Rift will instantly have their Myst Pool at maximum. Increases duration to 2 seconds."),  
 			);

@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         Audio Message by <span class="cts-amelia"></span>
         <br>TIME: 1694, SR 54th Spring
         <br>Saved in drafts
@@ -41,7 +40,6 @@
         <br>You can cry on your card all you want. But we'll always be the one listening to it. Not Kianna, not your kids, not Markus. Me. So maybe, it's time to sto-
         <br>
         <br>//Record Stopped
-        </p>
 
         </div>
         <div class="modal-footer">

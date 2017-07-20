@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         FORUM BOARD Title: <b>1685: The Rise of the 9th Ice Queen!</b>
         <br>Say "Congratulations!" to the the new Ice Queen of the Children of Mandalas, Amelia Beleaguer!
         <br>A powerful, good willed, and just overall incredible person, that's who Amelia is. It's nice to have someone I personally know sitting into the ever rotating throne of the Ice Queen! I am more than happy to serve you as your Snow Angel.  
@@ -31,7 +30,6 @@
         <hr>
         @[SNOWANGEL]KiannaHalley SWEET! Suggestion: Do not hold back on the frostings next time!
         <br><span class="cts-olive-frm"></span> TIME: 1685, SR 2nd Winter
-        </p>
 
         </div>
         <div class="modal-footer">

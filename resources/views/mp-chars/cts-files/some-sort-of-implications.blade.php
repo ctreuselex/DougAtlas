@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CT Audio Message Session: <span class="cts-maximus"></span>, <span class="cts-daud"></span> 
         <br>TIME: 1697, SR 8th Spring
         <br>
@@ -59,7 +58,6 @@
         <br><span class="cts-maximus"></span>: FUCKING HELL CROSS!
         <br>
         <br>[<span class="cts-daud"></span> has ended the session]
-        </p>
 
         </div>
         <div class="modal-footer">

@@ -5,9 +5,7 @@
           <h5 class="modal-title" id="exampleModalLongTitle">{{ $logs['name'] }}</h5>
         </div>
         <div class="modal-body">
-          
-        <p>
-        Text Message by <span class="cts-warner"></span> to <span class="cts-riza"></span>
+                  Text Message by <span class="cts-warner"></span> to <span class="cts-riza"></span>
         <br>TIME: 1687, SR 32nd Summer
         <br>
         <br>Hey Eagle.
@@ -35,7 +33,6 @@
         <br>It was a long time ago. I just hoped we've moved on. 
         <br>
         <br>PS. Do not reply to this message.
-        </p>
 
         </div>
         <div class="modal-footer">

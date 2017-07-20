@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CT Audio Message Session: <span class="cts-sandra"></span>, <span class="cts-llaxine"></span>
         <br>TIME: 1695, SR 48th Summer
         <br>
@@ -46,7 +45,6 @@
         <br><span class="cts-sandra"></span>: You should hang up! I can still hea-
         <br>
         <br>[<span class="cts-llaxine"></span> has ended the session]
-        </p>
 
         </div>
         <div class="modal-footer">

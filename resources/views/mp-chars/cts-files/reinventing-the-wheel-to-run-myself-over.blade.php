@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         Audio Message by <span class="cts-porlo"></span>
         <br>TIME: 1684, SR 18th Summer
         <br>
@@ -97,7 +96,6 @@
         <br>YOU SLAPPED ME! TWICE!
         <br>
         <br>It was just you spelling out your drama, sir.
-        </p>
 
         </div>
         <div class="modal-footer">

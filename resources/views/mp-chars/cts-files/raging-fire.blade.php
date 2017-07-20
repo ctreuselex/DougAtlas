@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Text Message by <span class="cts-duellie"></span> to <span class="cts-vines"></span>
         <br>TIME: 1688, SR 16th Winter
         <br>ATTACHMENTS:  my-vain-dad.avi
@@ -76,10 +75,6 @@
         <br>That's a great story.
         <br>Thanks Duellie!
         <br>Would have been better though... if I can... at least... hear the things Markus is saying.
-
-
-
-        </p>
 
         </div>
         <div class="modal-footer">

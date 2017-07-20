@@ -5,8 +5,7 @@
           <h5 class="modal-title" id="exampleModalLongTitle">{{ $logs['name'] }}</h5>
         </div>
         <div class="modal-body">
-          
-        <p>     
+           
         PSYINTERVIEW RECORD NO. 16
         <br>INTERVIEWER: <span class="cts-maximus"></span> 
         <br>INTERVIEWEE: Llaxine Shia Henrich Loquintez AGE: 16
@@ -37,7 +36,6 @@
         <br>TIME: 1693, SR 20th Fall
         <br>
         <br>Oh. Better hire her then.
-        </p>
 
         </div>
         <div class="modal-footer">

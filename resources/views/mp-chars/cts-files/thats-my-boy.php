@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         FORUM BOARD Title: <b>MRT [REPORT] GEIOS WINS THIS CYCLE'S SEASON CUP ON THE INSTITUTE'S SPORTS FEST!</b>
         <br>This cycle's Season Cup started with a looming provocation among the city as for the past seven recurssions, the cup always find it's home at the hands of the Luminos Division team. However, this time has been different and the crowd is pleased to see that it is possible to defeat the undefeated!
         <br>It's almost as if all the talent has been focused into one single human being, Daud Irwin, a second cycle student of the Geios Division, thought that maybe, he'll join the battle for the cup and just like that, owned almost - 17 out of 20 - events in which he participated! Some of the events that Daud 'totally aced' are BPD or Blunt Projectile Dodging, RDB or Rush Disk Battle, and of course HMD or Hundred Meter Dash. The entire city, not only Geios, is overjoyed for taking the crown from Luminos.
@@ -31,8 +30,6 @@
         <hr>
         OMG. I'm very happy for you guys!
         <br><span class="cts-cristine-frm"></span> TIME: 1691, SR 6th Spring
-
-        </p>
 
         </div>
         <div class="modal-footer">

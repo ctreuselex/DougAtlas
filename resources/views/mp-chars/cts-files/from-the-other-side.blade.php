@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Text Message by <span class="cts-george"></span> to <span class="cts-maximus"></span>
         <br>TIME: 1692, SR 55th Winter
         <br>
@@ -53,7 +52,6 @@
         <br>
 
         <br>Okay. You're a bully. Thanks for letting an almost-bald man who has been your supervisor since 1686 know that.
-        </p>
 
         </div>
         <div class="modal-footer">

@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CT Audio Message Session: <span class="cts-rustom"></span>, <span class="cts-chance"></span> 
         <br>TIME: 1693, SR 5th Fall
         <br>
@@ -65,7 +64,6 @@
         <br><span class="cts-rustom"></span>: So...
         <br>
         <br>[<span class="cts-chance"></span> has ended the session]
-        </p>
 
         </div>
         <div class="modal-footer">

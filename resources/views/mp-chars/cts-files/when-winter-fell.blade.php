@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Audio Message by <span class="cts-amelia"></span>
         <br>TIME: 1695, SR 59th Spring
         <br>Saved in drafts
@@ -22,7 +21,6 @@
         <br>
         <br>And remember. I love you Jay,
         <br>Amelia, your mom - in case you forgot this too.
-        </p>
 
         </div>
         <div class="modal-footer">

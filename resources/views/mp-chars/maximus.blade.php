@@ -18,6 +18,7 @@
 		$mcharFam = "Parents: Sandra & Landar Seidlitz";
 		$mcharDiv = "Geios";
 		$mcharAff = "Institute";
+		$mcharPos = "Co-owner of Landar Industries";
 		
 		$mcharAft = "Raw Myst";
 		$mcharSty = "Exnihille";

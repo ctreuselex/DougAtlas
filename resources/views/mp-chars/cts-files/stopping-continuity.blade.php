@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CT Message Tread: <span class="cts-vriskvin"></span> to <span class="cts-djerick"></span>
         <br>TIME: 1687, SR 32nd Summer
         <br>
@@ -30,7 +29,6 @@
         <br><span class="cts-djerick"></span>: i actually find the name to be icredibly cheezy
         <br><span class="cts-vriskvin"></span>: wtf! You two are weird!
         <br><span class="cts-djerick"></span>: says the guy writing essays to random people
-        </p>
 
         </div>
         <div class="modal-footer">

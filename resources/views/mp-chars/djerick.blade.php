@@ -21,7 +21,7 @@
 		
 		$mcharAft = "Water";
 		$mcharSty = "Armagus";
-		$mcharWoc = "Custom-made Aquadextrius";
+		$mcharWoc = "Custom Aquadextrius";
 
 		$charthemes = 'Pole-arms, Mirrors, Wicked Dance Moves, A Little Too Short On Everything';
 		$cityname = 'Deceit';

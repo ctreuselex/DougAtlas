@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         Text Message by <span class="cts-helios"></span> to <span class="cts-chance"></span>, <span class="cts-eva"></span>
         <br>TIME: 1687, SR. 29th Spring
         <br>
@@ -41,7 +40,6 @@
         <br>
         <br>NOO! I DO NOT APPROVE OF THIS DECISION!
         <br>GET YOU ASS BACK TO TAUROSCENE, EVA! I WILL NOT USE A WEAPON FROM ANYONE ELSE!
-        </p>
 
         </div>
         <div class="modal-footer">

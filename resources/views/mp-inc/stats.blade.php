@@ -294,7 +294,7 @@
     .st b {
         position: absolute;
         color: white;
-        right: 25px;
+        right: 15px;
         background: rgba(0,0,0,0.2);
         padding: 2px 5px;
     }
@@ -356,17 +356,17 @@
     <?php for ($i=0; $i<=100; $i++) { ?>
         
         .st .per.b{{ $i }}:after {
-            width: {{ ($i/100)*250 }}px; 
+            width: calc({{ ($i/100) }} * (100% - 20px)); 
         }
         .st .per.a{{ $i }} {
-            width: {{ ($i/100)*250 }}px;
+            width: calc({{ ($i/100) }} * (100% - 20px)); 
         }
 
     <?php } ?>
 
     .st b .details {
         position: absolute;
-        left: 0;
+        left: -100px;
         height: 24px;
         width: 200px;
         background: white;
@@ -390,8 +390,9 @@
     .details span.gei { background :#8bc34a; }
 </style>
 
-<div class="col-xs-6">
-    <h3 class="skill-name right" style="    background: white; padding: 5px 10px; margin-bottom: 1px; border-bottom: 2px solid {{ $charColor }};"><b>Statistics</b></h3>
+<div class="col-xs-6" style="padding: 0;">
+    <!-- <h3 class="skill-name right" style="    background: white; padding: 5px 10px; margin-bottom: 1px; border-bottom: 2px solid {{ $charColor }};"><b>Statistics</b></h3> -->
+    <div class="col-xs-12 char-per"><p><b>Statistics</b></p><i class="fa fa-sliders" aria-hidden="true"></i>
 
     @foreach ($finValues as $key => $val)
         <div class="st {{ $key }}"><div class="per b{{ $statRanks[$key] }} a{{ $statMaxRanks[$key] }}"></div>
@@ -449,7 +450,7 @@
         </div>
     @endforeach
 </div>
-<div class="col-xs-6">
+<!-- <div class="col-xs-6">
     <section>
         @if ($chardiv == $lumTotal)
             <img class="pie-division" src="{{ url('img/lum.png') }}">
@@ -470,4 +471,4 @@
         </ul>
     </section>
     <br>
-</div>
+</div> -->

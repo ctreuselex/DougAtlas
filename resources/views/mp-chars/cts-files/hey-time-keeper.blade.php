@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CT Message Tread: <span class="cts-vriskvin"></span> to <span class="cts-djerick"></span><br>
         TIME: 1689, SR 21st Winter<br>
         <br>
@@ -31,7 +30,6 @@
         <span class="cts-vriskvin"></span>: Where did you get that? That's ridicolous.<br>
         <span class="cts-djerick"></span>: youve sent me love letters! and wow! you mispelled something!<br>
         <span class="cts-vriskvin"></span>: SO YOU'RE THE ONE WHO STOLE THOSE! THEY'RE FOR YOUR SISTER! DAMMIT!<br>
-        </p>
 
         </div>
         <div class="modal-footer">

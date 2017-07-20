@@ -56,7 +56,7 @@
 				'des'=>"Causes the surrounding Myst to burst into flames causing massive damage in front of Zed. Damage diminishes the farther the fire travels. Causes |burn| for 2 seconds."),  
 
 			array ('name'=>"Igni's Ground", 'sk'=>'sk3',
-				'des'=>"Curses the ground with unpleasant bitterness causing it be void of Myst. Because of pain, the ground causes Zed to lose a percentage of health while he's standing on it."),
+				'des'=>"Curses the ground with unpleasant bitterness causing it be void of Myst, inflicting |myst-leak| to everyone standing on it. Because of pain, the ground causes Zed to lose a percentage of health while he's on it."),
 
 			array ('name'=>"Azure Fire Assault", 'sk'=>'ult',
 				'des'=>"Drains all Myst in the surrounding area to centralize in the target area, then causing it to combust into a glorious explosion."),
@@ -85,9 +85,9 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charpriaug = array (
-			array ('name' => "Blade Assimilation",
+			array ('name' => "Blade Assimilation", 'ico' => "ra-lightning-sword",
 				'des'=>"Causes Rune Blade to deal more damage equal to 15% of Zedrik's lost Health."),
-			array ('name' => "Demonic Vantage",
+			array ('name' => "Demonic Vantage", 'ico' => "ra-desert-skull",
 				'des'=>"Runic Blasts now deals additional damage equivalent to 3% of the target's lost Myst as well as burning their Myst by 30% of Runic Blasts' damage."), 
 			);
 		// ------------------------------------------------------------ //
@@ -108,10 +108,10 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsecaug = array (
-			array ('name' => "Aversion",
+			array ('name' => "Aversion", 'ico' => "ra-reverse",
 				'des'=>"Causes the projectile thrown to explode and deal 50% of Zedrik's Mystical damage in a 200 radius AoE as well as applying all the status effects to all units affected."),
-			array ('name' => "Conversion",
-				'des'=>"Turns the debuffs into 50 Myst per status effect removed instead of throwing it as a projectile."), 
+			array ('name' => "Conversion", 'ico' => "ra-cycle",
+				'des'=>"Turns the debuffs into 50 Myst per status effect removed instead of throwing it as a projectile. With Aversion, the explosion will occur on Zed's position."), 
 			);
 
 		// ------------------------------------------------------------ //
@@ -135,13 +135,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "Daredevil",
+			array ('name' => "Daredevil", 'ico' => "ra-nuclear",
 				'des'=>"Causes the cursed target and Zedrik himself with 25% |frangible|-ility."),
-			array ('name' => "Predator Rush",
-				'des'=>"Whenever an enemy units is cursed, Zed gains a 15% |frenzy|."),
-			array ('name' => "Burn Out",
+			array ('name' => "Predator Rush", 'ico' => "ra-shark",
+				'des'=>"Whenever an enemy unit is cursed, Zed gains a 15% |frenzy|."),
+			array ('name' => "Burn Out", 'ico' => "ra-fire",
 				'des'=>"Increases Myst drained per second to 5% while decreasing duration to 2."),
-			array ('name' => "Blood Sacrifice",
+			array ('name' => "Blood Sacrifice", 'ico' => "ra-cut-palm",
 				'des'=>"Removes Igni's Curse's Myst cost and causes it to deal 60 pure damage to the target."), 
 			);
 		// ------------------------------------------------------------ //
@@ -163,13 +163,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "Life Break",
+			array ('name' => "Life Break", 'ico' => "ra-dripping-knife",
 				'des'=>"Increases Breath of Fire's damage by 25% and replaces its cost to 10% of maximum health instead of 225 Myst."),
-			array ('name' => "Fire Spin",
+			array ('name' => "Fire Spin", 'ico' => "ra-spinning-sword",
 				'des'=>"Zedrik replaces Breath of Fire with a 250 radius AoE sword spin explosion with 20% more damage. Reverts back to Breath of Fire if Runic Transfiguration is active."),
-			array ('name' => "Burning Magic",
+			array ('name' => "Burning Magic", 'ico' => "ra-frostfire",
 				'des'=>"Breath of Fire now burns affected units' Myst by 100% of its damage."),
-			array ('name' => "No Ashes",
+			array ('name' => "No Ashes", 'ico' => "ra-kaleidoscope",
 				'des'=>"Breath of Fire now also |purge|-s most status effects off affected units."), 
 			);
 		// ------------------------------------------------------------ //
@@ -191,13 +191,13 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
-			array ('name' => "The Berserker",
+			array ('name' => "The Berserker", 'ico' => "ra-all-for-one",
 				'des'=>"Standing on Igni's Ground grants Zed a 20% |frenzy|."),
-			array ('name' => "Hyperbolic",
+			array ('name' => "Hyperbolic", 'ico' => "ra-arson",
 				'des'=>"Igni's Ground inflicts a 8% |break| to all enemy units standing on it."),
-			array ('name' => "Passed Curse",
+			array ('name' => "Passed Curse", 'ico' => "ra-bone-bite",
 				'des'=>"Causes all enemy units on Igni's Ground to get Igni's Curse whenever a cursed enemy unit is on Igni's Ground."),
-			array ('name' => "Blue Fire",
+			array ('name' => "Blue Fire", 'ico' => "ra-fire-symbol",
 				'des'=>"Decreases Azure Fire Assault's delay to 1 second when cast inside Igni's Ground."),  
 			);
 
@@ -222,9 +222,9 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charultaug = array (
-			array ('name' => "Retribution",
+			array ('name' => "Retribution", 'ico' => "ra-fire-breath",
 				'des'=>"Causes Rune Blade and Runic Blasts to deal pure damage for 3 seconds if Azure Fire Assault successfully hit an enemy."),
-			array ('name' => "Hellfire",
+			array ('name' => "Hellfire", 'ico' => "ra-burning-embers",
 				'des'=>"Increases Azure Fire Assault's base damage to 450."), 
 			);
 		// ------------------------------------------------------------ //
@@ -236,7 +236,7 @@
 			array ('name'=>'Runic Blasts Damage', 'val'=>'125%', 'ext'=>'mys'),
 			array ('name'=>'Runic Blasts Attack Rate', 'val'=>'120%', 'ext'=>''),
 			array ('name'=>'Runic Blasts Myst Cost', 'val'=>'30/ bolt', 'ext'=>''),
-			array ('name'=>'slow Runic Blasts', 'val'=>'30%', 'ext'=>''),
+			array ('name'=>'slow', 'val'=>'30%', 'ext'=>''),
 
 			);
 		$charextmcdm = array (
@@ -251,8 +251,8 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charextaug = array (
-			array ('name' => "Radiant Accession",
-				'des'=>"Causes Zedrik to deal 35 pure damage to enemy units within 400 radius of himself every second. Adds 12 Myst Cost per second while active."),
+			array ('name' => "Radiant Accession", 'ico' => "ra-sunbeams",
+				'des'=>"Causes Zedrik to deal 22 pure damage to enemy units within 400 radius of himself every second. Adds 12 Myst Cost per second while active."),
 			array ('name' => "Lucifer's Child",
 				'des'=>"Increases Runic Blasts' damage to 160% of Mystical damage."), 
 			);

@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         Audio Message by <span class="cts-chance"></span>
         <br>TIME: 1696, SR 1st Summer
         <br>Saved in drafts
@@ -62,7 +61,6 @@
         <br>[distant female voice] Where's Rustom?
         <br>
         <br>//Record Stopped
-        </p>
 
         </div>
         <div class="modal-footer">

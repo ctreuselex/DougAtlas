@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Text Message by <span class="cts-kuzma"></span> to <span class="cts-riza"></span>
         <br>TIME: 1685, SR 59th Winter
         <br>
@@ -34,8 +33,6 @@
         <br>TIME: 1685, SR 2nd Spring
         <br>
         <br>Uh... Hello? Who is this? I think you contacted the wrong person.
-        <br>
-        </p>
 
         </div>
         <div class="modal-footer">

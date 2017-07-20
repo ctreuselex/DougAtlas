@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         Text Message by <span class="cts-telik"></span> to <span class="cts-sylvia"></span>
         <br>TIME: 1688, SR. 35th Winter
         <br>ATTACHMENT: weird-sharp-bracelet-thing.jpg
@@ -46,7 +45,6 @@
         <br>
         <br>Sorry Telik,
         <br>Please disregard the previous message. My wife is just having a bad day.
-        </p>
 
         </div>
         <div class="modal-footer">

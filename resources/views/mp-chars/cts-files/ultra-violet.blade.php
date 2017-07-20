@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Text Message by <span class="cts-elliot"></span> to <span class="cts-sylvia"></span>
         <br>TIME: 1676, SR 5th Winter
         <br>
@@ -43,7 +42,6 @@
         <br>TIME: 1676, SR 5th Winter
         <br>
         <br>OPEN THE GODDAMN DOOR YOU MUD MADE TICK OF A COWARD!
-        </p>
 
         </div>
         <div class="modal-footer">

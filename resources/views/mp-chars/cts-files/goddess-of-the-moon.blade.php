@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CT Message Tread: <span class="cts-moon"></span> to <span class="cts-maximus"></span>
         <br>TIME: 1693, SR 15th Fall
         <br>
@@ -44,8 +43,6 @@
         <br><span class="cts-moon"></span>: I need to get Seline off me.
         <br><span class="cts-maximus"></span>: ...
         <br><span class="cts-maximus"></span>: Oh you're definitely dead.
-
-        </p>
 
         </div>
         <div class="modal-footer">

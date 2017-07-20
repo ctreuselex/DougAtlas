@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CT Message Tread: <span class="cts-avery"></span> to <span class="cts-vriskvin"></span>
         <br>TIME: 1689, SR 22nd Winter
         <br>
@@ -45,7 +44,6 @@
         <br><span class="cts-avery"></span>: Duellie said she'll let me talk to her if I get you to not punch Djerick anymore.
         <br><span class="cts-vriskvin"></span>: Denied.
         <br><span class="cts-avery"></span>: Oh come on man!
-        </p>
 
         </div>
         <div class="modal-footer">

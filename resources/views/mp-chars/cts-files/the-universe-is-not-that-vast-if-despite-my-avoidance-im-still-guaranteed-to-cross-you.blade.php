@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CT Audio Message Session: <span class="cts-porlo"></span>, <span class="cts-rustom"></span>
         <br>TIME: 1694, SR 19th Summer
         <br>
@@ -47,8 +46,7 @@
         <br><span class="cts-porlo"></span>: Cause I'm only a little bit not so disappointed in you too.
         <br>
         <br>[<span class="cts-rustom"></span> has ended the session]
-        </p>
-
+        
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

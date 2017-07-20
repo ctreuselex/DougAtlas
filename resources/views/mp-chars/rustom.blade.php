@@ -58,7 +58,7 @@
 			array ('name'=>"Nebula Cloud", 'sk'=>'sk3',
 				'des'=>"Creates a miniture nebula at the target area that |slow|-s all enemies inside while also creating Stardusts inside it every second."),
 
-			array ('name'=>"Supernovae", 'sk'=>'ult',
+			array ('name'=>"Supernova", 'sk'=>'ult',
 				'des'=>"Rustom absorbs all light within the vicinity to supercharge Ascalon and slams it into the ground causing a devastating explosion, damaging enemies and healing allies."),
 
 			array ('name'=>"Stardust", 'sk'=>'ext',
@@ -231,9 +231,9 @@
 			);
 		$charultaug = array (
 			array ('name' => "Black Hole", 'ico' => "ra-site",
-				'des'=>"Upon releasing Supernovae with at least a 4 second charge time, will create a black hole which sucks all enemy units towards the center for 2 seconds while |stun|-ning them."),
+				'des'=>"Upon releasing Supernova with at least a 4 second charge time, will create a black hole which sucks all enemy units towards the center for 2 seconds while |stun|-ning them."),
 			array ('name' => "New Born", 'ico' => "ra-sunbeams",
-				'des'=>"Creates 6 to 48 Stardusts, depending on the time spent charging, upon releasing Supernovae."), 
+				'des'=>"Creates 6 to 48 Stardusts, depending on the time spent charging, upon releasing Supernova."), 
 			);
 		// ------------------------------------------------------------ //
 		// EXTRA

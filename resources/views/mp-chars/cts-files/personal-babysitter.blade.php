@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Text Message by <span class="cts-djerick"></span> to <span class="cts-rustom"></span>
         <br>TIME: 1687, SR 10th Winter
         <br>
@@ -33,8 +32,6 @@
         <br>You've repeated yourself.
         <br>and... 
         <br>No.
-
-        </p>
 
         </div>
         <div class="modal-footer">

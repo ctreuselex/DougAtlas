@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         Text Message by <span class="cts-karissa"></span> to<span class="cts-olive"></span>, <span class="cts-kianna"></span>, <span class="cts-cathrine"></span>
         <br>TIME: 1679, SR. 3rd Winter
         <br>
@@ -35,7 +34,6 @@
         <br>
         <br>This document is signed by: <span class="cts-gliciero"></span>, <span class="cts-cryo"></span>, <span class="cts-nacer"></span>
         <br>Along with: <span class="cts-felix"></span>, Head of the Dominion
-        </p>
 
         </div>
         <div class="modal-footer">

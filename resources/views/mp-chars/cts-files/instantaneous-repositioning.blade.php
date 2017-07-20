@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         MISSION REPORT by <span class="cts-vines"></span>
         <br>TO: <span class="cts-ceniza"></span>
         <br>TIME: 1695, SR 9th Winter
@@ -22,7 +21,6 @@
         <br>And as usual, Chance is still useless.
         <br>
         <br>Vines out. 
-        </p>
 
         </div>
         <div class="modal-footer">

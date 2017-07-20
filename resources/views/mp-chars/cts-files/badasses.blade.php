@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         FORUM BOARD Title: <b>What the hell are those blackouts?</b>
         <br>like seriously? not that im afraid of dark but these blackouts are annoying me.
         <br><span class="cts-thechroniclez-frm"></span> TIME: 1687, SR 30th Fall
@@ -54,7 +53,6 @@
         <hr>
         haha. git gud nub.
         <br><span class="cts-mastehfianchow-frm"></span> Time: 1687, SR 30th Fall
-        </p>
 
         </div>
         <div class="modal-footer">

@@ -21,7 +21,7 @@
 		
 		$mcharAft = "Fire";
 		$mcharSty = "Maximo | Exnihille";
-		$mcharWoc = "Myst-based Chain Blades";
+		$mcharWoc = "None";
 
 		$charthemes = 'Firebirds, Ultimate Powah, Chains and Blades, Immortality, Dad Puns, I Like Boats';
 		$cityname = 'Walls';
@@ -56,7 +56,7 @@
 				'des'=>"Throws a fiery chain which binds the first enemy it comes in contact with inflicting |root| and |burn|."),  
 
 			array ('name'=>"Flame Bolt", 'sk'=>'sk3',
-				'des'=>"Fire exploding balls o fire which explodes after a short delay upon coming in contact with its target or the ground."),
+				'des'=>"Fire exploding balls of fire which explodes after a short delay upon coming in contact with its target or the ground."),
 
 			array ('name'=>"Dual Ignition", 'sk'=>'ult',
 				'des'=>"Valkyr concentrates on the power of rock and roll, and dad humor, to inflict twice the effect and damage of his attacks in the next few seconds."),

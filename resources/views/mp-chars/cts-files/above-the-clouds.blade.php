@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         MISSION REPORT by <span class="cts-berex"></span>
         <br>TO:<span class="cts-theodore"></span>
         <br>TIME: 1698, SR 58th Winter
@@ -19,7 +18,6 @@
         <br>With my concern, I contacted Madam Sylvia Loquintez, Seline's mother, and figured out, after an hour of ravage insults and mockery, that Royd Calixto is Seline's abusive father. After digging for more info, Royd is in deed, abusive, and abuse has been added to the list of charges he is now facing. Not that those would matter anymore, due to the fact that he is now dead. But with who Seline was back at the Institute, I think she gave him a safe exit from the much more frightening chapter that would have been the next one for his life.
         <br>
         <br>Berex Fritzie out.
-        </p>
 
         </div>
         <div class="modal-footer">

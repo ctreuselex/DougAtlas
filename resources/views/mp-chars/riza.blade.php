@@ -21,7 +21,7 @@
 		
 		$mcharAft = "Mydow";
 		$mcharSty = "None";
-		$mcharWoc = "Custom-made Hawk Turret";
+		$mcharWoc = "Custom Hawk Turret";
 
 		$charthemes = 'Sentries, Nano-tech, Machines, Tech Fan Girl, I Believe I Can Fly';
 		$cityname = 'Dirt';

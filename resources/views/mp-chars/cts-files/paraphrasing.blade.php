@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Text Message by <span class="cts-mikael"></span> to <span class="cts-avery"></span>
         <br>TIME: 1692, SR 13th Fall
         <br>
@@ -23,7 +22,6 @@
         <br>TIME: 1692, SR 13th Fall
         <br>
         <br>I really like how you wasted your time writing a bunch of paragraphs you could have said with one.
-        </p>
 
         </div>
         <div class="modal-footer">

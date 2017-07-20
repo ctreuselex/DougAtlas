@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         PSYINTERVIEW RECORD NO. 52
         <br>INTERVIEWER: <span class="cts-thomas"></span>
         <br>INTERVIEWEE: Djerick Beleaguer AGE: 18
@@ -41,7 +40,6 @@
         <br>
         <br>I know you have some massive hard on for Zaldy. BUT... we know she hates you. And I guess she probably meant something like "You're so hot I feel good about setting you on fire cos youre already on fire in my eyes" :(
         <br>Truth hurts... I know.
-        </p>
 
         </div>
         <div class="modal-footer">

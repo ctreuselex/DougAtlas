@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         EXPERIMENT AUDIO LOG: MystCore Battery #84
         <br>USER: <span class="cts-landar"></span>
         <br>TIME: 1677, SR 16th Summer
@@ -59,7 +58,6 @@
         <br>Lan-
         <br>
         <br>//Record Stopped
-        </p>
 
         </div>
         <div class="modal-footer">

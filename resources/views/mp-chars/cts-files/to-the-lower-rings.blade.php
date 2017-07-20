@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         MISSION REPORT by <span class="cts-moon"></span>
         <br>TO: <span class="cts-thomas"></span>
         <br>TIME: 1695, SR 30th Winter
@@ -18,7 +17,6 @@
         <br>Locals called them 'HOWLERS' and I guess that it's a better name for them rather than dogs - because it's little harsh on dogs due to my liking of dogs. Also, these Howlers howl when they see the moon, they also howl at me when I stab them in the chest 37 times... or was it a growl? They sound quite similar to me since I got water in my ears while fighting. Which reminds me to tell you that I might have this strange affinity to water. Or maybe, I just like to bath a lot. Anwyay, we decided to call our team MOON just because of that howler thing, and because we're awesome like that, and because team BOOTES is lame and also it will serve as some kind of recognition seeing as I'm called 'Moon' now. We got ourselves some nicknames! Vriskvin's is 'Dick' cos he's a dick. And Rustom's is 'Blank' cos I can't think of any for him and he has an apparent hatred towards my idea of nicknames. 
         <br>
         <br><strike>Djerick</strike> Moon out.
-        </p>
 
         </div>
         <div class="modal-footer">

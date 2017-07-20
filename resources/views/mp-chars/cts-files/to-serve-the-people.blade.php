@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         MISSION REPORT by <span class="cts-kianna"></span>
         <br>TO: <span class="cts-gamora"></span>
         <br>TIME: 1685, SR 42nd Spring

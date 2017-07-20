@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         MISSION REPORT by <span class="cts-hadji"></span>
         <br>TO: <span class="cts-theodore"></span>, <span class="cts-mikael"></span> ,<span class="cts-ceniza"></span>
         <br>TIME: 1697, SR 18th Summer
@@ -24,7 +23,6 @@
         <br>
         <br>Thanks,
         <br>Dr. Hadji Feralte out
-        </p>
 
         </div>
         <div class="modal-footer">

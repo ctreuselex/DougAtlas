@@ -5,8 +5,7 @@
           <h5 class="modal-title" id="exampleModalLongTitle">{{ $logs['name'] }}</h5>
         </div>
         <div class="modal-body">
-          
-        <p>    
+            
         FORUM BOARD Title: <b>THEORIST CLUB: The Green Flash!</b>
         <br>Hi Theorist. I was walking late last night, from Geios, when I saw a sudden flash of green light on the sky. Well, I know that the higher ups can easily change the sky to whatever the hell color they want for the sky but this strange light was very different! I don't have pictures for evidence since I don't really run around at night taking photos of shadows. So any ideas?
         <br><span class="cts-demeter-frm"></span> TIME: 1683, SR 52nd Fall
@@ -37,7 +36,6 @@
         <hr>
         I still like the theory with the idea that our city is a ship and there's nothing outside of it but more void tho. But then why are we all floating in an endless void? gives me all the mindfucks.
         <br><span class="cts-mig-frm"></span> TIME: 1683, 53rd Fall
-        </p>
 
         </div>
         <div class="modal-footer">

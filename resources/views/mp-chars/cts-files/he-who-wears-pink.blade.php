@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Text Message by <span class="cts-jonto"></span> to <span class="cts-riza"></span>
         <br>TIME: 1691, SR 31st Spring
         <br>
@@ -28,7 +27,6 @@
         <br>I'll be there.
         <br>
         <br>PS. Do not reply to this message.
-        </p>
 
         </div>
         <div class="modal-footer">

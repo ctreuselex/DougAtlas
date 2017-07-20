@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CT Audio Message Session: <span class="cts-avery"></span>, <span class="cts-daud"></span>
         <br>TIME: 1691, SR 8th Spring
         <br>
@@ -66,7 +65,6 @@
         <br><span class="cts-kash"></span>: So...
         <br><span class="cts-kash"></span>: Are we still going to have this party or not?
         <br><span class="cts-avery"></span>: Ok fine. Chips only tho. I only have 20 credits on me.
-        </p>
 
         </div>
         <div class="modal-footer">

@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Text Message by <span class="cts-rustom"></span> to <span class="cts-vriskvin"></span>
         <br>TIME: 1697, SR 25th Summer
         <br>
@@ -31,7 +30,6 @@
         <br>TIME: 1697, SR 26th Summer
         <br>
         <br>And. Yep. You're back.
-        </p>
 
         </div>
         <div class="modal-footer">

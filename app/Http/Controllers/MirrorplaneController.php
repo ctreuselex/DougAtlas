@@ -134,14 +134,14 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'llaxine','sur'=>'loquintez','year'=>1677,'color'=>'#EC78A0','subcolor'=>'#EFE167','ico'=>'ra ra-fairy' ),
             array ( 'name'=>'lupe','sur'=>'wolgraff','year'=>1665,'color'=>'#DDAF47','subcolor'=>'#882826','ico'=>'ra ra-wolf-howl' ),
             array ( 'name'=>'maximus','sur'=>'seidlitz','year'=>1673,'color'=>'#17EF79','subcolor'=>'#3D7D7A','ico'=>'ra ra-reactor' ),
-            array ( 'name'=>'mikael','sur'=>'clayford','year'=> 1667,'color'=>'','subcolor'=>'','ico'=>'ra ra-kitchen-knives' ),
+            array ( 'name'=>'mikael','sur'=>'clayford','year'=> 1667,'color'=>'#00e7e7','subcolor'=>'#0067CD','ico'=>'ra ra-kitchen-knives' ),
             array ( 'name'=>'moon','sur'=>'beleaguer','year'=>1668,'color'=>'#26DC9F','subcolor'=>'#D2A368','ico'=>'ra ra-slash-ring' ),
             array ( 'name'=>'noemi','sur'=>'','year'=> 1664,'color'=>'#FFEB3B','subcolor'=>'#8BC34A','ico'=>'ra ra-flowers' ),
             array ( 'name'=>'rigel','sur'=>'','year'=>1666,'color'=>'#00BCD4','subcolor'=>'#D824A2','ico'=>'ra ra-daggers' ),
             array ( 'name'=>'riza','sur'=>'harmilton','year'=>1671,'color'=>'#E61547','subcolor'=>'#CD15E6','ico'=>'fa fa-cogs' ),
             array ( 'name'=>'rustom','sur'=>'kepler','year'=>1670,'color'=>'#E2C926','subcolor'=>'#D41818','ico'=>'ra ra-splash' ),
             array ( 'name'=>'seline','sur'=>'loquintez','year'=>1668,'color'=>'#EFE167','subcolor'=>'#00BCD4','ico'=>'ra ra-focused-lightning' ),              
-            array ( 'name'=>'theodore','sur'=>'orcullo','year'=>1665,'color'=>'','subcolor'=>'','ico'=>'ra ra-axe' ),
+            array ( 'name'=>'theodore','sur'=>'orcullo','year'=>1665,'color'=>'#18ff81','subcolor'=>'#B1127F','ico'=>'ra ra-axe' ),
             array ( 'name'=>'valkyr','sur'=>'soltaire','year'=>1664,'color'=>'#F3A40C','subcolor'=>'#F54C04','ico'=>'ra ra-heartburn' ),
             array ( 'name'=>'vines','sur'=>'roderick','year'=>1668,'color'=>'#18FF81','subcolor'=>'#E91E63','ico'=>'ra ra-dragonfly' ),
             array ( 'name'=>'vriskvin','sur'=>'dirk','year'=>1667,'color'=>'#E91E63','subcolor'=>'#5F0B28','ico'=>'ra ra-clockwork' ),
@@ -299,7 +299,8 @@ class MirrorplaneController extends Controller
             array ('div' => 'mys', 'name' => 'ceniza', 'year' => '1693'),
             array ('div' => 'mys', 'name' => 'thomas', 'year' => '1680'),
             array ('div' => 'mys', 'name' => 'markus', 'year' => '1665'),
-            array ('div' => 'gei', 'name' => 'vriskvin', 'year' => '1696'),
+            array ('div' => 'gei', 'name' => 'vriskvin', 'year' => '1695'),
+            array ('div' => 'gei', 'name' => 'maximus', 'year' => '1693'),
             array ('div' => 'gei', 'name' => 'george', 'year' => '1680'),
             );
 
@@ -429,6 +430,8 @@ class MirrorplaneController extends Controller
             array ( 'y'=>1689, 's'=>2, 'd'=>'25', 'ord'=>'zedrik', 'logn'=>1, 'name'=>'Good To Be Bad'),
 
             array ( 'y'=>1688, 's'=>1, 'd'=>'10', 'ord'=>'noemi', 'logn'=>1, 'name'=>'Be Reasonable'),
+
+            array ( 'y'=>1697, 's'=>2, 'd'=>'4', 'ord'=>'mikael', 'logn'=>1, 'name'=>'Dream Come True'),
             );
 
         if($req=="char") return $mirChars;

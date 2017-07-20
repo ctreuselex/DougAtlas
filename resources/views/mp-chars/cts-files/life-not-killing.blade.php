@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         Audio Message by <span class="cts-gorgo"></span>
         <br>TIME: 1684, SR 20th Spring
         <br>Saved in drafts
@@ -56,7 +55,6 @@
         <br>Alright... hmmm. ho- how? ohhh right her-
         <br>
         <br>//Record Stopped
-        </p>
 
         </div>
         <div class="modal-footer">

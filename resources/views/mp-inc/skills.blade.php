@@ -16,7 +16,7 @@
         //speed
         array ('name'=>'slow', 'purge'=>true, 'ico'=>'ra ra-footprint',
             'des'=>'Decreases movement speed.'),
-        array ('name'=>'limp', 'purge'=>true, 'ico'=>'ra ra-hand',
+        array ('name'=>'limp', 'purge'=>true, 'ico'=>'ra ra-cut-palm',
             'des'=>'Decreases attact rate.'),
         //stuns
         array ('name'=>'disarm', 'purge'=>false, 'ico'=>'fa fa-sign-language',
@@ -128,7 +128,7 @@
 
     .aug-plus {
         display: flex; align-items: center;
-        position: absolute; top: 10px;
+        position: absolute; top: 0;
         height: 30px; width: 30px;
         background: white;
         color: white;    
@@ -158,12 +158,11 @@
     @keyframes augLoad {
         0% { top: -200px; }
         35% { top: 100px; }
-        100% { top: 1000px; }
-    }
+        100% { top: 1000px; } }
 
     .aug-anim-ski-top, .aug-anim-ski-base, .aug-anim-ski-bot {
         display: none;
-        position: absolute; top: 10px; left: 10px;
+        position: absolute; top: 0; left: 10px;
         width: 5px;
         overflow: hidden; }
     .anim-box {
@@ -207,20 +206,27 @@
             margin-right: 2px;  }
     @endforeach
 
+    @keyframes lemonshrink {
+        0% { transform: scale(1) width: 14px; }
+        20% { transform: scale(1.5); }
+        100% { transform: scale(0); width: 0; } }
+    .lemon-shrink {
+        animation: lemonshrink 2s 1;
+        animation-fill-mode:forwards; }
+
     .skill-augs {
         /*display: none;*/
-        position: fixed; bottom: 20px; left: 245px;
-        background: white; color: green;
+        position: fixed; bottom: 0; left: 225px;
         font-weight: bold;
         padding: 5px 10px;
-        border: 1px solid green;
-        box-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+        background: white; color: {{ $charColorSub }};
+        border: 1px solid {{ $charColor }};
+        border-left: 0;
         transition: 0.5s; }
     .skill-augs span {
-        font-size: 18px; }
+        font-size: 14px; }
     .skill-augs.error {
-        color: red;
-        border: 1px solid red;
+        background: white: color: red;
         transition: 0.5s; }
 </style>
 
@@ -234,34 +240,41 @@
         if($ability['sk']=='ext') $abilityprefix='Core:';
         $rowdiv = "4";
         if($ability['sk']=='pri'||$ability['sk']=='sec'||$ability['sk']=='ult'||$ability['sk']=='ext') $rowdiv = "6";
-        $rowpos = "";
+        $rowpos = ""; $rowcusPad = ""; $rowcusImg ="";
         $abilitystat = "";
         $abilitymcdm = "";
         $abilityaug = "";
         if($ability['sk']=='pri') { 
-            $abilitystat=$charpristats; $abilitymcdm=$charprimcdm; $abilityaug=$charpriaug; $rowpos="ski-top"; }
+            $abilitystat=$charpristats; $abilitymcdm=$charprimcdm; $abilityaug=$charpriaug; $augpos=15;
+            $rowpos="ski-top"; $rowcusPad="0 5px 0 15px"; $rowcusImg="20px"; }
         if($ability['sk']=='sec') { 
-            $abilitystat=$charsecstats; $abilitymcdm=$charsecmcdm; $abilityaug=$charsecaug; $rowpos="ski-top"; }
+            $abilitystat=$charsecstats; $abilitymcdm=$charsecmcdm; $abilityaug=$charsecaug; $augpos=5;
+            $rowpos="ski-top"; $rowcusPad="0 15px 0 5px"; $rowcusImg="30px"; }
         if($ability['sk']=='sk1') { 
-            $abilitystat=$charsk1stats; $abilitymcdm=$charsk1mcdm; $abilityaug=$charsk1aug; $rowpos="ski-base"; }
+            $abilitystat=$charsk1stats; $abilitymcdm=$charsk1mcdm; $abilityaug=$charsk1aug; $augpos=15;
+            $rowpos="ski-base"; $rowcusPad="0 5px 0 15px"; $rowcusImg="20px"; }
         if($ability['sk']=='sk2') { 
-            $abilitystat=$charsk2stats; $abilitymcdm=$charsk2mcdm; $abilityaug=$charsk2aug; $rowpos="ski-base"; }
+            $abilitystat=$charsk2stats; $abilitymcdm=$charsk2mcdm; $abilityaug=$charsk2aug; $augpos=5;
+            $rowpos="ski-base"; $rowcusPad="0 5px 0 5px"; $rowcusImg="20px"; }
         if($ability['sk']=='sk3') { 
-            $abilitystat=$charsk3stats; $abilitymcdm=$charsk3mcdm; $abilityaug=$charsk3aug; $rowpos="ski-base"; }
+            $abilitystat=$charsk3stats; $abilitymcdm=$charsk3mcdm; $abilityaug=$charsk3aug; $augpos=5;
+            $rowpos="ski-base"; $rowcusPad="0 15px 0 5px"; $rowcusImg="30px"; }
         if($ability['sk']=='ult') { 
-            $abilitystat=$charultstats; $abilitymcdm=$charultmcdm; $abilityaug=$charultaug; $rowpos="ski-bot"; }
+            $abilitystat=$charultstats; $abilitymcdm=$charultmcdm; $abilityaug=$charultaug; $augpos=15;
+            $rowpos="ski-bot"; $rowcusPad="0 5px 0 15px"; $rowcusImg="20px"; }
         if($ability['sk']=='ext') { 
-            $abilitystat=$charextstats; $abilitymcdm=$charextmcdm; $abilityaug=$charextaug; $rowpos="ski-bot"; }
+            $abilitystat=$charextstats; $abilitymcdm=$charextmcdm; $abilityaug=$charextaug; $augpos=5;
+            $rowpos="ski-bot"; $rowcusPad="0 15px 0 5px"; $rowcusImg="30px"; }
     ?>
 
-    <div class="col-sm-{{ $rowdiv }}">
+    <?php if($ability['sk']=='pri'||$ability['sk']=='sk1'||$ability['sk']=='ult') echo "<div class='col-xs-12' style='padding: 0'>"; ?>
+    <div class="col-sm-{{ $rowdiv }}" style="padding: {{ $rowcusPad }};">
         <div class="skill-box {{ $rowpos }}">
-            <div class="aug-anim-{{ $rowpos }} skill-{{ $ability['sk'] }}"><div class="anim-box"></div></div>
+            <div class="aug-anim-{{ $rowpos }} skill-{{ $ability['sk'] }}" style="left: {{ $augpos-5 }};"><div class="anim-box"></div></div>
             <div class="col-xs-12">
                 <p class="skill-name" style="border-bottom: 2px solid {{ $charColor }}"> {{ $abilityprefix }} <b>{{ $ability['name'] }}</b> </p>
             </div>
-            <img class="skill-img" src="{{ url('img/mp-char/skills/'.$charname.'/'.$ability['sk'].'.png') }}" width="120px" alt="">
-            <?php $augpos=15; ?>
+            <img class="skill-img" src="{{ url('img/mp-char/skills/'.$charname.'/'.$ability['sk'].'.png') }}" width="120px" alt="" style="right: {{ $rowcusImg }};">
             @foreach ($abilityaug as $aug)
                 <?php $augname = strtolower($aug['name']);
                     $augname = str_replace(" ","-",$augname);
@@ -280,7 +293,7 @@
             <div class="col-xs-12"> 
                 <div class="row"> 
                     <div class="col-xs-12">
-                        <p class="row col-xs-10">
+                        <p class="row col-xs-<?php if($rowpos!='ski-base') echo '10'; else echo '9'; ?>">
                             <?php
                                 $des = explode("|", $ability['des']); 
                                 foreach ($des as $d) {
@@ -417,10 +430,11 @@
             <div class="clear"></div>
         </div>
     </div>
+    <?php if($ability['sk']=='sec'||$ability['sk']=='sk3'||$ability['sk']=='ext') echo "</div>"; ?>
 @endforeach
 
 <div class="skill-augs">
-    Augment Points: <span id="aug-points"><i class="fa fa-eercast"></i></span>
+    APs: <span id="aug-points"><?php for($i=0;$i<10;$i++) echo "<i class='fa fa-lemon-o'></i> "; ?></span>
 </div>
 
 <!-- </div> -->
@@ -428,15 +442,23 @@
 <script type="text/javascript">
     var activeAugs = 10;
     function showaug(augname, sk) {
+        var divAug = "";
         if (activeAugs > 0) {
             if($('#btn-'+augname).hasClass("active")) { 
                 activeAugs++;
-                $('#btn-'+augname).removeClass("active"); 
-                $('#aug-points').html(activeAugs);
+                $('#btn-'+augname).removeClass("active");
+                for(i=0;i<activeAugs;i++) divAug += "<i class='fa fa-lemon-o'></i> ";
+                if(activeAugs==0) { divAug = "No more Lemons!" } 
+                $('#aug-points').html(divAug);
             } else { 
                 activeAugs--; 
                 $('#btn-'+augname).addClass("active");
-                $('#aug-points').html(activeAugs);
+                for(i=0;i<=activeAugs;i++) {
+                    if(i==activeAugs) divAug += "<i class='fa fa-lemon-o lemon-shrink'></i> ";
+                    else divAug += "<i class='fa fa-lemon-o'></i> ";
+                } 
+                if(activeAugs==0) { divAug = "No more Lemons!" } 
+                $('#aug-points').html(divAug);
                 
                 $('.'+sk).show();
                 $('.'+sk+' .anim-box').css("animation", "augLoad 2s infinite");
@@ -454,7 +476,9 @@
         } else if ($('#btn-'+augname).hasClass("active")) {
             activeAugs++;
             $('#btn-'+augname).removeClass("active"); 
-            $('#aug-points').html(activeAugs);  
+            for(i=0;i<activeAugs;i++) divAug += "<i class='fa fa-lemon-o'></i> "; 
+            if(activeAugs==0) { divAug = "No more Lemons!" } 
+            $('#aug-points').html(divAug);
             
             $('#'+augname).slideToggle(300, function() {
                 skiTop(); skiBase(); skiBot();

@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         PSYINTERVIEW RECORD NO. 2
         <br>INTERVIEWER: <span class="cts-george"></span>
         <br>INTERVIEWEE: Seline Nieve Cirrus Loquintez AGE: 18
@@ -30,7 +29,6 @@
         <br>TIME: 1686, SR 10th Fall
         <br>
         <br>She definitely sounds like someone you used to date, alright
-        </p>
 
         </div>
         <div class="modal-footer">

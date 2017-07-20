@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CRIMINAL RECORD NO. 129
         <br>INTERVIEWER: <span class="cts-gamora"></span>
         <br>SUBJECT: Zedrik Azazel AGE: 28
@@ -69,7 +68,6 @@
         <br><span class="cts-gamora"></span>: And we you do. I'd like you to get the sense of individuality you been fighting for, Zed.
         <br><span class="cts-gamora"></span>: So... Same time, same place?
         <br><span class="cts-gamora"></span>: I'll be waiting...
-        </p>
 
         </div>
         <div class="modal-footer">

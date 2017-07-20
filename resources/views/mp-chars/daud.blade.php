@@ -56,7 +56,7 @@
 				'des'=>"Creates a vector arrow at Daud's current position causing him or any ally to gain |haste| whenever they step on it. The Trail's |haste| buff stacks with each other but each can only affect the same unit once."),  
 
 			array ('name'=>"Kinetic Control", 'sk'=>'sk3',
-				'des'=>"Daud takes control of every objects' velocity in the area and throws them off to a direction. A unit thrown by Kinetic Control will damage other units it comes in contact with and well as damage itself. Projectiles thrown will act like it's |reflect|-ed."),
+				'des'=>"Daud takes control of every objects' velocity in the area and throws them off to a direction. A unit thrown by Kinetic Control will damage other units it comes in contact with and as well as damage itself. Projectiles thrown will act like it's |reflect|-ed."),
 
 			array ('name'=>"Cutting Wind", 'sk'=>'ult',
 				'des'=>"Daud repeatedly dashes towards an enemy then jumps towards another nearby, damaging and |blind|-ing them for the duration. Daud is under |invulnerability| for the duration of the skill."),

@@ -10,8 +10,8 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="">
-                <div id="da-logo" style="background-image: url('{{ url('img/logo.png') }}')"></div>
-                <!-- <img id="da-logo" src="{{ url('img/logo.png') }}" width="100px"> -->
+                <!-- <div id="da-logo" style="background-image: url('{{ url('img/logo.png') }}')"></div> -->
+                <img id="da-logo" src="{{ url('img/logo.png') }}" width="100px">
                 <span id="da-title"><b>Doug</b> Atlas</span>
             </a>
         </div>

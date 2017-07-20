@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         FORUM BOARD Title: <b>Disgusting!</b>
         <br>It's that time again, Recurrence, that time when everyone is gathering together for a chance to see the King along with us, the Dominion, adjusting something from Mirrorplane and dropping a handful of synthesized petals over the heads of these peasants below the Nimbocolumbus. I mean, it's great and everything but why waste precious time and Myst for these low lives? Can't we just drop bombs instead? I really don't see the need to please these beggers.
         <br>Also, it's almost time for the Mandalas to crown our new Ice Queen this coming winter, early welcome to you, Ice Queen Kianna. I hope you'll do better with laying waste to those climbers below unlike that old and grungy Ice Queen which did nothing but encourage stupid equality. What's her name? Nobody's going to miss her anyway.
@@ -45,7 +44,6 @@
         <hr>
         @theBoat good.
         <br><span class="cts-seline-frm"></span> TIME: 1685, SR 1st Summer
-        </p>
 
         </div>
         <div class="modal-footer">

@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         EXPERIMENT AUDIO LOG: MobileMystGeneratingArmory #173
         <br>USER: <span class="cts-cristine"></span> and <span class="cts-maximus"></span>
         <br>TIME: 1691, SR 50th Spring
@@ -108,7 +107,6 @@
         <br>[crash]
         <br>
         <br>//Record Stopped
-        </p>
 
         </div>
         <div class="modal-footer">

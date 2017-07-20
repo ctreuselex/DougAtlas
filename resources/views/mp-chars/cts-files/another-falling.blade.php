@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         INTERVIEWER: <span class="cts-dian"></span> of Midring Republic Times
         <br>INTERVIEWEE: Ice Queen, <span class="cts-kianna"></span>
         <br>ABOUT: INTERVIEW WITH THE QUEEN!
@@ -46,7 +45,6 @@
         <br><span class="cts-lance"></span>: For a reporter you seem to be incredibly biased.
         <br><span class="cts-dian"></span>: Maybe, it's because I-
         <br>//Record Stopped
-        </p>
 
         </div>
         <div class="modal-footer">

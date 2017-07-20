@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Text Message by <span class="cts-george"></span> to <span class="cts-vriskvin"></span>
         <br>TIME: 1693, SR 54th Summer
         <br>ATTACHMENTS:  tdirk-eyepatch.obj
@@ -22,7 +21,6 @@
         <br>
         <br>Condolences and Good Luck,
         <br>George Holland
-        </p>
 
         </div>
         <div class="modal-footer">

@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         CT Audio Message Session: <span class="cts-marina"></span>, <span class="cts-vines"></span>
         <br>TIME: 1693, SR 7th Fall
         <br>
@@ -50,8 +49,6 @@
 
         <br>
         <br>[<span class="cts-marina"></span> has ended the session]
-        </p>
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

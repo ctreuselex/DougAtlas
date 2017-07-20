@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         MISSION REPORT by <span class="cts-mig"></span>
         <br>TO: <span class="cts-thomas"></span>
         <br>TIME: 1686, SR 48th Summer
@@ -42,7 +41,6 @@
         <br>TIME: 1686, SR 49th Summer
         <br>
         <br>Sure. Thanks Thomas! As long as it's on you. And can we get spicy noodles?
-        </p>
 
         </div>
         <div class="modal-footer">

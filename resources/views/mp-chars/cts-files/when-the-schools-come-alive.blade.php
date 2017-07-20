@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         INTERVIEWER: <span class="cts-maximus"></span> and <span class="cts-daud"></span>
         <br>INTERVIEWEE: <span class="cts-jack"></span>
         <br>ABOUT: Punching a kid in the face
@@ -15,7 +14,7 @@
         <br><span class="cts-maximus"></span>: Okay... State your name. and reason for punching a kid in the face.
         <br><span class="cts-jack"></span>: What? I swear I didn't started it!
         <br><span class="cts-maximus"></span>: First of all... 'What' is not your name. And second, 'not starting it' is not a reason for punching a kid in the face.
-        <br><span class="cts-daud"></span>: I see you have become quite a dad, Mr Puns.
+        <br><span class="cts-daud"></span>: I don't think that's the right way to work with this, Mr. Sarcasm.
         <br><span class="cts-maximus"></span>: Shut up, Daud. Let me work.
         <br><span class="cts-jack"></span>: Sir Seidlitz, I... I mean... Kruger punched this girl... and... I stepped in for her.
         <br><span class="cts-maximus"></span>: Do you believe she can't handle herself?
@@ -46,7 +45,7 @@
         <br><span class="cts-jack"></span>: ...
         <br><span class="cts-maximus"></span>: ...
         <br><span class="cts-jack"></span>: uh... sir... should I go?
-        <Br><span class="cts-maximus"></span>: Yes... and get Kruger in on your way out. I'll punch him again for you.
+        <br><span class="cts-maximus"></span>: Yes... and get Kruger in on your way out. I'll punch him again for you.
 
         </div>
         <div class="modal-footer">

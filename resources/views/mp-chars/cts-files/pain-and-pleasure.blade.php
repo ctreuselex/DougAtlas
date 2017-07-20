@@ -5,8 +5,7 @@
           <h5 class="modal-title" id="exampleModalLongTitle">{{ $logs['name'] }}</h5>
         </div>
         <div class="modal-body">
-          
-        <p>     
+           
         CT Message Tread: <span class="cts-llaxine"></span> to <span class="cts-seline"></span>
         <br>TIME: 1693, SR. 3rd Winter
         <br>
@@ -45,7 +44,6 @@
         <br><span class="cts-seline"></span>: That's a bit harsh.
         <br><span class="cts-llaxine"></span>: I'll go and deep clean my brain with bleach now.
         <br><span class="cts-seline"></span>: Go and deep clean your mouth with bleach on your way there as well.
-        </p>
 
         </div>
         <div class="modal-footer">

@@ -21,7 +21,7 @@
 		
 		$mcharAft = "Raw Myst | Transparency";
 		$mcharSty = "Exnihille";
-		$mcharWoc = "Myst-based Shards & Corporal Works' Twin Daggers";
+		$mcharWoc = "Corporal Works' Twin Daggers";
 
 		$charthemes = 'Wind, Blades, Invisibility, Lots of Floating Blades, Surprisingly Not-So-Grumpy';
 		$cityname = 'Rats';

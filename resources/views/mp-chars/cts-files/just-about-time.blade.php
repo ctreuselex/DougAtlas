@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Text Message by <span class="cts-thomas"></span> to <span class="cts-george"></span>
         <br>TIME: 1678, SR 53th Winter
         <br>ATTACHMENTS: video0023.avi
@@ -59,7 +58,6 @@
         <br>TIME: 1678, SR 56th Winter
         <br>
         <br>With that mom lines. I think this blackmail will not work to your favor.
-        </p>
 
         </div>
         <div class="modal-footer">

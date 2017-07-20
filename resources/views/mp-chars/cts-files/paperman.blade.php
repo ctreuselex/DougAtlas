@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         PSYINTERVIEW RECORD NO. 52
         <br>INTERVIEWER: <span class="cts-george"></span>
         <br>INTERVIEWEE: Avery Gebsen AGE: 18
@@ -34,7 +33,6 @@
         <br>
         <br>Met the kid, he really is perverted.
         <br>Also the weapon farts poison. You don't want that shit in the interview room.
-        </p>
 
         </div>
         <div class="modal-footer">

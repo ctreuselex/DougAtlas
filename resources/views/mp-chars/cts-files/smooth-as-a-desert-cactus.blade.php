@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Audio Message by <span class="cts-daud"></span>
         <br>TIME: 1690, SR 58th Spring
         <br>Saved in drafts
@@ -80,8 +79,6 @@
         <br>Shut it Avery!
         <br>
         <br>//Record Stopped
-        </p>
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

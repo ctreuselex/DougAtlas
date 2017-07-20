@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>
         Audio Message by <span class="cts-george"></span> to <span class="cts-maximus"></span>, <span class="cts-daud"></span>, <span class="cts-sandra"></span>, <span class="cts-cross"></span>, <span class="cts-dianne"></span>
         <br>TIME: 1692, SR 58th Winter
         <br>
@@ -77,7 +76,6 @@
         <br>TIME: 1692, SR 58th Winter
         <br>
         <br>CROSS!
-        </p>
 
         </div>
         <div class="modal-footer">

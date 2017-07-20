@@ -6,7 +6,6 @@
         </div>
         <div class="modal-body">
           
-        <p>     
         Audio Message by <span class="cts-koba"></span>
         <br>TIME: 1685, SR 6th Summer
         <br>Saved in drafts
@@ -90,7 +89,6 @@
         <br>[screaming]
         <br>
         <br>//Record Stopped
-        </p>
 
         </div>
         <div class="modal-footer">
