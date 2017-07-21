@@ -30,7 +30,7 @@
         <br><span class="cts-chance"></span>: You know what? You were a fool for thinking you'd get away with disturbing Dominion business! Plus, that bitch Ceniza being a clueless puppet doesn't really give her any credit into continuing her role as the substitute that has been overstaying for three fuckinng recurssions! Because of that, I am GUARANTEED to get the new position as Head of Mystos.
         <br><span class="cts-chance"></span>: And I know you won't like that! What a shame!
         <br><span class="cts-chance"></span>: Boo hoo. sonny wouldn't be able to take daddy's place as head of mystos. boo hoo.
-        <br><span class="cts-chance"></span>: FUCKING CRY!
+        <br><span class="cts-chance"></span>: FUCKING CRY! PLUS YOU ALREADY HAVE GEIOS FOR YOUR OWN ANYWAY SO DONT BE SUCH A GREEDY PIGEION!
         <br><span class="cts-chance"></span>: Why the fuck are you NOT REPLYING TO ME YOU COWARD!
         <br><span class="cts-chance"></span>: SON OF AN INBRED SEWER MONKEY! TALK TO ME!!!
         <br><span class="cts-chance"></span>: FUCK FUCK FUCK FUCK FUCK FUCK!!!

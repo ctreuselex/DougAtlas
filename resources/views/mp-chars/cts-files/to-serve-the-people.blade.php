@@ -37,7 +37,7 @@
         <br>
         <br>[distant sound] The way has collapsed! There's no way in. We have to flood the place! The water's coming in.
         <br>
-        <br>NO! Sol might be still be there!
+        <br>NO! Sol might still be there!
         <br>
         <br>What? who's Sol?
         <br>

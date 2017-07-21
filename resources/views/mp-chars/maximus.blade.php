@@ -60,7 +60,7 @@
 				'des'=>"Using the prototype DMBS tech, generates a |shield|, in the form of wicked hexagons, that absorbs 50% damage. When deactivated, the shield is less flashy, but increases Max's Myst regeneration."),
 
 			array ('name'=>"Overcharge", 'sk'=>'ult',
-				'des'=>"Instantly replenishes the Max's Myst pool by 100% while using the excess Myst to damage everyone nearby and |disable|-ing Max for 3 seconds after, because, somehow, Max didn't thought this through. Damage will occur over the 3 second duration and enemies will be |myst-lock|-ed. Total Damage is distributed."),
+				'des'=>"Instantly replenishes Max's Myst pool by 100% while using the excess Myst to damage everyone nearby and |disable|-ing Max for 3 seconds after, because, somehow, Max didn't thought this through. Damage will occur over the 3 second duration and enemies will be |myst-lock|-ed. Total Damage is distributed."),
 
 			array ('name'=>"Reinforced Battery", 'sk'=>'ext',
 				'des'=>"Max concentrates on the next incoming direct damage and completely block its damage and effects like a badass he is. Receiving a critical hit on his MMGA's Core will add another 1 second to Reinforced Battery's cooldown."),

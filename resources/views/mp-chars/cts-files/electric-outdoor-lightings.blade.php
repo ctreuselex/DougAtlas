@@ -29,7 +29,7 @@
         <br><span class="cts-sandra"></span>: Alright, that's her, you better return her card now.
         <br><span class="cts-llaxine"></span>: Oh no, I won't. I'm not going to let her bitch ass get slapped by some useless, basement slacker!
         <br><span class="cts-sandra"></span>: Excuse me! My son is currently the head of the Landar Industries!
-        <br><span class="cts-llaxine"></span>: I don't fucking care woman! you're son is not going to get heads tonight!
+        <br><span class="cts-llaxine"></span>: I don't fucking care woman! you're son is not going to get heads tonight! And he was just the head of Geios a few days ago! Pathetic!
         <br><span class="cts-sandra"></span>: Holy Suger Cubes! You need to get some bar soap to chew on!
         <br><span class="cts-llaxine"></span>: Well can you get me some? I heard your company's weapons are as useless as bar soaps! Liquid soap exists! And they're so much better!
         <br><span class="cts-llaxine"></span>: [distant female voice] Mom, why are you yelling?

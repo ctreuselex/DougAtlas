@@ -23,91 +23,6 @@ class MirrorplaneController extends Controller
         $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
         return view($viewchar)->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }   
 
-    // public function avery() { 
-    //     $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //     return view('mp-chars.avery')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function andrei() { 
-    //     $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //     return view('mp-chars.andrei')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function bono() { 
-    //     $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //     return view('mp-chars.bono')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function chance() { 
-    //     $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //     return view('mp-chars.chance')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function daud() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.daud')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function denise() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.denise')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function dominic() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.dominic')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function fae() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.fae')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function frederick() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.frederick')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function herschel() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.herschel')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function jeanne() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.jeanne')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function kalli() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.kalli')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function kianna() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.kianna')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function koom() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.koom')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function llaxine() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.llaxine')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function lupe() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.lupe')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function maximus() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.maximus')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function gemini() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.gemini')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function noemi() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.noemi')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function rigel() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.rigel')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function riza() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.riza')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function rustom() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.rustom')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function djerick() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.djerick')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function seline() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.seline')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function valkyr() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.valkyr')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function vines() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.vines')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function vriskvin() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.vriskvin')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-    // public function zedrik() { 
-    //      $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
-    //      return view('mp-chars.zedrik')->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }
-
     public function charMeta($req) {
         $mirChars = array(
             array ( 'name'=>'dom','sur'=>'','year'=>0,'color'=>'#009688','subcolor'=>'#8BC34A','ico'=>'ra ra-castle-emblem' ),
@@ -241,6 +156,10 @@ class MirrorplaneController extends Controller
             array ('name'=>'demeter','act'=>'ocdVanDionyus'),
             array ('name'=>'noemi','act'=>'thelegendarylongcat'),
             array ('name'=>'vines','act'=>'ChuggingOnCaffeine'),
+            array ('name'=>'maximus','act'=>'LandarsChild'),
+            array ('name'=>'mikael','act'=>'mikeymouse'),
+            array ('name'=>'daud','act'=>'flagSpikingChampion90'),
+            array ('name'=>'avery','act'=>'paperman'),
             //randoms
             array ('name'=>'berex','act'=>'thefangirl01'),
             array ('name'=>'aguilia','act'=>'CristinaMEEE'),
@@ -431,7 +350,10 @@ class MirrorplaneController extends Controller
 
             array ( 'y'=>1688, 's'=>1, 'd'=>'10', 'ord'=>'noemi', 'logn'=>1, 'name'=>'Be Reasonable'),
 
-            array ( 'y'=>1697, 's'=>2, 'd'=>'4', 'ord'=>'mikael', 'logn'=>1, 'name'=>'Dream Come True'),
+            array ( 'y'=>1697, 's'=>2, 'd'=>'10', 'ord'=>'theodore', 'logn'=>1, 'name'=>'Loose Rope'),
+
+            array ( 'y'=>1695, 's'=>1, 'd'=>'15', 'ord'=>'mikael', 'logn'=>1, 'name'=>'Goodbye My Sour Prince'),
+            array ( 'y'=>1697, 's'=>2, 'd'=>'4', 'ord'=>'mikael', 'logn'=>2, 'name'=>'Dream Come True'),
             );
 
         if($req=="char") return $mirChars;

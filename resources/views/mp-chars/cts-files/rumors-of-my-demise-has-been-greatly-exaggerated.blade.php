@@ -17,7 +17,7 @@
         <br>AND THEN SHE FUCKING STABBED ME AGAIN.
         <br>From the pain, I did not cry. I jerked my head, revealing that I am strong. And that i will not bow! I slowly opened my eyes and straightly gazed into her eyes, which glittered with love for now that she know my strength. I invited her home, with all the charm I can beckon. But she refused.
         <br>AND THAT MIGHT NOT BE A STAB. BUT THAT HURTS FUCKING MORE!
-        <br>I shed a single tear before my vision slowly faded to darkness as she catch me into her embrace and bring me back to her place... where we did things for dayssss.
+        <br>I shed a single tear before my vision slowly faded to darkness as she catches me into her embrace and bring me back to her place... where we did things for dayssss.
         <br>---
         <br>Aaaand... yeah, that's what happened.
         <br><span class="cts-porlo-frm"></span> TIME: 1690, SR 18th Summer

@@ -65,8 +65,9 @@
         <br><span class="cts-zedrik"></span>: You know I'd be gone.
         <br><span class="cts-gamora"></span>: I know you'll be back.
         <br><span class="cts-zedrik"></span>: ...
-        <br><span class="cts-gamora"></span>: And we you do. I'd like you to get the sense of individuality you been fighting for, Zed.
-        <br><span class="cts-gamora"></span>: So... Same time, same place?
+        <br><span class="cts-gamora"></span>: And when you do. I'd like you to get the sense of individuality you been fighting for, Zed.
+        <br><span class="cts-gamora"></span>: So... 
+        <br><span class="cts-gamora"></span>:Same time, same place?
         <br><span class="cts-gamora"></span>: I'll be waiting...
 
         </div>

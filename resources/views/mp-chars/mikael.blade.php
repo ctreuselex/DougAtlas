@@ -192,7 +192,7 @@
 			array ('name'=>'Blade AoE', 'val'=>'150', 'ext'=>''),
 			array ('name'=>'Blade Duration', 'val'=>'8s', 'ext'=>''),
 			array ('name'=>'Blade Count', 'val'=>'14', 'ext'=>''),
-			array ('name'=>'Max Load', 'val'=>'140 /blade', 'ext'=>''),
+			array ('name'=>'Max Load', 'val'=>'90 /blade', 'ext'=>''),
 			array ('name'=>'myst-leak Duration', 'val'=>'3s', 'ext'=>''),
 
 			);
@@ -215,7 +215,7 @@
 			array ('name' => "Prism Blades", 'ico' => "ra-divert",
 				'des'=>"Optic Blast will now bounce to 4 more Myst blades or cage, same rules as a normal Optic Blast will apply to the reflected beams."),
 			array ('name' => "There Is No Spoon", 'ico' => "ra-knife-fork",
-				'des'=>"Increases Myst blades by Holostorm's max load to 175."),  
+				'des'=>"Increases Myst blades by Holostorm's max load to 125."),  
 			);
 
 		// ------------------------------------------------------------ //
@@ -223,8 +223,8 @@
 		// ------------------------------------------------------------ //
 		$charultstats = array (
 			array ('name'=>'Damage', 'val'=>'100% Acquired Load', 'ext'=>'pur'),
-			array ('name'=>'Mikael AoE', 'val'=>'700', 'ext'=>''),
-			array ('name'=>'Blade AoE', 'val'=>'300', 'ext'=>''),
+			array ('name'=>'Mikael AoE', 'val'=>'450', 'ext'=>''),
+			array ('name'=>'Blade AoE', 'val'=>'150', 'ext'=>''),
 			array ('name'=>'Cast Time', 'val'=>'2s', 'ext'=>''),
 			);
 		$charultmcdm = array (

@@ -54,7 +54,7 @@
 				'des'=>"Throws a bomb filled with smoke and tiny machines that |blind|-s enemies every 2 seconds. Enemies inside the smoke are highlighted for all friends to shoot at."), 
 
 			array ('name'=>"Anti-Kinetic Field", 'sk'=>'sk2',
-				'des'=>"Based own Psykeeper Vriskvin's time manipulation, Riza can also generate a field that |pause|-s everyone inside it for a short second."),  
+				'des'=>"Based on Psykeeper Vriskvin's time manipulation, Riza can also generate a field that |pause|-s everyone inside it for a short second."),  
 
 			array ('name'=>"Utility Tower", 'sk'=>'sk3',
 				'des'=>"Riza places a ulitity tower at her position that grants healing, along with other benefits for all surrounding allies."),

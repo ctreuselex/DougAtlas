@@ -11,9 +11,9 @@
         <br>TIME: 1697, SR 18th Summer
         <br>ATTACHMENT: naiademn-symbol.jpg
         <br>
-        <br>After being missing for several weeks now, Psykeeper Vriskvin Dirk was retrieved from the outskirts nearby E, L, Geios on 1697, SR 16th Summer.
+        <br>After being missing for several weeks now, Psykeeper and Current Head of Geios Vriskvin Dirk was retrieved from the outskirts nearby E, L, Geios on 1697, SR 16th Summer.
         <br>
-        <br>The Psykeeper seems to have been tortured with several 3rd degree burns located around his body. His right eye has been replaced with an artificial glass eye, the Psykeeper said that he is not able to see with this eye anymore. The glass eye bears a familiar symbol carved where the pupil should be, though my team and I don't really know where we've seen that before. Image of the symbol shown in the attachment.
+        <br>The Psykeeper seems to have been tortured with several 3rd degree burns located around his body. His right eye has been replaced with an artificial glass eye. Mr. Dirk said that he is not able to see with this eye anymore. The glass eye bears a familiar symbol carved where the pupil should be, though my team and I don't really know where we've seen that before. Image of the symbol shown in the attachment.
         <br>
         <br>The Psykeeper is alive and has received first aid medical treatment. He will be transfered to the nearest medical facility as soon as possible and shall stay there until full recovery.
         <br>
