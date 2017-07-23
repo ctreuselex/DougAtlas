@@ -22,7 +22,7 @@
         array ('name'=>'disarm', 'purge'=>false, 'ico'=>'fa fa-sign-language',
             'des'=>'Throws weapon out of hand and disables certain abilities. Instantly ends on weapon retrieval.'),
         array ('name'=>'freeze', 'purge'=>true, 'ico'=>'ra ra-frost-emblem',
-            'des'=>'Prevents any action. -60% physical defense. Removed on hit or struggling.'),
+            'des'=>'Prevents any action. -60% physical defense. Removed on hit, struggling, or by Burn.'),
         array ('name'=>'root', 'purge'=>true, 'ico'=>'ra ra-thorny-vine',
             'des'=>'Prevents moving. Instantly removed on dash, blink, teleport.'),
         array ('name'=>'stun', 'purge'=>false, 'ico'=>'ra ra-doubled',
@@ -211,7 +211,7 @@
         20% { transform: scale(1.5); }
         100% { transform: scale(0); width: 0; } }
     .lemon-shrink {
-        animation: lemonshrink 2s 1;
+        animation: lemonshrink 1s 1;
         animation-fill-mode:forwards; }
 
     .skill-augs {

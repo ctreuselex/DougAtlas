@@ -22,7 +22,7 @@
         <br>We've been friends for a long time. You'd know rash wouldn't even be a sufficient description. 
         <br>
         <br>What would then?
-        <br>Reskless? Fool? An Idiot?
+        <br>Reckless? Fool? An Idiot?
         <br>
         <br>I like that last term.
         <br>...

@@ -19,7 +19,7 @@
 		$mcharDiv = "Luminos";
 		$mcharAff = "The Ark";
 		
-		$mcharAft = "Raw Myst | Combustion";
+		$mcharAft = "Raw Myst | Fire";
 		$mcharSty = "Armagus | Maximo";
 		$mcharWoc = "Corporal Works' Rune Blade";
 
@@ -148,7 +148,7 @@
 		// SK2
 		// ------------------------------------------------------------ //
 		$charsk2stats = array (
-			array ('name'=>'Damage', 'val'=>'125 + 100% Mystical Damage', 'ext'=>'mys'),
+			array ('name'=>'Damage', 'val'=>'125 + 100% Physical Damage', 'ext'=>'lum'),
 			array ('name'=>'Range', 'val'=>'400', 'ext'=>''),
 			);
 		$charsk2mcdm = array (

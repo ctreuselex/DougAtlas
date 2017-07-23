@@ -39,7 +39,7 @@
         <br><span class="cts-thechroniclez-frm"></span> Time: 1687, SR 30th Fall
         
         <hr>
-        @mastehFianchow also shut the fuck up, psycho!
+        @mastehFianchow also shut the f*ck up, psycho!
         <br><span class="cts-thechroniclez-frm"></span> Time: 1687, SR 30th Fall
         
         <hr>
@@ -47,7 +47,7 @@
         <br><span class="cts-selina-frm"></span> Time: 1687, SR 30th Fall
         
         <hr>
-        HES GOING TO DEDUCT 15 POINTS FROM MY TEST TOMORROW! LIKE WHAT THE HELL? FUCK
+        HES GOING TO DEDUCT 15 POINTS FROM MY TEST TOMORROW! LIKE WHAT THE HELL? Sh*t!!!
         <br><span class="cts-thechroniclez-frm"></span> Time: 1687, SR 30th Fall
         
         <hr>

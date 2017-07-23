@@ -38,7 +38,7 @@
         <br><span class="cts-llaxine"></span>: [distant female voice] Sandra?
         <br><span class="cts-sandra"></span>: OH! THIS WON'T STOP HERE, SYLVIA!
         <br><span class="cts-llaxine"></span>: Hey... Hey! Mrs. Seidlitz?
-        <br><span class="cts-llaxine"></span>: Oh maaaan. What the fuck mom? She's my instructor's mom!
+        <br><span class="cts-llaxine"></span>: Oh maaaan. What the hell mom? She's my instructor's mom!
         <br><span class="cts-llaxine"></span>: Maximus is your instructor? THAT JUST MAKES THIS WORST!
         <br><span class="cts-llaxine"></span>: The hell mom?
         <br><span class="cts-llaxine"></span>: OKAY! You're going to stay away from this fuckboy!

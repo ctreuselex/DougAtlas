@@ -33,7 +33,6 @@
         <br><span class="cts-chance"></span>: FUCKING CRY! PLUS YOU ALREADY HAVE GEIOS FOR YOUR OWN ANYWAY SO DONT BE SUCH A GREEDY PIGEION!
         <br><span class="cts-chance"></span>: Why the fuck are you NOT REPLYING TO ME YOU COWARD!
         <br><span class="cts-chance"></span>: SON OF AN INBRED SEWER MONKEY! TALK TO ME!!!
-        <br><span class="cts-chance"></span>: FUCK FUCK FUCK FUCK FUCK FUCK!!!
         <br><span class="cts-chance"></span>: [indistinct audio]
         <br><span class="cts-chance"></span>: ...
         <br><span class="cts-chance"></span>: Fine!
@@ -50,8 +49,8 @@
         <br><span class="cts-chance"></span>: [distant female voice] I say he deserve it.
         <br><span class="cts-chance"></span>: [distant female voice] Go Vrisk!
         <br><span class="cts-chance"></span>: IM GOING TO FRY ALL THREE OF YOU!!! MOTHER WILL HEAR ABOUT THIS!!!
-        <br><span class="cts-chance"></span>: [distant male voice] FUCKING COME BACK HERE CHANCE!
-        <br><span class="cts-chance"></span>: [distant male voice] CRAWL BACK SO YOUR MOTHER WOULD HAVE ANOTHER REASON TO KISS YOUR DISGUSTING FACE!
+        <br><span class="cts-chance"></span>: [distant male voice] COME BACK HERE CHANCE!
+        <br><span class="cts-chance"></span>: [distant male voice] CRAWL BACK SO YOUR MOTHER WOULD HAVE AN ACTUAL REASON TO KISS YOUR DISGUSTING FACE!
         <br><span class="cts-chance"></span>: [distant cursing]
         <br>
         <br>[<span class="cts-chance"></span> has ended the session]

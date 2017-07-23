@@ -126,7 +126,7 @@
 		// SK1
 		// ------------------------------------------------------------ //
 		$charsk1stats = array (
-			array ('name'=>'Damage', 'val'=>'110 + 8% of Remaining Heath', 'ext'=>'mys'),
+			array ('name'=>'Damage', 'val'=>'110 + 8% of Remaining Heath', 'ext'=>'aer'),
 			array ('name'=>'Cast Time', 'val'=>'1.5s', 'ext'=>''),
 			array ('name'=>'Travel Speed', 'val'=>'450', 'ext'=>''),
 			array ('name'=>'Distance', 'val'=>'900', 'ext'=>''),
@@ -186,7 +186,7 @@
 		// SK3
 		// ------------------------------------------------------------ //
 		$charsk3stats = array (
-			array ('name'=>'Damage', 'val'=>'65 + 3% of Remaining Heath', 'ext'=>'mys'),
+			array ('name'=>'Damage', 'val'=>'65 + 3% of Remaining Heath', 'ext'=>'aer'),
 			array ('name'=>'Range', 'val'=>'900', 'ext'=>''),
 			array ('name'=>'Area of Effect', 'val'=>'300', 'ext'=>''),
 			array ('name'=>'Delay', 'val'=>'1s', 'ext'=>''),

@@ -37,9 +37,9 @@
         <br><span class="cts-chance"></span>: ORCULLO! DO SOMETHING ABOUT THIS MESS OR MY-
         <br><span class="cts-theodore"></span>: Your what?
         <br><span class="cts-theodore"></span>: Your mom?
-        <br><span class="cts-theodore"></span>: You fucking spoiled manchild!
+        <br><span class="cts-theodore"></span>: You frickin' spoiled manchild!
         <br><span class="cts-chance"></span>: DID YOU JUS-
-        <br><span class="cts-theodore"></span>: Yes! FUCK!
+        <br><span class="cts-theodore"></span>: Yes! I just!
         <br><span class="cts-theodore"></span>: If Rustom haven't told you yet...
         <br><span class="cts-theodore"></span>: NO, you won't get any position as anything in the Institute, let alone be the head of division.
         <br><span class="cts-theodore"></span>: So have your dreams get crushed and get thrown into the garbage where they belong! Maybe, you can claim yourself be the head of losertown!

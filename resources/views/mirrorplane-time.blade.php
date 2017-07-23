@@ -403,7 +403,7 @@
             // alert($(this).val()); 
 
             var searchq = $(this).val().toLowerCase();
-            $('#log-list a li').fadeOut();
+            $('#log-list a li').slideUp();
 
             if($(this).val().indexOf('+') >= 0) {
                 var searchq = searchq.split('+');

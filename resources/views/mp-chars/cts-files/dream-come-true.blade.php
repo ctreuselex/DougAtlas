@@ -17,7 +17,7 @@
         <br>
         <br>You really need to lower your sentence count and yes Mike. You're welcome.
         <br>You can go ahead and wreck havoc with that suit. I'm not replacing or upgrading mine. Because of reasons. Thanks.
-        <br>I'm actually stopping the whole project now. It's not that it's been idle for half a decade now.
+        <br>I'm actually stopping the whole project now. It's not that it's been idle for half a decade already.
         <hr>
 
         Text Message by <span class="cts-mikael"></span> to <span class="cts-maximus"></span>

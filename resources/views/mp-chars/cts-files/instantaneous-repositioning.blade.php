@@ -16,7 +16,7 @@
         <br>
         <br>One of the members seems to look like Jeanne Ark, a previous member of the Institute, assumed by Rustom. Being super observant, Rustom also think that Jeanne Ark is the one behind the Ark's fast moving operations that ranges towards every corner of the city, as Jeanne Ark seems to be able to 'teleport' to any location instantaneously. Rustom figured that the magic-gang-signs Jeanne Ark's been throwing around whenever we see her is her channeling Myst for her teleportation mumbo jumbos. The art and technique behind this ability is still a mystery to us however, and we believe that we will not be able to put the Ark down, if they can be everywhere at once.
         <br>
-        <br>Also, anyone guessing the Jeanne Ark might be more than just one of the Ark's high ranking members? I mean, her name basically says that she's totally the one behind all of it.
+        <br>Also, anyone guessing that Jeanne Ark might be more than just one of the Ark's high ranking members? I mean, her name basically says that she's totally the one behind all of it.
         <br>
         <br>And as usual, Chance is still useless.
         <br>

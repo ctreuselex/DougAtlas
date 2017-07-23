@@ -226,7 +226,7 @@
         <br>
         <br>Geios also have the most trees per houses in the entire city, and are very well educated, and very strict, when it comes to taking care of their surroundings. Tree-huggers, they are called, and they'll also let the tree stab you in the face if they see you throwing your trash irresponsibly.
         <br>
-        <br>Geios also helds the celebration for the graduation of the students of the Institute during the first of Spring, congratulating them for six revolutions of passion and hard work.
+        <br>Geios also helds the celebration for the graduation of the students of the Institute during the first of Spring, congratulating them for six cycles of passion and hard work.
         <br>
         <br>Geios's Intititute Division practices Cirkunesi, but due to the fact that it's really difficult to practice, they consider the Exnihille as well. But Cirkunesi will always be the priority.
         <br>

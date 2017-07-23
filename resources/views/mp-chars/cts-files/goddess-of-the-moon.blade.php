@@ -31,11 +31,12 @@
         <br><span class="cts-daud"></span>: someone's magnetic
         <br><span class="cts-maximus"></span>: I see that as a curse, you should get it lifted. Go contact the nearest witch doctor as soon as possible.
         <br><span class="cts-daud"></span>: Really Max? I don't think someone like you would ever have this kind of problem.
-        <br><span class="cts-maximus"></span>: What the fuck! get that cat away from me!
+        <br><span class="cts-maximus"></span>: What the hell! get that cat away from me!
         <br><span class="cts-maximus"></span>: Yes Ms Fluffytats get this jerk away. I'm having a conversation with someone.
-        <br><span class="cts-maximus"></span>: The hell, Max! I can't fucking breathe!
+        <br><span class="cts-maximus"></span>: The hell, Max! I can't breathe!
+        <br><span class="cts-maximus"></span>: [heavy breathing]
         <br><span class="cts-maximus"></span>: why don't you come here too Mr Woolpuff? I have treats!
-        <br><span class="cts-maximus"></span>: AHH! Fuck!
+        <br><span class="cts-maximus"></span>: AHH! F*ck!
         <br><span class="cts-maximus"></span>: Quiet down Daud! My reverse-text-to-speech is getting all your whinning!
         <br><span class="cts-moon"></span>: ...
         <br><span class="cts-moon"></span>: You guys still there?
