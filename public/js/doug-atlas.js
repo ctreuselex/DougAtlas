@@ -105,7 +105,7 @@ function skiTop() {
   
   var elementHeights = $('.ski-top').map(function() {
     return $(this).height();
-  }).get();
+  });
 
   var maxHeight = Math.max.apply(null, elementHeights);
 
@@ -121,7 +121,7 @@ function skiBase() {
   $('.ski-base').css("minHeight", "auto");
   var elementHeights = $('.ski-base').map(function() {
     return $(this).height();
-  }).get();
+  });
 
   var maxHeight = Math.max.apply(null, elementHeights);
 
@@ -134,7 +134,7 @@ function skiBot() {
   $('.ski-bot').css("minHeight", "auto");
   var elementHeights = $('.ski-bot').map(function() {
     return $(this).height();
-  }).get();
+  });
 
   var maxHeight = Math.max.apply(null, elementHeights);
 

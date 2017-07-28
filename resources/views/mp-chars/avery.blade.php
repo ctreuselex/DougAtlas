@@ -26,6 +26,8 @@
 		$charthemes = 'Papers, Witch, Wizard, Origami, Hopeless Romantic, Lookin\' Good';
 		$cityname = 'Love';
 
+		$domdes = 'lorem ipsum';
+
 		$lum = 6;
 		$lumPlus = 17;
 		$lumTotal = $lum+$lumPlus;

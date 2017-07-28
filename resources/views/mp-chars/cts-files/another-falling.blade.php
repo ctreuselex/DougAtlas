@@ -44,6 +44,7 @@
         <br><span class="cts-dian"></span>: Are you really going to pretend to be blind to everything?
         <br><span class="cts-lance"></span>: For a reporter you seem to be incredibly biased.
         <br><span class="cts-dian"></span>: Maybe, it's because I-
+        <br>
         <br>//Record Stopped
 
         </div>

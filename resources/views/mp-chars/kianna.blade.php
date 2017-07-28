@@ -18,7 +18,7 @@
 		$mcharFam = "Mentor: Amelia Beleaguer";
 		$mcharDiv = "Mystos";
 		$mcharAff = "Children of Mandalas";
-		$mcharPos = "10th ce Queen";
+		$mcharPos = "6th ce Queen";
 		
 		$mcharAft = "Frost";
 		$mcharSty = "Maximo | Sigilios";

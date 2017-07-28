@@ -69,21 +69,6 @@
     @yield('char-meta')
 
     <style type="text/css">
-        .ad-dash .list-group a.list-group-item.active, .ad-dash .list-group a.list-group-item.active:focus, .ad-dash .list-group a.list-group-item.active:hover { background-color: {{ $charColor }}; }
-        .list-group-item.active i { color: {{ $charColorSub }};}
-        .ad-dash-pa { border-right: 5px solid {{ $charColor }}; }
-        .ad-dash { 
-            border-top: 1px solid {{ $charColor }};
-            background: url({{ $charTexture }}); 
-            background-size: 100%;
-            background-blend-mode: multiply;
-            background-color: {{ $charColorSub }}; }
-        .city-scape .moon { background-color: {{ $charColor }}; }
-        .city-scape .moon { box-shadow: 0 0 30px 0px {{ $charColorSub }}; border: 85px solid {{ $charColorSub }}; }
-        .city-scape:hover .moon { box-shadow: 0 0 100px 10px {{ $charColor }}; border: 10px solid {{ $charColorSub }}; }
-        .city-scape .city-name { color: {{ $charColor }}; }
-        .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover { background-color: {{ $charColor }}; }
-
         .char-logs.per li { border-left: 5px solid {{ $charColor }}; }
         .char-logs.per li:before { background: {{ $charColor }};
             background: -moz-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
@@ -197,7 +182,9 @@
                         <div class="col-xs-12">
                             <ul class="char-logs">
                                 <!-- <li>Full Name: <b>{{ $mcharNam }}</b><span></li> -->
-                                <li>Age: <b>{{ 1699-$mcharAge }} | {{ $mcharAge }}</b></li>
+                                <li>Age: 
+                                    <b>{{ round(((236*1.35)*(1699-$mcharAge))/365, 0) }} | {{ 1699-$mcharAge }} | {{ $mcharAge }}</b>
+                                </li>
                                 <!-- <li>Relatives: <b>{{ $mcharFam }}</b></li> -->
                                 <li>Home Division: 
                                     @if ($mcharDiv == 'Luminos')
@@ -240,9 +227,11 @@
                                             $datatar = str_replace("?","",$datatar);
                                         ?>
 
-                                        <a href="" type="button" id="cts-{{ $ctsnum }}" data-toggle="modal" data-target="#{{ $datatar }}"><li>
+                                        <a href="" type="button" id="cts-{{ $logs['logn'] }}" data-toggle="modal" data-target="#{{ $datatar }}"><li>
                                             <span class="col-xs-2" style="padding: 0;">{{ $logs['y'] }}</span>
-                                            <b class="col-xs-10 log-name">{{ $logs['name'] }}</b>
+                                            <b class="col-xs-9 log-name">{{ $logs['name'] }}</b>
+                                            <span class="col-xs-1" style="padding: 0;">
+                                                {{ round(((236*1.35)*($logs['y']-$mcharAge))/365, 0) }}</span>
                                         </li></a>
 
                                         @include("mp-chars/cts-files/{$datatar}")

@@ -46,9 +46,10 @@
 
     <?php
         $curPage = 'home';
-        $Color = '#18FF81';
+        $charColor = '#18FF81';
+        $charColorSub = '#AAAAAA';
+        $charTexture = url('img/hex-bg-l.png'); 
         $cityname = 'Mirrorplane';
-        // $ColorSub = '#18FF81';
 
         $pageNotes = array (
             array('ord'=>'', 'n'=>"Inpirations!",'v'=>"Look at all these Inpirations!"),
@@ -59,21 +60,22 @@
     ?>
 
     <style type="text/css">
-        .ad-dash-pa { border-right: 5px solid {{ $Color }}; }
+        /*.ad-dash-pa { border-right: 5px solid {{ $charColor }}; }
         .ad-dash { 
-            border-top: 1px solid {{ $Color }};
+            border-top: 1px solid {{ $charColor }};
             background: url({{ url('img/hex-bg-l.png') }}); 
             background-size: 100%;
             background-blend-mode: multiply;
             background-color: grey; }
         .city-scape { background-color: grey; }
-        .city-scape .moon { background-color: {{ $Color }}; }
+        .city-scape .moon { background-color: {{ $charColor }}; }
         .city-scape .moon { box-shadow: 0 0 30px 0px white; border: 85px solid white; }
-        .city-scape:hover .moon { box-shadow: 0 0 100px 10px {{ $Color }}; border: 10px solid white; }
-        .bot-scro a.fir:hover, .bot-scro a.fir.active { background-color: {{ $Color }}; color: white; transition: 0.3s; }
-        .bot-scro a.mid:hover, .bot-scro a.mid.active { background-color: {{ $Color }}; color: white; transition: 0.3s; } 
-        .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $Color }}; color: white; transition: 0.3s; }
-        .notes ul li b { background: {{ $Color }}; }
+        .city-scape:hover .moon { box-shadow: 0 0 100px 10px {{ $charColor }}; border: 10px solid white; }*/
+
+        .bot-scro a.fir:hover, .bot-scro a.fir.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
+        .bot-scro a.mid:hover, .bot-scro a.mid.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; } 
+        .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
+        .notes ul li b { background: {{ $charColor }}; }
         
         .mp-cont-char {
             padding: 0;

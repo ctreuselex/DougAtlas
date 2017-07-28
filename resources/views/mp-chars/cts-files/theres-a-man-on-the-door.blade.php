@@ -25,7 +25,7 @@
         <br>[USER: <span class="cts-kash"></span> joined the session] 
         <br>
         <br><span class="cts-mikael"></span>: Kash, any news?
-        <br><span class="cts-kash"></span>: The body still is yet to be identified.
+        <br><span class="cts-kash"></span>: The body is yet to be identified.
         <br><span class="cts-kash"></span>: It seems to be rotten already. Like it's been dugged up from cycles ago of being underground.
         <br><span class="cts-kash"></span>: Also seems to be a message from the Dark Crusade.
         <br><span class="cts-kash"></span>: Especially with the: "We know what you did"

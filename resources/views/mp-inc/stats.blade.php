@@ -356,11 +356,9 @@
     <?php for ($i=0; $i<=100; $i++) { ?>
         
         .st .per.b{{ $i }}:after {
-            width: calc({{ ($i/100) }} * (100% - 20px)); 
-        }
+            width: calc({{ ($i/100) }} * (100% - 20px));  }
         .st .per.a{{ $i }} {
-            width: calc({{ ($i/100) }} * (100% - 20px)); 
-        }
+            width: calc({{ ($i/100) }} * (100% - 20px));  }
 
     <?php } ?>
 
@@ -375,24 +373,43 @@
         padding-top: 4px;
         margin-top: -22px;
         opacity: 0;
-        transition: 0.3s;
-    }
+        transition: 0.3s; }
     .st:hover b .details {
         left: -200px;
         opacity: 1;
         transition: 0.5s;
-        z-index: 10;
-    }
+        z-index: 10; }
     .details span { background: grey; padding: 5px; color: white; }
     .details span.lum, .details span.phyDam, .details span.phyDef { background :#ff9800; }
     .details span.aer { background :#e91e63; }
     .details span.mys, .details span.mysDam, .details span.mysDef { background :#2196f3; }
     .details span.gei { background :#8bc34a; }
+
+    .char-per i.domdes {
+        top: 0; right: -40px;
+        background: {{ $charColor }}; color: white;
+        padding: 5px;
+        cursor: pointer; }
+    .char-per i.domdes.open {
+        left: 15px; right: 0; }
+    .domdes-div {
+        display: none;
+        position: absolute;
+        width: calc(100% - 15px); height: 402px;
+        background: white;
+        padding: 5px 10px;
+        z-index: 999; }
 </style>
 
 <div class="col-xs-6" style="padding: 0;">
     <!-- <h3 class="skill-name right" style="    background: white; padding: 5px 10px; margin-bottom: 1px; border-bottom: 2px solid {{ $charColor }};"><b>Statistics</b></h3> -->
-    <div class="col-xs-12 char-per"><p><b>Statistics</b></p><i class="fa fa-sliders" aria-hidden="true"></i>
+    <div class="col-xs-12 char-per"><p><b>Statistics</b></p>
+    <i class="fa fa-sliders" aria-hidden="true"></i>
+
+    @if(isset($domdes))
+        <i class="domdes fa fa-commenting" aria-hidden="true"></i>
+        <div class="domdes-div">{{ $domdes }}</div>
+    @endif
 
     @foreach ($finValues as $key => $val)
         <div class="st {{ $key }}"><div class="per b{{ $statRanks[$key] }} a{{ $statMaxRanks[$key] }}"></div>
@@ -472,3 +489,26 @@
     </section>
     <br>
 </div> -->
+
+<script type="text/javascript">
+    var desOpen=false;
+    $('.domdes').click(function() {
+        if(!desOpen) {
+            $('.domdes').animate({
+                left: "15px",
+                right: "0"
+            },300,function() {
+                $('.domdes-div').slideDown();
+                desOpen=true;
+            });
+        } else {
+            $('.domdes-div').slideUp();
+            $('.domdes').animate({
+                left: "100%",
+                right: "-40px"
+            },300,function() {
+                desOpen=false;
+            });
+        }
+    });
+</script>

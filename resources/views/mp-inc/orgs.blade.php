@@ -2,7 +2,7 @@
     <li>
         <img class="mp-img" src="{{ url('img/dom.png') }}" width="125px">
         <b class="mp-title">The Dominion</b> | "Bad things happen, especially, if we want it to"
-        <br>Founded after the creation of the CTsystem in 1554, by the elites of the Higher Ring who first used the technology.
+        <br>Founded after the creation of the CTsystem in 1654, by the elites of the Higher Ring who first used the technology.
         <br>
         <br>Was once a simple group of people, researchers and scientists, called The Nexus, who played with the power of the Myst Core in the Heart of the City, they connected everyone in the Higher Ring with their very first creation, the CTsystem. But after Frederick Lemaitre, one of the founders, found a way to use the system to not only influence the people, but also influence and control the city itself, a name rose up to power. Felix Zacharias tried to brought down Lemaitre, who immediately left after seeing what has become of his companions, and transformed the Nexus into becoming the Dominion it is now known as.
         <br>
@@ -28,13 +28,13 @@
     <li>
         <img class="mp-img" src="{{ url('img/com.png') }}" width="125px">
         <b class="mp-title">Children of Mandalas</b> | "For Change is Victory!"
-        <br>Originally serving as the hand of the Dominion in their foundation in 1595, the Children of Mandalas became the people serving group they are after Gliciero Quivince died in 1616, along with the disappearance of adviser Nacer Witfield and Ice Queen Cryo Arvy's increasing popularity among the poeple of the Lower Ring. 
+        <br>Originally serving as the hand of the Dominion in their foundation in 1645, the Children of Mandalas became the people serving group they are after Gliciero Quivince died in 1656, along with the disappearance of adviser Nacer Witfield and Ice Queen Cryo Arvy's increasing popularity among the poeple of the Lower Ring. 
         <br>
         <br>The Mandalas Cathedral is constantly revolving around the outer wall of the Middle Ring, completing it's revolution in sync with the Recurrence.
         <br>
         <br>Because of Cryo Arvy's belief in equality, she started the tradition of selecting her Snow Angels from the most gifted from the Middle and Lower Rings. Every decade on winter, The current Ice Queen selects one of her Snow Angels to be crowned as the next in throne, as she prepares herself for her ascending, in which process is unknown of.
         <br>
-        <br>Ice Queens: [10th]Kianna Halley, [9th]Amelia Beleaguer, [8th]Karissa Arvy, [1st]Cryo Arvy    
+        <br>Ice Queens: [6th]Kianna Halley, [5th]Amelia Beleaguer, [4th]Karissa Arvy, [1st]Cryo Arvy    
         <div class="clear"></div>
     </li>
     <li>

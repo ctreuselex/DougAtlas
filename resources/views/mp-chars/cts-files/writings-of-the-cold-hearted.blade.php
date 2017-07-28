@@ -20,7 +20,7 @@
         [OFFICIAL MANIFESTO OF THE CHILDREN OF MANDALAS]
         <br>AUTHOR: <span class="cts-gliciero"></span>, the founding father of the Children of Mandalas
         <br>CO-AUTHOR: <span class="cts-cryo"></span>, our first Ice Queen and <span class="cts-nacer"></span>, adviser and representative of the serving Snow Angels
-        <br>TIME: 1595, SR. 1st Winter
+        <br>TIME: 1645, SR. 1st Winter
         <br>
         <br>We, with souls of white and pure
         <br>Are here to bring calm and cold

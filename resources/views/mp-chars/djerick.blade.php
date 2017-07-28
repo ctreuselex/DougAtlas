@@ -48,7 +48,7 @@
 				'des'=>"Moon's own custom made pole-arm is as deadly as rust rushing through open wounds and a breakdancer having a very long third leg."),
 
 			array ('name'=>"Geyser Strike", 'sk'=>'sec',
-				'des'=>"Swings an upward strike which throws the target into air, damaging and |disarm|-ing them in the process. Can be cast again for 35 Myst cost for a second hit with a water blast which damages again, but now knockbacks and |drench|-es."),
+				'des'=>"Swings an upward strike which throws the target into air, damaging and |disarm|-ing them in the process. Can be cast again for 35 Myst cost for a second hit with a water blast which damages again, but now |knockback|-s and |drench|-es."),
 
 			array ('name'=>"Aqua Blast", 'sk'=>'sk1',
 				'des'=>"This trick shot allows Moon to quickly damage, |drench|, and annoy his target with a blast of water to the face along with a |clone| of himself. Double the annoyance."), 
@@ -99,6 +99,8 @@
 			array ('name'=>'Second Strike Damage', 'val'=>'85 + 30% Physical Damage', 'ext'=>'aer'),
 			array ('name'=>'Cast Time', 'val'=>'70% of Attack Rate', 'ext'=>''),
 			array ('name'=>'Range', 'val'=>'150 radius cone', 'ext'=>''),
+			array ('name'=>'knockback', 'val'=>'200', 'ext'=>''),
+
 			);
 		$charsecmcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),

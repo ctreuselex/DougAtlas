@@ -42,10 +42,11 @@
 	@include('inc/navigation')
 
     <?php
-        $curPage = 'time';
-        $Color = '#18FF81';
+        $curPage = 'home';
+        $charColor = '#18FF81';
+        $charColorSub = '#AAAAAA';
+        $charTexture = url('img/hex-bg-l.png'); 
         $cityname = 'Mirrorplane';
-        // $ColorSub = '#18FF81';
         
         $pageNotes = array (
             array('ord'=>'', 'n'=>"Much Info",'v'=>"Build Stuff. Build Moar Stuff! Destroy Said Stuff. That's the plan!"),
@@ -54,21 +55,10 @@
     ?>
 
     <style type="text/css">
-        .ad-dash-pa { border-right: 5px solid {{ $Color }}; }
-        .ad-dash { 
-            border-top: 1px solid {{ $Color }};
-            background: url({{ url('img/hex-bg-l.png') }}); 
-            background-size: 100%;
-            background-blend-mode: multiply;
-            background-color: grey; }
-        .city-scape { background-color: grey; }
-        .city-scape .moon { background-color: {{ $Color }}; }
-        .city-scape .moon { box-shadow: 0 0 30px 0px white; border: 85px solid white; }
-        .city-scape:hover .moon { box-shadow: 0 0 100px 10px {{ $Color }}; border: 10px solid white; }
-        .bot-scro a.fir:hover, .bot-scro a.fir.active { background-color: {{ $Color }}; color: white; transition: 0.3s; }
-        .bot-scro a.mid:hover, .bot-scro a.mid.active { background-color: {{ $Color }}; color: white; transition: 0.3s; } 
-        .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $Color }}; color: white; transition: 0.3s; }
-        .notes ul li b { background: {{ $Color }}; }
+        .bot-scro a.fir:hover, .bot-scro a.fir.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
+        .bot-scro a.mid:hover, .bot-scro a.mid.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; } 
+        .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
+        .notes ul li b { background: {{ $charColor }}; }
         
         .mp-cont li {
             padding: 5px;
@@ -223,7 +213,7 @@
                             <b>{{ $log['ord']  }}</b> | 
                             @foreach ($mirChars as $char)
                                 @if ($log['ord']==$char['name'])
-                                    {{ $log['y']-$char['year'] }}
+                                    {{ round(((236*1.35)*($log['y']-$char['year']))/365, 0) }}
                                 @endif
                             @endforeach
                             </span>
@@ -308,13 +298,13 @@
                                 <div class="char-hvr">
                                     @if($charyr>0) <b class="capitalize">{{ $charin }}:</b> <br>{{ $charyr }} | {{ $charyr-$char['year'] }}<br> @endif
                                     Logs: <b>{{ $logcount }}</b><br>
-                                    Reg Year: <b>{{ round(((236*1.35)*(1699-$char['year']))/365, 0) }}</b>
+                                    MP Cycles: <b>{{ 1699-$char['year'] }}</b>
                                 </div>
                                 <i class="down fa fa-caret-down"></i>
                                 <b class="col-xs-5 col-xs-offset-1 capitalize"><i class="{{ $char['ico'] }}"></i> {{ $char['name'] }}</b>
                                 <span class="col-xs-6 right">
                                     {{ $char['year']  }} | 
-                                    <b>{{ 1699-$char['year'] }}</b>
+                                    <b>{{ round(((236*1.35)*(1699-$char['year']))/365, 0) }}</b>
                                 </span>
                             </li>
                         </a>
