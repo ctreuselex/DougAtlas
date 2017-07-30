@@ -230,10 +230,10 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charultaug = array (
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "Air Sharpened", 'ico' => "ra-leaf",
+				'des'=>"Increases damage dealt by Razor Water by 25% if cast while in the air."),
+			array ('name' => "Grappling Hook", 'ico' => "ra-grappling-hook",
+				'des'=>"Ties down Tiderunner with an unbreakable cord that allows Kash to dash towards the target after it hits them."), 
 			);
 		// ------------------------------------------------------------ //
 		// EXTRA
@@ -244,7 +244,7 @@
 			);
 		$charextmcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
-			array ('name'=>'Cooldown', 'val'=>'25s'),
+			array ('name'=>'Cooldown', 'val'=>'15s'),
 			array ('name'=>'Myst Cost', 'val'=>'30'),
 			array ('name'=>'Health Cost', 'val'=>''),
 			// array ('name'=>'dp', 'val'=>false), //damage point // 't=direct' 'f=indirect'
@@ -254,10 +254,10 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "Chakra on the Foot", 'ico' => "ra-gecko",
+				'des'=>"Adds a passive ability which allows wall jumping for up to 2 times."),
+			array ('name' => "The Cephalopod", 'ico' => "ra-octopus",
+				'des'=>"Camouflage becomes a passive ability which activates whenever Kash gets close to an object or an ally. Cooldown still in effect but is reduced to 8 seconds."), 
 			);
 	?>
 @stop

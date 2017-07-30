@@ -1,5 +1,6 @@
 body {
 	font-family: 'Raleway';
+	min-width: 1024px;
 }
 
 a, a:hover, a:focus, a:active {

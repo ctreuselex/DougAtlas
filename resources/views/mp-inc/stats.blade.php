@@ -385,6 +385,7 @@
     .details span.mys, .details span.mysDam, .details span.mysDef { background :#2196f3; }
     .details span.gei { background :#8bc34a; }
 
+        
     .char-per i.domdes {
         top: 0; right: -40px;
         background: {{ $charColor }}; color: white;
@@ -392,13 +393,29 @@
         cursor: pointer; }
     .char-per i.domdes.open {
         left: 15px; right: 0; }
+    .char-per .white {
+        display: none;
+        position: absolute; top: 0; left: 60px;
+        background: transparent;
+        color: white;
+        border: 0;
+        z-index: 99;
+        cursor: pointer; }
     .domdes-div {
         display: none;
         position: absolute;
         width: calc(100% - 15px); height: 402px;
         background: white;
-        padding: 5px 10px;
+        padding: 10px;
+        overflow-y: scroll; 
         z-index: 999; }
+    .domdes-div p {
+        font-family: "Raleway";
+        font-size: 12px;
+        text-indent: 20px;
+        text-align: justify;
+        padding: 0;
+        border: 0; }
 </style>
 
 <div class="col-xs-6" style="padding: 0;">
@@ -408,7 +425,8 @@
 
     @if(isset($domdes))
         <i class="domdes fa fa-commenting" aria-hidden="true"></i>
-        <div class="domdes-div">{{ $domdes }}</div>
+        <p class="white"><b>Profile</b></p>
+        <div class="domdes-div"></div>
     @endif
 
     @foreach ($finValues as $key => $val)
@@ -489,23 +507,29 @@
     </section>
     <br>
 </div> -->
+@if(isset($domdes)) <script type="text/javascript"> var domdes = <?php echo json_encode($domdes); ?>; </script> @endif
 
 <script type="text/javascript">
     var desOpen=false;
-    $('.domdes').click(function() {
+    $('.domdes , .char-per .white').click(function() {
         if(!desOpen) {
             $('.domdes').animate({
                 left: "15px",
-                right: "0"
+                right: "0",
+                paddingLeft: "15px"
             },300,function() {
+                $('.domdes-div').html(domdes);
                 $('.domdes-div').slideDown();
+                $('.char-per .white').fadeIn();
                 desOpen=true;
             });
         } else {
             $('.domdes-div').slideUp();
+            $('.char-per .white').fadeOut();
             $('.domdes').animate({
                 left: "100%",
-                right: "-40px"
+                right: "-40px",
+                paddingLeft: "5px"
             },300,function() {
                 desOpen=false;
             });
