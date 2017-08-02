@@ -53,7 +53,7 @@
 				'des'=>"Rigel surrounds herself with her weird obsession with blades and slices all nearby flesh into sushi, her favorite."), 
 
 			array ('name'=>"Swift", 'sk'=>'sk2',
-				'des'=>"Dashes a small distance forward whilst spinning, for maximum effect, that knockbacks enemies on her landing point."),  
+				'des'=>"Dashes a small distance forward whilst spinning, for maximum effect, that |knockback|-s enemies on her landing point."),  
 
 			array ('name'=>"Razor Wings", 'sk'=>'sk3',
 				'des'=>"Forms wings made of, guess what, blades, on Rigel's back, which awesomeness exerts fear into her enemies' hearts that it increases her damage to them."),
@@ -154,8 +154,7 @@
 			array ('name'=>'Distance', 'val'=>'300', 'ext'=>''),
 			array ('name'=>'Charges', 'val'=>'2', 'ext'=>''),
 
-			array ('name'=>'Knockback', 'val'=>'200', 'ext'=>''),
-			array ('name'=>'Knockback AoE', 'val'=>'200', 'ext'=>''),
+			array ('name'=>'knockback', 'val'=>'200', 'ext'=>''),
 			);
 		$charsk2mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>'16s'),
@@ -172,7 +171,7 @@
 			array ('name' => "Swift Tricks", 'ico' => "ra-regeneration",
 				'des'=>"Decrease Swift's Myst cost to 10 and allows casting of Windblade for only 5 Myst for 3 seconds after using Swift."),
 			array ('name' => "Vacuum", 'ico' => "ra-radial-balance",
-				'des'=>"Reverse the knockback effect of Swift on its landing point."),
+				'des'=>"Reverses the |knockback| effect of Swift on its landing point."),
 			array ('name' => "Slow Down A Little", 'ico' => "ra-footprint",
 				'des'=>"Swift now inflicts a 20% |slow| on affected enemies' for 3 seconds."),
 			array ('name' => "Flying With Wings", 'ico' => "ra-feather-wing",

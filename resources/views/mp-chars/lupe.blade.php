@@ -47,7 +47,7 @@
 				'des'=>"Normally, Lupe simply bashes people with his trusty wrench, but at times, he claws their innards and throw guts to nearby supposed-to-be animal abusers. That is, if they don't stop annoying him while he works."),
 
 			array ('name'=>"Heavy Slam", 'sk'=>'sec',
-				'des'=>"Lupe smashes the ground with his massive elephant hooves, knocking away all stupid free loaders who can't pay to see the current show."), 
+				'des'=>"Lupe smashes the ground with his massive elephant hooves, |knockback|-ing away all stupid free loaders who can't pay to see the current show."), 
 
 			array ('name'=>"Bull Rush", 'sk'=>'sk1',
 				'des'=>"Morphs bull horns on his head, which looks 'fucking badass' according to Koom, and dashes through the crowd of non-paying costumers."), 
@@ -97,7 +97,7 @@
 			array ('name'=>'Damage', 'val'=>'180% Physical Damage', 'ext'=>'lum'),
 			array ('name'=>'Attack Rate', 'val'=>'60%', 'ext'=>''),
 			array ('name'=>'Area of Effect', 'val'=>'250', 'ext'=>''),
-			array ('name'=>'Knockback', 'val'=>'200', 'ext'=>''),
+			array ('name'=>'knockback', 'val'=>'200', 'ext'=>''),
 			);
 		$charsecmcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
@@ -114,7 +114,7 @@
 			array ('name' => "Brittle Footing", "ico" => "ra-boot-stomp",
 				'des'=>"Leaves an area effect that lasts for 3 seconds which |slow|-s everyone standing on it by 25%."),
 			array ('name' => "Not On My Ground", "ico" => "ra-groundbreaker",
-				'des'=>"Increases area of effect to 300 and  knockback to 450."), 
+				'des'=>"Increases area of effect to 300 and |knockback| to 450."), 
 			);
 
 		// ------------------------------------------------------------ //
@@ -140,7 +140,7 @@
 			);
 		$charsk1aug = array (
 			array ('name' => "Samson Force", "ico" => "ra-horns",
-				'des'=>"Allows Bull Rush to be cast again, stopping Lupe's dash and follow with a horn strike which knockbacks and deals double of Bull Rush's damage and the duration of its |stun|."),
+				'des'=>"Allows Bull Rush to be cast again, stopping Lupe's dash and follow with a horn strike which |knockback|-s for 200 and deals double of Bull Rush's damage and the duration of its |stun|."),
 			array ('name' => "Red Like Blood", "ico" => "ra-burst-blob",
 				'des'=>"Attacking an enemy unit affected by |bleed|-ing has 20% chance of inflicting a 1 second |stun|."), 
 			array ('name' => "Stampede", "ico" => "ra-desert-skull",

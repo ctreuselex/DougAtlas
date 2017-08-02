@@ -51,7 +51,7 @@
 				'des'=>"Max binds his armor to an ally, allowing them to share Health regeneration, Myst regeneration, and other forms of healing. Tether breaks if the ally is too far away or Max decides that he have someone else better to share things with."), 
 
 			array ('name'=>"Mystbind Push", 'sk'=>'sk1',
-				'des'=>"Creates a blast of Myst that damages and knock backs all non friendly people along its path."), 
+				'des'=>"Creates a blast of Myst that damages and |knockback|-s all non friendly people along its path."), 
 
 			array ('name'=>"Mystbind Pull", 'sk'=>'sk2',
 				'des'=>"Max pulls out the first person his Myst first comes in contact with, along with other people caught in the middle of it. If the unit has Myst less than 10% of their maximum Myst, pull will have no effect but Myst is still absorbed."),  
@@ -122,7 +122,7 @@
 			array ('name'=>'Damage', 'val'=>'60 + 5% of Remaining Myst', 'ext'=>'mys'),
 			array ('name'=>'Range', 'val'=>'600', 'ext'=>''),
 			array ('name'=>'Area of Effect', 'val'=>'250', 'ext'=>''),
-			array ('name'=>'Knockback', 'val'=>'160', 'ext'=>''),
+			array ('name'=>'knockback', 'val'=>'400', 'ext'=>''),
 			);
 		$charsk1mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),

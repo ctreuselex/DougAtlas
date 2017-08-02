@@ -55,7 +55,7 @@
         array ('name'=>'morph', 'purge'=>true, 'ico'=>'ra ra-sheep',
             'des'=>'Turns into a critter and prevents all actions but moving. Can only move at 20% of normal movement speed.'),
         array ('name'=>'knockback', 'purge'=>false, 'ico'=>'ra ra-hand',
-            'des'=>'Disables everything while also being thrown away from the source. Can be cancelled by using escape abilities.'),
+            'des'=>'Disables everything while also being thrown away from the source. Effectiveness reduced by Physical Defense. Can be cancelled by using escape abilities.'),
         
         //buffs 
         //damage

@@ -44,10 +44,10 @@
 
 		$charability = array(
 			array ('name'=>"Flurry / Vapor Blade", 'sk'=>'pri',
-				'des'=>"Releases a flurry of strikes which goes faster the longer Kash his blender transformation. If Kash is currently in the air, he will slam himself to the ground with Tiderunner and deal incredible damage to all enemy units nearby."),
+				'des'=>"Releases a flurry of strikes which goes faster the longer Kash holds his blender transformation. If Kash is currently in the air, he will slam himself to the ground with Tiderunner and deal incredible damage to all enemy units nearby."),
 
 			array ('name'=>"Tide Rush / Rain Slam", 'sk'=>'sec',
-				'des'=>"Slides on the ground and high kicks the poor fellow into the air. If Kash is currently in the air, dashes through the air and slams the targeted ground instead. Deals more damage while |drench|-ed."), 
+				'des'=>"Slides on the ground and high kicks the first poor fellow he comes he contact with into the air. If Kash is currently in the air, dashes through the air and slams the targeted ground instead. Deals more damage while |drench|-ed."), 
 
 			array ('name'=>"Hydrobomb", 'sk'=>'sk1',
 				'des'=>"Throws a bomb which explodes, dealing damage and |drench|-ing nearby enemy units on contact. Kash, jumping on top of one will cause it to explode and throw him into the air."), 
@@ -88,10 +88,10 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charpriaug = array (
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "King Crab",
+				'des'=>"Gives Flurry a 15% chance to inflict a 20% |slow| for 2 seconds."),
+			array ('name' => "One Punch Shrimp", 'ico' => "ra-spiked-tentacle",
+				'des'=>"Not attacking for more than 10 seconds will give Kash a 60% physical |amplify| which last until his next attack."), 
 			);
 		// ------------------------------------------------------------ //
 		// SECONDARY
@@ -115,10 +115,10 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsecaug = array (
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "The Tiderunner", 'ico' => "ra-sea-serpent",
+				'des'=>"Increases Tide Rush and Rain Slam's damage when |drench| to 40%."),
+			array ('name' => "Gooey Rain", 'ico' => "ra-kaleidoscope",
+				'des'=>"Rain Slam will also inflict a 20% |slow| to affected units for 3 seconds."), 
 			);
 
 		// ------------------------------------------------------------ //
@@ -129,6 +129,7 @@
 			array ('name'=>'Range', 'val'=>'500', 'ext'=>''),
 			array ('name'=>'Area of Effect', 'val'=>'200', 'ext'=>''),
 			array ('name'=>'Duration', 'val'=>'15s', 'ext'=>''),
+			array ('name'=>'Activation Range', 'val'=>'100', 'ext'=>''),
 			);
 		$charsk1mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
@@ -142,14 +143,14 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "Frag Grenade", 'ico' => "ra-grenade",
+				'des'=>"Increases Hydrobomb's damage by 50% while also cause it to inflict |bleed|-ing for 3 seconds."),
+			array ('name' => "Twin Grenade", 'ico' => "ra-gloop",
+				'des'=>"Gives Hydrobomb 2 charges which can be cast separately but decreases their damage by 30%."),
+			array ('name' => "Ink Bomb", 'ico' => "ra-suckered-tentacle",
+				'des'=>"Causes Hydrobomb to inflict |blind|-ness for 2 seconds."),
+			array ('name' => "High Tide", 'ico' => "ra-gem",
+				'des'=>"Hydrobomb will noe leave a puddle which lasts for 5 seconds."), 
 			);
 		// ------------------------------------------------------------ //
 		// SK2
@@ -169,14 +170,14 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk2aug = array (
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "Jump Kick", 'ico' => "ra-falling",
+				'des'=>"Kash |knockback|-s enemy units he jumps on to by 200. While also inflicting a 5% |frangible|-ibility for 3 seconds."),
+			array ('name' => "Flying Fish", 'ico' => "ra-fish",
+				'des'=>"Increases jump height while also increases damage increase to 120%."),
+			array ('name' => "Typhoon", 'ico' => "ra-lightning-storm",
+				'des'=>"Using Vapor Blade or Rain Slam after Stepping Stone will cause |drench| to all units in the vicinity before Kash lands."),
+			array ('name' => "Spring Feet", 'ico' => "ra-footprint",
+				'des'=>"Removes Myst cost and reduces cooldown to 2 seconds."), 
 			);
 		// ------------------------------------------------------------ //
 		// SK3
@@ -199,14 +200,14 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk3aug = array (
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),  
+			array ('name' => "Everyday I'm Juggling", 'ico' => "ra-food-chain",
+				'des'=>"Following a successful Counter Whip with a Tide Rush will throw the target higher into the air while also inflicting a 40% physical |break| for 5 seconds."),
+			array ('name' => "Suction Arms", 'ico' => "ra-tentacle",
+				'des'=>"Prevents Kash from being |disarm|-ed for 20 seconds after a successful counter, unless he throws Tiderunner away for Razor Water."),
+			array ('name' => "Rocks on the Water", 'ico' => "ra-bone-knife",
+				'des'=>"Gives Kash 20% Physical |amplify| for 5 seconds on successful counter."),
+			array ('name' => "Poseidon's Bash", 'ico' => "ra-trident",
+				'des'=>"Replaces the |knockback| with a 2 second |stun|."),  
 			);
 
 		// ------------------------------------------------------------ //
@@ -254,7 +255,7 @@
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charextaug = array (
-			array ('name' => "Chakra on the Foot", 'ico' => "ra-gecko",
+			array ('name' => "Concentrate it on the foot", 'ico' => "ra-gecko",
 				'des'=>"Adds a passive ability which allows wall jumping for up to 2 times."),
 			array ('name' => "The Cephalopod", 'ico' => "ra-octopus",
 				'des'=>"Camouflage becomes a passive ability which activates whenever Kash gets close to an object or an ally. Cooldown still in effect but is reduced to 8 seconds."), 

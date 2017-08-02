@@ -89,7 +89,7 @@
 			array ('name' => "Ice Fan", "ico" => "ra-sapphire",
 				'des'=>"Causes Kianna to shoot three icicles in a fan instead of a single one."),
 			array ('name' => "Snowball Fighter", "ico" => "ra-frost-emblem",
-				'des'=>"Allows critical hits with Icicle to knock back the target. Reduces damage by 15%."), 
+				'des'=>"Allows critical hits with Icicle to |knockback| the target by 300. Reduces damage by 15%."), 
 			);
 		// ------------------------------------------------------------ //
 		// SECONDARY

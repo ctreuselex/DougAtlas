@@ -142,3 +142,4 @@ function skiBot() {
   $('.ski-bot').css("minHeight", maxHeight+20);
   $('.aug-anim-ski-bot').css("minHeight", maxHeight+50);
 }
+

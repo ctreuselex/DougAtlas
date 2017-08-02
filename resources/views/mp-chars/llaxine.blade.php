@@ -139,7 +139,7 @@
 			);
 		$charsk1aug = array (
 			array ('name' => "Evanescent", "ico" => "ra-candle",
-				'des'=>"Celestial Apparition now knock backs Llaxine for 125 causing the apparition to move faster."),
+				'des'=>"Celestial Apparition now |knockback|-s Llaxine for 125 causing the apparition to move faster by increasing its travel speed to 650."),
 			array ('name' => "Lissome", "ico" => "ra-hood",
 				'des'=>"Llaxine and allied units become |invisible| whenever they are within 200 radius of the apparition."),
 			array ('name' => "Light Giver", "ico" => "ra-light-bulb",

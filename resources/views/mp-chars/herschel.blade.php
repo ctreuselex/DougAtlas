@@ -56,7 +56,7 @@
 				'des'=>"With her mastery of raw Myst, Herschel can |myst-lock| all enemies in the target area for a few seconds while also |reveal|-ing them naked, a significant boost to the morale of her allies."),  
 
 			array ('name'=>"Myst Propulsion", 'sk'=>'sk3',
-				'des'=>"Causes Skyshooter to release massive amount of Myst that knocks Herschel back along with all people in front of her."),
+				'des'=>"Causes Skyshooter to release massive amount of Myst that |knockback|-s Herschel back along with people in front of her."),
 
 			array ('name'=>"Ethereal Shot", 'sk'=>'ult',
 				'des'=>"Coming from the way of the void. Herschel shoots an ethereal arrow from a distance dealing damage and knockbacks all enemies it passes through."),
@@ -184,7 +184,7 @@
 			array ('name'=>'Range', 'val'=>'250', 'ext'=>''),
 			array ('name'=>'Area of Effect', 'val'=>'300', 'ext'=>''),
 
-			array ('name'=>'Knockback', 'val'=>'300', 'ext'=>''),
+			array ('name'=>'knockback', 'val'=>'300', 'ext'=>''),
 			);
 		$charsk3mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),

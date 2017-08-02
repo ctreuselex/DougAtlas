@@ -143,6 +143,34 @@
         #div-aer { background-color: #e91e63; color: white;}
         #div-mys { background-color: #2196f3; color: white;}
         #div-gei { background-color: #8bc34a; color: white;}
+
+        /*ImageSlider*/
+        .mp-ref {
+            overflow: hidden;
+            display: none; }
+        .mp-scroll-div {
+            height: 275px;
+            margin-top: 25px; }
+        .mp-scroll-div img {
+            float: left;
+            height: 275px; }
+        .mp-ref .mp-scroll {    
+            position: absolute;
+            width: 100px;                       
+            height: 275px;
+            font-size: 80px;
+            padding-top: 100px;
+            margin-top: -275px; 
+            opacity: 0.7;
+            transition: 0.5s;
+            color: {{ $charColor }}; }
+        .mp-ref .mp-scroll:hover { 
+            opacity: 1;
+            transition: 0.3s; }
+        .mp-scroll.left {
+            left: 5px; }
+        .mp-scroll.right {
+            right: 5px; }
     </style>
 
     @foreach ($mirChars as $char)
@@ -214,7 +242,19 @@
             <li>
                 <b class="mp-title">Mirrorplane</b>, a place inspired by circuit boards and art-decos, lots of art decos. Nobody knows who the city formed, where the people came from, or where it actually is. But they known that everyone must cooperate to survive the crowded, tiny world they are living in.
                 <br>
-                <img class="mp-ref" src="{{ url('img/ref-mir.png') }}" width="100%">
+
+                <div class="mp-ref" id="scroll-mircity">
+                    <div class="mp-scroll-div">
+                        <img src="{{ url('img/mircity1.jpg') }}">
+                        <img src="{{ url('img/mircity2.jpg') }}">
+                        <img src="{{ url('img/mircity3.jpg') }}">
+                        <img src="{{ url('img/mircity4.jpg') }}">
+                        <img src="{{ url('img/mircity5.jpg') }}">
+                    </div>
+                    <i class="mp-scroll left fa fa-caret-left"></i>
+                    <i class="mp-scroll right fa fa-caret-right"></i>
+                </div>
+                <!-- <img src="{{ url('img/ref-mir.png') }}" width="100%"> -->
             </li>
         </ul>
 
@@ -254,13 +294,55 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ url('js/bootstrap.min.js') }}"></script>
 
+    <script type="text/javascript"> var pageNotes = <?php echo json_encode($pageNotes); ?>;</script>
+
     <!-- CUSTOM Script-->
     <script src="{{ url('js/doug-atlas.js') }}"></script>
     <script src="{{ url('js/pie-graph.js') }}"></script>
 
     <!-- <script href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script> -->
 
-    <script type="text/javascript"> var pageNotes = <?php echo json_encode($pageNotes); ?>;</script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            createSlide("#scroll-mircity");
+            createSlide("#scroll-diviLum");
+            createSlide("#scroll-diviAer");
+            createSlide("#scroll-diviMys");
+            createSlide("#scroll-diviGei");
+        });
+
+        /*=========== ImageSlide ===========*/
+        function createSlide(id) {
+
+            $(id).fadeIn();
+            
+            var scrollDivWidth = 0;
+            $(id + '.mp-ref .mp-scroll-div img').each(function() {
+                scrollDivWidth += $(this).width();
+            });
+            $(id + '.mp-ref .mp-scroll-div').width(parseInt((scrollDivWidth)+5)+"px");
+
+            var scrolly;
+            $(id + '.mp-ref .mp-scroll.right').hover(function() { scrolly = setInterval(scrollDivRight, 10);
+            }, function() { clearInterval(scrolly); });
+            $(id + '.mp-ref .mp-scroll.left').hover(function() { scrolly = setInterval(scrollDivLeft, 10);
+            }, function() { clearInterval(scrolly); });
+
+            var scrollDivMar;
+            function scrollDivRight() {
+                scrollDivMar = $(id + '.mp-ref .mp-scroll-div').css('margin-left').replace("px","");
+                if((scrollDivMar*-1)<(scrollDivWidth-$(id).width())){
+                    $(id + '.mp-ref .mp-scroll-div').css('margin-left', (parseInt(scrollDivMar)-4)+"px");
+                }
+            }
+            function scrollDivLeft() {
+                scrollDivMar = $(id + '.mp-ref .mp-scroll-div').css('margin-left').replace("px","");
+                if(scrollDivMar<0){
+                    $(id + '.mp-ref .mp-scroll-div').css('margin-left', (parseInt(scrollDivMar)+4)+"px");
+                }
+            } 
+        }
+    </script>
 
 </body>
 

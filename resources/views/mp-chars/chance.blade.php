@@ -175,8 +175,7 @@
 			array ('name'=>'Delay', 'val'=>'', 'ext'=>''),
 			array ('name'=>'Duration', 'val'=>'', 'ext'=>''),
 			array ('name'=>'Charges', 'val'=>'', 'ext'=>''),
-
-			array ('name'=>'Knockback', 'val'=>'200', 'ext'=>''),
+			array ('name'=>'knockback', 'val'=>'200', 'ext'=>''),
 			);
 		$charsk2mcdm = array (
 			array ('name'=>'Cooldown', 'val'=>'25s'),

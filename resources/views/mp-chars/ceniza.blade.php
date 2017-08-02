@@ -51,7 +51,7 @@
 				'des'=>"She might be a mage, but Ceniza can totally wreck anyone in close-combat with her super awesome bo staff hacking moves."), 
 
 			array ('name'=>"Bo Twister", 'sk'=>'sk1',
-				'des'=>"Spins around her position like it's tango class damaging all nearby aggressive dancers, ending it with a literal blast which knocks them back and |disarm|-s. No final blast if |myst-lock|-ed."), 
+				'des'=>"Spins around her position like it's tango class damaging all nearby aggressive dancers, ending it with a literal blast which |knockback|-s and |disarm|-s. No final blast if |myst-lock|-ed."), 
 
 			array ('name'=>"Comet Fall", 'sk'=>'sk2',
 				'des'=>"Calls forth a comet which falls on the target area and damages all bandits' skulking around the place like those time when they thought that the staff is just for show."),  
@@ -125,7 +125,7 @@
 			array ('name'=>'Damage', 'val'=>'130% Physical Damage /s', 'ext'=>'lum'),
 			array ('name'=>'Area of Effect', 'val'=>'200', 'ext'=>''),
 			array ('name'=>'Duration', 'val'=>'2s', 'ext'=>''),
-			array ('name'=>'Knockback', 'val'=>'200', 'ext'=>''),
+			array ('name'=>'knockback', 'val'=>'200', 'ext'=>''),
 			);
 		$charsk1mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),

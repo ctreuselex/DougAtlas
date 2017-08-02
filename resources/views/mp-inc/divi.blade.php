@@ -68,7 +68,19 @@
         </ul>
         </div>
         <br>
-        <img class="mp-ref" src="{{ url('img/ref-lum.png') }}" width="100%">
+        <div class="mp-ref" id="scroll-diviLum">
+            <div class="mp-scroll-div">
+                <img src="{{ url('img/divilum (1).jpg') }}">
+                <img src="{{ url('img/divilum (2).jpg') }}">
+                <img src="{{ url('img/divilum (3).jpg') }}">
+                <img src="{{ url('img/divilum (4).jpg') }}">
+                <img src="{{ url('img/divilum (5).jpg') }}">
+                <img src="{{ url('img/divilum (6).jpg') }}">
+            </div>
+            <i class="mp-scroll left fa fa-caret-left"></i>
+            <i class="mp-scroll right fa fa-caret-right"></i>
+        </div>
+        <!-- <img class="mp-ref" src="{{ url('img/ref-lum.png') }}" width="100%"> -->
         <div class="clear"></div>
     </li>
     <li>
@@ -140,7 +152,20 @@
         </ul>
         </div>
         <br>
-        <img class="mp-ref" src="{{ url('img/ref-aer.png') }}" width="100%">
+        <div class="mp-ref" id="scroll-diviAer">
+            <div class="mp-scroll-div">
+                <img src="{{ url('img/diviaer (1).jpg') }}">
+                <img src="{{ url('img/diviaer (2).jpg') }}">
+                <img src="{{ url('img/diviaer (3).jpg') }}">
+                <img src="{{ url('img/diviaer (4).jpg') }}">
+                <img src="{{ url('img/diviaer (5).jpg') }}">
+                <img src="{{ url('img/diviaer (6).jpg') }}">
+                <img src="{{ url('img/diviaer (7).jpg') }}">
+            </div>
+            <i class="mp-scroll left fa fa-caret-left"></i>
+            <i class="mp-scroll right fa fa-caret-right"></i>
+        </div>
+        <!-- <img class="mp-ref" src="{{ url('img/ref-aer.png') }}" width="100%"> -->
         <div class="clear"></div>
     </li>
     <li>
@@ -214,13 +239,25 @@
         </ul>
         </div>
         <br>
-        <img class="mp-ref" src="{{ url('img/ref-mys.png') }}" width="100%">
+        <div class="mp-ref" id="scroll-diviMys">
+            <div class="mp-scroll-div">
+                <img src="{{ url('img/divimys (1).jpg') }}">
+                <img src="{{ url('img/divimys (2).jpg') }}">
+                <img src="{{ url('img/divimys (3).jpg') }}">
+                <img src="{{ url('img/divimys (4).jpg') }}">
+                <img src="{{ url('img/divimys (5).jpg') }}">
+                <img src="{{ url('img/divimys (6).jpg') }}">
+            </div>
+            <i class="mp-scroll left fa fa-caret-left"></i>
+            <i class="mp-scroll right fa fa-caret-right"></i>
+        </div>
+        <!-- <img class="mp-ref" src="{{ url('img/ref-mys.png') }}" width="100%"> -->
         <div class="clear"></div>
     </li>
     <li>
         <div class="col-xs-8 no-pad">
         <img class="mp-img" src="{{ url('img/gei.png') }}" width="125px">
-        <b class="mp-title">Geios</b> | The division of Earth, Spring, and Strength.
+        <b class="mp-title">Geios</b> | The division of Earth, Spring, and Wealth.
         <br>
         <br>The division of Geios have the reputation of being the wealthiest, that's not part of the Dominion, and being incredibly neat all the time. The Higher and Middle Rings of Geios can go toe-to-toe with the Dominion when it comes to beauty, aesthetics, and practicability, despite the Dominion's obvious flying schlick. And the Lower Ring of Geios is even rich enough to go on par with the Higher Rings of the other divisions.
         <br>
@@ -288,7 +325,18 @@
         </ul>
         </div>
         <br>
-        <img class="mp-ref" src="{{ url('img/ref-gei.png') }}" width="100%">
+        <div class="mp-ref" id="scroll-diviGei">
+            <div class="mp-scroll-div">
+                <img src="{{ url('img/divigei (1).jpg') }}">
+                <img src="{{ url('img/divigei (2).jpg') }}">
+                <img src="{{ url('img/divigei (3).jpg') }}">
+                <img src="{{ url('img/divigei (4).jpg') }}">
+                <img src="{{ url('img/divigei (5).jpg') }}">
+            </div>
+            <i class="mp-scroll left fa fa-caret-left"></i>
+            <i class="mp-scroll right fa fa-caret-right"></i>
+        </div>
+        <!-- <img class="mp-ref" src="{{ url('img/ref-gei.png') }}" width="100%"> -->
         <div class="clear"></div>
     </li>
 </ul>

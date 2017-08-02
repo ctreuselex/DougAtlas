@@ -8,6 +8,6 @@
         <br>
         <br>Years are called Revolutions, and is only made off 236 days, 59 days for each month. Days are also 35% longer to make up for the fewer days. Every new revolution is celebrated in Geios called the 'Recurrence'.
         <br>
-        <br>Fun Fact: Even wit hthe longer days, there is still fewer days in total per year in Mirrorplane, making everyone to be actually at least 1-3 years younger than their actual age, or even more gap when their older.
+        <br>Fun Fact: Even with the longer days, there is still fewer days in total per year in Mirrorplane, making everyone to be actually at least 1-3 years younger than their actual age, or even more gap when their older.
     </li>
 </ul>

@@ -233,10 +233,10 @@ class MirrorplaneController extends Controller
             array ('name' => 'tornado', 'div' => 'lum', 'year' => '1694~'),
             array ('name' => 'crustacean', 'div' => 'aer', 'year' => '1687~'),
             array ('name' => 'serpentes', 'div' => 'aer', 'year' => '1687~'),
-            array ('name' => 'bootes', 'div' => 'mys', 'year' => '1687-1693'),
             array ('name' => 'lupus', 'div' => 'mys', 'year' => '1693~'),
-            array ('name' => 'auriga', 'div' => 'mys', 'year' => '1665-1686'),
+            array ('name' => 'bootes', 'div' => 'mys', 'year' => '1687-1693'),
             array ('name' => 'circinus', 'div' => 'mys', 'year' => '1687-1691'),
+            array ('name' => 'auriga', 'div' => 'mys', 'year' => '1665-1686'),
             array ('name' => 'escutcheon', 'div' => 'gei', 'year' => '1692~'),
             array ('name' => 'genesis', 'div' => 'gei', 'year' => '1665-1680'),
             );

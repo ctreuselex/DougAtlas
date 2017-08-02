@@ -35,7 +35,7 @@
         <br><span class="cts-kash-frm"></span> TIME: 1690, SR 15th Spring
         
         <hr>
-        @mikeymouse You sound really desperate. I'll give Max 10 more years before breaking.
+        @mikeymouse You sound really desperate. I'll give Max 10 more cycles before breaking.
         <br><span class="cts-avery-frm"></span> TIME: 1690, SR 15th Spring
 
         </div>
