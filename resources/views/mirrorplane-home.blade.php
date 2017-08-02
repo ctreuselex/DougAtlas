@@ -154,6 +154,11 @@
         .mp-scroll-div img {
             float: left;
             height: 275px; }
+        .mp-scroll-prog {
+            position: absolute; 
+            height: 5px;        
+            margin-top: -5px; 
+            background: {{ $charColor }}; }
         .mp-ref .mp-scroll {    
             position: absolute;
             width: 100px;                       
@@ -171,6 +176,9 @@
             left: 5px; }
         .mp-scroll.right {
             right: 5px; }
+        .mp-scroll.left.max, .mp-scroll.right.max {
+            opacity: 0.2; }
+
     </style>
 
     @foreach ($mirChars as $char)
@@ -226,10 +234,8 @@
             margin-left: -15px;
             margin-top: -15px;
         "></div> -->
-        <img src="{{ url('img/mirrorplane-wallpaper.jpg') }}" style="
+        <img src="{{ url('img/mirrorplane-header.png') }}" style="
             width: calc(100% + 30px);
-            border: 7px solid black;
-            border-left: 0; border-right: 0;
             margin-left: -15px;
             margin-top: -15px;">
         <!-- <img src="{{ url('img/mirrorplane-poster.png') }}" style="
@@ -245,13 +251,14 @@
 
                 <div class="mp-ref" id="scroll-mircity">
                     <div class="mp-scroll-div">
-                        <img src="{{ url('img/mircity1.jpg') }}">
+                        <img class="scroll-img-hover" src="{{ url('img/mircity1.jpg') }}">
                         <img src="{{ url('img/mircity2.jpg') }}">
                         <img src="{{ url('img/mircity3.jpg') }}">
                         <img src="{{ url('img/mircity4.jpg') }}">
                         <img src="{{ url('img/mircity5.jpg') }}">
                     </div>
-                    <i class="mp-scroll left fa fa-caret-left"></i>
+                    <div class="mp-scroll-prog"></div>
+                    <i class="mp-scroll max left fa fa-caret-left"></i>
                     <i class="mp-scroll right fa fa-caret-right"></i>
                 </div>
                 <!-- <img src="{{ url('img/ref-mir.png') }}" width="100%"> -->
@@ -320,7 +327,11 @@
             $(id + '.mp-ref .mp-scroll-div img').each(function() {
                 scrollDivWidth += $(this).width();
             });
-            $(id + '.mp-ref .mp-scroll-div').width(parseInt((scrollDivWidth)+5)+"px");
+            $(id + '.mp-ref .mp-scroll-div').width(parseInt((scrollDivWidth))+"px");
+
+            var scrollProgPer = ($(id).width() / scrollDivWidth);
+            var scrollProgWidth = $(id).width() * scrollProgPer;
+            $(id + '.mp-ref .mp-scroll-prog').width(scrollProgWidth+"px");
 
             var scrolly;
             $(id + '.mp-ref .mp-scroll.right').hover(function() { scrolly = setInterval(scrollDivRight, 10);
@@ -329,18 +340,38 @@
             }, function() { clearInterval(scrolly); });
 
             var scrollDivMar;
+            var scrollProgMar;
+            var scrollProgSpeed;
             function scrollDivRight() {
                 scrollDivMar = $(id + '.mp-ref .mp-scroll-div').css('margin-left').replace("px","");
+                scrollProgMar = $(id + '.mp-ref .mp-scroll-prog').css('margin-left').replace("px","");
+
+                scrollProgSpeed = (4 / scrollDivWidth) * ($(id).width());
+                console.log(scrollProgSpeed);
+
                 if((scrollDivMar*-1)<(scrollDivWidth-$(id).width())){
-                    $(id + '.mp-ref .mp-scroll-div').css('margin-left', (parseInt(scrollDivMar)-4)+"px");
-                }
+                    $(id + '.mp-ref .mp-scroll-div').css('margin-left', (parseFloat(scrollDivMar)-4)+"px");
+                    $(id + '.mp-ref .mp-scroll-prog').css('margin-left', (parseFloat(scrollProgMar)+scrollProgSpeed)+"px");
+
+                    $(id + '.mp-ref .mp-scroll.right').removeClass("max");
+                    $(id + '.mp-ref .mp-scroll.left').removeClass("max");
+                } else { $(id + '.mp-ref .mp-scroll.right').addClass("max"); }
             }
             function scrollDivLeft() {
                 scrollDivMar = $(id + '.mp-ref .mp-scroll-div').css('margin-left').replace("px","");
+                scrollProgMar = $(id + '.mp-ref .mp-scroll-prog').css('margin-left').replace("px","");
+
+                scrollProgSpeed = (4 / scrollDivWidth) * ($(id).width());
+
                 if(scrollDivMar<0){
-                    $(id + '.mp-ref .mp-scroll-div').css('margin-left', (parseInt(scrollDivMar)+4)+"px");
-                }
-            } 
+                    $(id + '.mp-ref .mp-scroll-div').css('margin-left', (parseFloat(scrollDivMar)+4)+"px");
+                    $(id + '.mp-ref .mp-scroll-prog').css('margin-left', (parseFloat(scrollProgMar)-scrollProgSpeed)+"px");
+
+                    $(id + '.mp-ref .mp-scroll.right').removeClass("max");
+                    $(id + '.mp-ref .mp-scroll.left').removeClass("max");
+                } else { $(id + '.mp-ref .mp-scroll.left').addClass("max"); }
+            }
+
         }
     </script>
 

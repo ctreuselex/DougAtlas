@@ -77,7 +77,8 @@
                 <img src="{{ url('img/divilum (5).jpg') }}">
                 <img src="{{ url('img/divilum (6).jpg') }}">
             </div>
-            <i class="mp-scroll left fa fa-caret-left"></i>
+            <div class="mp-scroll-prog"></div>
+            <i class="mp-scroll max left fa fa-caret-left"></i>
             <i class="mp-scroll right fa fa-caret-right"></i>
         </div>
         <!-- <img class="mp-ref" src="{{ url('img/ref-lum.png') }}" width="100%"> -->
@@ -162,7 +163,8 @@
                 <img src="{{ url('img/diviaer (6).jpg') }}">
                 <img src="{{ url('img/diviaer (7).jpg') }}">
             </div>
-            <i class="mp-scroll left fa fa-caret-left"></i>
+            <div class="mp-scroll-prog"></div>
+            <i class="mp-scroll max left fa fa-caret-left"></i>
             <i class="mp-scroll right fa fa-caret-right"></i>
         </div>
         <!-- <img class="mp-ref" src="{{ url('img/ref-aer.png') }}" width="100%"> -->
@@ -248,7 +250,8 @@
                 <img src="{{ url('img/divimys (5).jpg') }}">
                 <img src="{{ url('img/divimys (6).jpg') }}">
             </div>
-            <i class="mp-scroll left fa fa-caret-left"></i>
+            <div class="mp-scroll-prog"></div>
+            <i class="mp-scroll max left fa fa-caret-left"></i>
             <i class="mp-scroll right fa fa-caret-right"></i>
         </div>
         <!-- <img class="mp-ref" src="{{ url('img/ref-mys.png') }}" width="100%"> -->
@@ -333,7 +336,8 @@
                 <img src="{{ url('img/divigei (4).jpg') }}">
                 <img src="{{ url('img/divigei (5).jpg') }}">
             </div>
-            <i class="mp-scroll left fa fa-caret-left"></i>
+            <div class="mp-scroll-prog"></div>
+            <i class="mp-scroll max left fa fa-caret-left"></i>
             <i class="mp-scroll right fa fa-caret-right"></i>
         </div>
         <!-- <img class="mp-ref" src="{{ url('img/ref-gei.png') }}" width="100%"> -->
