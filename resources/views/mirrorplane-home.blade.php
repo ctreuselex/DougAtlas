@@ -269,9 +269,9 @@
         @include('mp-inc/divi')
         <div class="clear"></div>
         
-        <p><span class="char-name">Rings</span> | From the Classy to the not-so Classy</p>
+        <!-- <p><span class="char-name">Rings</span> | From the Classy to the not-so Classy</p>
         @include('mp-inc/ring')
-        <div class="clear"></div>
+        <div class="clear"></div> -->
 
         <p><span class="char-name">Day-Night Cycle</span> | How Does Time Works? Seriously? How?</p>
         @include('mp-inc/time')
