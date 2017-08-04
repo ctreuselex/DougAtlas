@@ -6,7 +6,7 @@
         <br>
         <br>Weeks are made up of ten days, and there are only four months, which are the four seasons of; Summer, Fall, Winter, and Spring, in that order. Which month it currently is, is determined by which division the Mandalas Catherdral is currently located.
         <br>
-        <br>Years are called Revolutions, and is only made off 236 days, 59 days for each month. Days are also 35% longer to make up for the fewer days. Every new revolution is celebrated in Geios called the 'Recurrence'.
+        <br>Years are called Cycles and is only made off 236 days, 59 days for each month. Days are also 35% longer to make up for the fewer days. Every new cycle is celebrated throughout Mirrorplane called the 'Recurrence', in which Geios officials perform the Shifting of the Myst Core.
         <br>
         <br>Fun Fact: Even with the longer days, there is still fewer days in total per year in Mirrorplane, making everyone to be actually at least 1-3 years younger than their actual age, or even more gap when their older.
     </li>

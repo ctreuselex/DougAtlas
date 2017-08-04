@@ -145,27 +145,44 @@
         #div-gei { background-color: #8bc34a; color: white;}
 
         /*ImageSlider*/
+        @keyframes slideAnim {
+            0% { right: 0; width: 5px; }
+            25% { width: 50px; }
+            50% { right: calc(100% - 5px); width: 5px; }
+            75% { width: 50px; }
+            100% { right: 0; width: 5px; }
+        }
+
         .mp-ref {
+            background: black;
             overflow: hidden;
             display: none; }
         .mp-scroll-div {
-            height: 275px;
-            margin-top: 25px; }
+            height: 275px; /*same*/ }
         .mp-scroll-div img {
             float: left;
-            height: 275px; }
+            height: 275px; /*same*/ }
         .mp-scroll-prog {
             position: absolute; 
             height: 5px;        
             margin-top: -5px; 
             background: {{ $charColor }}; }
+        .mp-scroll-prog:after {
+            content: "";
+            position: absolute; top: 0; right: 0;
+            height: 5px; width: 5px;
+            background: white;
+            border: 1px solid;
+            mix-blend-mode: color-dodge;
+            animation: slideAnim 2s infinite;
+            box-shadow: 0px 0px 10px 1px {{ $charColor }}; }
         .mp-ref .mp-scroll {    
             position: absolute;
             width: 100px;                       
-            height: 275px;
+            height: 275px; /*same*/
             font-size: 80px;
             padding-top: 100px;
-            margin-top: -275px; 
+            margin-top: -275px; /*-same*/
             opacity: 0.7;
             transition: 0.5s;
             color: {{ $charColor }}; }
@@ -251,11 +268,11 @@
 
                 <div class="mp-ref" id="scroll-mircity">
                     <div class="mp-scroll-div">
-                        <img class="scroll-img-hover" src="{{ url('img/mircity1.jpg') }}">
-                        <img src="{{ url('img/mircity2.jpg') }}">
-                        <img src="{{ url('img/mircity3.jpg') }}">
-                        <img src="{{ url('img/mircity4.jpg') }}">
-                        <img src="{{ url('img/mircity5.jpg') }}">
+                        <img class="scroll-img-hover" src="{{ url('img/divi/mircity1.jpg') }}">
+                        <img src="{{ url('img/divi/mircity2.jpg') }}">
+                        <img src="{{ url('img/divi/mircity3.jpg') }}">
+                        <img src="{{ url('img/divi/mircity4.jpg') }}">
+                        <img src="{{ url('img/divi/mircity5.jpg') }}">
                     </div>
                     <div class="mp-scroll-prog"></div>
                     <i class="mp-scroll max left fa fa-caret-left"></i>
@@ -312,10 +329,14 @@
     <script type="text/javascript">
         $(window).load(function() {
             createSlide("#scroll-mircity");
-            createSlide("#scroll-diviLum");
-            createSlide("#scroll-diviAer");
-            createSlide("#scroll-diviMys");
-            createSlide("#scroll-diviGei");
+            createSlide("#scroll-divilum");
+            createSlide("#scroll-diviaer");
+            createSlide("#scroll-divimys");
+            createSlide("#scroll-divigei");
+            createSlide("#scroll-diviArmagi");
+            createSlide("#scroll-diviExnihille");
+            createSlide("#scroll-diviMaximo");
+            createSlide("#scroll-diviCirkunesi");
         });
 
         /*=========== ImageSlide ===========*/
@@ -323,13 +344,13 @@
 
             $(id).fadeIn();
             
-            var scrollDivWidth = 0;
+            var scrollDivWidth = 5;
             $(id + '.mp-ref .mp-scroll-div img').each(function() {
                 scrollDivWidth += $(this).width();
             });
             $(id + '.mp-ref .mp-scroll-div').width(parseInt((scrollDivWidth))+"px");
 
-            var scrollProgPer = ($(id).width() / scrollDivWidth);
+            var scrollProgPer = $(id).width() / scrollDivWidth;
             var scrollProgWidth = $(id).width() * scrollProgPer;
             $(id + '.mp-ref .mp-scroll-prog').width(scrollProgWidth+"px");
 
@@ -346,8 +367,7 @@
                 scrollDivMar = $(id + '.mp-ref .mp-scroll-div').css('margin-left').replace("px","");
                 scrollProgMar = $(id + '.mp-ref .mp-scroll-prog').css('margin-left').replace("px","");
 
-                scrollProgSpeed = (4 / scrollDivWidth) * ($(id).width());
-                console.log(scrollProgSpeed);
+                scrollProgSpeed = (4 / scrollDivWidth) * $(id).width();
 
                 if((scrollDivMar*-1)<(scrollDivWidth-$(id).width())){
                     $(id + '.mp-ref .mp-scroll-div').css('margin-left', (parseFloat(scrollDivMar)-4)+"px");
@@ -361,7 +381,7 @@
                 scrollDivMar = $(id + '.mp-ref .mp-scroll-div').css('margin-left').replace("px","");
                 scrollProgMar = $(id + '.mp-ref .mp-scroll-prog').css('margin-left').replace("px","");
 
-                scrollProgSpeed = (4 / scrollDivWidth) * ($(id).width());
+                scrollProgSpeed = (4 / scrollDivWidth) * $(id).width();
 
                 if(scrollDivMar<0){
                     $(id + '.mp-ref .mp-scroll-div').css('margin-left', (parseFloat(scrollDivMar)+4)+"px");
