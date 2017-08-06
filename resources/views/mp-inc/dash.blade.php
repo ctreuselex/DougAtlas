@@ -8,6 +8,12 @@
         background-size: 100%;
         background-blend-mode: multiply;
         background-color: {{ $charColorSub }}; }
+    /*.ad-dash { 
+        background: url('img/char-text-colored.jpg'); 
+        background-size: cover;
+        background-blend-mode: luminosity;
+        border-top: 1px solid {{ $charColor }};
+        background-color: {{ $charColorSub }}; }*/
     .city-scape .moon { background-color: {{ $charColor }}; }
     .city-scape .moon { box-shadow: 0 0 30px 0px {{ $charColorSub }}; border: 85px solid {{ $charColorSub }}; }
     .city-scape:hover .moon { box-shadow: 0 0 100px 10px {{ $charColor }}; border: 10px solid {{ $charColorSub }}; }

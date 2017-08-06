@@ -317,6 +317,7 @@ $mirChaps = array(
     ?>
 
     <style type="text/css">
+        .ad-dash { border-bottom: 50px solid {{ $charColor }}; }
         .bot-scro a.fir:hover, .bot-scro a.fir.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
         .bot-scro a.mid:hover, .bot-scro a.mid.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; } 
         .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }

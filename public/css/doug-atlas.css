@@ -163,7 +163,6 @@ a, a:hover, a:focus, a:active {
 	    right: -25px;
 		background-color: #333333; 
 	    padding-top: 0px;
-	    padding-bottom: 100px;
 	    padding-right: 0;
 	    overflow-y: scroll;
 	}
@@ -177,6 +176,8 @@ a, a:hover, a:focus, a:active {
 	    transition: 0.3s;
 	}*/
 
+	.list-group {
+	     margin-bottom: 0px; }
 	.list-group-item {
 	    position: relative;
 	    display: block;
@@ -184,39 +185,34 @@ a, a:hover, a:focus, a:active {
 	    margin-bottom: -1px;
 	    color: white;
 	    background-color: transparent;
-	    border: 0; 
-	}
+	    border: 0; }
 	.list-group-item:first-child {
 	    border-top-left-radius: 0px;
-	    border-top-right-radius: 0px;
-	}
+	    border-top-right-radius: 0px; }
 	.list-group-item:last-child {
 	    margin-bottom: 0;
 	    border-bottom-right-radius: 0px;
-	    border-bottom-left-radius: 0px;
-	}
+	    border-bottom-left-radius: 0px; }
 
-	a.list-group-item {
+	a.list-group-item {    
+		background: rgba(255,255,255,0.2);
 	    color: white;
 	    text-transform: capitalize;
 	    text-decoration: none;
     	padding: 5px 15px;
-	    transition: 0.3s;
-	}
+	    transition: 0.3s; }
 	a.list-group-item:hover {
 	    color: white;
 	    text-decoration: none;
 	    background-color: white;
 	    color: black;
-	    transition: 0.3s;
-	}
+	    transition: 0.3s; }
 	.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
 	    z-index: 2;
 	    color: white;
 	    background-color: white;
 	    border-color: 0;
-	    font-weight: bolder;
-	}
+	    font-weight: bolder; }
 
 	a.list-group-item i {
 	    opacity: 0;
@@ -226,18 +222,15 @@ a, a:hover, a:focus, a:active {
 	    top: -3px;
 	    position: relative;
 	    margin-right: 10px;
-	    transition: 0.5s;
-	}
+	    transition: 0.5s; }
 	a.list-group-item:hover i{
 		opacity: 1;
-	    transition: 0.3s;
-	}
+	    transition: 0.3s; }
 	a.list-group-item.active i {
 		opacity: 1;
 	    display: block;
 	    float: right;
-	    position: relative;
-	}
+	    position: relative; }
 
 	.mp-cont {
 		padding: 0;

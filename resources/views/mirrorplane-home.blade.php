@@ -72,6 +72,7 @@
         .city-scape .moon { box-shadow: 0 0 30px 0px white; border: 85px solid white; }
         .city-scape:hover .moon { box-shadow: 0 0 100px 10px {{ $charColor }}; border: 10px solid white; }*/
 
+        .ad-dash { border-bottom: 50px solid {{ $charColor }}; }
         .bot-scro a.fir:hover, .bot-scro a.fir.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
         .bot-scro a.mid:hover, .bot-scro a.mid.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; } 
         .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }

@@ -47,7 +47,7 @@
 
     <?php 
         $curPage = 'char';
-        $charTexture = url('img/hex-bg-l.png'); 
+        $charTexture = url('img/hex-bg-l.png');
         // $charTexture = url('img/mp-char/texture/'.$charname.'.jpg'); 
         $pageNotes = array (
             array('ord'=>'', 'n'=>"Game Stats",'v'=>"I have no idea why these people have stats."),
@@ -69,6 +69,7 @@
     @yield('char-meta')
 
     <style type="text/css">
+        .ad-dash { border-bottom: 50px solid {{ $charColor }}; }
         .char-logs.per li { border-left: 5px solid {{ $charColor }}; }
         .char-logs.per li:before { background: {{ $charColor }};
             background: -moz-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
@@ -168,9 +169,22 @@
         /*background: url({{ $charTexture }}); background-size: 30%; background-blend-mode: overlay; background-color: {{ $charColorSub }};*/
         "> 
 
+        <style type="text/css">
+            .char-back {
+                position: absolute; top: -20px;
+                width: calc(100% - 15px);
+                height: 650px;
+                z-index: -1;
+                background-image: url('{{ url('img/char-text-colored.jpg') }}');
+                background-size: cover;
+                background-blend-mode: luminosity;
+                background-color: {{ $charColor }}; }
+        </style>
+
     	<div class="row">
-	    	<div class="col-sm-5"> 
-                <img src="{{ url('img/mp-char/'.$charname.'.png') }}" width="125%" style="margin-top:-20px; margin-left:-12%;">
+	    	<div class="col-sm-5">
+                <!-- <div class="char-back"></div>  -->
+                <img src="{{ url('img/mp-char/'.$charname.'.png') }}" width="120%" style="margin-top:-20px; margin-left:-12%;">
 	    	</div>
             <div class="col-sm-6" style="padding:0;">
                 <div class="col-sm-12">

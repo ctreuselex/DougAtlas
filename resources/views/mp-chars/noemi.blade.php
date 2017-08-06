@@ -56,7 +56,7 @@
 				'des'=>"Fires three poison darts at a direction with deals a small amount of damage and latches on the target for 2 seconds. After that, it then releases toxins which causes the target to be inflicted with |poison|."),  
 
 			array ('name'=>"Oak Skin", 'sk'=>'sk3',
-				'des'=>"Covers a target or Noemi herself with bark which gives a significant physical |fortify| while also preventing them from getting |thundershock|."),
+				'des'=>"Covers an ally with bark which gives a significant physical |fortify| while also preventing them from getting |thundershock|. Using it on herself will make her appear as an ally to enemies units as long as she uses it before any enemy sees her and not all enemy is present to see her in her current disguise."),
 
 			array ('name'=>"Keeper of the Grove", 'sk'=>'ult',
 				'des'=>"Noemi summons a treant out of the forest - even if there's no forest in sight - to fight her battles. The treant is also in the shape of a lion, just because she likes big cats."),

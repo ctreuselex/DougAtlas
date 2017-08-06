@@ -1,7 +1,7 @@
 <?php
     $mirMyma = array(
         array('name' => "Armagi", 'tag' => "We are without the lack of creativity",
-            'imgCnt' => 7,
+            'imgCnt' => 8,
             'des' => "Weapon use is commonplace before Myst manipulations began to sprung, and when it did, manipulations are still increadibly raw and uncontrolled. Mystics who found themselves refining their art in Myst manipulation in those times soon applied their art along with their weapon mastery, bringing birth to the school of Armagi.
                 <br>
                 <br>Armagus, people who practice the art of mixing manipulations along with their weapons are still the most common type of Mystics to this day. This is mostly due to the minimal use of Myst and better physique, thus allowing them to engage in combat without the need to rest every three minutes because of the lack of stamina or overuse of Myst connections.
@@ -17,7 +17,7 @@
                 <br>Another practice of Exnihille is an uncommon one, called 'Voiding'. Voiding is the process of removing Myst from a particular area, preventing all Mystics from using it to their advantage or being 'Myst Locked' in Mystics' terms. Voiding is a recent discovery by an unknown Mystic or Mystics. The first record of it's usage is within Aeros, thought the possibly of it being used even earlier is possible."),
 
         array('name' => "Maximo", 'tag' => "To connect to the source of everything",
-            'imgCnt' => 7,
+            'imgCnt' => 8,
             'des' => "Maximo is the use of one's material affinity with minimal use of other sources but Myst. It's the most basic practice yet, it is the hardest to master. This is due to Myst can easily be tapped once a Mystic knows about it's existence, but Myst can be used up for most of Maximo conjurations and connecting to more sources of Myst can be really difficult.
                 <br>
                 <br>The grand practice of Maximo is called Sigilios, which is the creation of the so called \"Sigils\" to connect the user to the ultimate source of Myst, the Myst Core, which grants them unimaginable power for a short period of time or as long as they can hold to massive surge of Myst flowing through the window they just created. The main process behind Sigilios, outside of the creation of sigils themselves, is still unknown, and tapping to such great power is considered reckless and irresponsible by most.
@@ -25,7 +25,7 @@
                 <br>Maximo is often practiced by those whose material affinity can be generated from Myst itself such as fire, lightning, light, etc. And though, it is common for Maxims to manipulate already existing material, the conjuration of things are much easier and more reliable than recycling. This makes control another part of their practice, and makes the creation of sigils require extreme precision."),
 
         array('name' => "Cirkunesi", 'tag' => "The very city is your ally",
-            'imgCnt' => 6,
+            'imgCnt' => 7,
             'des' => "The rarest practice of all, is the Cirkunesi, which is the bringing of the city itself into one's own hands. It is often practiced by those whose material affinity are abstract or cannot be generated from Myst and requires an actual object to be manipulated in the first place such as; earth, time, speed, etc.
                 <br>
                 <br>Why they're so rare are unknown, but Mystics who practice Cirkunesi are valued by almost everyone, especially the Dominion who wants to change the city in drastic ways to whatever they seem fit. This makes being classified as a Cirkunesi the same as winning the superpower lottery and people will instantly throw all their credits on you.
