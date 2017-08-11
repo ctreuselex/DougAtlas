@@ -16,7 +16,7 @@
 
 		$mcharNam = "Rigel 'Razor Gale'";
 		$mcharFam = "Mentor: Lemaitre";
-		$mcharDiv = "<unknown>";
+		$mcharDiv = "";
 		$mcharAff = "Order of the Void";
 		
 		$mcharAft = "Raw Myst | Transparency";

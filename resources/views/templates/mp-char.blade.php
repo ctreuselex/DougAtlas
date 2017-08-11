@@ -200,18 +200,20 @@
                                     <b>{{ round(((236*1.35)*(1699-$mcharAge))/365, 0) }} | {{ 1699-$mcharAge }} | {{ $mcharAge }}</b>
                                 </li>
                                 <!-- <li>Relatives: <b>{{ $mcharFam }}</b></li> -->
-                                <li>Home Division: 
-                                    @if ($mcharDiv == 'Luminos')
-                                        <img src="{{ url('img/lum.png') }}" width="30px">
-                                    @elseif ($mcharDiv == 'Aeros')
-                                        <img src="{{ url('img/aer.png') }}" width="30px">
-                                    @elseif ($mcharDiv == 'Mystos')
-                                        <img src="{{ url('img/mys.png') }}" width="30px">
-                                    @elseif ($mcharDiv == 'Geios')
-                                        <img src="{{ url('img/gei.png') }}" width="30px">
-                                    @endif
-                                    <b>{{ $mcharDiv }}</b>
-                                </li> <!-- Luminos | Aeros | Mystos | Geios -->
+                                @if ($mcharDiv != '')
+                                    <li>Home Division: 
+                                        @if ($mcharDiv == 'Luminos')
+                                            <img src="{{ url('img/lum.png') }}" width="30px">
+                                        @elseif ($mcharDiv == 'Aeros')
+                                            <img src="{{ url('img/aer.png') }}" width="30px">
+                                        @elseif ($mcharDiv == 'Mystos')
+                                            <img src="{{ url('img/mys.png') }}" width="30px">
+                                        @elseif ($mcharDiv == 'Geios')
+                                            <img src="{{ url('img/gei.png') }}" width="30px">
+                                        @endif
+                                        <b>{{ $mcharDiv }}</b>
+                                    </li> <!-- Luminos | Aeros | Mystos | Geios -->
+                                @endif
                                 <li>Affiliation: <b>{{ $mcharAff }}</b></li>
                                 <?php if(isset($mcharPos)) { ?><li>Current Rep: <b>{{ $mcharPos }}</b></li> <?php } ?>
                             </ul>

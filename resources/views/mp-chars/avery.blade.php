@@ -202,8 +202,8 @@
 				'des'=>"Increases chance of |slow| and increases its effect to 85%."), 
 			array ('name' => "People Are Sheeple", 'ico' => "ra-sheep",
 				'des'=>"Increases chance of |morph| and its duration to 4 seconds. Does not affect the duration of other curses."),
-			array ('name' => "Power Of Love", 'ico' => "ra-glass-heart",
-				'des'=>"Increases chance of |myst-lock| and its duration to 4 seconds. Does not affect the duration of other curses."),
+			array ('name' => "Rotten Love", 'ico' => "ra-glass-heart",
+				'des'=>"Replaces |myst-lock| with |rot|, also increases its chance to proct."),
 			);
 
 		// ------------------------------------------------------------ //

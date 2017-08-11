@@ -56,6 +56,8 @@
             'des'=>'Turns into a critter and prevents all actions but moving. Can only move at 20% of normal movement speed.'),
         array ('name'=>'knockback', 'purge'=>false, 'ico'=>'ra ra-hand',
             'des'=>'Disables everything while also being thrown away from the source. Effectiveness reduced by Physical Defense. Can be cancelled by using escape abilities.'),
+        array ('name'=>'rot', 'purge'=>false, 'ico'=>'ra ra-bone-bite',
+            'des'=>'Continuously deals 7% of remaining health as physical damage until 20% of remaining Myst upon rot is used. Removed by Myst Lock.'),
         
         //buffs 
         //damage

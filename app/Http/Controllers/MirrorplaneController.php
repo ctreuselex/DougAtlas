@@ -16,11 +16,15 @@ class MirrorplaneController extends Controller
         $mirDiv = $this->charMeta("div");
         $mirTeam = $this->charMeta("team");
         $mirMems = $this->charMeta("mems");
+        
         return view('mirrorplane-home')->with('mirChars',$mirChars)->with('mirDiv',$mirDiv)->with('mirTeam',$mirTeam)->with('mirMems',$mirMems); }
 
     public function character($char) {
         $viewchar = 'mp-chars.'.$char;
-        $mirChars = $this->charMeta("char"); $mirLogs = $this->charMeta("logs"); $mirFrm = $this->charMeta("frm");
+        $mirChars = $this->charMeta("char"); 
+        $mirLogs = $this->charMeta("logs"); 
+        $mirFrm = $this->charMeta("frm");
+
         return view($viewchar)->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }   
 
     public function charMeta($req) {
@@ -157,6 +161,7 @@ class MirrorplaneController extends Controller
             array ('name'=>'demeter','act'=>'ocdVanDionyus'),
             array ('name'=>'noemi','act'=>'thelegendarylongcat'),
             array ('name'=>'vines','act'=>'ChuggingOnCaffeine'),
+            array ('name'=>'berex','act'=>'thefangirl01'),
             //boyband
             array ('name'=>'maximus','act'=>'LandarsChild'),
             array ('name'=>'mikael','act'=>'mikeymouse'),
@@ -165,7 +170,6 @@ class MirrorplaneController extends Controller
             array ('name'=>'kash','act'=>'killerPrawn'),
             array ('name'=>'froxy','act'=>'whiteFlag101'),
             //randoms
-            array ('name'=>'berex','act'=>'thefangirl01'),
             array ('name'=>'aguilia','act'=>'CristinaMEEE'),
             array ('name'=>'rainier','act'=>'H31P_m3'),
             array ('name'=>'olive','act'=>'juvilleee09'),
@@ -185,6 +189,9 @@ class MirrorplaneController extends Controller
             array ('name'=>'merandaciti','act'=>'meRandaCiti'),
             array ('name'=>'sherkeythelocker','act'=>'SherkeytheLocker'),
             array ('name'=>'pessimist101','act'=>'Pessimist101'),
+            array ('name'=>'chookey','act'=>'chookey'),
+            array ('name'=>'nanobeermachines','act'=>'nanoBeerMachines'),
+            array ('name'=>'crankydude69','act'=>'crankyDude69'),
             //rep
             array ('name'=>'kendrik','act'=>'KendrikManol'),
             array ('name'=>'jogun','act'=>'JogunSkullBasher'),
@@ -354,7 +361,8 @@ class MirrorplaneController extends Controller
 
             array ( 'y'=>1689, 's'=>2, 'd'=>'25', 'ord'=>'zedrik', 'logn'=>1, 'name'=>'Good To Be Bad'),
 
-            array ( 'y'=>1688, 's'=>1, 'd'=>'10', 'ord'=>'noemi', 'logn'=>1, 'name'=>'Be Reasonable'),
+            array ( 'y'=>1688, 's'=>1, 'd'=>'10', 'ord'=>'noemi', 'logn'=>2, 'name'=>'Be Reasonable'),
+            array ( 'y'=>1683, 's'=>3, 'd'=>'21', 'ord'=>'noemi', 'logn'=>1, 'name'=>'Weird Eyed'),
 
             array ( 'y'=>1697, 's'=>2, 'd'=>'10', 'ord'=>'theodore', 'logn'=>2, 'name'=>'Loose Rope'),
             array ( 'y'=>1696, 's'=>4, 'd'=>'4', 'ord'=>'theodore', 'logn'=>1, 'name'=>'There\'s A Man On The Door'),

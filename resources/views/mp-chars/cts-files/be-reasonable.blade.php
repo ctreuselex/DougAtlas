@@ -7,13 +7,12 @@
         <div class="modal-body">
           
         FORUM BOARD Title: <b>Guarding things is kinda dumb</b>
-        <br>Okay. I just want to get this out of my system. I get that she gets to be a leader seeing that she's too friggin' ambitious. I mean that's pretty much what got us into this mess. AMBITIONS! AND WILD SUPER WILD DREAMS! and also conspiracies. I'm not getting into specifics because I might get in trouble and we don't really need that right now.
-        <br>So... the guy who is a maniac and likes to destroy things gets to do all the dirty work. I mean that's fine. But not really seeing as he gets to destroy things! ALL OF IT! because he's damn aggressive! and me? I get to guard stuff. because why? because I get too attached too things they say. I say what? I really REALLY want to slap the two of them right now! but I won't because they're my friends BUT SERIOUSLY! I'm mad! MAD I TELL YOU! And I need to vent onto something!
-        <br>And the point, well, is anyone interested in getting smacked by a log? I'm acquiring volunteers! just message me. thanks!
+        <br>Well. As the title says; guarding things is SUUUPPPPEEERRRR boring. I get that the psychopath gets to wreck stuff, and the dreamer gets to lead stuff but me? the girl with thick emotional attachments and long term commitment success gets to guard stuff? why? I can wreck or lead to stuff you know! but well, what do I know, I'm just the one who gets to lurk into stuff and get everyone the info we need to know about stuff.
+        <br>And the point of this post is well, is anyone interested in getting smacked by a log? I need to vent onto <strike>something</strike> someoone. I'm acquiring volunteers! just message me. thanks!
         <br><span class="cts-noemi-frm"></span> TIME: 1688, SR 10th Summer
         
         <hr>
-        Oh! me! I'll wear leather too!
+        Oh! me! I'll wear leather too! I'll put stuff into your stuff.
         <br><span class="cts-mastehfianchow-frm"></span> TIME: 1688, SR 10th Summer
 
         <hr>

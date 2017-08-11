@@ -15,8 +15,8 @@
 		}
 
 		$mcharNam = "Riza 'Eagle' Harmilton";
-		$mcharFam = "<unknown>";
-		$mcharDiv = "<unknown>";
+		$mcharFam = "";
+		$mcharDiv = "";
 		$mcharAff = "none";
 		
 		$mcharAft = "Mydow";

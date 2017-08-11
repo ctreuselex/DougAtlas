@@ -16,7 +16,7 @@
 
 		$mcharNam = "Theodore Orcullo";
 		$mcharFam = "<unknown>";
-		$mcharDiv = "Luminos";
+		$mcharDiv = "Geios";
 		$mcharAff = "Institute";
 		$mcharPos = "Head of Luminos";
 		
