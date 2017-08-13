@@ -75,17 +75,18 @@ $(document).ready(function() {
 });
 
 /*=========== SEL-ACTIVE ===========*/
-$(function() {
+
+$(document).ready(function() {
     if(location.pathname.split("/")[1] == "mirrorplane") {
         $('#mirrorplane-nav').addClass('mirrorplane-nactive');
         $('.ad-dash div a#' + location.pathname.split("/")[3]).addClass('active');
 
         if(location.pathname.split("/")[2]=="profile") {
-          // console.log(location.pathname.split("/")[3]);
-          var currentli = $('.ad-dash div a#' + location.pathname.split("/")[3]).position().top;
-          $('.ad-dash').animate({
-              scrollTop: currentli
-          }, '3000');  
+            // console.log(location.pathname.split("/")[3]);
+            var currentli = $('.ad-dash div a#' + location.pathname.split("/")[3]).position().top;
+            $('.ad-dash').animate({
+                scrollTop: currentli
+            }, '3000');  
         }
     }
 });
