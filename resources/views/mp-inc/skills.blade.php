@@ -218,20 +218,40 @@
         animation: lemonshrink 1s 1;
         animation-fill-mode:forwards; }
 
+    @keyframes boxshrink {
+        0% { transform: scale(1) rotate(0deg); }
+        20% { transform: scale(1.5) rotate(20deg); }
+        35% { background-color: white; box-shadow: 0 0 5px 1px {{ $charColorSub }}; }
+        100% { transform: scale(0) rotate(360deg); } }
+        100% { background-color: white; box-shadow: 0 0 0 0 white }
+    .box-shrink {
+        animation: boxshrink 1s 1;
+        animation-fill-mode:forwards; }
+    @keyframes boxpop {
+        0% { transform: scale(0); }
+        30% { transform: scale(1.5); }
+        80% { transform: scale(0.9) ; }
+        100% { transform: scale(1) ; } }
+    .box-pop {
+        animation: boxpop 0.5s 1;
+        animation-fill-mode:forwards; }
+
     .skill-augs {
         /*display: none;*/
         position: fixed; bottom: 0; left: 225px;
         font-weight: bold;
-        padding: 5px 10px;
-        background: white; color: {{ $charColorSub }};
-        border: 1px solid {{ $charColor }};
-        border-left: 0;
+        padding: 5px;
         transition: 0.5s; }
     .skill-augs span {
         font-size: 14px; }
     .skill-augs.error {
         background: white: color: red;
         transition: 0.5s; }
+
+    .aug-points {
+        width: 10px; height: 10px;
+        margin: 5px 0; 
+        background: {{ $charColor }}; }
 </style>
 
 <!-- <div class="row"> -->
@@ -438,7 +458,7 @@
 @endforeach
 
 <div class="skill-augs">
-    APs: <span id="aug-points"><?php for($i=0;$i<10;$i++) echo "<i class='fa fa-lemon-o'></i> "; ?></span>
+    <?php for($i=0;$i<10;$i++) echo '<div class="aug-points"></div>'; ?>
 </div>
 
 <!-- </div> -->
@@ -451,18 +471,21 @@
             if($('#btn-'+augname).hasClass("active")) { 
                 activeAugs++;
                 $('#btn-'+augname).removeClass("active");
-                for(i=0;i<activeAugs;i++) divAug += "<i class='fa fa-lemon-o'></i> ";
-                if(activeAugs==0) { divAug = "No more Lemons!" } 
-                $('#aug-points').html(divAug);
+                for(i=0;i<activeAugs;i++) {
+                    if(i==0) divAug += "<div class='aug-points box-pop'></div> ";
+                    else divAug += "<div class='aug-points'></div> ";
+                }
+                if(activeAugs==0) { divAug = "" } 
+                $('.skill-augs').html(divAug);
             } else { 
                 activeAugs--; 
                 $('#btn-'+augname).addClass("active");
                 for(i=0;i<=activeAugs;i++) {
-                    if(i==activeAugs) divAug += "<i class='fa fa-lemon-o lemon-shrink'></i> ";
-                    else divAug += "<i class='fa fa-lemon-o'></i> ";
+                    if(i==0) divAug += "<div class='aug-points box-shrink'></div> ";
+                    else divAug += "<div class='aug-points'></div> ";
                 } 
-                if(activeAugs==0) { divAug = "No more Lemons!" } 
-                $('#aug-points').html(divAug);
+                if(activeAugs==0) { divAug = "" } 
+                $('.skill-augs').html(divAug);
                 
                 $('.'+sk).show();
                 $('.'+sk+' .anim-box').css("animation", "augLoad 2s infinite");
@@ -480,9 +503,12 @@
         } else if ($('#btn-'+augname).hasClass("active")) {
             activeAugs++;
             $('#btn-'+augname).removeClass("active"); 
-            for(i=0;i<activeAugs;i++) divAug += "<i class='fa fa-lemon-o'></i> "; 
-            if(activeAugs==0) { divAug = "No more Lemons!" } 
-            $('#aug-points').html(divAug);
+            for(i=0;i<activeAugs;i++) {
+                if(i==0) divAug += "<div class='aug-points box-pop'></div> ";
+                else divAug += "<div class='aug-points'></div> ";
+            } 
+            if(activeAugs==0) { divAug = "" } 
+            $('.skill-augs').html(divAug);
             
             $('#'+augname).slideToggle(300, function() {
                 skiTop(); skiBase(); skiBot();

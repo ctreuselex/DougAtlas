@@ -1,5 +1,7 @@
 <style type="text/css">
-    .ad-dash .list-group a.list-group-item.active, .ad-dash .list-group a.list-group-item.active:focus, .ad-dash .list-group a.list-group-item.active:hover { background-color: {{ $charColor }}; border-left: 5px solid {{ $charColor }}; }
+    .ad-dash .list-group a.list-group-item.active, .ad-dash .list-group a.list-group-item.active:focus, .ad-dash .list-group a.list-group-item.active:hover { 
+    	background-color: {{ $charColor }}; 
+    	border-left: 5px solid {{ $charColor }}; }
     .list-group-item.active i { color: {{ $charColorSub }};}
     .ad-dash-pa { border-right: 5px solid {{ $charColor }}; }
     .ad-dash { 
