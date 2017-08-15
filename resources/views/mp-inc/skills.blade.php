@@ -317,7 +317,8 @@
             <div class="col-xs-12"> 
                 <div class="row"> 
                     <div class="col-xs-12">
-                        <p class="row col-xs-<?php if($rowpos!='ski-base') echo '10'; else echo '9'; ?>">
+                        <p class="row col-xs-<?php if($rowpos!='ski-base') echo '12'; else echo '12'; ?>">
+                            <span style="width: 100px; height: 50px; float: right;"></span>
                             <?php
                                 $des = explode("|", $ability['des']); 
                                 foreach ($des as $d) {
