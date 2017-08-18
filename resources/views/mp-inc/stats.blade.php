@@ -407,15 +407,17 @@
         width: calc(100% - 15px); height: 402px;
         background: white;
         padding: 10px;
-        overflow-y: scroll; 
+        /*overflow-y: scroll; */
         z-index: 999; }
     .domdes-div p {
         font-family: "Raleway";
         font-size: 12px;
-        text-indent: 20px;
-        text-align: justify;
+        /*text-indent: 20px;*/
+        /*text-align: justify;*/
         padding: 0;
         border: 0; }
+    .domdes-div hr { margin: 10px 0; }
+
 </style>
 
 <div class="col-xs-6" style="padding: 0;">
@@ -507,7 +509,24 @@
     </section>
     <br>
 </div> -->
-@if(isset($domdes)) <script type="text/javascript"> var domdes = <?php echo json_encode($domdes); ?>; </script> @endif
+@if(isset($domdes)) 
+    <?php
+        $fuldes = '';
+        $des = explode("|", $domdes);
+        for($i=0; $i<count($des); $i++) {
+            for ($j=0; $j<count($mirChars); $j++) {
+                $charico = $mirChars[$j]['ico'];
+                if ($charico=="") $charico = "fa fa-user";
+
+                if($mirChars[$j]['name']==$des[$i]) $des[$i] = '<p><span class="cts-'.$des[$i].'"><i class="'.$charico.'"></i></span>:';
+            }
+            if($des[$i]=='<') $des[$i]='<p>';
+            elseif($des[$i]=='>') $des[$i]='</p><hr>';
+            $fuldes .= $des[$i];
+        } 
+    ?>
+    <script type="text/javascript"> var domdes = <?php echo json_encode($fuldes); ?>; </script> 
+@endif
 
 <script type="text/javascript">
     var desOpen=false;

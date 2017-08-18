@@ -176,7 +176,7 @@
 			array ('name' => "Make a Wish", 'ico' => "ra-fairy-wand",
 				'des'=>"Removes all negative status effects on allies, regardless of where they are, once the comet hits the ground."),
 			array ('name' => "Comets are Actually Ice", 'ico' => "ra-crystals",
-				'des'=>"Causes Comet fall yo |freeze| enemies on hit."), 
+				'des'=>"Causes Comet fall to |freeze| enemies on hit."), 
 			);
 		// ------------------------------------------------------------ //
 		// SK3

@@ -139,7 +139,10 @@
         border-top: 30px solid {{ $charColor }};
         border-right: 1px solid #eeeeee;
         cursor: pointer;
-        transition: 0.5s; }
+        transition: 0.3s; }
+    .aug-plus:hover {
+        border-top: 25px solid {{ $charColor }};
+        transition: 0.3s; }
     .aug-plus i {
         margin: -30px auto 0;
         font-size: 20px;
@@ -218,24 +221,6 @@
         animation: lemonshrink 1s 1;
         animation-fill-mode:forwards; }
 
-    @keyframes boxshrink {
-        0% { transform: scale(1) rotate(0deg); }
-        20% { transform: scale(1.5) rotate(20deg); }
-        35% { background-color: white; box-shadow: 0 0 5px 1px {{ $charColorSub }}; }
-        100% { transform: scale(0) rotate(360deg); } }
-        100% { background-color: white; box-shadow: 0 0 0 0 white }
-    .box-shrink {
-        animation: boxshrink 1s 1;
-        animation-fill-mode:forwards; }
-    @keyframes boxpop {
-        0% { transform: scale(0); }
-        30% { transform: scale(1.5); }
-        80% { transform: scale(0.9) ; }
-        100% { transform: scale(1) ; } }
-    .box-pop {
-        animation: boxpop 0.5s 1;
-        animation-fill-mode:forwards; }
-
     .skill-augs {
         /*display: none;*/
         position: fixed; bottom: 0; left: 225px;
@@ -251,7 +236,36 @@
     .aug-points {
         width: 10px; height: 10px;
         margin: 5px 0; 
-        background: {{ $charColor }}; }
+        background: {{ $charColor }};
+        transition: 0.3s;  }
+    .aug-points:hover {
+        height: 30px;
+        transition: 0.3s; }
+    .aug-points:after {
+        content: "";
+        position: absolute;
+        width: 4px; height: 4px;    
+        background-color: white;
+        margin-top: 3px; margin-left: 3px;
+        mix-blend-mode: color-dodge;
+        box-shadow: 0 0 5px 1px {{ $charColor }}; }
+
+    @keyframes boxshrink {
+        0% { transform: scale(1) rotate(0deg); }
+        40% { transform: scale(0.5) rotate(360deg); height: 10px; margin-bottom: 60px; background-color: {{ $charColorSub }}; }
+        55% { transform: scale(0.5) rotate(360deg); height: 200px; background-color: {{ $charColorSub }};}
+        100% { transform: scale(0.5) rotate(360deg); height: 200px; margin-bottom: 800px; background-color: {{ $charColorSub }}; } }
+    .box-shrink {
+        animation: boxshrink 2s 1;
+        animation-fill-mode:forwards; }
+    @keyframes boxpop {
+        0% { transform: scale(0); margin-bottom: 50px; }
+        30% { transform: scale(1.5); margin-bottom: 10px; }
+        80% { transform: scale(0.9) ; }
+        100% { transform: scale(1) ; margin-bottom: 0px; } }
+    .box-pop {
+        animation: boxpop 0.5s 1;
+        animation-fill-mode:forwards; }
 </style>
 
 <!-- <div class="row"> -->

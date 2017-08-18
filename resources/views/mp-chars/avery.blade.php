@@ -27,10 +27,14 @@
 		$cityname = 'Love';
 
 		$domdes = "
-			<p>Avery has a special case of staying late around at night and randomly trolling his friends and strangers through the CTs. It's actually quite suprising he's still not 'haunted' by the Order. Seems like he could use a visit from them.</p>
-			<p>Aside from the frequent trolling, there's also the case of frequently staring at people. I'd say ladies if he's only staring at ladies but that doesn't seem to be the case.</p>
-			<p>Regardless of those however is the talent to fold paper. Not only in an origami way to impress his folks but in a way that no other can seem to pull off; to make people his paper, or their souls first, seeing as it's the first thing he's tapping into. Though it remains a mystery how he discovered his power, as he keeps on changing topics when people ask him about it, he is famed throughout the city for such a discovery. A discovery that could have ended up being darker than it is now. Luckily, it fell in the hands of a reluctant perv.</p>
-			<p>Mikael also seem to like spending his time writing long paragraphs about why Avery should consider his Psykeeper business more seriously.</p>";
+			|<|george| 
+				Well, Zaldy likes him cause they're paper buddies.|>|
+			|<|gamora| 
+				I do adore his curiousity... Sexual curiousity.|>|
+			|<|mikael| 
+				Guy's great; great friend, great teammate, great waste of time. Seriously. He likes wasting my time. He could've been training to a better Psykeeper but noooooo... let's go havoc instead.|>|
+			|<|lance| 
+				Can somebody please prevent this man from entering the Mandalas Cathedral every damn night. The warm ambiance is not cool and the screeching are stopping me from getting my sleep.|>|";
 
 		$lum = 6;
 		$lumPlus = 17;

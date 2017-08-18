@@ -26,6 +26,16 @@
 		$charthemes = 'Dual Guns, Balance, No Second Chances, Being a Jerk to Everyone ';
 		$cityname = 'Pride';
 
+		$domdes = "
+			|<|eva| 
+				Everything about him is perfect! <3|>|
+			|<|vines| 
+				Perfect sociopath. Yes. I mean no. I mean... Nevermind, just don't go near him if you want to keep your santy intact.|>|
+			|<|theodore| 
+				If you have a habit of getting insulted every 3 minutes, why don't you crank that up to eleven and be insulted evey 30 seconds?|>|
+			|<|vriskvin| 
+				There's only one way to get around his attics every now and then; punch his face.|>|";
+
 		$lum = 8;
 		$lumPlus = 25;
 		$lumTotal = $lum+$lumPlus;
