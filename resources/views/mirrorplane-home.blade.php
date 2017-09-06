@@ -261,27 +261,6 @@
             margin-left: -15px;
             margin-top: -15px;">-->
 
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <style type="text/css">
-            .dragbtn {
-                background-color: red; 
-                width: 100px; height: 100px; 
-                border-radius: 100px; 
-                position: fixed; top: 0; right: 0; 
-                z-index: 99999;
-                transition: 0; }
-            .dragbtn:hover, .dragbtn:focus, .dragbtn:active {
-                margin-top: -5px;
-                box-shadow: 0 5px 5px 0 rgba(0,0,0,0.5);
-                transition: 0; }
-        </style>
-        <div class="dragbtn" id="draggable"></div>
-        <script type="text/javascript">
-            $( function() {
-                $( "#draggable" ).draggable();
-            } );
-        </script>
-
         <p><span class="char-name">The City</span> | The World, the Universe</p>
         <ul class="mp-cont">
             <li>
