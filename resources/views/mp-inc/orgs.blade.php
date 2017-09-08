@@ -99,12 +99,12 @@
                 <br>
                 <br>The Ark is bent on proving the existence of the outside world and that the Myst Core is responsible for the 'Wall' which separates the city from it. They are also convinced that the Dominion and its previous form - whatever it was before its formation in the 1500s - are the ones responsible for Mirrorplane's isolation. For the past cycles, however, the Ark has never made any direct attack on the Dominion itself, but rather attack weapon manufacturers such as the Tauroscene Corp and the Landar Industries. It is believed that they are trying to diminish the power from the Dominion by stealing their weaponry, it is regarded as \"foolish\" by most though, due to Myst Manipulation, and the fact that the higher ring and the Dominion have the most Mystics, and the need for weapons in combat is very minimal." ),
 
-        array('id'=>"darkcrusade", 'name'=>"The Dark Crusade",
+        array('id'=>"ringunited", 'name'=>"Rings United",
             'img'=>url('img/cam.png'),
-            'tag'=>"Shun the non-believers!",
-            'des'=>"The brother organization of the Ark. Its formation was due to the limited access to the main circle of its older brother, and due to the poeple of the lower ring's belief that the city is totally unfair.
+            'tag'=>"Walls will not divide as any longer!",
+            'des'=>"The brother organization of the Ark. Its formation was due to the limited access to the main circle of its older brother, and due to the people of the lower ring's belief that the city is totally unfair.
                 <br>
-                <br>The Ark speaks nothing of the presence of the Dark Crusade and they might be trying to deny its creation due to the crusades violent nature. The crusade is well known within the lower ring and even if its purely composed of its people, they are afraid of it, as it represents the ring's absence of humanity." ),
+                <br>A group of former Ark members seperated themselves from Arks increasingly vague goals and pursue a more reasonable course of action to unite the entire city without rings and divisions." ),
         );
 
 
