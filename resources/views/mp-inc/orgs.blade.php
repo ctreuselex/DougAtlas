@@ -107,9 +107,6 @@
                 <br>A group of former Ark members seperated themselves from Arks increasingly vague goals and pursue a more reasonable course of action to unite the entire city without rings and divisions." ),
         );
 
-
-
-
 ?>
 
 <style type="text/css">
@@ -145,7 +142,8 @@
             $orgcount++;
      
             $orgid = $org['id'];
-            $orgimg = $org['img']; ?>        <div class="tab-org {{ $isActive }}" onclick="orgChange(this, '{{ $orgid }}')">
+            $orgimg = $org['img']; ?>        
+                <div class="tab-org {{ $isActive }}" onclick="orgChange(this, '{{ $orgid }}')">
                 <img src="{{ $orgimg }}" width="100%"></div>
     @endforeach
 </div>

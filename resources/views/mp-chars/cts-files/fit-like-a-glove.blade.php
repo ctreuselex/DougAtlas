@@ -30,7 +30,7 @@
         <br><span class="cts-kash"></span>: Your sword broke in half as you try to lunge it through Vriskvin's armor. But the handle remained intact so you can still use it to forge another but the frost-enchanted blade is totally lost.
         <br><span class="cts-vriskvin"></span> Nice luck.
         <br><span class="cts-mikael"></span>: Wouldn't my strength contribute something to that?
-        <br><span class="cts-kash"></span>: You poured your stat into wisdom, you should have known.
+        <br><span class="cts-kash"></span>: You poured your stat into wisdom, you should have known better.
         <br><span class="cts-kash"></span>: V, roll!
         <br><span class="cts-vriskvin"></span> 18.
         <br><span class="cts-kash"></span>: From the frost-enchanted blade, your armor emitted a frost nova and repelled the insects that are surrounding the whole team, increasing the visibility around the tunnel.
