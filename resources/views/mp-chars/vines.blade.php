@@ -20,7 +20,7 @@
 		$mcharAff = "Dominion | Institute";
 		
 		$mcharAft = "Water";
-		$mcharSty = "Armagus";
+		$mcharSty = "Armagi | Cirkunesi";
 		$mcharWoc = "Tauroscene's Sherwillon";
 
 		$charthemes = 'Paintings, Murals, Color Me Surprised, Countering, Parrying';

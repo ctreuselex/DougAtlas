@@ -20,8 +20,8 @@
 		$mcharAff = "Institute";
 		$mcharPos = "Head of Aeros";
 		
-		$mcharAft = "Raw Myst";
-		$mcharSty = "Exnihille";
+		$mcharAft = "Fire*";
+		$mcharSty = "Extenebri";
 		$mcharWoc = "None";
 
 		$charthemes = 'Keyboard Warrior, Gang Signs, Total Boss, Cyclops, Probably a Cyborg';

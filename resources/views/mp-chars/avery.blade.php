@@ -20,7 +20,7 @@
 		$mcharAff = "Dominion | Institute";
 		
 		$mcharAft = "Paper";
-		$mcharSty = "Maximo";
+		$mcharSty = "Cirkunesi | Invorti";
 		$mcharWoc = "Tauroscene's Biblumancer";
 
 		$charthemes = 'Papers, Witch, Wizard, Origami, Hopeless Romantic, Lookin\' Good';

@@ -55,7 +55,7 @@
     ?>
 
     <style type="text/css">
-        .ad-dash { border-bottom: 50px solid {{ $charColor }}; }
+        /*.ad-dash { border-bottom: 50px solid {{ $charColor }}; }*/
         .bot-scro a.fir:hover, .bot-scro a.fir.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
         .bot-scro a.mid:hover, .bot-scro a.mid.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; } 
         .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
@@ -63,19 +63,16 @@
         
         .mp-cont li {
             padding: 5px;
-            margin-bottom: 1px;
-        }
+            margin-bottom: 1px; }
         .mp-cont li.no-hvr {
             padding: 5px;
-            margin-bottom: -4px;
-        }
+            margin-bottom: -4px; }
         .year-div {
             width: 100%;
             font-size: 10px;
             font-weight: bolder;
             border-bottom: 1px solid white;
-            padding: 5px 20px;
-        }
+            padding: 5px 20px; }
         a { color: #333; }
         .li-hvr {
             display: inline-block;
@@ -91,8 +88,7 @@
             -webkit-transition-property: color;
             transition-property: color;
             -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-        }
+            transition-duration: 0.3s; }
         .li-hvr:before {
             content: "";
             position: absolute;
@@ -111,20 +107,22 @@
             -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
             -webkit-transition-timing-function: ease-out;
-            transition-timing-function: ease-out;
-        }
+            transition-timing-function: ease-out; }
         .li-hvr:hover, .li-hvr:focus, .li-hvr:active {
-            color: white;
-        }
+            color: white; }
         .li-hvr:hover:before, .li-hvr:focus:before, .li-hvr:active:before {
             -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-        }
+            transform: scaleX(0); }
         #div-lum { background-color: #ff9800; color: white;}
         #div-aer { background-color: #e91e63; color: white;}
         #div-mys { background-color: #2196f3; color: white;}
         #div-gei { background-color: #8bc34a; color: white;}
         /*.sbx.pur { background-color: #EFE167; }*/
+
+        #cts-search {
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 1px; }
     </style>
 
     @foreach ($mirChars as $char)
@@ -238,34 +236,28 @@
                 margin-top: 0;
                 z-index: 999;
                 opacity: 0;
-                transition: 0.5s;
-            }
+                transition: 0.5s; }
             .li-hvr:hover .char-hvr {
                 height: 94px;
                 color: #333;
-                /*font-size: 14px;*/
                 margin-top: -99px;
                 opacity: 1;
-                transition: 0.3s;
-            }
+                transition: 0.3s; }
             i.down {   
                 margin-top: -25px;
                 margin-left: 90%;
                 font-size: 40px; 
-                opacity: 0;
-            }
+                opacity: 0; }
             .li-hvr:hover i.down {
                 margin-top: -25px !important;
                 margin-left: 90% !important;
                 font-size: 40px !important;
-
-                opacity: 1;
-            }
+                opacity: 1; }
     
         </style>
 
         <div class="col-xs-3">
-            <input id="cts-search" class="form-control" type="text" placeholder="search"><br>
+            <input id="cts-search" class="form-control" type="text" placeholder="Search">
             <!-- CHARACTERS -->
             <ul class="mp-cont">
                 <?php
@@ -290,14 +282,15 @@
                                 if($yrs['name'] == $char['name']) {
                                     $charin = $yrs['in'];
                                     $charyr = $yrs['year'];
-                                    if($charin=='institute') $charyr = $charyr.'-'.($charyr+6);
+                                    if($charin=='institute') $charyrs = $charyr.'-'.($charyr+6);
+                                    else $charyrs = $charyr;
                                 }
                             }
                         ?>
                         <a href="/mirrorplane/profile/{{$charlink}}">
                             <li id="{{ $char['name'] }}" class="li-hvr">
                                 <div class="char-hvr">
-                                    @if($charyr>0) <b class="capitalize">{{ $charin }}:</b> <br>{{ $charyr }} | {{ $charyr-$char['year'] }}<br> @endif
+                                    @if($charyr>0) <b class="capitalize">{{ $charin }}:</b> <br>{{ $charyrs }} | {{ $charyr-$char['year'] }}<br> @endif
                                     Logs: <b>{{ $logcount }}</b><br>
                                     MP Cycles: <b>{{ 1699-$char['year'] }}</b>
                                 </div>

@@ -19,8 +19,8 @@
 		$mcharDiv = "";
 		$mcharAff = "Order of the Void";
 		
-		$mcharAft = "Raw Myst | Phasing";
-		$mcharSty = "Exnihille | Voiding";
+		$mcharAft = "Unknown*";
+		$mcharSty = "Extenebri | Voiding";
 		$mcharWoc = "Tauroscene's Starshooter";
 
 		$charthemes = 'Longshots, Blindshots, Ghosts, Stars, Aiming Perfectionist, Super Tall';

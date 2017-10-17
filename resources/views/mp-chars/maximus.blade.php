@@ -20,8 +20,8 @@
 		$mcharAff = "Institute";
 		$mcharPos = "Co-owner of Landar Industries";
 		
-		$mcharAft = "Raw Myst";
-		$mcharSty = "Exnihille";
+		$mcharAft = "Metal*";
+		$mcharSty = "Extenebri";
 		$mcharWoc = "Landar Industries' MMGA Tech Prototype";
 
 		$charthemes = 'Shields, Tethers, Technology, Armor, Nerd in a Bully Costume';

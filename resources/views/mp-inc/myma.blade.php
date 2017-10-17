@@ -2,46 +2,52 @@
     $mirMyma = array(
         array('name' => "Armagi", 'tag' => "We are without the lack of creativity",
             'imgCnt' => 8,
-            'des' => "Weapon use is commonplace before Myst manipulations began to sprung, and when it did, manipulations are still increadibly raw and uncontrolled. Mystics who found themselves refining their art in Myst manipulation in those times soon applied their art along with their weapon mastery, bringing birth to the school of Armagi.
+            'des' => "Weapon use is commonplace before Myst manipulations began to sprung, and when it did, manipulations are still incredibly raw and uncontrolled. Mystics who found themselves refining their art in Myst manipulation in those times soon applied their art along with their weapon mastery, bringing birth to the school of Armagi.
                 <br>
-                <br>Armagus, people who practice the art of mixing manipulations along with their weapons are still the most common type of Mystics to this day. This is mostly due to the minimal use of Myst and better physique, thus allowing them to engage in combat without the need to rest every three minutes because of the lack of stamina or overuse of Myst connections.
+                <br>Armagus, people who practice the art of mixing manipulations along with their weapons are still the most common type of Mystics to this day. This is mostly due to the minimal use of Myst and better physique, thus allowing them to engage in combat without the need to rest every three minutes because of the lack of stamina or overuse of Myst connections. They are also know to be extremely creative and innovative in their application of Myst.
                 <br>
-                <br>Any type of material affinity and weapon type is respected within the Armagi. As long as one can use their weapon on par with their ability to manipulate their medium, they are good to go. This leads to the common practice of mixing Armagi with the other types of Myst manipulations."),
+                <br>Any type of material affinity and weapon type is respected within the Armagi. As long as one can use their weapon on par with their ability to manipulate their medium, they are good to go. Anyone who is an Armagus always have other practices of Myst Manipulation in their arsenals, although not but not always on par with their pure counterparts."),
 
-        array('name' => "Exnihille", 'tag' => "From the void, bring it forth",
+        array('name' => "Extenebri", 'tag' => "From the void, bring it forth",
             'imgCnt' => 7,
-            'des' => "Is the practice of creating material out of Myst itself, often practiced by those who have raw Myst as their material affinity.
+            'des' => "Is the practice of using Myst itself without a medium. Extenebrus used have affinities of their own but would have deteriorated in the process of training the practice. There are exceptions who were able to keep themselves affiliated but their sense over the medium is severely weakened.
                 <br>
-                <br>Exnihille is a style that mostly consist of Myst crystallization; creating weapons, objects, armors with Myst itself and fight off opponents with extreme versatility and unpredictableness. Its practice began from Frederick Lemaitre who first discovered that raw Myst itself is manipulable without a medium. This lead him to find other Mystics who can sense to presence of Myst without relating it to a certain medium; having raw Myst as a affinity, and train them of his ways. 
+                <br>Extenebri is a style that mostly consist of Myst crystallization; creating weapons, objects, armors with Myst itself and fight off opponents with extreme versatility and unpredictableness. Its practice began from Frederick Lemaitre who first discovered that if one can sense Myst out of a medium, why not go further and pull that out of the medium and use the Myst itself as a weapon. It was a difficult task as Myst out of the medium means losing track of of it entirely, but Lemaitre was determined. He found a way to free himself of his affinity by draining his surrounding of it. Being once affiliated with fire, he stayed in a frozen room and attempted to connect himself to the Myst surrounding him inside in the heat inside him. It was a success, and he was a revolutionary. He then opened up the school of Extenebri within the Institute in hopes of spreading his discovery.
                 <br>
-                <br>Another practice of Exnihille is an uncommon one, called 'Voiding'. Voiding is the process of removing Myst from a particular area, preventing all Mystics from using it to their advantage or being 'Myst Locked' in Mystics' terms. Voiding is a recent discovery by an unknown Mystic or Mystics. The first record of it's usage is within Aeros, thought the possibly of it being used even earlier is possible."),
+                <br>Another practice of Extenebri is an even more uncommon one, called 'Voiding'. Voiding is the process of removing Myst from a particular area, preventing all Mystics from using it to their advantage or being 'Myst Locked' in Mystics' terms. Voiding is a recent discovery by an unknown Mystic/s. The first record of it's usage is within Aeros, thought the possibly of it being used even earlier is possible."),
 
-        array('name' => "Maximo", 'tag' => "To connect to the source of everything",
+        array('name' => "Rudimenti", 'tag' => "To connect to the source of everything",
             'imgCnt' => 8,
-            'des' => "Maximo is the use of one's material affinity with minimal use of other sources but Myst. It's the most basic practice yet, it is the hardest to master. This is due to Myst can easily be tapped once a Mystic knows about it's existence, but Myst can be used up for most of Maximo conjurations and connecting to more sources of Myst can be really difficult.
+            'des' => "Rudimenti is the creation of one's material affinity using Myst. It's the most basic practice yet, it is the hardest to master. This is due to Myst can easily be tapped once a Mystic knows about it's existence, but Myst can be used up for most of Rudimenti's conjurations and connecting to more sources of Myst can be really difficult; it's like to be able to create fire, there must be fire nearby.
                 <br>
-                <br>The grand practice of Maximo is called Sigilios, which is the creation of the so called \"Sigils\" to connect the user to the ultimate source of Myst, the Myst Core, which grants them unimaginable power for a short period of time or as long as they can hold to massive surge of Myst flowing through the window they just created. The main process behind Sigilios, outside of the creation of sigils themselves, is still unknown, and tapping to such great power is considered reckless and irresponsible by most.
+                <br>The grand practice of Rudementi is called 'Sigilios', which is the creation of the so called \"Sigils\" to connect the user to the ultimate source of Myst, the Myst Core, which grants them possibly infinite source of Myst for a short period of time or as long as they can hold to the massive surge of Myst flowing through the window they just created. The main process behind Sigilios, outside of the creation of sigils themselves, is still unknown, and tapping to such great power is considered reckless and irresponsible by most.
                 <br>
-                <br>Maximo is often practiced by those whose material affinity can be generated from Myst itself such as fire, lightning, light, etc. And though, it is common for Maxims to manipulate already existing material, the conjuration of things are much easier and more reliable than recycling. This makes control another part of their practice, and makes the creation of sigils require extreme precision."),
+                <br>Control is out of Rudimenti's bounds as a practice and is the main reason Sigilios is a hard for the to master. But a Rudimentus also practice Cirkunesi would be a though opponent to battle against."),
 
         array('name' => "Cirkunesi", 'tag' => "The very city is your ally",
             'imgCnt' => 7,
-            'des' => "The rarest practice of all, is the Cirkunesi, which is the bringing of the city itself into one's own hands. It is often practiced by those whose material affinity are abstract or cannot be generated from Myst and requires an actual object to be manipulated in the first place such as; earth, time, speed, etc.
+            'des' => "The rarest practice of all is Cirkunesi, which is the bringing of the city itself into one's own hands. It is the manipulate of one's affinity by they sheer force of will.
                 <br>
-                <br>Why they're so rare are unknown, but Mystics who practice Cirkunesi are valued by almost everyone, especially the Dominion who wants to change the city in drastic ways to whatever they seem fit. This makes being classified as a Cirkunesi the same as winning the superpower lottery and people will instantly throw all their credits on you.
+                <br>It is due the Dominion's superiority complex which is why the Cirkunesi is a rare practice today. They used to think that the creation of matter is the most powerful thing a Mystic can do and that limiting one's poewr to only manipulate what's already existing is weak and pointless, this lead to them battling against anyone to tries to 'vadalized' their 'creations', leading to death and torture. But as they change their goals, the Dominions view on Cirkunesus have also changed, leading them into seeking these Cirkunesus for their new vision of the city. The newer generation of Mystics are now cautious whenever they discover that their affinity has the potential of Cirkunesi, for in the past few years; it means death, but now it means being insanely rich, but what's the catch?
                 <br>
-                <br>There are Cirkunesi whose material affinity allows them to easily create sigils, but without an allied Exnihille or Maximo, the window will remain dormant until tapped on and allow the surge of Myst to go through."),
+                <br>Due to being considered as the practice of 'control'. Cirkunesus have the easiest time in making Sigils out of their medium, they can not, however, tap into it unless an Extenebrus or Rudimentus voluntarily so."),
+
+        array('name' => "Invorti", 'tag' => "To manipulate anything or anyone",
+            'imgCnt' => 6,
+            'des' => "Is a new kind of Myst Manipulation only discovered recently by an unknown band of individuals in the deeper areas of Aeros. It is the practice of transmuting an object into another and is never a school in the Institute.
+                <br>
+                <br>No one is certain as to where or who first invoked the practice. But it has become a large priority of talented Mystics in Aeros to figure out it's secrets either to stop it for it's violating effects as they can be permanently damaging to the user or others or even further excercise it to achieve it's maximum effect."),
         );
 ?>
 
 <ul class="mp-cont">
     <li>
         <b class="mp-title">Material Affinity</b>
-        <br>Myst Manipulation is what separates a Mystic to a Mydow. Everyone in Mirrorplane is connected to the source, to Myst, but it's only Mystics who can manipulate Myst, either by itself or through a medium that's called material affinity.
+        <br>Myst Manipulation is what separates a Mystic from a Mydow. Everyone in Mirrorplane is connected to the source, to Myst, but only Mystics can perceive Myst through a certain medium called affinity. A material affinity is the way a Mystic 'sees' or 'feels' Myst in their surroundings, and it is through their affinity which allows them to manipulate Myst itself or the medium they are using.
         <br>
-        <br>Material Affinity can be very general like fire, frost, air, etc. which are the common ones, or extremely specific and abstract like, time, speed, plants, etc, which is the rarer type, or even raw Myst itself.
+        <br>Mydows are not all that powerless fortunately, they also have material affinities of their own, but only lacks the ability to manipulate Myst by themselves.
         <br>
-        <br>A person's material affinity can be directly related to their parents, may even be passed down as a whole, or a mixed concept of both. 
+        <br>Material Affinities can range from the most basics of matter such as: solids, liquids, gases, etc. to something more bizzare and abstract like the likes of: speed, time, space, etc. Being able to see Myst through their affinities, a Mystic affiliated with fire can detect any form of heat in his surroundings and depending in his practice, may be able to create or control fire in any way he needs to.
     </li>
     @foreach($mirMyma as $myma)
         <li>
@@ -61,44 +67,11 @@
     @endforeach
 </ul>
 
-<!-- ================================================== -->
-<!-- <li>
-    <b class="mp-title">Armagus</b> | "We are without the lack of creativity"
-    <br>
-    <img class="mp-ref" src="{{ url('img/ref-arm.png') }}" width="100%">
-</li>
-<li>
-    <b class="mp-title">Exnihille</b> | "From the void, bring it forth"
-    <br>Is the practice of creating material out of Myst itself, often practiced by those who have raw Myst as their material affinity.
-    <br>
-    <br>Exnihille is a style that mostly consist of Myst crystallization; creating weapons, objects, armors with Myst itself and fight off opponents with extreme versatility and unpredictableness.
-    <br>
-    <br>Another practice of Exnihille is an uncommon one, called 'Voiding'. Voiding is the process of removing Myst from a particular area, preventing all Mystics from using it to their advantage or being 'Myst Locked' in Mystics' terms. Technology and the city itself can be affected by Voiding, and the fact that it's effects are harsh makes it a taboo among Mystics.
-    <br>
-    <br>The first Voiding was demonstrated by Frederick Lemaitre, in moment of his departure from the Dominion.  
-    <br>
-    <br>Practiced by the Institute's Aeros division.
-    <img class="mp-ref" src="{{ url('img/ref-exn.png') }}" width="100%">
-</li>
-<li>
-    <b class="mp-title">Maximo</b> | "To connect from the source of everything"
-    <br>The most basic practice is Maximo, yet, it is also the hardest to master. Maximo is the use of one's material affinity, without or with minimal use of other sources but Myst. It is often practiced by those whose material affinity can be generated or translated from Myst itself such as fire, lightning, frost, air, combustions, light, etc.
-    <br>
-    <br>The grand practice of Maximo is called 'Sigilios', which is the creation of the so called 'Celestial Sigils' to connect the user to the ultimate source of Myst, the Myst Core, which grants them unimaginable power for a short period of time.
-    <br>
-    <br>The main process behind Sigilios, outside of the creation of sigils themselves, is still unknown, and tapping to such great power is considered reckless and irresponsible by most.
-    <br>
-    <br>Practiced by the Institute's Mystos division.
-    <img class="mp-ref" src="{{ url('img/ref-max.png') }}" width="100%">
-</li>
-<li>
-    <b class="mp-title">Cirkunesi</b> | "The very city is your ally"
-    <br>The rarest practice of all, is the Cirkunesi, which is the bringing of the city itself into one's own hands. It is often practiced by those whose material affinity are abstract, or cannot be generated or translated from Myst, and requires an actual object to be manipulated in the first place such as; earth, time, speed, etc.
-    <br>
-    <br>Why they're so rare are unknown, but Mystics who practice Cirkunesi are valued by almost everyone, especially the Dominion who wants to change the city, in drastic ways, to whatever they seem fit.
-    <br>
-    <br>Those who can practice Cirkunesi effectively also often add Armagi to their arsenal, as manipulating the environment as well as having a weapon of your own is just badass!
-    <br>
-    <br>Practiced by the Institute's Geios division.
-    <img class="mp-ref" src="{{ url('img/ref-cir.png') }}" width="100%">
-</li> -->
+<script type="text/javascript">
+    var mirMyma = <?php echo json_encode($mirMyma); ?>;
+    $(window).load(function() {
+        for(var i=0; i<mirMyma.length; i++) {
+            createSlide("#scroll-divi"+mirMyma[i]['name']);
+        }   
+    });
+</script>

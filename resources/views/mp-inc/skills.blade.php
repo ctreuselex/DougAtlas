@@ -17,7 +17,7 @@
         array ('name'=>'slow', 'purge'=>true, 'ico'=>'ra ra-footprint',
             'des'=>'Decreases movement speed.'),
         array ('name'=>'limp', 'purge'=>true, 'ico'=>'ra ra-cut-palm',
-            'des'=>'Decreases attact rate.'),
+            'des'=>'Decreases attack rate.'),
         //stuns
         array ('name'=>'disarm', 'purge'=>false, 'ico'=>'fa fa-sign-language',
             'des'=>'Throws weapon out of hand and disables certain abilities. Instantly ends on weapon retrieval.'),
@@ -223,7 +223,7 @@
 
     .skill-augs {
         /*display: none;*/
-        position: fixed; bottom: 0; left: 225px;
+        position: fixed; bottom: 0; left: 16.6%;;
         font-weight: bold;
         padding: 5px;
         transition: 0.5s; }
@@ -252,8 +252,8 @@
 
     @keyframes boxshrink {
         0% { transform: scale(1) rotate(0deg); }
-        40% { transform: scale(0.5) rotate(360deg); height: 10px; margin-bottom: 60px; background-color: {{ $charColorSub }}; }
-        55% { transform: scale(0.5) rotate(360deg); height: 200px; background-color: {{ $charColorSub }};}
+        55% { transform: scale(0.5) rotate(360deg); height: 10px; margin-bottom: 60px; background-color: {{ $charColorSub }}; }
+        75% { transform: scale(0.5) rotate(360deg); height: 200px; background-color: {{ $charColorSub }};}
         100% { transform: scale(0.5) rotate(360deg); height: 200px; margin-bottom: 800px; background-color: {{ $charColorSub }}; } }
     .box-shrink {
         animation: boxshrink 2s 1;

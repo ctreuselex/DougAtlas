@@ -20,7 +20,7 @@
 		$mcharAff = "The Ark";
 		
 		$mcharAft = "Space";
-		$mcharSty = "Armagus";
+		$mcharSty = "Armagi | Cirkunesi";
 		$mcharWoc = "Tauroscene's Capo Ferro";
 
 		$charthemes = 'Divine Calling, Teleportation, Space, Stabbing, Definitely French, Oui?';

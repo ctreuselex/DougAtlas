@@ -21,7 +21,7 @@
 		$mcharPos = "Head of Geios";
 		
 		$mcharAft = "Time";
-		$mcharSty = "Exnihille | Cirkunesi";
+		$mcharSty = "Extenebri | Cirkunesi";
 		$mcharWoc = "None";
 
 		$charthemes = 'Physics, Hammers, Saws, Eyepatches, Do Not Provoke, Total Hipster';

@@ -20,7 +20,7 @@
 		$mcharAff = "Institute";
 		
 		$mcharAft = "Light";
-		$mcharSty = "Maximo | Sigilios";
+		$mcharSty = "Rudimenti | Sigilios";
 		$mcharWoc = "Corporal Works' Ascalon";
 
 		$charthemes = 'Light, Sigils, Cosmos, Seriously? Like Are You Serious? Why So Serious?';

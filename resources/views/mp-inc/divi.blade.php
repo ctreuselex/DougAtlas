@@ -36,7 +36,7 @@
                 <br>Every two cycles, a the Carnival of Madness lights up within the heart of the Great Aeros Fire to bring people back to its ground. It serves as a remembrance to those who were lost during the times of flames and as a way to liven the place up back from its barren ground.
                 <br>
                 <br><b>Aeros Division of the Institute</b>
-                <br>After Frederick Lemaitre and his first protégé, Jon Horacio, the Aeros division of the Intitute built themselves on Exnihille, the practice of manipulating Myst by itself without a medium. this also served to be really useful to their situation, as with the lack of actual material to use.
+                <br>After Frederick Lemaitre and his first protégé, Jon Horacio, the Aeros division of the Intitute built themselves on Extenebri, the practice of manipulating Myst by itself without a medium. this also served to be really useful to their situation, as with the lack of actual material to use.
                 <br>
                 <br>Aeros teams are named after family of animals.",
             ),
@@ -57,7 +57,7 @@
                 <br><b>Mystos Division of the Institute</b>
                 <br>Mystos acquires all the entry applicants for the Institute and interviews begin on the 10th of Fall then those who are accepted will begin their semester on the 1st of Winter.
                 <br>
-                <br>The Institute's Mystos Division practices Maximo, the most pure form of Myst Manipulation, aside from Exnihille of course, but that was just invented. 
+                <br>The Institute's Mystos Division practices Rudimenti, the most pure form of Myst Manipulation, aside from Extenebri of course, but that was just invented. 
                 <br>
                 <br>Mystos teams are named after star constellations.",
             ),
@@ -76,7 +76,7 @@
                 <br>Tauroscence Corporations, and eventually; Landar Industries established themselves within Geios. The focus towards innovation and efficiency which are extremely high within its borders really helped both company find their calling within the city.
                 <br>
                 <br><b>Geios Division of the Institute</b>
-                <br>Geios' practices Cirkunesi, but due to the fact that it's really difficult to practice and very rare, they consider Exnihille as well. But Cirkunesi will always be the priority.
+                <br>Geios' practices Cirkunesi, but due to the fact that it's very rare, they consider Extenebri as well. But Cirkunesi will always be the priority.
                 <br>
                 <br>Geios teams are named after anomalies, uncommon words.",
             ),

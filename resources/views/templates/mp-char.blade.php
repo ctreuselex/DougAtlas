@@ -69,17 +69,17 @@
     @yield('char-meta')
 
     <style type="text/css">
-        .ad-dash { border-bottom: 50px solid {{ $charColor }}; }
+        /*.ad-dash { border-bottom: 50px solid {{ $charColor }}; }*/
         .char-logs.per li { border-left: 5px solid {{ $charColor }}; }
-        .char-logs.per li:before { background: {{ $charColor }};
-            background: -moz-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
+        .char-logs.per li:before { background: {{ $charColor }}; }
+            /*background: -moz-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
             background: -webkit-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
             background: linear-gradient(to right, {{ $charColor }} 0%, {{ $charColorSub }} 100%); 
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ $charColor }}', endColorstr=' {{ $charColorSub }}',GradientType=1 ); }
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ $charColor }}', endColorstr=' {{ $charColorSub }}',GradientType=1 ); }*/
 
         .char-per p { border-bottom: 2px solid {{ $charColor }}; }
         .char-per i { color: {{ $charColorSub }} ;}
-        .modal-header { background-color: {{ $charColor }}; }
+        .modal-header { padding-top: 30px; background-color: {{ $charColor }}; }
         .modal-footer { background-color: {{ $charColorSub }}; }
         .modal-footer .btn { background: {{ $charColor }}; color: white; }
         .bot-scro a { color: {{ $charColorSub }};}
@@ -166,27 +166,25 @@
     @include('mp-inc/dash')
 
     <div class="col-sm-10 col-sm-offset-2" style="padding: 15px; 
-        /*background: url({{ $charTexture }}); background-size: 30%; background-blend-mode: overlay; background-color: {{ $charColorSub }};*/
         "> 
 
         <style type="text/css">
             .char-back {
-                position: absolute; top: -20px;
-                width: calc(100% - 15px);
+                display: none;
+                position: absolute; top: -20px; left: -12%;
+                width: calc(100% + 12%);
                 height: 650px;
-                z-index: -1;
-                background-image: url('{{ url('img/char-text-colored.jpg') }}');
-                background-size: cover;
-                background-blend-mode: luminosity;
-                background-color: {{ $charColor }}; }
+                z-index: 9;
+                /*background-color: {{ $charColor }}; }*/
         </style>
 
     	<div class="row">
 	    	<div class="col-sm-5">
-                <!-- <div class="char-back"></div>  -->
-                <img src="{{ url('img/mp-char/'.$charname.'.png') }}" width="120%" style="margin-top:-20px; margin-left:-12%;">
+                <div class="char-back" style="background-image: url('{{ url('img/mp-char/'.$charname.'.png') }}'); 
+                    background-size: 100%; background-position: top center;"></div> 
+                <!-- <img src="{{ url('img/mp-char/'.$charname.'.png') }}" width="120%" style="margin-top:-20px; margin-left:-12%;"> -->
 	    	</div>
-            <div class="col-sm-6" style="padding:0;">
+            <div class="col-sm-6 char-details" style="padding:0;">
                 <div class="col-sm-12">
                     <span class="char-name">{{ $mcharNam }}</span>
                     <p>{{ $charthemes}}</p>
@@ -345,6 +343,12 @@
                     // console.log('nope' + frmname);
                 }
             }
+
+            var imgHeight = $('.char-details').height() + 15;
+            $('.char-back').css('height', imgHeight+"px");
+            $('.char-back').slideDown();
+            console.log(imgHeight);
+
 
             // $('img[src="http://localhost:8000/img/mp-char/skills/valkyr/pri.png"]').hide();
         });

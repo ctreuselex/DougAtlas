@@ -20,7 +20,7 @@
 		$mcharAff = "Dominion | Institute";
 		
 		$mcharAft = "Water";
-		$mcharSty = "Armagus";
+		$mcharSty = "Armagi | Cirkunesi";
 		$mcharWoc = "Custom Aquadextrius";
 
 		$charthemes = 'Pole-arms, Mirrors, Wicked Dance Moves, A Little Too Short On Everything';

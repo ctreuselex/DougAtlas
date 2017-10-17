@@ -45,7 +45,7 @@
 	        <div class="moon"></div>
 	        <div class="city-name" style="
 				font-size: 16px;
-				top: 16.5%;
+				top: 120px;
 			">City of</div>
 	        <div class="city-name">{{ $cityname }}</div>
         	<!-- <p>MIRRORPLANE</p> -->

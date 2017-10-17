@@ -19,8 +19,8 @@
 		$mcharDiv = "Luminos";
 		$mcharAff = "The Ark";
 		
-		$mcharAft = "Raw Myst | Fire";
-		$mcharSty = "Armagus | Maximo";
+		$mcharAft = "Fire";
+		$mcharSty = "Armagi | Rudimenti";
 		$mcharWoc = "Corporal Works' Rune Blade";
 
 		$charthemes = 'Berserker, Demon, Beast, Much Swag, Boom, Masochism, Boom!';

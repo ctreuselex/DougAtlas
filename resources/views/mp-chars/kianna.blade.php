@@ -21,7 +21,7 @@
 		$mcharPos = "6th ce Queen";
 		
 		$mcharAft = "Frost";
-		$mcharSty = "Maximo | Sigilios";
+		$mcharSty = "Cirkunesi | Sigilios";
 		$mcharWoc = "None";
 
 		$charthemes = 'Frost, Snow, Fabulousness, Queen, Ultimate Rebel';

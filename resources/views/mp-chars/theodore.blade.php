@@ -21,7 +21,7 @@
 		$mcharPos = "Head of Luminos";
 		
 		$mcharAft = "Weapons";
-		$mcharSty = "Armagus | Cirkunesi";
+		$mcharSty = "Armagi | Cirkunesi";
 		$mcharWoc = "Tauroscene's Dire";
 
 		$charthemes = 'Dark Souls, Death Kight, Oh no Murder, Has a Puppy which Wield Swords';

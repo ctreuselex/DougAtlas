@@ -20,7 +20,7 @@
 		$mcharAff = "None";
 		
 		$mcharAft = "Fire";
-		$mcharSty = "Maximo | Exnihille";
+		$mcharSty = "Rudimenti | Extenebri";
 		$mcharWoc = "None";
 
 		$charthemes = 'Firebirds, Ultimate Powah, Chains and Blades, Immortality, Dad Puns, I Like Boats';

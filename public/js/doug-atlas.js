@@ -1,25 +1,3 @@
-/*=========== BADASS HEADER ===========*/
-// $(window).scroll(function() {
-
-//     if ($(this).scrollTop()>0)
-//      {
-//         document.getElementById('da-logo').style.height = "50px";
-//         document.getElementById('da-logo').style.width = "50px";
-
-//         document.getElementById('da-title').style.opacity = "1";
-//         document.getElementById('da-header').style.opacity = "0";
-
-//      }
-//     else
-//      {
-//         document.getElementById('da-logo').style.height = "100px";
-//         document.getElementById('da-logo').style.width = "100px";
-
-//         document.getElementById('da-title').style.opacity = "0";
-//         document.getElementById('da-header').style.opacity = "1";
-//      }
-//  });
-
 
 /*=========== SMOOOOTH SCROLL ===========*/
 $(document).on('click', 'a', function(event){
@@ -77,7 +55,13 @@ $(document).ready(function() {
 /*=========== SEL-ACTIVE ===========*/
 
 $(document).ready(function() {
-    if(location.pathname.split("/")[1] == "mirrorplane") {
+  var mainNav = location.pathname.split("/")[1]
+
+  $('#'+mainNav).addClass(mainNav+'-nactive');
+  $('#'+mainNav).removeClass('hover-nav');
+
+
+    if(mainNav == "mirrorplane") {
         $('#mirrorplane-nav').addClass('mirrorplane-nactive');
         $('.ad-dash div a#' + location.pathname.split("/")[3]).addClass('active');
 

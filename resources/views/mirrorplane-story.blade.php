@@ -1,12 +1,49 @@
 <?php
     $mirVols = array(
-        array('id'=>"0", 'name'=>"Shorts", "chap"=>3 ),
-        array('id'=>"1", 'name'=>"Geios", "chap"=>2 ),
-        array('id'=>"2", 'name'=>"Mystos", "chap"=>2 ),
-        array('id'=>"3", 'name'=>"Aeros", "chap"=>0 ),
-        array('id'=>"4", 'name'=>"Luminos", "chap"=>0 ),
-        array('id'=>"5", 'name'=>"Nimbocolumbus", "chap"=>0 ),
-        array('id'=>"6", 'name'=>"Mirrorplane", "chap"=>0 ),
+        array('id'=>"0", 'name'=>"Shorts", "chaps"=>array(
+            array('title'=>"The Sun", 'img'=>"",
+                'chars'=>'valkyr,noemi,zedrik'), 
+            array('title'=>"The Moon", 'img'=>"https://orig00.deviantart.net/bf3a/f/2017/234/8/9/down_to_the_bottom_by_ctreuse109-dbcv7zs.png",
+                'chars'=>'maximus,vriskvin,moon'), 
+            array('title'=>"The Stars", 'img'=>"https://orig00.deviantart.net/c908/f/2017/234/5/f/shot_in_the_dark_by_ctreuse109-dbcg3rb.png",
+                'chars'=>'herschel,rigel,kalli,gemini'), 
+            )),
+        array('id'=>"1", 'name'=>"Geios", "chaps"=>array(
+            array('title'=>"Intro", 'img'=>"",
+                'chars'=>''), 
+            array('title'=>"Intro 2", 'img'=>"",
+                'chars'=>''), 
+            )),
+        array('id'=>"2", 'name'=>"Mystos", "chaps"=>array(
+            array('title'=>"Intro", 'img'=>"",
+                'chars'=>''), 
+            array('title'=>"Intro 2", 'img'=>"",
+                'chars'=>''), 
+            )),
+        array('id'=>"3", 'name'=>"Aeros", "chaps"=>array(
+            array('title'=>"Intro", 'img'=>"",
+                'chars'=>''), 
+            array('title'=>"Intro 2", 'img'=>"",
+                'chars'=>''), 
+            )),
+        array('id'=>"4", 'name'=>"Luminos", "chaps"=>array(
+            array('title'=>"Intro", 'img'=>"",
+                'chars'=>''), 
+            array('title'=>"Intro 2", 'img'=>"",
+                'chars'=>''), 
+            )),
+        array('id'=>"5", 'name'=>"Nimbocolumbus", "chaps"=>array(
+            array('title'=>"Intro", 'img'=>"",
+                'chars'=>''), 
+            array('title'=>"Intro 2", 'img'=>"",
+                'chars'=>''), 
+            )),
+        array('id'=>"6", 'name'=>"Mirrorplane", "chaps"=>array(
+            array('title'=>"Intro", 'img'=>"",
+                'chars'=>''), 
+            array('title'=>"Intro 2", 'img'=>"",
+                'chars'=>''), 
+            )),
         );
 
 ?>
@@ -69,7 +106,7 @@
     ?>
 
     <style type="text/css">
-        .ad-dash { border-bottom: 50px solid {{ $charColor }}; }
+        /*.ad-dash { border-bottom: 50px solid {{ $charColor }}; }*/
         .bot-scro a.fir:hover, .bot-scro a.fir.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
         .bot-scro a.mid:hover, .bot-scro a.mid.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; } 
         .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
@@ -177,15 +214,13 @@
                 text-transform: capitalize;
                 font-weight: bold;
                 padding: 5px;     
-                opacity: 0;                   
-                transition: 0.5s;
-            }
+                opacity: 0;               
+                transition: 0.5s; }
             .cts-{{ $char['name'] }}:hover:before {
                 opacity: 1;
                 margin-top: 20px;                      
                 box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-                transition: 0.3s;
-            }
+                transition: 0.3s; }
 
             <?php 
                 $ctscharcolor = $char['color']; if ($ctscharcolor=="") $ctscharcolor = "#ffffff"; 
@@ -196,15 +231,13 @@
                 font-size: 16px;
                 color: {{ $ctscharcolor }};
                 background: {{ $ctssubcharcolor }};
-                padding: 2px;
-                border-radius: 2px;
-            }
+                padding: 3px;
+                border-radius: 2px; }
             .cts-team i.{{ $char['name'] }} {
                 position: static;
                 font-size: 16px;
                 margin-left: 3px;
-                color: {{ $ctscharcolor }};
-            }
+                color: {{ $ctscharcolor }}; }
 
         @endforeach
 
@@ -230,23 +263,60 @@
     .tab-vol:hover {
         background: white;
         transition: 0.3s; }
-    .tab-vol.active {
-        background: white; }
+    .tab-vol.active {    
+        background: {{ $charColor }};
+        color: white; }
 
     @keyframes prevvol {
-    	0% { top: 75px; opacity: 1; }
-    	100% { top: 100%; opacity: 0; } }
+    	0% { left: 15px; opacity: 1; }
+    	100% { left: 100%; opacity: 0; } }
     @keyframes nextvol {
     	50% { left: -100%; opacity: 0; }
     	100% { left: 15px; opacity: 1; } }
 
     /*.mp-cont li.vol-cont { display: none; }*/
-    .mp-cont li.vol-cont { position: absolute; top: 75px; left: 15px; 
+    .mp-cont li.vol-cont { 
+        position: absolute; top: 75px; left: 15px; 
     	width: calc(100% - 30px);
+        background-color: transparent;
+        padding: 0;
+        box-shadow: 0 0 0 transparent; 
     	z-index: -1;
     	opacity: 0; }
     .mp-cont li.vol-cont.prevvol { animation: prevvol 0.5s 1; animation-fill-mode:forwards;  }
     .mp-cont li.vol-cont.nextvol { animation: nextvol 1s 1; animation-fill-mode:forwards; }
+
+    .mp-cont li.vol-cont .story {    
+        float: left;
+        width: 65%; }
+    .mp-cont li.vol-cont .plot {    
+        float: left;
+        width: calc(35% - 5px);
+        background-color: white;
+        padding: 20px;
+        margin-left: 5px;
+        box-shadow: 1px 1px 0 #DDD, 2px 2px 0 #BBB; }
+
+    .mp-cont li.vol-cont .point {
+        float: left; width: 100%;
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 1px;
+        box-shadow: 1px 1px 0 #DDD, 2px 2px 0 #BBB;  }
+    .mp-cont li.vol-cont .title {
+        font-family: "Righteous";
+        font-size: 24px;
+        font-weight: bold; }
+    .mp-cont li.vol-cont .img {
+        float: right;
+        width: 250px; height: 250px;
+        background-color: grey;
+        margin-left: 15px; }
+    .mp-cont li.vol-cont .chars {
+        float: right;
+        margin-top: -25px; }
+    .mp-cont li.vol-cont hr {
+        margin: 0 0 15px; }
 
     </style>
 
@@ -280,9 +350,28 @@
 		            else $isActive = "";
 		            $volcount++; ?> 
 			    <li class="vol-cont {{ $vol['id'] }} {{ $isActive }}">
-			    	@for($i=1; $i<=$vol['chap']; $i++)
-                        @include("mp-vols/{$vol['id']}/chap{$i}")
-			    	@endfor
+                    <div class="story">
+			    	@foreach($vol['chaps'] as $key => $chap)
+                        <?php $tempkey = $key+1; ?>
+                        <div class="point">
+                            <div class="img" style="background-image: url('{{ $chap['img'] }}'); 
+                                background-size: cover; background-position: center;"></div>
+                            <div class="title">{{ $chap['title'] }}</div>
+                            <div class="chars">
+                                <?php $chars = explode(',', $chap['chars']); ?>
+                                @foreach($chars as $char)
+                                    @if($char!='hr')<span class="cts-{{$char}}"></span>
+                                    @else |
+                                    @endif 
+                                @endforeach</div>
+                                <hr>
+                                @include("mp-vols/{$vol['id']}/chap{$tempkey}")
+                        </div>
+			    	@endforeach
+                    </div>
+                    <div class="plot">
+                        
+                    </div>
 			    </li>
 		    @endforeach
 		</ul>
@@ -315,7 +404,11 @@
                 $('.vol-cont').removeClass('nextvol');
                 $('.vol-cont.'+id).removeClass('prevvol');
                 $('.vol-cont.'+id).addClass('nextvol');
+                $('.vol-cont.'+id).show();
 
+                setTimeout(function () {
+                    $('.vol-cont').not('.nextvol').hide();
+                }, 1000);
 	        }
 	    }
 

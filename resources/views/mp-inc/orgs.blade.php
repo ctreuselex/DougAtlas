@@ -11,7 +11,9 @@
                 <br>
                 <br>On 1616, Zacharias used the CTsystem to brought parts of the Higher Ring into a floating platform which he called the 'Nimbocolumbus', now serving as the home of the Dominion. Nimbocolumbus also brought forth the tradition in which the color of the skies is being changed every Reccurence, in order to remind the city of what power the Dominion holds.
                 <br>
-                <br>Zacharias and Quivince was killed at the same day on 1618, whoever is responsible for the murder of both leaders remain unknown. Though it is rumored that Zacharias was able to survive the attack, and that his body has been preserved deep inside the Nimbocolumbus, and is the one people call the 'King'." ),
+                <br>Zacharias and Quivince was killed at the same day on 1618, whoever is responsible for the murder of both leaders remain unknown. Though it is rumored that Zacharias was able to survive the attack, and that his body has been preserved deep inside the Nimbocolumbus, and is the one people call the 'King'.
+                <br>
+                <br>During their uprising and the Dominion being dominantly Rudimentus, they believed that the primal example of Myst manipulation is the creation of matter which Rudimenti exhibits, this lead to them murdering anyone who is a Cirkunesus, the complete opposite of their practice. Armagus they ignored as they're pretty much just an extension of Myst Manipulation. But due to the shift in the Dominion's goal; wanting to manipulate the city at will, they began searching for Cirkunesus, giving them power and wealth just so they stay within their grasps." ),
 
         array('id'=>"institute", 'name'=>"The Institute",
             'img'=>url('img/ins.png'),

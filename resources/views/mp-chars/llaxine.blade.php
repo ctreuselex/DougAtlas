@@ -20,7 +20,7 @@
 		$mcharAff = "Dominion | Institute";
 		
 		$mcharAft = "Light";
-		$mcharSty = "Maximo | Sigilios";
+		$mcharSty = "Rudimenti | Sigilios";
 		$mcharWoc = "Tauroscene's Spike Bracelets";
 
 		$charthemes = 'Light, Ballet, Bracelets, Twisting and Spinning, Poof';

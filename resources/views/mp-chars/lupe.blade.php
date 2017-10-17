@@ -20,7 +20,7 @@
 		$mcharAff = "Howler | Carnival of Madness";
 		
 		$mcharAft = "Metal";
-		$mcharSty = "Armagus | Metamorph";
+		$mcharSty = "Invorti";
 		$mcharWoc = "His Trusty Wrench";
 
 		$charthemes = 'The Mechanic, Big Bad Wolf, Alpha Wolf, Woof, Bark, Scratch';

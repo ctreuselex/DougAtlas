@@ -19,8 +19,8 @@
 		$mcharDiv = "";
 		$mcharAff = "Order of the Void";
 		
-		$mcharAft = "Raw Myst | Transparency";
-		$mcharSty = "Exnihille";
+		$mcharAft = "Unknown*";
+		$mcharSty = "Extenebri";
 		$mcharWoc = "Corporal Works' Twin Daggers";
 
 		$charthemes = 'Wind, Blades, Invisibility, Lots of Floating Blades, Surprisingly Not-So-Grumpy';

@@ -21,7 +21,7 @@
 		$mcharPos = "Head of Mystos";
 		
 		$mcharAft = "Fire";
-		$mcharSty = "Maximo";
+		$mcharSty = "Rudimenti";
 		$mcharWoc = "Tauroscene's Cometcaller";
 
 		$charthemes = 'You Shall Not Pass, Tropical Vacations, Typical Fire Mage, Fireball!';

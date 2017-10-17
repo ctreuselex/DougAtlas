@@ -19,8 +19,8 @@
 		$mcharDiv = "Mystos";
 		$mcharAff = "Dominion | Institute";
 		
-		$mcharAft = "Raw Myst";
-		$mcharSty = "Armagus";
+		$mcharAft = "Fire*";
+		$mcharSty = "Armagi | Extenebri";
 		$mcharWoc = "Landar Industries' ACMA Tech Twin Pistol";
 
 		$charthemes = 'Dual Guns, Balance, No Second Chances, Being a Jerk to Everyone ';
