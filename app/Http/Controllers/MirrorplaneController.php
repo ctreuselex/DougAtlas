@@ -103,7 +103,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'helios','sur'=>'skyforge','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-anvil' ),
             array ( 'name'=>'jupiter','sur'=>'skyforge','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-anvil' ),
             // demeter
-            array ( 'name'=>'demeter','sur'=>'van dionyus','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-book' ),
+            array ( 'name'=>'demeter','sur'=>'von lehrer','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-book' ),
             array ( 'name'=>'romania','sur'=>'mars','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-apple' ),
             // mandalas
             array ( 'name'=>'karissa','sur'=>'arvy','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-snowflake' ),
@@ -158,7 +158,7 @@ class MirrorplaneController extends Controller
             array ('name'=>'sandra','act'=>'Minimum28'),
             array ('name'=>'jeanne','act'=>'theBoat'),
             array ('name'=>'mig','act'=>'firebird'),
-            array ('name'=>'demeter','act'=>'ocdVanDionyus'),
+            array ('name'=>'demeter','act'=>'ocdVonLehrer'),
             array ('name'=>'noemi','act'=>'thelegendarylongcat'),
             array ('name'=>'vines','act'=>'ChuggingOnCaffeine'),
             array ('name'=>'berex','act'=>'thefangirl01'),

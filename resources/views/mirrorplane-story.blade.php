@@ -76,15 +76,6 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-
 </head>
 
 
@@ -113,23 +104,19 @@
         .notes ul li b { background: {{ $charColor }}; }
         
         .mp-cont-char {
-            padding: 0;
-        }
+            padding: 0; }
         .mp-cont-char li {
             padding: 5px;
-            margin-bottom: 1px;
-        }
+            margin-bottom: 1px; }
         .mp-cont-char li.no-hvr {
             padding: 5px;
-            margin-bottom: -4px;
-        }
+            margin-bottom: -4px; }
         .year-div {
             width: 100%;
             font-size: 10px;
             font-weight: bolder;
             border-bottom: 1px solid white;
-            padding: 5px 20px;
-        }
+            padding: 5px 20px; }
         a { color: #333; }
         .li-hvr {
             display: inline-block;
@@ -145,8 +132,7 @@
             -webkit-transition-property: color;
             transition-property: color;
             -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-        }
+            transition-duration: 0.3s; }
         .li-hvr:before {
             content: "";
             position: absolute;
@@ -165,15 +151,12 @@
             -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
             -webkit-transition-timing-function: ease-out;
-            transition-timing-function: ease-out;
-        }
+            transition-timing-function: ease-out; }
         .li-hvr:hover, .li-hvr:focus, .li-hvr:active {
-            color: white;
-        }
+            color: white; }
         .li-hvr:hover:before, .li-hvr:focus:before, .li-hvr:active:before {
             -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-        }
+            transform: scaleX(0); }
         #div-lum { background-color: #ff9800; color: white;}
         #div-aer { background-color: #e91e63; color: white;}
         #div-mys { background-color: #2196f3; color: white;}
@@ -181,27 +164,18 @@
 
         .chap-div {
             float: left;
-            width: 100%;
-        }
-        /*.feat-char {
-            float: right;
-            width: 210px;
-            padding: 10px 20px;
-        }*/
+            width: 100%; }
         .feat-char.drop { margin-top:20px; }
         .feat-char hr { margin:5px 0; }
         .feat-char b { margin-bottom:10px; }
         .feat-char p { margin:0; }
         .story-div {
-            /*width: calc(100% - 210px);*/
-            margin-bottom: 20px;
-        }
+            margin-bottom: 20px; }
         ul.story-div { padding: 0; }
         ul.story-div li {
             box-shadow: 0 0 0;
             padding: 0;
-            margin-bottom: 0;
-        }
+            margin-bottom: 0; }
 
         @foreach ($mirChars as $char)
             <?php 
@@ -300,7 +274,7 @@
     .mp-cont li.vol-cont .point {
         float: left; width: 100%;
         background-color: white;
-        padding: 20px;
+        padding: 15px;
         margin-bottom: 1px;
         box-shadow: 1px 1px 0 #DDD, 2px 2px 0 #BBB;  }
     .mp-cont li.vol-cont .title {

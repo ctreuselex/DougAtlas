@@ -29,15 +29,6 @@
     <!-- jQuery -->
     <script src="{{ url('js/jquery.js') }}"></script>
     <script src="{{ url('js/jquery-ui.min.js') }}"></script>
-    
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
 
 </head>
 
@@ -72,10 +63,6 @@
         /*.ad-dash { border-bottom: 50px solid {{ $charColor }}; }*/
         .char-logs.per li { border-left: 5px solid {{ $charColor }}; }
         .char-logs.per li:before { background: {{ $charColor }}; }
-            /*background: -moz-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
-            background: -webkit-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
-            background: linear-gradient(to right, {{ $charColor }} 0%, {{ $charColorSub }} 100%); 
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ $charColor }}', endColorstr=' {{ $charColorSub }}',GradientType=1 ); }*/
 
         .char-per p { border-bottom: 2px solid {{ $charColor }}; }
         .char-per i { color: {{ $charColorSub }} ;}
@@ -92,9 +79,6 @@
         li:hover .log-name { border-left: 1px solid white; }
 
         @foreach ($mirChars as $char)
-            /*span#ctslog-{{ $char['name'] }} i {
-                color: {{ $char['color'] }};
-            }*/
             <?php 
                 $ctscharnamesub = substr($char['name'], 0, 1).'.'.substr($char['sur'], 0, 1);  
                 $ctscharnameful = $char['name'].' '.$char['sur'];
@@ -107,28 +91,24 @@
             .cts-{{ $char['name'] }}:after {
                 content: "{{ $ctscharnamesub }}";
                 text-transform: capitalize;
-                font-weight: bold;
-            }
+                font-weight: bold; }
             .cts-{{ $char['name'] }}:hover:after {
                 content: "{{ $ctscharnameful }}";
                 text-transform: capitalize;
-                font-weight: bold;
-            }
+                font-weight: bold; }
             <?php $ctscharcolor = $char['color']; if ($ctscharcolor=="") $ctscharcolor = "#d5d5d5"; ?>
             .cts-{{ $char['name'] }} i {
                 position: static;
                 font-size: 14px;
                 margin: 0 3px;
-                color: {{ $ctscharcolor }};
-            }
+                color: {{ $ctscharcolor }}; }
 
         @endforeach
 
         @foreach ($mirFrm as $frm)
             .cts-{{ $frm['name'] }}-frm:after {
                 content: "{{ $frm['act'] }}";
-                font-weight: bold;
-            }
+                font-weight: bold; }
             @foreach ($mirChars as $char)
                 @if ($frm['name']==$char['name'])  
                     <?php  
@@ -144,29 +124,25 @@
                         font-weight: bold;
                         padding: 5px;     
                         opacity: 0;                   
-                        transition: 0.5s;
-                    }
+                        transition: 0.5s; }
                     .cts-{{ $char['name'] }}-frm:hover:before {
                         opacity: 1;
                         margin-top: 20px;                      
                         box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-                        transition: 0.3s;
-                    }
+                        transition: 0.3s; }
                 @endif
             @endforeach
             .cts-{{ $frm['name'] }}-frm i {
                 position: static;
                 font-size: 14px;
                 margin: 0 3px;
-                color: {{ $ctscharcolor }};
-            }
+                color: {{ $ctscharcolor }}; }
         @endforeach
     </style>
 
     @include('mp-inc/dash')
 
-    <div class="col-sm-10 col-sm-offset-2" style="padding: 15px; 
-        "> 
+    <div class="col-sm-10 col-sm-offset-2" style="padding: 15px;"> 
 
         <style type="text/css">
             .char-back {
@@ -175,7 +151,6 @@
                 width: calc(100% + 12%);
                 height: 650px;
                 z-index: 9;
-                /*background-color: {{ $charColor }}; }*/
         </style>
 
     	<div class="row">
@@ -261,12 +236,6 @@
     	</div>
         </div>
 
-        <!-- <div class="row">
-            <div class="col-xs-12">
-                
-                </div>
-            </div>
-        </div> -->
         <div class="clear"></div>
 
         <div class="col-xs-12">

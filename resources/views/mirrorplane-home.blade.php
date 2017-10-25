@@ -29,15 +29,6 @@
     <!-- jQuery -->
     <script src="{{ url('js/jquery.js') }}"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-
 </head>
 
 <body>
@@ -60,42 +51,25 @@
     ?>
 
     <style type="text/css">
-        /*.ad-dash-pa { border-right: 5px solid {{ $charColor }}; }
-        .ad-dash { 
-            border-top: 1px solid {{ $charColor }};
-            background: url({{ url('img/hex-bg-l.png') }}); 
-            background-size: 100%;
-            background-blend-mode: multiply;
-            background-color: grey; }
-        .city-scape { background-color: grey; }
-        .city-scape .moon { background-color: {{ $charColor }}; }
-        .city-scape .moon { box-shadow: 0 0 30px 0px white; border: 85px solid white; }
-        .city-scape:hover .moon { box-shadow: 0 0 100px 10px {{ $charColor }}; border: 10px solid white; }*/
-
-        /*.ad-dash { border-bottom: 50px solid {{ $charColor }}; }*/
         .bot-scro a.fir:hover, .bot-scro a.fir.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
         .bot-scro a.mid:hover, .bot-scro a.mid.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; } 
         .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
         .notes ul li b { background: {{ $charColor }}; }
         
         .mp-cont-char {
-            padding: 0;
-        }
+            padding: 0; }
         .mp-cont-char li {
             padding: 5px;
-            margin-bottom: 1px;
-        }
+            margin-bottom: 1px; }
         .mp-cont-char li.no-hvr {
             padding: 5px;
-            margin-bottom: -4px;
-        }
+            margin-bottom: -4px; }
         .year-div {
             width: 100%;
             font-size: 10px;
             font-weight: bolder;
             border-bottom: 1px solid white;
-            padding: 5px 20px;
-        }
+            padding: 5px 20px; }
         a { color: #333; }
         .li-hvr {
             display: inline-block;
@@ -111,8 +85,7 @@
             -webkit-transition-property: color;
             transition-property: color;
             -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-        }
+            transition-duration: 0.3s; }
         .li-hvr:before {
             content: "";
             position: absolute;
@@ -131,15 +104,12 @@
             -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
             -webkit-transition-timing-function: ease-out;
-            transition-timing-function: ease-out;
-        }
+            transition-timing-function: ease-out; }
         .li-hvr:hover, .li-hvr:focus, .li-hvr:active {
-            color: white;
-        }
+            color: white; }
         .li-hvr:hover:before, .li-hvr:focus:before, .li-hvr:active:before {
             -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-        }
+            transform: scaleX(0); }
         #div-lum { background-color: #ff9800; color: white;}
         #div-aer { background-color: #e91e63; color: white;}
         #div-mys { background-color: #2196f3; color: white;}
@@ -205,20 +175,18 @@
         ?>
 
         <style type="text/css">
-            /*@if($char['color']!='')*/
+            li#{{$char['name']}} {
+                border-left: 5px solid {{ $char['color'] }};
+                border-right: 5px solid {{ $char['subcolor'] }};
+            }
+            li#{{$char['name']}}.li-hvr {
+                background: {{ $char['color'] }};
+                background: -moz-linear-gradient(left, {{ $char['color'] }} 0%, {{ $char['subcolor'] }} 100%);
+                background: -webkit-linear-gradient(left, {{ $char['color'] }} 0%, {{ $char['subcolor'] }} 100%);
+                background: linear-gradient(to right, {{ $char['color'] }} 0%, {{ $char['subcolor'] }} 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ $char['color'] }}', endColorstr=' {{ $char['subcolor'] }}',GradientType=1 );"> <center>{{ $char['color'] }} | <b>COLOR</b> SCHEME | {{ $char['subcolor'] }}</center> 
+            }
 
-            /*@endif*/
-                li#{{$char['name']}} {
-                    border-left: 5px solid {{ $char['color'] }};
-                    border-right: 5px solid {{ $char['subcolor'] }};
-                }
-                li#{{$char['name']}}.li-hvr {
-                    background: {{ $char['color'] }};
-                    background: -moz-linear-gradient(left, {{ $char['color'] }} 0%, {{ $char['subcolor'] }} 100%);
-                    background: -webkit-linear-gradient(left, {{ $char['color'] }} 0%, {{ $char['subcolor'] }} 100%);
-                    background: linear-gradient(to right, {{ $char['color'] }} 0%, {{ $char['subcolor'] }} 100%); 
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ $char['color'] }}', endColorstr=' {{ $char['subcolor'] }}',GradientType=1 );"> <center>{{ $char['color'] }} | <b>COLOR</b> SCHEME | {{ $char['subcolor'] }}</center> 
-                }
             li#{{$char['name']}} i {
                 color: {{ $char['color'] }};
                 font-size: 20px;
@@ -234,9 +202,6 @@
                 border-right: 5px solid {{ $char['subcolor'] }};
                 transition: 0.3s;
             }
-            /*li#{{$char['name']}}:hover img{
-                filter: grayscale(100%) brightness(100%);
-            }*/
         </style>
     @endforeach
 
@@ -244,22 +209,10 @@
 
     <div class="col-sm-10 col-sm-offset-2" style="padding: 15px;">
         
-        <!-- <div style="
-            width: calc(100% + 30px); height: 100vh;
-            background: url('{{ url('img/mirrorplane-poster.png') }}');
-            background-position: center;
-            background-size: cover;
-            margin-left: -15px;
-            margin-top: -15px;
-        "></div> -->
         <img src="{{ url('img/mirrorplane-header.png') }}" style="
             width: calc(100% + 30px);
             margin-left: -15px;
             margin-top: -15px;">
-        <!-- <img src="{{ url('img/mirrorplane-poster.png') }}" style="
-            width: calc(100% + 30px);
-            margin-left: -15px;
-            margin-top: -15px;">-->
 
         <p><span class="char-name">The City</span> | The World, the Universe</p>
         <ul class="mp-cont">
@@ -279,7 +232,6 @@
                     <i class="mp-scroll max left fa fa-caret-left"></i>
                     <i class="mp-scroll right fa fa-caret-right"></i>
                 </div>
-                <!-- <img src="{{ url('img/ref-mir.png') }}" width="100%"> -->
             </li>
         </ul>
 

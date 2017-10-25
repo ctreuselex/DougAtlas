@@ -26,15 +26,6 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-
 </head>
 
 <body>
@@ -131,20 +122,18 @@
         ?>
 
         <style type="text/css">
-            /*@if($char['color']!='')*/
+            li#{{$char['name']}} {
+                border-left: 5px solid {{ $char['color'] }};
+                border-right: 5px solid {{ $char['subcolor'] }};
+            }
+            li#{{$char['name']}}.li-hvr {
+                background: {{ $char['color'] }};
+                background: -moz-linear-gradient(left, {{ $char['color'] }} 0%, {{ $char['subcolor'] }} 100%);
+                background: -webkit-linear-gradient(left, {{ $char['color'] }} 0%, {{ $char['subcolor'] }} 100%);
+                background: linear-gradient(to right, {{ $char['color'] }} 0%, {{ $char['subcolor'] }} 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ $char['color'] }}', endColorstr=' {{ $char['subcolor'] }}',GradientType=1 );"> <center>{{ $char['color'] }} | <b>COLOR</b> SCHEME | {{ $char['subcolor'] }}</center> 
+            }
 
-            /*@endif*/
-                li#{{$char['name']}} {
-                    border-left: 5px solid {{ $char['color'] }};
-                    border-right: 5px solid {{ $char['subcolor'] }};
-                }
-                li#{{$char['name']}}.li-hvr {
-                    background: {{ $char['color'] }};
-                    background: -moz-linear-gradient(left, {{ $char['color'] }} 0%, {{ $char['subcolor'] }} 100%);
-                    background: -webkit-linear-gradient(left, {{ $char['color'] }} 0%, {{ $char['subcolor'] }} 100%);
-                    background: linear-gradient(to right, {{ $char['color'] }} 0%, {{ $char['subcolor'] }} 100%); 
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ $char['color'] }}', endColorstr=' {{ $char['subcolor'] }}',GradientType=1 );"> <center>{{ $char['color'] }} | <b>COLOR</b> SCHEME | {{ $char['subcolor'] }}</center> 
-                }
             li#{{$char['name']}} i {
                 color: {{ $char['color'] }};
                 font-size: 20px;
@@ -160,9 +149,6 @@
                 border-right: 5px solid {{ $char['subcolor'] }};
                 transition: 0.3s;
             }
-            /*li#{{$char['name']}}:hover img{
-                filter: grayscale(100%) brightness(100%);
-            }*/
         </style>
     @endforeach
 
@@ -253,7 +239,6 @@
                 margin-left: 90% !important;
                 font-size: 40px !important;
                 opacity: 1; }
-    
         </style>
 
         <div class="col-xs-3">

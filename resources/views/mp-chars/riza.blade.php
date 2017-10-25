@@ -176,7 +176,7 @@
 				'des'=>"Placing Kinetic Field on top of Nano Smoke will cause the smoke to reset its duration."),
 			array ('name' => "I Didn't Know It Can Do That", 'ico' => "ra-aura",
 				'des'=>"Now causes allies to get maximum movement and attack speed in the field instead of getting paused."),
-			array ('name' => "After Shock", 'ico' => "ra-groundbreaker",
+			array ('name' => "Git Rekt", 'ico' => "ra-groundbreaker",
 				'des'=>"Hawk Turret's Sentry Mode's shield depleting and Utility Tower being destroyed now creates a Kinetic field in their place."), 
 			);
 		// ------------------------------------------------------------ //
@@ -208,7 +208,7 @@
 				'des'=>"Applies a 50% |reflect| to the utility tower."),
 			array ('name' => "Hit Pulse", 'ico' => "ra-health",
 				'des'=>"Causes the tower to heal all allied units in the area by 50% of its heal every time it's hit."),
-			array ('name' => "Empower", 'ico' => "ra-all-for-one",
+			array ('name' => "Git Gud", 'ico' => "ra-all-for-one",
 				'des'=>"Applies a 5% physical and mystical |amplify| to all allied units in range."),  
 			);
 

@@ -150,7 +150,7 @@
 			array ('name' => "Ink Bomb", 'ico' => "ra-suckered-tentacle",
 				'des'=>"Causes Hydrobomb to inflict |blind|-ness for 2 seconds."),
 			array ('name' => "High Tide", 'ico' => "ra-gem",
-				'des'=>"Hydrobomb will noe leave a puddle which lasts for 5 seconds."), 
+				'des'=>"Hydrobomb will now leave a puddle which lasts for 5 seconds."), 
 			);
 		// ------------------------------------------------------------ //
 		// SK2
