@@ -226,6 +226,7 @@
         position: fixed; bottom: 0; left: 16.6%;;
         font-weight: bold;
         padding: 5px;
+        z-index: 99;
         transition: 0.5s; }
     .skill-augs span {
         font-size: 14px; }

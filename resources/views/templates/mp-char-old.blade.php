@@ -14,6 +14,22 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ url('css/bootstrap.min.css') }}" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>@yield('title')</title>
+    <link rel="icon" href="{{ url('img/logo.png') }}" type="image/png"> 
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ url('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="{{ url('css/modern-business.css') }}" rel="stylesheet">
@@ -25,7 +41,6 @@
     <link rel="stylesheet" type="text/css" href="{{ url('css/rpg-awesome.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
     <!-- jQuery -->
     <script src="{{ url('js/jquery.js') }}"></script>
@@ -35,7 +50,7 @@
 
 <body>
 
-	@include('inc/navigation')
+    @include('inc/navigation')
 
     <?php 
         $curPage = 'char';
@@ -65,7 +80,7 @@
         .char-logs.per li { border-left: 5px solid {{ $charColor }}; }
         .char-logs.per li:before { background: {{ $charColor }}; }
 
-        .char-per p { border-bottom: 2px solid {{ $charColorSub }}; }
+        .char-per p { border-bottom: 2px solid {{ $charColor }}; }
         .char-per i { color: {{ $charColorSub }} ;}
         .modal-header { padding-top: 30px; background-color: {{ $charColor }}; }
         .modal-footer { background-color: {{ $charColorSub }}; }
@@ -143,34 +158,115 @@
 
     @include('mp-inc/dash')
 
-    <div class="col-sm-10 col-sm-offset-2" style="padding: 0;">
+    <div class="col-sm-10 col-sm-offset-2" style="padding: 15px;"> 
 
-        @include("mp-inc/char-main")
+        <style type="text/css">
+            .char-back {
+                display: none;
+                position: absolute; top: -20px; left: -12%;
+                width: calc(100% + 12%);
+                height: 650px;
+                z-index: 9;
+        </style>
 
-        <div style="padding: 5px; margin-bottom: 5px; color: white;
-            background: {{ $charColor }};
-            background: -moz-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
-            background: -webkit-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
-            background: linear-gradient(to right, {{ $charColor }} 0%, {{ $charColorSub }} 100%);"> <center>{{ $charColor }} | <b>COLOR</b> SCHEME | {{ $charColorSub }}</center>
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="char-back" style="background-image: url('{{ url('img/mp-char/'.$charname.'.png') }}'); 
+                    background-size: 100%; background-position: top center;"></div> 
+                <!-- <img src="{{ url('img/mp-char/'.$charname.'.png') }}" width="120%" style="margin-top:-20px; margin-left:-12%;"> -->
+            </div>
+            <div class="col-sm-6 char-details" style="padding:0;">
+                <div class="col-sm-12">
+                    <span class="char-name">{{ $mcharNam }}</span>
+                    <p>{{ $charthemes}}</p>
+                </div>
+                <div class="col-xs-6" style="padding:0;">
+                    <div class="col-xs-12 char-per"><p><b>Character</b></p><i class="{{ $charIco }}" aria-hidden="true"></i>
+                        <div class="col-xs-12">
+                            <ul class="char-logs">
+                                <!-- <li>Full Name: <b>{{ $mcharNam }}</b><span></li> -->
+                                <li>Age: 
+                                    <b>{{ round(((236*1.35)*(1699-$mcharAge))/365, 0) }} | {{ 1699-$mcharAge }} | {{ $mcharAge }}</b>
+                                </li>
+                                <!-- <li>Relatives: <b>{{ $mcharFam }}</b></li> -->
+                                @if ($mcharDiv != '')
+                                    <li>Home Division: 
+                                        @if ($mcharDiv == 'Luminos')
+                                            <img src="{{ url('img/lum.png') }}" width="30px">
+                                        @elseif ($mcharDiv == 'Aeros')
+                                            <img src="{{ url('img/aer.png') }}" width="30px">
+                                        @elseif ($mcharDiv == 'Mystos')
+                                            <img src="{{ url('img/mys.png') }}" width="30px">
+                                        @elseif ($mcharDiv == 'Geios')
+                                            <img src="{{ url('img/gei.png') }}" width="30px">
+                                        @endif
+                                        <b>{{ $mcharDiv }}</b>
+                                    </li> <!-- Luminos | Aeros | Mystos | Geios -->
+                                @endif
+                                <li>Affiliation: <b>{{ $mcharAff }}</b></li>
+                                <?php if(isset($mcharPos)) { ?><li>Current Rep: <b>{{ $mcharPos }}</b></li> <?php } ?>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 char-per"><p><b>Combat</b></p><i class="fa fa-gamepad" aria-hidden="true"></i>
+                        <div class="col-xs-12">
+                            <ul class="char-logs">
+                                <li>Material Affinity: <b>{{ $mcharAft }}</b></li> <!-- Fire | Water | Air | Electricity | Etc... -->
+                                <li>MM Style: <b>{{ $mcharSty }}</b></li> <!-- Armagi | Exnihille | Maximo | Cirkunesi -->
+                                <li>Weapon: <b>{{ $mcharWoc }}</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 char-per"><p><b>CTs Logs</b></p><i class="fa fa-inbox" aria-hidden="true"></i>
+                        <div class="col-xs-12">
+                            <ul class="char-logs per">
+                                <?php $ctsnum = 1; ?>
+                                @foreach ($mirLogs as $logs)
+                                    @if ($logs['ord']==$charname)
+                                        <?php 
+                                            $datatar = strtolower($logs['name']);
+                                            $datatar = str_replace(" ","-",$datatar);
+                                            $datatar = str_replace(",","",$datatar);
+                                            $datatar = str_replace("'","",$datatar);
+                                            $datatar = str_replace("!","",$datatar);
+                                            $datatar = str_replace("?","",$datatar);
+                                        ?>
+
+                                        <a href="" type="button" id="cts-{{ $logs['logn'] }}" data-toggle="modal" data-target="#{{ $datatar }}"><li>
+                                            <span class="col-xs-2" style="padding: 0;">{{ $logs['y'] }}</span>
+                                            <b class="col-xs-9 log-name">{{ $logs['name'] }}</b>
+                                            <span class="col-xs-1" style="padding: 0;">
+                                                {{ round(((236*1.35)*($logs['y']-$mcharAge))/365, 0) }}</span>
+                                        </li></a>
+
+                                        @include("mp-chars/cts-files/{$datatar}")
+                                        <?php $ctsnum++; ?>
+                                    @endif
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                @include('mp-inc/stats')
+            </div>
+        </div>
         </div>
 
-        <div style="display: inline-block; padding: 15px; margin-bottom: 100px;">
-            @include('mp-inc/skills')
+        <div class="clear"></div>
+
+        <div class="col-xs-12">
+            <div style="padding: 5px; margin-bottom: 5px; color: white;
+                background: {{ $charColor }};
+                background: -moz-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
+                background: -webkit-linear-gradient(left, {{ $charColor }} 0%, {{ $charColorSub }} 100%);
+                background: linear-gradient(to right, {{ $charColor }} 0%, {{ $charColorSub }} 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ $charColor }}', endColorstr=' {{ $charColorSub }}',GradientType=1 );"> <center>{{ $charColor }} | <b>COLOR</b> SCHEME | {{ $charColorSub }}</center>
+            </div>
         </div>
 
-        @foreach ($mirLogs as $logs)
-            @if ($logs['ord']==$charname)
-                <?php 
-                    $datatar = strtolower($logs['name']);
-                    $datatar = str_replace(" ","-",$datatar);
-                    $datatar = str_replace(",","",$datatar);
-                    $datatar = str_replace("'","",$datatar);
-                    $datatar = str_replace("!","",$datatar);
-                    $datatar = str_replace("?","",$datatar);
-                ?>
-                @include("mp-chars/cts-files/{$datatar}")
-            @endif
-        @endforeach
+        @include('mp-inc/skills')
+        
+        <div class="clear"></div><br><br>
     </div>
 
     @include('mp-inc/foot')
@@ -184,6 +280,19 @@
     <!-- CUSTOM Script-->
     <script src="{{ url('js/doug-atlas.js') }}"></script>
     <script src="{{ url('js/pie-graph.js') }}"></script>
+
+    <!-- <script href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script> -->
+
+    @if(isset($_GET['cts']))
+        <?php echo '<input id="ctslog-id" value="'.$_GET['cts'].'">' ?>
+        <script>
+            $(document).ready(function() {
+                var ctsid = $("#ctslog-id").val();
+                var ctsname = $("#cts-"+ctsid).data("target");
+                $(ctsname).modal('show');
+            });
+        </script>
+    @endif
 
     <script type="text/javascript">
         $(document).ready(function() {

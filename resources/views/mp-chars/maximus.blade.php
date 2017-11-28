@@ -14,8 +14,8 @@
 			}
 		}
 
-		$mcharNam = "Maximus Seidlitz";
-		$mcharFam = "Parents: Sandra & Landar Seidlitz";
+		$mcharNam = "Maximus Redgrave";
+		$mcharFam = "Parents: Sandra & Landar Redgrave";
 		$mcharDiv = "Geios";
 		$mcharAff = "Institute";
 		$mcharPos = "Co-owner of Landar Industries";

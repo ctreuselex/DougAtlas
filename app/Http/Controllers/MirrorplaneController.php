@@ -44,7 +44,6 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'herschel','sur'=>'','year'=>1667,'color'=>'#9C27B0','subcolor'=>'#00BCD4','ico'=>'ra ra-supersonic-arrow' ),
             array ( 'name'=>'ismael','sur'=>'immen','year'=> 1675,'color'=>'','subcolor'=>'','ico'=>'ra ra-heart-bottle' ), 
             array ( 'name'=>'jeanne','sur'=>'ark','year'=> 1665,'color'=>'#3F51B5','subcolor'=>'#1B2D92','ico'=>'ra ra-fluffy-swirl' ),
-            array ( 'name'=>'kalli','sur'=>'','year'=> 1669,'color'=>'','subcolor'=>'','ico'=>'ra ra-crossbow' ),
             array ( 'name'=>'kash','sur'=>'lorielle','year'=> 1668,'color'=>'#2590ab','subcolor'=>'#d0f30f','ico'=>'ra ra-crab-claw' ),
             array ( 'name'=>'kianna','sur'=>'halley','year'=>1670,'color'=>'#0D4E84','subcolor'=>'#00BCD4','ico'=>'ra ra-snowflake' ),
             array ( 'name'=>'kilosh','sur'=>'elizer','year'=> 1675,'color'=>'','subcolor'=>'','ico'=>'ra ra-shuriken' ),
@@ -52,7 +51,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'frederick','sur'=>'lemaitre','year'=> 1543,'color'=>'','subcolor'=>'','ico'=>'ra ra-bird-mask' ),
             array ( 'name'=>'llaxine','sur'=>'loquintez','year'=>1677,'color'=>'#EC78A0','subcolor'=>'#EFE167','ico'=>'ra ra-fairy' ),
             array ( 'name'=>'lupe','sur'=>'wolgraff','year'=>1665,'color'=>'#DDAF47','subcolor'=>'#882826','ico'=>'ra ra-wolf-howl' ),
-            array ( 'name'=>'maximus','sur'=>'seidlitz','year'=>1673,'color'=>'#17EF79','subcolor'=>'#3D7D7A','ico'=>'ra ra-reactor' ),
+            array ( 'name'=>'maximus','sur'=>'redgrave','year'=>1673,'color'=>'#17EF79','subcolor'=>'#3D7D7A','ico'=>'ra ra-reactor' ),
             array ( 'name'=>'mikael','sur'=>'clayford','year'=> 1667,'color'=>'#00e7e7','subcolor'=>'#0067CD','ico'=>'ra ra-kitchen-knives' ),
             array ( 'name'=>'moon','sur'=>'beleaguer','year'=>1668,'color'=>'#26DC9F','subcolor'=>'#D2A368','ico'=>'ra ra-slash-ring' ),
             array ( 'name'=>'noemi','sur'=>'allium','year'=> 1664,'color'=>'#FFEB3B','subcolor'=>'#8BC34A','ico'=>'ra ra-flowers' ),
@@ -64,6 +63,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'valkyr','sur'=>'soltaire','year'=>1664,'color'=>'#F3A40C','subcolor'=>'#F54C04','ico'=>'ra ra-heartburn' ),
             array ( 'name'=>'vines','sur'=>'roderick','year'=>1668,'color'=>'#18FF81','subcolor'=>'#E91E63','ico'=>'ra ra-dragonfly' ),
             array ( 'name'=>'vriskvin','sur'=>'dirk','year'=>1667,'color'=>'#E91E63','subcolor'=>'#5F0B28','ico'=>'ra ra-clockwork' ),
+            array ( 'name'=>'xiscor','sur'=>'A','year'=> 1669,'color'=>'','subcolor'=>'','ico'=>'ra ra-crossbow' ),
             array ( 'name'=>'zedrik','sur'=>'azazel','year'=>1661,'color'=>'#FFC107','subcolor'=>'#00BCD4','ico'=>'ra ra-flaming-claw' ), 
 
             // non main
@@ -79,8 +79,8 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'gamora','sur'=>'asbistos','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),  
             array ( 'name'=>'samtiel','sur'=>'vance','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),  
             // landar
-            array ( 'name'=>'sandra','sur'=>'seidlitz','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-reactor' ),  
-            array ( 'name'=>'landar','sur'=>'seidlitz','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-reactor' ), 
+            array ( 'name'=>'sandra','sur'=>'redgrave','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-reactor' ),  
+            array ( 'name'=>'landar','sur'=>'redgrave','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-reactor' ), 
             // irwin 
             array ( 'name'=>'cross','sur'=>'irwin','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-ankh' ),  
             array ( 'name'=>'dianne','sur'=>'irwin','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ), 

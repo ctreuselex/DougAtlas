@@ -75,6 +75,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url('css/rpg-awesome.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
 </head>
 

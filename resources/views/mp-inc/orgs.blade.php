@@ -55,6 +55,8 @@
                 <br>
                 <br>Tauroscene Corp. is a Mystic custom weapon creator since it's inception, hailing Helios Skyforge for his use of his father's famed smithery and creative weapon designs. However, due to pride, and basically, their whole business premise, Tauroscene only make their weapons once and based it whole on their client's fighting style, making them unique, one-of-a-kind, and out-of-this-world ultra expensive.
                 <br>
+                <br>They are the first weapon manufacturer to bind myst with weapons with the use of Sigilios. Using different sigils, they design each weapon to perform actions simply by connecting itself to its user, allowing it to function simply by their will.
+                <br>
                 <br>The Tauroscene Corp. helds an annual weapon exhibition every 28th of Spring in which people showcases their Tauroscene weapon in a one-on-one spar, in which the best are being awarded with the Tauroscene Exellence Trophy, complete with a golden replica of their own weapon." ),
 
         array('id'=>"corporalworks", 'name'=>"Corporal Works",

@@ -1,5 +1,5 @@
 body {
-	font-family: 'Raleway';
+	font-family: 'Quicksand', sans-serif; 
 	min-width: 1024px;
     overflow-x: hidden;
 }
@@ -122,21 +122,42 @@ a, a:hover, a:focus, a:active {
 
 	.city-scape {
 	    height: 190px;
-	    background-color: grey; 
+	    background-color: #bbb; 
 	    margin: 0 -15px; }
-	.city-scape .moon{
-		position: absolute;
-	    top: 70px;
+	.city-scape .moon {
+		position: absolute; top: 70px;
 	    left: calc(50% - (170px / 2));
-	    height: 170px;
-	    width: 170px;
-	    background-color: #E2C926;
+	    height: 170px; width: 170px;
 	    border-radius: 90px;
-        mix-blend-mode: exclusion;
+        mix-blend-mode: hard-light;
         /*opacity: 0.8;*/
 	    transition: 0.5s; }
+	.city-scape .diamond {
+		position: absolute; top: 90px; 
+	    left: calc(50% - (120px / 2));
+	    height: 120px; width: 120px;  
+        opacity: 0;
+		transform: scale(2) rotate(45deg); 
+	    transition: 0.3s; }
+	.city-scape .diamond-border {
+		position: absolute; top: 80px; 
+	    left: calc(50% - (120px / 2));
+	    height: 120px; width: 120px;
+	    border: 2px solid white;
+        opacity: 0;
+		transform: scale(2) rotate(45deg); 
+	    transition: 0.3s; }
 	.city-scape:hover .moon {
+		transform: scale(2); 
+		transition: 0.7s; }
+	.city-scape:hover .diamond { 
+        opacity: 0.8;
+		transform: scale(1) rotate(45deg);
 		transition: 0.3s; }
+	.city-scape:hover .diamond-border { 
+        opacity: 0.5;
+		transform: scale(1) rotate(45deg);
+		transition: 0.5s; }
 	.city-scape .city-name {
 	    position: absolute;
 	    top: 130px;
@@ -147,7 +168,7 @@ a, a:hover, a:focus, a:active {
 	    text-shadow: 0 0px 10px;
     	letter-spacing: -2px;
 	    color: white;
-	    mix-blend-mode: color-dodge;
+	    /*mix-blend-mode: color-dodge;*/
 	    transition: 0.5s; }
 	.city-scape:hover .city-name {
 		color: white;
@@ -324,7 +345,7 @@ a, a:hover, a:focus, a:active {
 	    position: absolute;
 	    font-size: 30px;
 	    top: 5px;
-    	right: 25px; }
+    	right: 15px; }
 	.char-logs {
 		padding: 0;
 		margin: 0 -15px; }
@@ -371,7 +392,7 @@ a, a:hover, a:focus, a:active {
 		-webkit-transition-timing-function: ease-out;
 		transition-timing-function: ease-out; }
 	.char-logs.per a li:hover, .char-logs.per a li:focus, .char-logs.per a li:active {
-		color: white;
+		color: white !important;
 		transition: 0.3s; }
 	.char-logs.per li:hover:before, .char-logs.per li:focus:before, .char-logs.per li:active:before {
 		-webkit-transform: scaleX(1);
@@ -379,7 +400,7 @@ a, a:hover, a:focus, a:active {
 
 	.modal-title {
 	    font-family: 'Righteous', cursive;
-	    font-size: 20px;
+	    font-size: 30px;
 	    color: white;
     	line-height: 1; }
 	.modal-body p {
@@ -394,19 +415,15 @@ a, a:hover, a:focus, a:active {
 	    position: absolute;
 	    z-index: 2;
 	    top: 110px;
-	    left: 89px;
-	}
+	    left: 89px; }
 	.pie {
 	    margin: 30px auto;
-	    margin-left: 10%;
-	}
+	    margin-left: 10%; }
 	.legend {
 	    margin-top: 20px;
-	    width: 100%;
-	}
+	    width: 100%; }
 	.legend li {
-    	width: 90%;
-	}
+    	width: 90%; }
 
 /*---------------------------- FOOTER YO ----------------------------*/
 
@@ -415,15 +432,13 @@ a, a:hover, a:focus, a:active {
 	    right: 0;
     	top: 60px;
 	    transition: 0.3s;
-	}
+	    z-index: 99999; }
 	.notes.boop {
 	    right: -145px;
-	    transition: 0.3s;
-	}
+	    transition: 0.3s; }
 	.notes ul {
 	    padding: 0;
-	    /*text-align: right;*/
-	}
+	    /*text-align: right;*/ }
 	.notes ul li {
 	    list-style: none;
 	    max-width: 150px;
@@ -432,49 +447,42 @@ a, a:hover, a:focus, a:active {
 	    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 	    padding: 5px 10px;
 	    padding-left: 15px;
-	    margin: 1px;
-	}
+	    margin: 1px; }
 	.notes ul li b {
 	    position: absolute;
     	min-width: 50px;
 	    color: white;
 	    right: 140px;
-	    padding: 3px;
-	}
+	    padding: 3px; }
 
 	.bot-scro {
 	    position: fixed;
 	    bottom: 0px;
-	    right: 60px;    
-	}
+	    right: 60px; }
 	.bot-scro a.fir {
 	    background: white;
 	    padding: 5px 10px;
         border: 1px solid #d5d5d5;
 	    border-top-left-radius: 20px;
 	    box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
-	    transition: 0.5s;
-	}
+	    transition: 0.5s; }
 	.bot-scro a.mid {
 	    background: white;
 	    padding: 5px 10px;
         border: 1px solid #d5d5d5;
 	    box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
-	    transition: 0.5s;
-	}
+	    transition: 0.5s; }
 	.bot-scro a.las {
 	    background: white;
 	    padding: 5px 10px;
         border: 1px solid #d5d5d5;
 	    border-top-right-radius: 20px;
 	    box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
-	    transition: 0.5s;
-	}
+	    transition: 0.5s; }
 	.bot-scro a {
 		color: #333;
 		font-size: 20px;
-		margin: 0px -2px;
-	}
+		margin: 0px -2px; }
 
 /*---------------------------- ANIMATIONS ----------------------------*/
 
