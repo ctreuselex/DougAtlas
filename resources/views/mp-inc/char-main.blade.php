@@ -14,9 +14,13 @@
         width: 60%; }
 
     @keyframes diamondscale {
-        0% { transform: scale(5) rotate(315deg); opacity: 0; }
-        70% { transform: scale(5) rotate(315deg); opacity: 0; }
-        100% { transform: scale(1) rotate(315deg); opacity: 0.8 ; }
+        0% { transform: scale(5) rotate(315deg); opacity: 0; border: 1000px solid {{ $charColor }}; }
+        50% { transform: scale(5) rotate(315deg); opacity: 0; border: 1000px solid {{ $charColor }}; }
+        100% { transform: scale(1) rotate(315deg); opacity: 0.5;  border: 0 solid {{ $charColor }}; }
+    }@keyframes diamondscaleborder {
+        0% { transform: scale(0) rotate(315deg); opacity: 0; }
+        70% { transform: scale(0) rotate(315deg); opacity: 0; }
+        100% { transform: scale(1) rotate(315deg); opacity: 1 ; }
     }
 
     .char-main .diamond {
@@ -88,19 +92,19 @@
     }
 
     .modal-backdrop .diamond {
-        animation: diamondmodal 1s;
+        animation: diamondmodal 0.5s;
         animation-fill-mode: forwards;
         position: relative;
-        width: 800px; height: 800px;
+        width: 700px; height: 700px;
         margin: -15% auto 0; 
         background: {{ $charColor }};
         box-shadow: 0 0 200px 30px {{ $charColor }}; }
     .modal-backdrop .diamond-border {
-        animation: diamondmodaldrop 1.3s;
+        animation: diamondmodaldrop 0.8s;
         animation-fill-mode: forwards;
         position: relative;
-        width: 750px; height: 750px;
-        margin: -43% auto 0;
+        width: 650px; height: 650px;
+        margin: -35% auto 0;
         border: 2px solid white; }
 
 </style>
@@ -182,21 +186,14 @@
         </div>
     </div>
 
+    <div class="load-circle"></div>
+
 </div>
 
 <script type="text/javascript">
     $(window).load( function() {
-        var firstload = true;
-
-        $(window).mousemove(function (e) {
-            if(firstload) firstload = callin();
-
-            parallax(e, $('.char-main img').get(0), 1, 200);
-            parallax(e, $('.char-main .diamond').get(0), 1.5, 0);
-            parallax(e, $('.char-main .diamond-border').get(0), 1.75, 0);
-            parallax(e, $('.char-main .diamond-cover').get(0), 2, -700); 
-            $('.char-main .diamond-cover').addClass('turr');
-        });
+        // var firstload = true;
+        callin();   
 
         $('.cts-modal').click(function() {
             setTimeout(function() {
@@ -206,23 +203,35 @@
         })
     });
 
-    function parallax(e, target, layer, add) {
-        var layer_coeff = 10 / layer;
-        // var y = (($('.char-main').height() - target.offsetHeight) - (e.pageY - ($('.char-main').height() / 2)) / layer_coeff);
-        var x = (($('.char-main').width() - target.offsetWidth) - (e.pageX - ($('.char-main').width() / 2)) / layer_coeff) + add;
-        // $(target).offset({ top: y ,left: x });
-        $(target).offset({ left: x });
-    };
-
     function callin() {
         $('.char-main img.portrait').fadeIn("slow", function() {
             $('.char-main .details').fadeIn("slow");
         });
         $('.char-main .diamond').css('animation', 'diamondscale 1.5s');
         $('.char-main .diamond').css('animation-fill-mode', 'forwards');
-        $('.char-main .diamond-border').css('animation', 'diamondscale 1.8s');
+        $('.char-main .diamond-border').css('animation', 'diamondscaleborder 1.8s');
         $('.char-main .diamond-border').css('animation-fill-mode', 'forwards');
-        $('.char-main .diamond-cover').addClass('in');
+        $('.char-main .diamond-cover').addClass('in'); 
+
+        setTimeout(function() {
+            $(window).mousemove(function (e) {
+
+                parallax(e, $('.char-main img').get(0), 1, 200);
+                parallax(e, $('.char-main .diamond').get(0), 1.5, -50);
+                parallax(e, $('.char-main .diamond-border').get(0), 1.75, -50);
+                parallax(e, $('.char-main .diamond-cover').get(0), 2, -700); 
+                $('.char-main .diamond-cover').addClass('turr');
+            });
+        }, 3000);
+
         return false; 
+    };
+
+    function parallax(e, target, layer, add) {
+        var layer_coeff = 10 / layer;
+        // var y = (($('.char-main').height() - target.offsetHeight) - (e.pageY - ($('.char-main').height() / 2)) / layer_coeff);
+        var x = (($('.char-main').width() - target.offsetWidth) - (e.pageX - ($('.char-main').width() / 2)) / layer_coeff) + add;
+        // $(target).offset({ top: y ,left: x });
+        $(target).offset({ left: x });
     };
 </script>
