@@ -2,7 +2,7 @@
 <style type="text/css">
     .char-main {
         position: relative;
-        width: 100%; height: 80vh;
+        width: 100%; height: calc(100vh - 80px);
         background-size: 300px; 
         background-blend-mode: overlay;
         overflow: hidden;
@@ -10,7 +10,7 @@
         background-image: url('{{ $charTexture }}');}
     .char-main img.portrait {
         display: none;
-        position: absolute; right: 0; top: 0;
+        position: absolute; right: 0; bottom: 0;
         width: 60%; }
 
     @keyframes diamondscale {
@@ -71,8 +71,8 @@
         padding: 0;
         margin: 0; }
     .char-main .details .char-logs.per li, .char-logs li {
-        background: rgba(255,255,255,0.8);
-        color: #333; }
+        background: rgba(255,255,255,0.1);
+        color: white; }
 
     .modal-backdrop.in { background-color: {{ $charColorSub }}; }
     .modal-backdrop.in { opacity: 0.7;}
@@ -139,13 +139,13 @@
                 @if ($mcharDiv != '')
                     <li>Home Division: 
                         @if ($mcharDiv == 'Luminos')
-                            <img src="{{ url('img/lum.png') }}" width="30px">
+                            <img style="filter: brightness(100);" src="{{ url('img/lum.png') }}" width="30px">
                         @elseif ($mcharDiv == 'Aeros')
-                            <img src="{{ url('img/aer.png') }}" width="30px">
+                            <img style="filter: brightness(100);" src="{{ url('img/aer.png') }}" width="30px">
                         @elseif ($mcharDiv == 'Mystos')
-                            <img src="{{ url('img/mys.png') }}" width="30px">
+                            <img style="filter: brightness(100);" src="{{ url('img/mys.png') }}" width="30px">
                         @elseif ($mcharDiv == 'Geios')
-                            <img src="{{ url('img/gei.png') }}" width="30px">
+                            <img style="filter: brightness(100);" src="{{ url('img/gei.png') }}" width="30px">
                         @endif
                         <b>{{ $mcharDiv }}</b>
                     </li> <!-- Luminos | Aeros | Mystos | Geios -->

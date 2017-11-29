@@ -1,5 +1,5 @@
 body {
-	font-family: 'Quicksand', sans-serif; 
+	font-family: 'Quicksand', sans-serif;
 	min-width: 1024px;
     overflow-x: hidden;
 }
@@ -458,7 +458,8 @@ a, a:hover, a:focus, a:active {
 	.bot-scro {
 	    position: fixed;
 	    bottom: 0px;
-	    right: 60px; }
+	    right: 60px;
+	    z-index: 999; }
 	.bot-scro a.fir {
 	    background: white;
 	    padding: 5px 10px;

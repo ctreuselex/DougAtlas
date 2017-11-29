@@ -39,7 +39,7 @@
     <?php
         $curPage = 'home';
         $charColor = '#18FF81';
-        $charColorSub = '#AAAAAA';
+        $charColorSub = '#009688';
         $charTexture = url('img/hex-bg-l.png'); 
         $cityname = 'Mirrorplane';
 
@@ -208,12 +208,11 @@
 
     @include('mp-inc/dash')
 
+    <div class="col-sm-10 col-sm-offset-2" style="padding: 0;">
+        @include('mp-inc/home-head')
+    </div>
+
     <div class="col-sm-10 col-sm-offset-2" style="padding: 15px;">
-        
-        <img src="{{ url('img/mirrorplane-header.png') }}" style="
-            width: calc(100% + 30px);
-            margin-left: -15px;
-            margin-top: -15px;">
 
         <p><span class="char-name">The City</span> | The World, the Universe</p>
         <ul class="mp-cont">

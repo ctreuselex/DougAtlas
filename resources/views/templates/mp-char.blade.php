@@ -76,8 +76,6 @@
         .bot-scro a.las:hover, .bot-scro a.las.active { background-color: {{ $charColor }}; color: white; transition: 0.3s; }
         .notes ul li b { background: {{ $charColor }}; }
 
-        .log-name { border-left: 1px solid rgba(0,0,0,0.3); }
-        li:hover .log-name { border-left: 1px solid white; }
 
         @foreach ($mirChars as $char)
             <?php 
@@ -145,7 +143,7 @@
 
     <div class="col-sm-10 col-sm-offset-2" style="padding: 0;">
 
-        @include("mp-inc/char-main")
+        @include("mp-inc/char-head")
 
         <div style="padding: 5px; margin-bottom: 5px; color: white;
             background: {{ $charColor }};

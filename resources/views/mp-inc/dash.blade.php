@@ -9,7 +9,7 @@
         /*background: url({{ $charTexture }}); */
         background-size: 100%;
         background-blend-mode: multiply;
-        background-color: /*{{ $charColorSub }}*/ grey; }
+        background-color: /*{{ $charColorSub }}*/ black; }
     /*.ad-dash { 
         background: url('img/char-text-colored.jpg'); 
         background-size: cover;
