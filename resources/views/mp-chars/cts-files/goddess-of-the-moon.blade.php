@@ -7,7 +7,7 @@
         <div class="modal-body">
           
         CT Message Tread: <span class="cts-moon"></span> to <span class="cts-maximus"></span>
-        <br>TIME: 1693, SR 15th Fall
+        <br>TIME: 1692, SR 15th Spring
         <br>
         <br><span class="cts-moon"></span>: dude i need your help
         <br><span class="cts-maximus"></span>: Ok look, I know you really REALLY like to use guns, but I'm telling you, you being kickass without it is wh-

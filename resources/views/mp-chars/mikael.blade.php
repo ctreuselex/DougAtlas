@@ -48,7 +48,7 @@
 				'des'=>"Mikael is used to swinging an oversized greatsword made of Myst that he casually beheads people just for standing behind him while playing against those pesky teenagers in CTs Virtual League."),
 
 			array ('name'=>"Optic Blast", 'sk'=>'sec',
-				'des'=>"Using his Myst visor he proudly created himself, Mikael releases a huge amount of fiery Myst that melts through the thickest of armors. Can also be used to overload Myst weapons. Can't be used while |blind|-ed."), 
+				'des'=>"Using his Myst visor he proudly created himself, Mikael releases a huge amount of fiery Myst that melts through the thickest of armors, ignoring Myst resistance. Can also be used to overload Myst weapons. Can't be used while |blind|-ed."), 
 
 			array ('name'=>"Holocage", 'sk'=>'sk1',
 				'des'=>"Throws all units in the area with dormat Myst underground and quickly crystalizes it sending all units trapped within into a |pause|-d state but with total |invulnerability|. Basically what happens when he gets ganked in early game."), 

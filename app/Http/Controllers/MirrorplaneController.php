@@ -17,7 +17,7 @@ class MirrorplaneController extends Controller
         $mirTeam = $this->charMeta("team");
         $mirMems = $this->charMeta("mems");
         
-        return view('mirrorplane-home')->with('mirChars',$mirChars)->with('mirDiv',$mirDiv)->with('mirTeam',$mirTeam)->with('mirMems',$mirMems); }
+        return view('mp-home')->with('mirChars',$mirChars)->with('mirDiv',$mirDiv)->with('mirTeam',$mirTeam)->with('mirMems',$mirMems); }
 
     public function character($char) {
         $viewchar = 'mp-chars.'.$char;
@@ -33,7 +33,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'cin','sur'=>'','year'=>0,'color'=>'#8BC34A','subcolor'=>'#009688','ico'=>'ra ra-castle-emblem' ),
 
             array ( 'name'=>'andrei','sur'=>'','year'=>1666,'color'=>'','subcolor'=>'','ico'=>'ra ra-crystals' ),
-            array ( 'name'=>'avery','sur'=>'gebsen','year'=>1668,'color'=>'#91DA2D','subcolor'=>'#9D2DDA','ico'=>'fa fa-paper-plane' ),
+            array ( 'name'=>'avery','sur'=>'gambol','year'=>1668,'color'=>'#91DA2D','subcolor'=>'#9D2DDA','ico'=>'fa fa-paper-plane' ),
             array ( 'name'=>'bono','sur'=>'vasili','year'=>1568,'color'=>'','subcolor'=>'','ico'=>'ra ra-blade-bite' ),
             array ( 'name'=>'ceniza','sur'=>'corvera','year'=>1667,'color'=>'#9e0cd4','subcolor'=>'#f39b0f','ico'=>'ra ra-crystal-wand' ),
             array ( 'name'=>'chance','sur'=>'linus','year'=>1668,'color'=>'#673Ab7','subcolor'=>'#203E46','ico'=>'ra ra-diamond' ),
@@ -287,7 +287,7 @@ class MirrorplaneController extends Controller
             array ( 'y'=>1666, 's'=>4, 'd'=>'49', 'ord'=>'valkyr', 'logn'=>1, 'name'=>'The Rebirth'),
 
             array ( 'y'=>1698, 's'=>3, 'd'=>'58', 'ord'=>'seline', 'logn'=>5, 'name'=>'Above The Clouds'),
-            array ( 'y'=>1693, 's'=>2, 'd'=>'15', 'ord'=>'seline', 'logn'=>4, 'name'=>'Goddess Of The Moon'),
+            array ( 'y'=>1692, 's'=>4, 'd'=>'15', 'ord'=>'seline', 'logn'=>4, 'name'=>'Goddess Of The Moon'),
             array ( 'y'=>1686, 's'=>2, 'd'=>'10', 'ord'=>'seline', 'logn'=>3, 'name'=>'Minimum Effort'),
             array ( 'y'=>1684, 's'=>4, 'd'=>'59', 'ord'=>'seline', 'logn'=>2, 'name'=>'Peasant Hating'),
             array ( 'y'=>1676, 's'=>3, 'd'=>'5', 'ord'=>'seline', 'logn'=>1, 'name'=>'Ultra Violet'),
@@ -303,10 +303,10 @@ class MirrorplaneController extends Controller
             array ( 'y'=>1687, 's'=>1, 'd'=>'32', 'ord'=>'vriskvin', 'logn'=>2, 'name'=>'Stopping Continuity'),
             array ( 'y'=>1678, 's'=>3, 'd'=>'53', 'ord'=>'vriskvin', 'logn'=>1, 'name'=>'Just About Time'),
 
-            array ( 'y'=>1696, 's'=>1, 'd'=>'4', 'ord'=>'kianna', 'logn'=>5, 'name'=>'Another Falling'),
-            array ( 'y'=>1694, 's'=>4, 'd'=>'54', 'ord'=>'kianna', 'logn'=>4, 'name'=>'A Stab On The Back'),
+            // array ( 'y'=>1696, 's'=>1, 'd'=>'4', 'ord'=>'kianna', 'logn'=>5, 'name'=>'Another Falling'),
+            // array ( 'y'=>1694, 's'=>4, 'd'=>'54', 'ord'=>'kianna', 'logn'=>4, 'name'=>'A Stab On The Back'),
             array ( 'y'=>1685, 's'=>4, 'd'=>'42', 'ord'=>'kianna', 'logn'=>3, 'name'=>'To Serve The People'),
-            array ( 'y'=>1685, 's'=>3, 'd'=>'1', 'ord'=>'kianna', 'logn'=>2, 'name'=>'Another Rising'),
+            // array ( 'y'=>1685, 's'=>3, 'd'=>'1', 'ord'=>'kianna', 'logn'=>2, 'name'=>'Another Rising'),
             array ( 'y'=>1679, 's'=>3, 'd'=>'3', 'ord'=>'kianna', 'logn'=>1, 'name'=>'Writings Of The Cold Hearted'),
 
             array ( 'y'=>1694, 's'=>1, 'd'=>'18', 'ord'=>'rigel', 'logn'=>3, 'name'=>'Reinventing The Wheel To Run Myself Over'),
@@ -344,7 +344,7 @@ class MirrorplaneController extends Controller
             array ( 'y'=>1693, 's'=>2, 'd'=>'5', 'ord'=>'chance', 'logn'=>2, 'name'=>'Totally Unacceptable'),
             array ( 'y'=>1687, 's'=>4, 'd'=>'29', 'ord'=>'chance', 'logn'=>1, 'name'=>'Sorry, Not Sorry'),
 
-            array ( 'y'=>1692, 's'=>2, 'd'=>'13', 'ord'=>'avery', 'logn'=>4, 'name'=>'Paraphrasing'),
+            // array ( 'y'=>1692, 's'=>2, 'd'=>'13', 'ord'=>'avery', 'logn'=>4, 'name'=>'Paraphrasing'),
             array ( 'y'=>1691, 's'=>4, 'd'=>'8', 'ord'=>'avery', 'logn'=>3, 'name'=>'Girls Like Jocks You Know'),
             array ( 'y'=>1689, 's'=>3, 'd'=>'22', 'ord'=>'avery', 'logn'=>2, 'name'=>'Time Keeper, Hey!'),
             array ( 'y'=>1686, 's'=>2, 'd'=>'11', 'ord'=>'avery', 'logn'=>1, 'name'=>'Paperman'),

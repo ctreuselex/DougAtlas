@@ -71,7 +71,7 @@
         padding: 0;
         margin: 0; }
     .char-main .details .char-logs.per li, .char-logs li {
-        background: rgba(255,255,255,0.1);
+        background: rgba(0,0,0,0.2);
         color: white; }
 
     .modal-backdrop.in { background-color: {{ $charColorSub }}; }
@@ -129,7 +129,7 @@
     <div class="details">
         <span class="char-name">{{ $mcharNam }}</span>
         <p style="white-space: nowrap;">{{ $charthemes}}</p>
-        <div class="char-per"><p><b>Character</b></p><i class="{{ $charIco }}" aria-hidden="true"></i>
+        <div class="char-per"><p><b>Profile</b></p><i class="{{ $charIco }}" aria-hidden="true"></i>
             <ul class="char-logs">
                 <!-- <li>Full Name: <b>{{ $mcharNam }}</b><span></li> -->
                 <li>Age: 
@@ -139,13 +139,13 @@
                 @if ($mcharDiv != '')
                     <li>Home Division: 
                         @if ($mcharDiv == 'Luminos')
-                            <img style="filter: brightness(100);" src="{{ url('img/lum.png') }}" width="30px">
+                            <img style="" src="{{ url('img/lum.png') }}" width="30px">
                         @elseif ($mcharDiv == 'Aeros')
-                            <img style="filter: brightness(100);" src="{{ url('img/aer.png') }}" width="30px">
+                            <img style="" src="{{ url('img/aer.png') }}" width="30px">
                         @elseif ($mcharDiv == 'Mystos')
-                            <img style="filter: brightness(100);" src="{{ url('img/mys.png') }}" width="30px">
+                            <img style="" src="{{ url('img/mys.png') }}" width="30px">
                         @elseif ($mcharDiv == 'Geios')
-                            <img style="filter: brightness(100);" src="{{ url('img/gei.png') }}" width="30px">
+                            <img style="" src="{{ url('img/gei.png') }}" width="30px">
                         @endif
                         <b>{{ $mcharDiv }}</b>
                     </li> <!-- Luminos | Aeros | Mystos | Geios -->
@@ -154,7 +154,7 @@
                 <?php if(isset($mcharPos)) { ?><li>Current Rep: <b>{{ $mcharPos }}</b></li> <?php } ?>
             </ul>
         </div>
-        <div class="char-per"><p><b>Combat</b></p><i class="fa fa-gamepad" aria-hidden="true"></i>
+        <div class="char-per"><p><b>Combat Statistics</b></p><i class="fa fa-gamepad" aria-hidden="true"></i>
             <ul class="char-logs">
                 <li>Material Affinity: <b>{{ $mcharAft }}</b></li> <!-- Fire | Water | Air | Electricity | Etc... -->
                 <li>MM Style: <b>{{ $mcharSty }}</b></li> <!-- Armagi | Exnihille | Maximo | Cirkunesi -->

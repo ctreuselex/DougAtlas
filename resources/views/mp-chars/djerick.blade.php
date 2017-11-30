@@ -205,7 +205,7 @@
 			array ('name' => "Bloodbather",  "ico" => "ra-droplet-splash",
 				'des'=>"Hitting enemy units with Aquadextrius, Whirlpool, or Percutiens Aerugo has a 15% chance of |drench|-ing Moon and whoever it is he's hitting. |clone|-s get this ability too."),
 			array ('name' => "Tide Turner",  "ico" => "ra-double-team",
-				'des'=>"Each charge of Water Image, if cast of water, now creates two copies of Moon instead of one but after a 1 second delay."),
+				'des'=>"Each charge of Water Image, if cast on water, now creates two copies of Moon instead of one but after a 1 second delay."),
 			array ('name' => "Total Fanatic",  "ico" => "ra-hydra-shot",
 				'des'=>"Charging towards an enemy unit while on water causes all of Moon's |clone|-s to charge towards the target while giving them all 40% more Movement Speed. Has a cooldown of 6 seconds."),  
 			);

@@ -9,8 +9,8 @@
         background-image: url('{{ $charTexture }}');}
     .home-main img.portrait {
         display: none;
-        position: absolute; bottom: 25%;
-        left: calc(50% - (900px / 2));
+        position: absolute; bottom: 30%;
+        left: calc(50% - (800px / 2));
         width: 800px; }
 
     .home-main .color-grade {
@@ -44,8 +44,8 @@
         left: calc(50% - (650px / 2));
         height: 650px; width: 650px;
         opacity: 0;
-        background: {{ $charColorSub }}; 
-        box-shadow: 0 0 500px 20px {{ $charColorSub }}; }
+        background: #9C27B0; 
+        box-shadow: 0 0 500px 20px #9C27B0; }
     .home-main .diamond-border {
         position: absolute; top: 10%; 
         left: calc(50% - (650px / 2));
@@ -57,30 +57,33 @@
         height: 1000px; width: 1000px;
         opacity: 0;
         transform: rotate(45deg);
-        border: 1000px solid white;
-        background: {{ $charColor }};
-        box-shadow: 0 0 500px 20px {{ $charColor }};}
+        border: 1000px solid #F54C04;
+        background: #F3A40C;
+        box-shadow: 0 0 500px 20px #F3A40C; }
     .home-main .diamond-cover.sec {
-        position: absolute; top: -50%; left: -100%; }
+        position: absolute; top: -50%; left: -100%;
+        border: 1000px solid #00BCD4;
+        background: #26DC9F;
+        box-shadow: 0 0 500px 20px #26DC9F; }
     .home-main .diamond-cover.in {
         left: -50%;
         opacity: 0.7;
-        border: 0 solid white;
+        border-width: 0;
         transition: 1s; }
     .home-main .diamond-cover.sec.in {
         left: 70%; }
 
     @keyframes circleload {
-        0% { height: 0; width: 5px; margin-top: calc(15% - 0); 
+        0% { height: 0; width: 5px; margin-top: calc(20% - 0); 
             transform: rotate(0deg); opacity: 0.7; border: 0 solid white; }
-        30% { height: 200px; width: 5px; margin-top: calc(15% - (200px / 2)); 
+        30% { height: 200px; width: 5px; margin-top: calc(20% - (200px / 2)); 
             transform: rotate(0deg); opacity: 0.7; border: 0 solid white; }
         55% { background-color: {{ $charColorSub }}; }
         60% { background-color: {{ $charColor }}; }
         65% { background-color: {{ $charColorSub }}; }
-        70% { height: 200px; width: 200px; margin-top: calc(15% - (200px / 2)); 
+        70% { height: 200px; width: 200px; margin-top: calc(20% - (200px / 2)); 
             transform: rotate(315deg); opacity: 0.7; border: 0 solid white; }
-        100% { height: 800px; width: 800px; margin-top: calc(15% - (800px / 2)); 
+        100% { height: 800px; width: 800px; margin-top: calc(20% - (800px / 2)); 
             transform: rotate(315deg); opacity: 0; border: 400px solid white; }
     }
     @keyframes circleloadboot {
@@ -105,7 +108,7 @@
         box-sizing: border-box;
         position: relative;
         width: 10px;
-        margin: 15% auto 0;
+        margin: 20% auto 0;
         background-color: {{ $charColorSub }}; }
     .home-main .circle-load-boot {
         position: absolute;
@@ -173,7 +176,7 @@
     <div class="diamond"></div><div class="diamond-border"></div>
     <div class="diamond-cover"></div><div class="diamond-cover sec"></div>
     <img class="portrait" src="{{ url('img/mirrorplane-logo.png') }}">
-    <div class="circle-load"></div><div class="circle-load-boot">System Booting...</div>
+    <div class="circle-load"></div><div class="circle-load-boot">Initializing Boot<br>Sequence...</div>
     <div class="color-grade bot"></div>
 
     <ul class="mini-nav">
@@ -197,7 +200,7 @@
             $('.home-main .circle-load').css('animation-fill-mode', 'forwards');
 
             setTimeout(function() {
-                $('.home-main .circle-load-boot').html('Initializing Core<br>Connection...'); 
+                $('.home-main .circle-load-boot').html('Opening<br>Core Tether...'); 
             }, 1000);
 
             setTimeout(function() {

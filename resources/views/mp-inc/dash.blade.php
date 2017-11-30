@@ -33,6 +33,27 @@
 		a.list-group-item.d-{{ $char['name'] }}:hover i{
 			opacity: 1; color: {{ $ctscharsubcolor }}; transition: 0.3s; }
 	@endforeach
+	
+    @keyframes circleloadcontacts {
+        0% { transform: scale(0) rotate(45deg); border: 75px solid white; }
+        20% { transform: scale(1) rotate(45deg); border: 1px solid white; }
+        80% { transform: scale(0.9) rotate(45deg); border: 1px solid white; }
+        100% { transform: scale(0) rotate(45deg); border: 75px solid white; }
+    }
+
+	.ad-dash-pa .circle-load-boot {
+		display: none;
+        position: absolute;
+        top: 50%; left: calc(50% - (200px / 2));
+        width: 200px;
+        color: white;
+        text-align: center; }
+    .ad-dash-pa .circle-load-boot.in:before {
+        content: "";
+        animation: circleloadcontacts 3s;
+        animation-fill-mode: forwards;
+        position: absolute; top: -65px; left: calc(50% - 75px);
+        width: 150px; height: 150px; }
 </style>
 
 <div class="col-sm-2 ad-dash-pa">
@@ -67,4 +88,10 @@
 	        
 	    </div>
 	</div>
+	<div class="circle-load-boot">
+		<img src="{{ url('img/loading-diamond.gif') }}"
+			style="width: 40%; margin: -180px 0 -100px; transform: rotate(45deg);">
+		<br>Finding Contacts...<br>Please Wait
+	</div>
+
 </div>

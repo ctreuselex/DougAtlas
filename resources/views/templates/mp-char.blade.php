@@ -183,6 +183,22 @@
     <script src="{{ url('js/doug-atlas.js') }}"></script>
     <script src="{{ url('js/pie-graph.js') }}"></script>
 
+    @if(isset($_GET['cts']))
+        <?php echo '<input id="ctslog-id" value="'.$_GET['cts'].'">' ?>
+        <script>
+            $(document).ready(function() {
+                var ctsid = $("#ctslog-id").val();
+                var ctsname = $("#cts-"+ctsid).data("target");
+                $(ctsname).modal('show');
+
+                setTimeout(function() {
+                    $('.modal-backdrop').append('<div class="diamond"></div>');
+                    $('.modal-backdrop').append('<div class="diamond-border"></div>');
+                },500);
+            });
+        </script>
+    @endif
+
     <script type="text/javascript">
         $(document).ready(function() {
             var mirChars = <?php echo json_encode($mirChars); ?>;
