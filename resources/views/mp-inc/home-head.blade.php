@@ -180,12 +180,12 @@
     <div class="color-grade bot"></div>
 
     <ul class="mini-nav">
-        <li><a href="#">Divisions</a></li>
-        <li><a href="#">Day/Night Cycle</a></li>
-        <li><a href="#">CTSystem</a></li>
-        <li><a href="#">Myst Manipulation</a></li>
-        <li><a href="#">Organizations</a></li>
-        <li><a href="#">The Mares</a></li>
+        <li><a class="home-head-nav" href="#home-divisions">Divisions</a></li>
+        <li><a class="home-head-nav" href="#">Day/Night Cycle</a></li>
+        <li><a class="home-head-nav" href="#">CTSystem</a></li>
+        <li><a class="home-head-nav" href="#">Myst Manipulation</a></li>
+        <li><a class="home-head-nav" href="#">Organizations</a></li>
+        <li><a class="home-head-nav" href="#">The Mares</a></li>
     </ul>
 
 </div>

@@ -83,6 +83,18 @@
         );
 ?>
 
+<style type="text/css">
+    .swiper-container {
+        margin-top: 30px; }
+    .swiper-container {
+        width: 100%;
+        height: 100%; }
+</style>
+
+<ul class="mp-cont">
+    <li>Mirrorplane is divided into four divisions; Luminos, Aeros, Mystos, and Geios.</li>
+</ul>
+
 <ul class="mp-cont">
     @foreach($mirDivis as $maindiv)
         <li>
@@ -148,7 +160,7 @@
             </div>
             <br>
             <div class="clearfix"></div>
-            <div class="mp-ref" id="scroll-divi{{ $maindiv['id'] }}">
+            <!-- <div class="mp-ref" id="scroll-divi{{ $maindiv['id'] }}">
                 <div class="mp-scroll-div">
                     @for($i=1; $i<=$maindiv['imgCnt']; $i++)
                         <img src="{{ url('img/divi/divi'.$maindiv['id'].' ('.$i.').jpg') }}">
@@ -157,7 +169,36 @@
                 <div class="mp-scroll-prog"></div>
                 <i class="mp-scroll max left fa fa-caret-left"></i>
                 <i class="mp-scroll right fa fa-caret-right"></i>
+            </div> -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    @for($i=1; $i<=$maindiv['imgCnt']; $i++)
+                        <?php
+                            $url = 'img/divi/divi'.$maindiv['id'].'%20('.$i.').jpg';
+                            $size = getimagesize(url($url));
+                            $por = 300 / $size[1]; 
+                            $height = $por * $size[1];
+                            $width = $por * $size[0];
+                        ?>
+                        <div class="swiper-slide" style="width: {{ $width }}px; height: {{ $height }}px; ">
+                            <img src="{{ url('img/divi/divi'.$maindiv['id'].' ('.$i.').jpg') }}" width="100%">
+                        </div>
+                    @endfor
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </li>
     @endforeach
 </ul>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+    });
+</script>

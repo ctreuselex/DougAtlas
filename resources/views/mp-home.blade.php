@@ -23,9 +23,18 @@
 @section('main')
 	
 	<style type="text/css">	
-	</style>
+        section {
+            padding: 0 15px;
+            margin: 0; }
+    </style>
 
 	@include('mp-inc/home-head')
+
+    <section id="home-divisions">
+        <p><span class="char-name">Divisions</span> | What separates this place from that place?</p>
+            @include('mp-inc/divi')
+        <div class="clear"></div>
+    </section>
 
 	<script type="text/javascript">
 		$('.ad-dash .list-group').hide();
@@ -41,6 +50,16 @@
             }, 2500);
 
     	}, 5500);
+
+        $(document).on('click', 'a', function(event){
+            if($(this).hasClass('home-head-nav')) {
+                event.preventDefault();
+                
+                $('html, body').animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top - 50
+                }, 500);
+            }
+        });
 	</script>
 
 @stop 

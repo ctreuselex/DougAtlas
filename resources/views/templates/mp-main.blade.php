@@ -19,6 +19,8 @@
     <link href="{{ url('css/modern-business.css') }}" rel="stylesheet">
     <link href="{{ url('css/pie-graph.css') }}" rel="stylesheet">
     <link href="{{ url('css/doug-atlas.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.min.css">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,6 +31,8 @@
 
     <!-- jQuery -->
     <script src="{{ url('js/jquery.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
 
 </head>
 
@@ -133,6 +137,39 @@
                     border-right: 5px solid {{ $char['subcolor'] }};
                     transition: 0.3s;
                 }
+
+                <?php $ctscharnameful = $char['name'].' '.$char['sur']; ?>
+                .cts-{{ $char['name'] }}:before {
+                    content: "{{ $ctscharnameful }}";
+                    position: absolute;
+                    background: white;  
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    padding: 5px;     
+                    opacity: 0;               
+                    transition: 0.5s; }
+                .cts-{{ $char['name'] }}:hover:before {
+                    opacity: 1;
+                    margin-top: 20px;                      
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+                    transition: 0.3s; }
+
+                <?php 
+                    $ctscharcolor = $char['color']; if ($ctscharcolor=="") $ctscharcolor = "#ffffff"; 
+                    $ctssubcharcolor = $char['subcolor']; if ($ctssubcharcolor=="") $ctssubcharcolor = "#d5d5d5";
+                ?>
+                .cts-{{ $char['name'] }} i {
+                    position: static;
+                    font-size: 16px;
+                    color: {{ $ctscharcolor }};
+                    background: {{ $ctssubcharcolor }};
+                    padding: 3px;
+                    border-radius: 2px; }
+                .cts-team i.{{ $char['name'] }} {
+                    position: static;
+                    font-size: 16px;
+                    margin-left: 3px;
+                    color: {{ $ctscharcolor }}; }
         <?php endforeach ?>
     </style>
 

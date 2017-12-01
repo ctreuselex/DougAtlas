@@ -408,7 +408,7 @@ class MirrorplaneController extends Controller
         // $mirLogs = $this->charMeta("logs");
 
         // return view('mirrorplane-story')->with('mirChars',$mirChars)->with('mirYrs',$mirYrs)->with('mirDiv',$mirDiv)->with('mirTeam',$mirTeam)->with('mirMems',$mirMems)->with('mirLogs',$mirLogs);
-        return view('mirrorplane-story')->with('mirChars',$mirChars);
+        return view('mp-story')->with('mirChars',$mirChars);
     }
 
 }
