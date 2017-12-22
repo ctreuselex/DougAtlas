@@ -101,6 +101,7 @@
         0% { transform: scale(0) rotate(45deg); border: 75px solid white; }
         20% { transform: scale(1.2) rotate(45deg); border: 1px solid white; }
         80% { transform: scale(1.1) rotate(45deg); border: 1px solid white; }
+        90% { border: 75px solid white; }
         100% { transform: scale(0) rotate(45deg); border: 75px solid white; }
     }
 

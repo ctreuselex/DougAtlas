@@ -18,7 +18,7 @@
         background-color: {{ $charColorSub }}; }*/
     .city-scape .moon { background-color: {{ $charColor }}; }
     .city-scape .moon { box-shadow: 0 0 30px 0px {{ $charColorSub }}; border: 85px solid {{ $charColorSub }}; }
-    .city-scape:hover .moon { box-shadow: 0 0 100px 10px {{ $charColor }}; border: 0 solid {{ $charColorSub }}; }
+    .city-scape:hover .moon { box-shadow: 0 0 100px 10px {{ $charColor }}; border: 0 solid {{ $charColorSub }}; opacity: 0.75; }
     .city-scape .diamond { background-color: {{ $charColorSub }}; box-shadow: 0 0 100px 5px {{ $charColorSub }}; }
     .city-scape .city-name { /*color: {{ $charColor }};*/ color: white; }
     .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover { background-color: {{ $charColor }}; }
@@ -38,6 +38,7 @@
         0% { transform: scale(0) rotate(45deg); border: 75px solid white; }
         20% { transform: scale(1) rotate(45deg); border: 1px solid white; }
         80% { transform: scale(0.9) rotate(45deg); border: 1px solid white; }
+        90% { border: 75px solid white; }
         100% { transform: scale(0) rotate(45deg); border: 75px solid white; }
     }
 

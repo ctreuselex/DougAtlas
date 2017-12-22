@@ -107,6 +107,8 @@
         #div-mys { background-color: #2196f3; color: white;}
         #div-gei { background-color: #8bc34a; color: white;}
 
+        .swiper-pagination-progressbar .swiper-pagination-progressbar-fill { background: {{ $charColor }}; }
+
         <?php foreach ($mirChars as $char): ?>
             <?php if($char['color']=='') { $char['color']='#d5d5d5'; $char['subcolor']='#d5d5d5'; } ?>
 
