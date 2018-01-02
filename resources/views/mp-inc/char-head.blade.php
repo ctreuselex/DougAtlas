@@ -11,7 +11,7 @@
     .char-main img.portrait {
         display: none;
         position: absolute; right: 0; bottom: 0;
-        width: 60%; }
+        width: 62.5%; }
 
     @keyframes diamondscale {
         0% { transform: scale(5) rotate(315deg); opacity: 0; border: 1000px solid {{ $charColor }}; }
@@ -216,7 +216,7 @@
         setTimeout(function() {
             $(window).mousemove(function (e) {
 
-                parallax(e, $('.char-main img').get(0), 1, 200);
+                parallax(e, $('.char-main img').get(0), 1, 300);
                 parallax(e, $('.char-main .diamond').get(0), 1.5, -50);
                 parallax(e, $('.char-main .diamond-border').get(0), 1.75, -50);
                 parallax(e, $('.char-main .diamond-cover').get(0), 2, -700); 
