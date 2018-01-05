@@ -44,6 +44,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'herschel','sur'=>'','year'=>1667,'color'=>'#9C27B0','subcolor'=>'#00BCD4','ico'=>'ra ra-supersonic-arrow' ),
             array ( 'name'=>'ismael','sur'=>'immen','year'=> 1675,'color'=>'','subcolor'=>'','ico'=>'ra ra-heart-bottle' ), 
             array ( 'name'=>'jeanne','sur'=>'ark','year'=> 1665,'color'=>'#3F51B5','subcolor'=>'#1B2D92','ico'=>'ra ra-fluffy-swirl' ),
+            array ( 'name'=>'kalli','sur'=>'','year'=> 1669,'color'=>'','subcolor'=>'','ico'=>'ra ra-crossbow' ),
             array ( 'name'=>'kash','sur'=>'lorielle','year'=> 1668,'color'=>'#2590ab','subcolor'=>'#d0f30f','ico'=>'ra ra-crab-claw' ),
             array ( 'name'=>'kianna','sur'=>'halley','year'=>1670,'color'=>'#0D4E84','subcolor'=>'#00BCD4','ico'=>'ra ra-snowflake' ),
             array ( 'name'=>'kilosh','sur'=>'elizer','year'=> 1675,'color'=>'','subcolor'=>'','ico'=>'ra ra-shuriken' ),
@@ -63,7 +64,6 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'valkyr','sur'=>'soltaire','year'=>1664,'color'=>'#F3A40C','subcolor'=>'#F54C04','ico'=>'ra ra-heartburn' ),
             array ( 'name'=>'vines','sur'=>'roderick','year'=>1668,'color'=>'#18FF81','subcolor'=>'#E91E63','ico'=>'ra ra-dragonfly' ),
             array ( 'name'=>'vriskvin','sur'=>'dirk','year'=>1667,'color'=>'#E91E63','subcolor'=>'#5F0B28','ico'=>'ra ra-clockwork' ),
-            array ( 'name'=>'xiscor','sur'=>'A','year'=> 1669,'color'=>'','subcolor'=>'','ico'=>'ra ra-crossbow' ),
             array ( 'name'=>'zedrik','sur'=>'azazel','year'=>1661,'color'=>'#FFC107','subcolor'=>'#00BCD4','ico'=>'ra ra-flaming-claw' ), 
 
             // non main

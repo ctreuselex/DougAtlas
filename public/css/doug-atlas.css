@@ -483,7 +483,12 @@ a, a:hover, a:focus, a:active {
 	    transition: 0.5s; }
 	.bot-scro a {
 		color: #333;
+<<<<<<< HEAD
 		font-size: 20px; }
+=======
+		font-size: 20px;
+		margin: 0 0 0 -4px; }
+>>>>>>> 9c5700273e021b0ff0aeb9eb6b125918ecfdbbb9
 
 /*---------------------------- ANIMATIONS ----------------------------*/
 
