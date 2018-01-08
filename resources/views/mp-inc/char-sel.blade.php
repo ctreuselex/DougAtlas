@@ -33,7 +33,7 @@
 
     	@foreach ($mirChars as $char)
 	    	@if ($char['ico']!='' && $char['color']!='')
-	    		@if ($char['name']!='djerick' && $char['name']!='dom' && $char['name']!='cin' && $char['name']!='mikael' && $char['name']!='kalli')
+	    		@if ($char['name']!='djerick' && $char['name']!='dom' && $char['name']!='cin' && $char['name']!='kalli')
 			    	<?php
 			    		if($char['name'] == $charname) $slideindex = $cnt;
 			    		else $cnt++;
