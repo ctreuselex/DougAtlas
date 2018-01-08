@@ -19,6 +19,8 @@
     <link href="{{ url('css/modern-business.css') }}" rel="stylesheet">
     <link href="{{ url('css/pie-graph.css') }}" rel="stylesheet">
     <link href="{{ url('css/doug-atlas.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.min.css">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -30,6 +32,8 @@
     <!-- jQuery -->
     <script src="{{ url('js/jquery.js') }}"></script>
     <script src="{{ url('js/jquery-ui.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
 
 </head>
 
@@ -152,9 +156,11 @@
             background: linear-gradient(to right, {{ $charColor }} 0%, {{ $charColorSub }} 100%);"> <center>{{ $charColor }} | <b>COLOR</b> SCHEME | {{ $charColorSub }}</center>
         </div>
 
-        <div style="display: inline-block; padding: 15px; margin-bottom: 100px;">
+        <div style="display: inline-block; padding: 15px;">
             @include('mp-inc/skills')
         </div>
+
+        @include('mp-inc/char-sel')
 
         @foreach ($mirLogs as $logs)
             @if ($logs['ord']==$charname)

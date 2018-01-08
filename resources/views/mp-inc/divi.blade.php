@@ -181,11 +181,10 @@
                             $width = $por * $size[0];
                         ?>
                         <div class="swiper-slide" style="width: {{ $width }}px; height: {{ $height }}px; ">
-                            <img src="{{ url('img/divi/divi'.$maindiv['id'].' ('.$i.').jpg') }}" width="100%">
+                            <img src="{{ url($url) }}" width="100%">
                         </div>
                     @endfor
                 </div>
-                <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
             </div>
         </li>
