@@ -21,7 +21,7 @@
 		
 		$mcharAft = "Fire*";
 		$mcharSty = "Armagi | Extenebri";
-		$mcharWoc = "Landar Industries' ACMA Tech Twin Pistol";
+		$mcharWoc = "Landar Industries' ACMA Cuff Blasters";
 
 		$charthemes = 'Dual Guns, Balance, No Second Chances, Being a Jerk to Everyone ';
 		$cityname = 'Pride';
@@ -54,10 +54,10 @@
 
 		$charability = array(
 			array ('name'=>"Dual ACMA", 'sk'=>'pri',
-				'des'=>"Using the ACMA Tech Twin Pistols he got from eons of pestering his mother to pestering Tauroscene, Chance can happily tot his way to victory with Sandra's pity."),
+				'des'=>"Using the ACMA Cuff Blasters he got from eons of pestering his mother to pestering Tauroscene, Chance can happily tot his way to victory with Sandra's pity."),
 
 			array ('name'=>"Charged Shot", 'sk'=>'sec',
-				'des'=>"Chance unloads the rounds off his twin pistols into a single shot that deals massive amount of damage to the target. Hitting a friend, even if no one likes him as a friend, with Charged Shot will heal them instead."), 
+				'des'=>"Chance unloads the rounds off his Cuff Blasters into a single shot that deals massive amount of damage to the target. Hitting a friend, even if no one likes him as a friend, with Charged Shot will heal them instead."), 
 
 			array ('name'=>"Grab Hold", 'sk'=>'sk1',
 				'des'=>"Chance pulls a nerd and holds him tight in position inflicting |stun| and then |root| and |disarm| after. Chance is |disable|-d and |expose|-d for the whole duration or until the nerd escapes."), 
@@ -100,7 +100,7 @@
 			array ('name'=>'cd', 'val'=>'FREEFORM'), //cast design // 'freeform' 'stationary'
 			array ('name'=>'sd', 'val'=>''), //skill design // 'active' 'passive' 'channeling' 'toggle'
 			array ('name'=>'ml', 'val'=>true), //constraints
-			array ('name'=>'da', 'val'=>true),
+			array ('name'=>'da', 'val'=>false),
 			);
 		$charpriaug = array (
 			array ('name' => "Trigger Happy", 'ico' => "ra-crossed-pistols",
@@ -124,7 +124,7 @@
 			array ('name'=>'cd', 'val'=>'STATIONARY'), //cast design // 'freeform' 'stationary'
 			array ('name'=>'sd', 'val'=>''), //skill design // 'active' 'passive' 'channeling' 'toggle'
 			array ('name'=>'ml', 'val'=>true), //constraints
-			array ('name'=>'da', 'val'=>true),
+			array ('name'=>'da', 'val'=>false),
 			);
 		$charsecaug = array (
 			array ('name' => "Three Stones With One Bird", 'ico' => "ra-lightning-trio",

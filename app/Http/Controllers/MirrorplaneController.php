@@ -44,7 +44,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'herschel','sur'=>'','year'=>1667,'color'=>'#9C27B0','subcolor'=>'#00BCD4','ico'=>'ra ra-supersonic-arrow' ),
             array ( 'name'=>'ismael','sur'=>'immen','year'=> 1675,'color'=>'','subcolor'=>'','ico'=>'ra ra-heart-bottle' ), 
             array ( 'name'=>'jeanne','sur'=>'ark','year'=> 1665,'color'=>'#3F51B5','subcolor'=>'#1B2D92','ico'=>'ra ra-fluffy-swirl' ),
-            array ( 'name'=>'kalli','sur'=>'','year'=> 1669,'color'=>'','subcolor'=>'','ico'=>'ra ra-crossbow' ),
+            array ( 'name'=>'kalli','sur'=>'','year'=> 1669,'color'=>'#b31b1b','subcolor'=>'#5b2064','ico'=>'ra ra-crossbow' ),
             array ( 'name'=>'kash','sur'=>'lorielle','year'=> 1668,'color'=>'#2590ab','subcolor'=>'#d0f30f','ico'=>'ra ra-crab-claw' ),
             array ( 'name'=>'kianna','sur'=>'halley','year'=>1670,'color'=>'#0D4E84','subcolor'=>'#00BCD4','ico'=>'ra ra-snowflake' ),
             array ( 'name'=>'kilosh','sur'=>'elizer','year'=> 1675,'color'=>'','subcolor'=>'','ico'=>'ra ra-shuriken' ),

@@ -33,7 +33,7 @@
 
     	@foreach ($mirChars as $char)
 	    	@if ($char['ico']!='' && $char['color']!='')
-	    		@if ($char['name']!='djerick' && $char['name']!='dom' && $char['name']!='cin' && $char['name']!='mikael')
+	    		@if ($char['name']!='djerick' && $char['name']!='dom' && $char['name']!='cin' && $char['name']!='mikael' && $char['name']!='kalli')
 			    	<?php
 			    		if($char['name'] == $charname) $slideindex = $cnt;
 			    		else $cnt++;
@@ -68,7 +68,7 @@
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
         spaceBetween: -100,
-        initialSlide: {{ $slideindex }},
+        initialSlide: {{ $slideindex }} - 2,
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
