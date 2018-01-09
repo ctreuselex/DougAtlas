@@ -4,7 +4,7 @@
 @section('title') Mirrorplane | Lupe @stop
 @section('char-meta')
 	<?php 
-		$charname = 'lupe';
+		$charname = 'trevor';
 		foreach ($mirChars as $char) {
 			if ($char['name']==$charname) {
 				$charColor = $char['color'];
@@ -14,17 +14,17 @@
 			}
 		}
 
-		$mcharNam = "Lupe Wolgraff";
+		$mcharNam = "Trevor Wolgraff";
 		$mcharFam = "<unknown>";
 		$mcharDiv = "Aeros";
 		$mcharAff = "Howler | Carnival of Madness";
 		
-		$mcharAft = "Metal";
+		$mcharAft = "Flesh";
 		$mcharSty = "Invorti";
-		$mcharWoc = "His Trusty Wrench";
+		$mcharWoc = "His Trusty Claws";
 
-		$charthemes = 'The Mechanic, Big Good? Wolf, Alpha Wolf, Woof, Is Actually More of a Bull';
-		$cityname = 'Comradery';
+		$charthemes = 'The Murderer, Big Bad Wolf, Alpha Alpha Wolf, Is actually the one more appropriate for the name \'Lupe\'';
+		$cityname = 'Bones';
 
 		$lum = 13;
 		$lumPlus = 38;
@@ -43,34 +43,34 @@
 		$geiTotal = $gei+$geiPlus;
 
 		$charability = array(
-			array ('name'=>"Bash", 'sk'=>'pri',
-				'des'=>"Lupe bashes people with his trusty wrench whenever they sneaking into the show and when they don't stop annoying him while he works."),
+			array ('name'=>"Savage Strike", 'sk'=>'pri',
+				'des'=>"Savagery is Trevor's personality and he always had the liking for murder so those two usually meet from time to time."),
 
-			array ('name'=>"Heavy Slam", 'sk'=>'sec',
-				'des'=>"Smashes the ground with his invorted elephant hooves, |knockback|-ing away all stupid free loaders who can't pay to see the current show."), 
+			array ('name'=>"Pounce", 'sk'=>'sec',
+				'des'=>"Jumps to the target area like the wolf he is inflicting |slow| to nearby enemy units."), 
 
-			array ('name'=>"Bull Rush", 'sk'=>'sk1',
-				'des'=>"With the permanent bull horns on his head, which looks 'fucking badass' according to Koom, Lupe dashes through the crowd of non-paying costumers."), 
+			array ('name'=>"Power Smack", 'sk'=>'sk1',
+				'des'=>"Smack enemy units in melee range with his powerful claws which damages and |disarm|-s."), 
 
 			array ('name'=>"Ursine Roar", 'sk'=>'sk2',
-				'des'=>"Activates Lupe's bear-like instincts which gives him more |frenzy| and physical |amplify| the lesser his remaining health is."),  
+				'des'=>"Activates Trevor's bear-like instincts which gives him more |frenzy| and physical |amplify| the lesser his remaining health is."),  
 
-			array ('name'=>"Surprise Attack", 'sk'=>'sk3',
-				'des'=>"Lupe digs into his toolbox and throws whatever he finds into the target enemy, leaving them |stun|-ned for a short period of time."),
+			array ('name'=>"Bloodthirst", 'sk'=>'sk3',
+				'des'=>"Extreme savageness comes with the lack of morality which basically allows Trevor to eat those who don't know the difference between different kinds of knives giving him the ability to |leech| off their suffering."),
 
 			array ('name'=>"Polymorph", 'sk'=>'ult',
-				'des'=>"Lupe's mastery of morphing himself allowed him to try |morph|-ing other people. Makes him sad whenever they try to flap their chicken wings or when they stop breathing because they're now a fish out of water."),
+				'des'=>"Trevor's mastery of morphing himself allowed him to try |morph|-ing other people. Makes him laugh whenever they try to flap their chicken wings or when they stop breathing because they're now a fish out of water."),
 
 			array ('name'=>"The Wolf Within", 'sk'=>'ext',
-				'des'=>"Lupe fully transforms himself into a giant wolf effectively giving him high physical |amplify|, |haste|, and physical |fortify|. Lupe also cannot be |disarm|-ed while in Werewolf form, cause obviously, his a wolf now, he needs no wrenches to wreck."),
+				'des'=>"Trevor fully transforms himself into a giant wolf effectively giving him high physical |amplify|, |haste|, and physical |fortify|."),
 			);
 
 		// ------------------------------------------------------------ //
 		// PRIMARY
 		// ------------------------------------------------------------ //
 		$charpristats = array (
-			array ('name'=>'Damage', 'val'=>'100% Physical Damage', 'ext'=>'lum'),
-			array ('name'=>'Attack Rate', 'val'=>'70%', 'ext'=>''),
+			array ('name'=>'Damage', 'val'=>'90% Physical Damage', 'ext'=>'lum'),
+			array ('name'=>'Attack Rate', 'val'=>'110%', 'ext'=>''),
 			array ('name'=>'Range', 'val'=>'90 radius cone', 'ext'=>''),
 			);
 		$charprimcdm = array (
@@ -82,22 +82,22 @@
 			array ('name'=>'cd', 'val'=>'FREEFORM'), //cast design // 'freeform' 'stationary'
 			array ('name'=>'sd', 'val'=>''), //skill design // 'active' 'passive' 'channeling' 'toggle'
 			array ('name'=>'ml', 'val'=>false), //constraints
-			array ('name'=>'da', 'val'=>true),
+			array ('name'=>'da', 'val'=>false),
 			);
 		$charpriaug = array (
 			array ('name' => "Feral Strength", "ico" => "ra-lion",
-				'des'=>"Gives Bash a 20% chance of inflicting |stun| to enemy units for 1 second."),
+				'des'=>"Increases Savage Strike's damage by 5% of Trevor's remaining health."),
 			array ('name' => "Feral Agility", "ico" => "ra-rabbit",
-				'des'=>"Passively increases Lupe's attack rate by 20%."), 
+				'des'=>"Passively increases Trevor's attack rate by 30%."), 
 			);
 		// ------------------------------------------------------------ //
 		// SECONDARY
 		// ------------------------------------------------------------ //
 		$charsecstats = array (
-			array ('name'=>'Damage', 'val'=>'180% Physical Damage', 'ext'=>'lum'),
-			array ('name'=>'Attack Rate', 'val'=>'60%', 'ext'=>''),
+			array ('name'=>'Range', 'val'=>'500', 'ext'=>''),
 			array ('name'=>'Area of Effect', 'val'=>'250', 'ext'=>''),
-			array ('name'=>'knockback', 'val'=>'200', 'ext'=>''),
+			array ('name'=>'slow', 'val'=>'25%', 'ext'=>''),
+			array ('name'=>'slow Duration', 'val'=>'3s', 'ext'=>''),
 			);
 		$charsecmcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
@@ -113,40 +113,37 @@
 		$charsecaug = array (
 			array ('name' => "Brittle Footing", "ico" => "ra-boot-stomp",
 				'des'=>"Leaves an area effect that lasts for 3 seconds which |slow|-s everyone standing on it by 25%."),
-			array ('name' => "Get Out of My Garage", "ico" => "ra-groundbreaker",
-				'des'=>"Increases area of effect to 300 and |knockback| to 450."), 
+			array ('name' => "Far Leap", "ico" => "ra-overhead",
+				'des'=>"Increases Pounce range to 800."), 
 			);
 
 		// ------------------------------------------------------------ //
 		// SK1
 		// ------------------------------------------------------------ //
 		$charsk1stats = array (	
-			array ('name'=>'Damage', 'val'=>'160% Physical Damage', 'ext'=>'lum'),
-			array ('name'=>'Area of Effect', 'val'=>'200', 'ext'=>''),
-			array ('name'=>'Distance', 'val'=>'600', 'ext'=>''),
-			array ('name'=>'Cast Time', 'val'=>'1.5s', 'ext'=>''),
-			array ('name'=>'stun Duration', 'val'=>'1s', 'ext'=>''),
+			array ('name'=>'Damage', 'val'=>'130% Physical Damage', 'ext'=>'lum'),
+			array ('name'=>'Area of Effect', 'val'=>'150 radius cone', 'ext'=>''),
 			);
 		$charsk1mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
-			array ('name'=>'Cooldown', 'val'=>'18s'),
-			array ('name'=>'Myst Cost', 'val'=>'145'),
+			array ('name'=>'Cooldown', 'val'=>'15s'),
+			array ('name'=>'Myst Cost', 'val'=>'90'),
 			array ('name'=>'Health Cost', 'val'=>''),
 			array ('name'=>'dp', 'val'=>false), //damage point // 't=direct' 'f=indirect'
-			array ('name'=>'cd', 'val'=>'STATIONARY'), //cast design // 'freeform' 'stationary'
+			array ('name'=>'cd', 'val'=>'FREEFORM'), //cast design // 'freeform' 'stationary'
 			array ('name'=>'sd', 'val'=>'ACTIVE'), //skill design // 'active' 'passive' 'channeling' 'toggle'
 			array ('name'=>'ml', 'val'=>true), //constraints
 			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk1aug = array (
-			array ('name' => "Samson Force", "ico" => "ra-horns",
-				'des'=>"Allows Bull Rush to be cast again, stopping Lupe's dash and follow with a horn strike which |knockback|-s for 200 and deals double of Bull Rush's damage and the duration of its |stun|."),
-			array ('name' => "Red Like Blood", "ico" => "ra-burst-blob",
-				'des'=>"Attacking an enemy unit affected by |bleed|-ing has 20% chance of inflicting a 1 second |stun|."), 
-			array ('name' => "Stampede", "ico" => "ra-desert-skull",
-				'des'=>"Gives a 30% |haste|, which lasts for 5 seconds, to all allied units Lupe ran through with Bull Rush."),
-			array ('name' => "Not In The Eye", "ico" => "ra-site",
-				'des'=>"Getting hit in a critical spot allows Lupe to cast Bull Rush with 25 Myst cost while also ignoring its cooldown for 4 seconds."),
+			array ('name' => "Brother Bear", 'ico' => "ra-bear-trap",
+				'des'=>"Power Smacking a |stun|-ned unit would deal 100% more damage."), 
+			array ('name' => "Rapid Hammering", 'ico' => "ra-broken-bone ",
+				'des'=>"|frenzy| now has an effect on reducing Power Smacks cooldown."),
+			array ('name' => "Nasty Little Critters", 'ico' => "ra-fairy",
+				'des'=>"Using Power Smack on a |polymorph|-ed unit will deal more damage base on the target's remaining health."),
+			array ('name' => "Playing with Food", 'ico' => "ra-roast-chicken",
+				'des'=>"Inflicts |expose| to the target for 2 seconds."), 
 			);
 		// ------------------------------------------------------------ //
 		// SK2
@@ -172,38 +169,39 @@
 			array ('name' => "Grizzly Bellow", "ico" => "ra-muscle-fat",
 				'des'=>"Ursine Roar now inflicts a 7% |frangible| to all enemy units caught in its radius."),
 			array ('name' => "Lone Hunter", "ico" => "ra-fox",
-				'des'=>"Increases the effects of Ursine Roar by 50% if there are no nearby allies around Lupe."),
+				'des'=>"Increases the effects of Ursine Roar by 50% if there are no nearby allies around Trevor."),
 			array ('name' => "Mauling Sleuth", "ico" => "ra-decapitation",
 				'des'=>"Gives nearby allies 50% of the buffs given by Ursine Roar."),
 			array ('name' => "Growl Of Annoyance", "ico" => "ra-burning-eye",
-				'des'=>"Passively grants 10% of Ursine Roar's effects to Lupe and all nearby allies. Stacks with Ursine Roar's actual effects."), 
+				'des'=>"Passively grants 10% of Ursine Roar's effects to Trevor and all nearby allies. Stacks with Ursine Roar's actual effects."), 
 			);
 		// ------------------------------------------------------------ //
 		// SK3
 		// ------------------------------------------------------------ //
 		$charsk3stats = array (
-			array ('name'=>'stun Duration', 'val'=>'2s', 'ext'=>''),
+			array ('name'=>'Duration', 'val'=>'10s', 'ext'=>''),
+			array ('name'=>'leech', 'val'=>'15%', 'ext'=>''),
 			);
 		$charsk3mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
 			array ('name'=>'Cooldown', 'val'=>'15s'),
-			array ('name'=>'Myst Cost', 'val'=>''),
+			array ('name'=>'Myst Cost', 'val'=>'100'),
 			array ('name'=>'Health Cost', 'val'=>''),
-			array ('name'=>'dp', 'val'=>true), //damage point // 't=direct' 'f=indirect'
-			array ('name'=>'cd', 'val'=>'FREEFORM'), //cast design // 'freeform' 'stationary'
+			// array ('name'=>'dp', 'val'=>false), //damage point // 't=direct' 'f=indirect'
+			// array ('name'=>'cd', 'val'=>'FREEFORM'), //cast design // 'freeform' 'stationary'
 			array ('name'=>'sd', 'val'=>'ACTIVE'), //skill design // 'active' 'passive' 'channeling' 'toggle'
-			array ('name'=>'ml', 'val'=>false), //constraints
-			array ('name'=>'da', 'val'=>true),
+			array ('name'=>'ml', 'val'=>true), //constraints
+			array ('name'=>'da', 'val'=>false),
 			);
 		$charsk3aug = array (
-			array ('name' => "Well That Was Random", "ico" => "ra-uncertainty",
-				'des'=>"Gives a 30% chance that Surprise Attack will end up throwing a grenade which explodes on contact, dealing 120% physical damage along with the stun."),
-			array ('name' => "Infinity Toolbox", "ico" => "ra-repair",
-				'des'=>"Decreases Surprise Attack's cooldown to 4 seconds."),
-			array ('name' => "Doink!", "ico" => "ra-doubled",
-				'des'=>"Now inflicts |expose| for 3 seconds."),
-			array ('name' => "Play Fetch", "ico" => "ra-wolf-head",
-				'des'=>"With Trevor as a ally, inflcts a 30% |frangible|-ility on the target for 5 seconds."),  
+			array ('name' => "Savagery", "ico" => "ra-shark",
+				'des'=>"Trevor's attacks, while affected by Bloodthirst, now also inflict |bleed|-ing for 2 seconds."),
+			array ('name' => "The Weak Left Behind", "ico" => "ra-sheep",
+				'des'=>"Having a |morph|-ed unit within the 500 radius of a unit affected by Bloodthirst, increases its |leech| to 40%."),
+			array ('name' => "Sweet Return", "ico" => "ra-insect-jaws",
+				'des'=>"Allows Trevor to cast Bloodthirst with no Myst cost while his health is below 40%."),
+			array ('name' => "Wolf Pack", "ico" => "ra-wolf-head",
+				'des'=>"Bloodthirst now also affects allied units within a 300 area of effect around Trevor."),  
 			);
 
 		// ------------------------------------------------------------ //
@@ -227,8 +225,8 @@
 		$charultaug = array (
 			array ('name' => "Party Animal", "ico" => "ra-seagull",
 				'des'=>"Allows for multiple |morph|-ing of enemy units with a 400 area of effect. Reduces duration to 3 seconds."),
-			array ('name' => "The Wolves Among Us",
-				'des'=>"Targets an ally, and morphs them into the likes of Lupe's Werewolf form, giving them half its benefits for twice the duration of Polymorph."), 
+			array ('name' => "The Wolves Among Us", "ico" => "ra-wolf-howl",
+				'des'=>"Targets an ally, and morphs them into the likes of Trevor's Werewolf form, giving them half its benefits for twice the duration of Polymorph."), 
 			);
 		// ------------------------------------------------------------ //
 		// EXTRA
@@ -252,9 +250,9 @@
 			);
 		$charextaug = array (
 			array ('name' => "Huff And Puff", "ico" => "ra-demolish",
-				'des'=>"Doubles the |stun| duration of Bull Rush and |amplify| of Ursine Roar while Lupe is in Werewolf form."),
+				'des'=>"Doubles the |amplify| of Ursine Roar and |leech| of Bloodthirst while Trevor is in Werewolf form."),
 			array ('name' => "The Degenerate", "ico" => "ra-bone-bite",
-				'des'=>"Replace Werewolf form's Myst cost with 15 Health cost every second. Forces Lupe to transform back to his human form whenever his health reaches 15%."), 
+				'des'=>"Replace Werewolf form's Myst cost with 15 Health cost every second. Forces Trevor to transform back to his human form whenever his health reaches 15%."), 
 			);
 	?>
 @stop

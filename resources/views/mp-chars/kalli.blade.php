@@ -88,9 +88,9 @@
 			);
 		$charpriaug = array (
 			array ('name' => "Dimensional Cut", 'ico' => "ra-doubled",
-				'des'=>"When using melee Antares, hitting a unit under Destiny Shift will create a |clone| of the target which will attack the target."),
+				'des'=>"When using melee Antares, hitting a unit under Destiny Shift will create a |clone| of the target which will attack its original."),
 			array ('name' => "Myst Magic", 'ico' => "ra-player-shot",
-				'des'=>"Adds 30% of Kalli's Mystical damage whenever she hits a unit under Destiny Shift."), 
+				'des'=>"Adds 30% of Kalli's Mystical damage to ranged Antares whenever she hits a unit under Destiny Shift."), 
 			);
 		// ------------------------------------------------------------ //
 		// SECONDARY
@@ -137,14 +137,14 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk1aug = array (
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "Sand Torrent", 'ico' => "ra-bleeding-eye",
+				'des'=>"Causes an initial sand explosion that |blind|-s units within the area for 2 seconds."),
+			array ('name' => "Solidify", 'ico' => "ra-broken-skull",
+				'des'=>"Units that stayed within the quicksand for its full duration will be |petrify|-ied."),
+			array ('name' => "All of Egypt", 'ico' => "ra-pyramids",
+				'des'=>"Allows the quicksand to gain more ground by expanding by 75 every second."),
+			array ('name' => "Oasis", 'ico' => "ra-droplet-splash",
+				'des'=>"Allied units caught in the quicksand will get a 60% |health-regen| for 8 seconds."), 
 			);
 		// ------------------------------------------------------------ //
 		// SK2
@@ -165,14 +165,14 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk2aug = array (
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""), 
+			array ('name' => "Moving Shell", 'ico' => "ra-footprint",
+				'des'=>"Allow Kalli to move while Reflective Shell is active but gives her a 60% |slow| during it."),
+			array ('name' => "Not Now Rain", 'ico' => "ra-lightning-storm",
+				'des'=>"Casts Reflective Shell when channeling God's Play. This version of Reflective will protective Kalli in all angles but will cost 200% more Myst every second."),
+			array ('name' => "Karma's a Female Dog", 'ico' => "ra-wolf-head",
+				'des'=>"Causes |reflect|-ed damage and projectiles to inflict a 30% |slow| for 3 seconds."),
+			array ('name' => "Death Wish", 'ico' => "ra-raven",
+				'des'=>"Enemy units behind Kalli while Reflective Shell is active receives a 30% |frangible|-ility."), 
 			);
 		// ------------------------------------------------------------ //
 		// SK3
@@ -182,6 +182,7 @@
 			array ('name'=>'Area of Effect', 'val'=>'150 radius cone', 'ext'=>''),
 			array ('name'=>'Cast Time', 'val'=>'1.5s', 'ext'=>''),
 			array ('name'=>'Duration', 'val'=>'5s', 'ext'=>''),
+			array ('name'=>'sleep Duration', 'val'=>'3s', 'ext'=>''),
 			);
 		$charsk3mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),
@@ -195,14 +196,14 @@
 			array ('name'=>'da', 'val'=>true),
 			);
 		$charsk3aug = array (
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),
-			array ('name' => "",
-				'des'=>""),  
+			array ('name' => "Pre-rendered", 'ico' => "ra-cog",
+				'des'=>"Removes the cast time but at the cost of permanently decreasing Kalli's movement speed by 10%."),
+			array ('name' => "Burn Out", 'ico' => "ra-flame-symbol",
+				'des'=>"Cause Maddening Strike to always end with |sleep| even without Destiny Shift."),
+			array ('name' => "Multi Tasking", 'ico' => "ra-spear-head",
+				'des'=>"If Kalli have Reflective Shell active for as long as Maddening Strike's cast time, Maddening Strike will be cast instantly."),
+			array ('name' => "Scorpion Sting",
+				'des'=>"With ranged Antares, Maddening Strike will become a shot that affects all units in the 200 radius of the target area."),  
 			);
 
 		// ------------------------------------------------------------ //
