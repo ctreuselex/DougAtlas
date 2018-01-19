@@ -40,7 +40,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'daud','sur'=>'irwin','year'=>1674,'color'=>'#E64C15','subcolor'=>'#8C0B0B','ico'=>'ra ra-reverse' ),
             array ( 'name'=>'denise','sur'=>'','year'=>1662,'color'=>'','subcolor'=>'','ico'=>'ra ra-suits' ),
             array ( 'name'=>'froxy','sur'=>'rennis','year'=> 1668, 'color' =>'','subcolor'=>'','ico'=>'ra ra-crossed-axes' ),
-            array ( 'name'=>'gemini','sur'=>'','year'=> 1676, 'color' =>'','subcolor'=>'','ico'=>'ra ra-gemini' ),
+            array ( 'name'=>'gemini','sur'=>'','year'=> 1676, 'color' =>'#009dd0','subcolor'=>'#f8900b','ico'=>'ra ra-gemini' ),
             array ( 'name'=>'herschel','sur'=>'','year'=>1667,'color'=>'#9C27B0','subcolor'=>'#00BCD4','ico'=>'ra ra-supersonic-arrow' ),
             array ( 'name'=>'jeanne','sur'=>'ark','year'=> 1665,'color'=>'#3F51B5','subcolor'=>'#1B2D92','ico'=>'ra ra-fluffy-swirl' ),
             array ( 'name'=>'kalli','sur'=>'','year'=> 1669,'color'=>'#b31b1b','subcolor'=>'#5b2064','ico'=>'ra ra-crossbow' ),
@@ -377,6 +377,15 @@ class MirrorplaneController extends Controller
             array ( 'y'=>1685, 's'=>1, 'd'=>'16', 'ord'=>'jeanne', 'logn'=>1, 'name'=>'To Be Everywhere At Once'),
 
             array ( 'y'=>1688, 's'=>4, 'd'=>'8', 'ord'=>'ceniza', 'logn'=>1, 'name'=>'Fit Like A Glove'),
+
+            // Lore
+            array ( 'y'=>1642, 's'=>3, 'd'=>'?', 'ord'=>'norm', 'logn'=>1, 'name'=>'Origin: The Nexus'),
+            array ( 'y'=>1644, 's'=>1, 'd'=>'?', 'ord'=>'norm', 'logn'=>1, 'name'=>'Mystic War'),
+            array ( 'y'=>1645, 's'=>1, 'd'=>'?', 'ord'=>'norm', 'logn'=>1, 'name'=>'Meltdown'),
+            array ( 'y'=>1645, 's'=>2, 'd'=>'?', 'ord'=>'norm', 'logn'=>1, 'name'=>'Origin: Children of Mandalas'),
+            array ( 'y'=>1645, 's'=>2, 'd'=>'?', 'ord'=>'norm', 'logn'=>1, 'name'=>'Origin: Psykeeper'),
+            array ( 'y'=>1656, 's'=>1, 'd'=>'1', 'ord'=>'norm', 'logn'=>1, 'name'=>'Ascension of the First Ice Queen'),
+            array ( 'y'=>1666, 's'=>4, 'd'=>'42', 'ord'=>'norm', 'logn'=>1, 'name'=>'Great Aeros Fire'),
 
             );
 

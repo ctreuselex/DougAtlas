@@ -181,10 +181,10 @@
     <div class="color-grade bot"></div>
 
     <ul class="mini-nav">
-        <li><a class="home-head-nav" href="#home-divisions">Divisions</a></li>
+        <li><a class="home-head-nav" href="#home-divi">Divisions</a></li>
         <li><a class="home-head-nav" href="#">Day/Night Cycle</a></li>
         <li><a class="home-head-nav" href="#">CTSystem</a></li>
-        <li><a class="home-head-nav" href="#">Myst Manipulation</a></li>
+        <li><a class="home-head-nav" href="#home-myma">Myst Manipulation</a></li>
         <li><a class="home-head-nav" href="#">Organizations</a></li>
         <li><a class="home-head-nav" href="#">The Mares</a></li>
     </ul>
@@ -196,15 +196,15 @@
         // var firstload = true;
         $('.home-main .circle-load-boot').css('animation', 'circleloadboot 4s');
         $('.home-main .circle-load-boot').css('animation-fill-mode', 'forwards');
-        setTimeout(function() {
+        setTimeout( function() {
             $('.home-main .circle-load').css('animation', 'circleload 3s');
             $('.home-main .circle-load').css('animation-fill-mode', 'forwards');
 
-            setTimeout(function() {
+            setTimeout( function() {
                 $('.home-main .circle-load-boot').html('Opening<br>Core Tether...'); 
             }, 1000);
 
-            setTimeout(function() {
+            setTimeout( function() {
                 callin(); 
             }, 1750);
 
@@ -220,14 +220,14 @@
         $('.home-main .diamond-border').css('animation', 'diamondscaleborder 1.7s');
         $('.home-main .diamond-border').css('animation-fill-mode', 'forwards');
         $('.home-main .diamond-cover').addClass('in'); 
-        setTimeout(function() {
+        setTimeout( function() {
             $('.home-main .mini-nav').addClass('in');
 
             $('.home-main .circle-load-boot').html('Card Operational...');
             $('.home-main .circle-load-boot').css('animation', '');
             $('.home-main .circle-load-boot').addClass('in');
 
-            setTimeout(function() {
+            setTimeout( function() {
                 $('.home-main .circle-load-boot').fadeOut("fast");
             }, 2500);
 

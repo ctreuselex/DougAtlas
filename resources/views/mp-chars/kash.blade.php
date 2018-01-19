@@ -20,7 +20,7 @@
 		$mcharAff = "Howler | Institute";
 		
 		$mcharAft = "Water";
-		$mcharSty = "Armagi | Cirkunesi";
+		$mcharSty = "Cirkunesi";
 		$mcharWoc = "Tauroscene's Tiderunner";
 
 		$charthemes = 'Marine, Nautilidae, Crustaceans, Aerial Shrimp, Twin Blade Bandit';

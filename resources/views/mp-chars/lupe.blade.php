@@ -44,7 +44,7 @@
 
 		$charability = array(
 			array ('name'=>"Bash", 'sk'=>'pri',
-				'des'=>"Lupe bashes people with his trusty wrench whenever they sneaking into the show and when they don't stop annoying him while he works."),
+				'des'=>"Lupe bashes people with his trusty wrench whenever they try sneaking into the show and when they don't stop annoying him while he works."),
 
 			array ('name'=>"Heavy Slam", 'sk'=>'sec',
 				'des'=>"Smashes the ground with his invorted elephant hooves, |knockback|-ing away all stupid free loaders who can't pay to see the current show."), 
@@ -56,7 +56,7 @@
 				'des'=>"Activates Lupe's bear-like instincts which gives him more |frenzy| and physical |amplify| the lesser his remaining health is."),  
 
 			array ('name'=>"Surprise Attack", 'sk'=>'sk3',
-				'des'=>"Lupe digs into his toolbox and throws whatever he finds into the target enemy, leaving them |stun|-ned for a short period of time."),
+				'des'=>"Lupe digs into his toolbox and throws whatever he finds into the target enemy, leaving them |stun|-ned for a short period of time. If the target is hit on the back,  the |stun| duration is doubled."),
 
 			array ('name'=>"Polymorph", 'sk'=>'ult',
 				'des'=>"Lupe's mastery of morphing himself allowed him to try |morph|-ing other people. Makes him sad whenever they try to flap their chicken wings or when they stop breathing because they're now a fish out of water."),
@@ -86,7 +86,7 @@
 			);
 		$charpriaug = array (
 			array ('name' => "Feral Strength", "ico" => "ra-lion",
-				'des'=>"Gives Bash a 20% chance of inflicting |stun| to enemy units for 1 second."),
+				'des'=>"Gives Bash a 20% chance of inflicting |stun| to enemy units for 0.5 second."),
 			array ('name' => "Feral Agility", "ico" => "ra-rabbit",
 				'des'=>"Passively increases Lupe's attack rate by 20%."), 
 			);
@@ -182,7 +182,7 @@
 		// SK3
 		// ------------------------------------------------------------ //
 		$charsk3stats = array (
-			array ('name'=>'stun Duration', 'val'=>'2s', 'ext'=>''),
+			array ('name'=>'stun Duration', 'val'=>'1s', 'ext'=>''),
 			);
 		$charsk3mcdm = array (
 			array ('name'=>'Recharge Rate', 'val'=>''),

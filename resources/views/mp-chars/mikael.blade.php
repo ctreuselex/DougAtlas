@@ -63,7 +63,7 @@
 				'des'=>"Connects Mikael's CyberTech suit with all overloaded Myst blades and cage nearby and causes an explosion, dealing pure devastating damage to enemy units and restoring Myst to everyone depending on how much load is acquired from the Myst weapons."),
 
 			array ('name'=>"Clayford's CyberTech", 'sk'=>'ext',
-				'des'=>"Mikael's armor, which he collaborated with Maximus to make with, prevents him from being affected by certain status effects such as; |myst-leak|, |myst-degen|, and |myst-lock|, to which Maximus agreed is his dream armor but ignores it for the fact that he made it with someone else. Gets disabled a few seconds whenever Mikael is hit with a critical hit."),
+				'des'=>"Mikael's armor or rather 'extra fashionable suit', which he collaborated with Maximus to make with, prevents him from being affected by certain status effects such as; |myst-leak|, |myst-degen|, and |myst-lock|, to which Maximus agreed is his dream armor but ignores it for the fact that he made it with someone else. Gets disabled a few seconds whenever Mikael is hit with a critical hit."),
 			);
 
 		// ------------------------------------------------------------ //

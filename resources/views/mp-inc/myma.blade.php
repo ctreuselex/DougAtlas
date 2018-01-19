@@ -53,7 +53,7 @@
         <li>
         <b class="mp-title">{{ $myma['name'] }}</b> | "{{ $myma['tag'] }}"
             <br><?php echo $myma['des'] ?>
-            <div class="mp-ref" id="scroll-divi{{ $myma['name'] }}">
+            <!-- <div class="mp-ref" id="scroll-divi{{ $myma['name'] }}">
                 <div class="mp-scroll-div">
                     @for($i=1; $i<=$myma['imgCnt']; $i++)
                         <img src="{{ url('img/myma/myma'.$myma['name'].' ('.$i.').jpg') }}">
@@ -62,16 +62,45 @@
                 <div class="mp-scroll-prog"></div>
                 <i class="mp-scroll max left fa fa-caret-left"></i>
                 <i class="mp-scroll right fa fa-caret-right"></i>
+            </div> -->
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    @for($i=1; $i<=$myma['imgCnt']; $i++)
+                        <?php
+                            $url = 'img/myma/myma'.$myma['name'].'%20('.$i.').jpg';
+                            $size = getimagesize(url($url));
+                            $por = 300 / $size[1]; 
+                            $height = $por * $size[1];
+                            $width = $por * $size[0];
+                        ?>
+                        <div class="swiper-slide" style="width: {{ $width }}px; height: {{ $height }}px; ">
+                            <img src="{{ url($url) }}" width="100%">
+                        </div>
+                    @endfor
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </li>
     @endforeach
 </ul>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     var mirMyma = <?php echo json_encode($mirMyma); ?>;
     $(window).load(function() {
         for(var i=0; i<mirMyma.length; i++) {
             createSlide("#scroll-divi"+mirMyma[i]['name']);
         }   
+    });
+</script> -->
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
     });
 </script>

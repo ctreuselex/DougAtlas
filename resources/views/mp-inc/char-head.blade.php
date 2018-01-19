@@ -139,13 +139,13 @@
                 @if ($mcharDiv != '')
                     <li>Home Division: 
                         @if ($mcharDiv == 'Luminos')
-                            <img style="" src="{{ url('img/lum.png') }}" width="30px">
+                            <img style="filter: brightness(10) grayscale(1);" src="{{ url('img/lum.png') }}" width="30px">
                         @elseif ($mcharDiv == 'Aeros')
-                            <img style="" src="{{ url('img/aer.png') }}" width="30px">
+                            <img style="filter: brightness(10) grayscale(1);" src="{{ url('img/aer.png') }}" width="30px">
                         @elseif ($mcharDiv == 'Mystos')
-                            <img style="" src="{{ url('img/mys.png') }}" width="30px">
+                            <img style="filter: brightness(10) grayscale(1);" src="{{ url('img/mys.png') }}" width="30px">
                         @elseif ($mcharDiv == 'Geios')
-                            <img style="" src="{{ url('img/gei.png') }}" width="30px">
+                            <img style="filter: brightness(10) grayscale(1);" src="{{ url('img/gei.png') }}" width="30px">
                         @endif
                         <b>{{ $mcharDiv }}</b>
                     </li> <!-- Luminos | Aeros | Mystos | Geios -->
@@ -154,7 +154,7 @@
                 <?php if(isset($mcharPos)) { ?><li>Current Rep: <b>{{ $mcharPos }}</b></li> <?php } ?>
             </ul>
         </div>
-        <div class="char-per"><p><b>Combat Statistics</b></p><i class="fa fa-gamepad" aria-hidden="true"></i>
+        <div class="char-per"><p><b>Combat</b></p><i class="fa fa-gamepad" aria-hidden="true"></i>
             <ul class="char-logs">
                 <li>Material Affinity: <b>{{ $mcharAft }}</b></li> <!-- Fire | Water | Air | Electricity | Etc... -->
                 <li>MM Style: <b>{{ $mcharSty }}</b></li> <!-- Armagi | Exnihille | Maximo | Cirkunesi -->

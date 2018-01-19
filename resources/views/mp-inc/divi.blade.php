@@ -92,10 +92,6 @@
 </style>
 
 <ul class="mp-cont">
-    <li>Mirrorplane is divided into four divisions; Luminos, Aeros, Mystos, and Geios.</li>
-</ul>
-
-<ul class="mp-cont">
     @foreach($mirDivis as $maindiv)
         <li>
             <div class="col-xs-8 no-pad">

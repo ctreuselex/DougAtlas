@@ -56,7 +56,7 @@
 				'des'=>"Activates Trevor's bear-like instincts which gives him more |frenzy| and physical |amplify| the lesser his remaining health is."),  
 
 			array ('name'=>"Bloodthirst", 'sk'=>'sk3',
-				'des'=>"Extreme savageness comes with the lack of morality which basically allows Trevor to eat those who don't know the difference between different kinds of knives giving him the ability to |leech| off their suffering."),
+				'des'=>"Extreme savageness comes with the lack of morality which basically allows Trevor to eat those who don't know the difference between different kinds of knives in his collection giving him the ability to |leech| off their suffering."),
 
 			array ('name'=>"Polymorph", 'sk'=>'ult',
 				'des'=>"Trevor's mastery of morphing himself allowed him to try |morph|-ing other people. Makes him laugh whenever they try to flap their chicken wings or when they stop breathing because they're now a fish out of water."),
@@ -141,7 +141,7 @@
 			array ('name' => "Rapid Hammering", 'ico' => "ra-broken-bone ",
 				'des'=>"|frenzy| now has an effect on reducing Power Smacks cooldown."),
 			array ('name' => "Nasty Little Critters", 'ico' => "ra-fairy",
-				'des'=>"Using Power Smack on a |polymorph|-ed unit will deal more damage base on the target's remaining health."),
+				'des'=>"Using Power Smack on a |morph|-ed unit will deal more damage base on the target's remaining health."),
 			array ('name' => "Playing with Food", 'ico' => "ra-roast-chicken",
 				'des'=>"Inflicts |expose| to the target for 2 seconds."), 
 			);

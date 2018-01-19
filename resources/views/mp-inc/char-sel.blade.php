@@ -12,6 +12,7 @@
 		width: 200px; height: 200px;
 		z-index: 1;
 		opacity: 0.8;
+		filter: blur(0px);
 		transform: scale(1) rotate(45deg);
 		transition: 0.3s; }
 	.sel-diamond.border { 
@@ -31,13 +32,15 @@
 	    text-shadow: 0 0 10px white;
 	    line-height: 1;
 	    z-index: 1;
-	    transition: 0.7s; }
+		filter: blur(0px);
+	    transition: 0.3s; }
 	.sel-name b {
 	    font-size: 16px; }
 	.sel-name i {
 	    font-size: 24px; }
 	.swiper-slide img {
-		filter: blur(1px) brightness(0.5) grayscale(0.8);
+		/*filter: blur(1px) brightness(0.5) grayscale(0.8);*/
+		filter: contrast(0.3) blur(1px);
 		transition: 0.5s; }
 
 	.swiper-slide:hover .sel-diamond,
@@ -46,6 +49,7 @@
 		transition: 0.3s; }
 	.swiper-slide:hover .sel-diamond.sm {
 		bottom: -120px;
+		filter: blur(1px);
 		transition: 0.5s; }
 	.swiper-slide.sel .sel-diamond.sm {
 		opacity: 0.5;
@@ -56,12 +60,14 @@
 		transition: 0.3s;  }
 	.swiper-slide:hover .sel-name {
 		bottom: 30px;
+		filter: blur(1px);
 		transition: 0.5s; }
 	.swiper-slide.sel .sel-name{
 		bottom: -80px; }
 	.swiper-slide:hover img,
 	.swiper-slide.sel img{
-		filter: blur(0px) brightness(1) grayscale(0);	
+		/*filter: blur(0px) brightness(1) grayscale(0);	*/
+		filter: contrast(1) blur(0);
 		transition: 0.3s; }
 </style>				
 
@@ -71,7 +77,7 @@
 
     	@foreach ($mirChars as $char)
 	    	@if ($char['ico']!='' && $char['color']!='')
-	    		@if ($char['name']!='djerick' && $char['name']!='dom' && $char['name']!='cin' && $char['name']!='kalli' && $char['name']!='trevor' )
+	    		@if ($char['name']!='djerick' && $char['name']!='dom' && $char['name']!='cin' && $char['name']!='kalli' && $char['name']!='trevor' && $char['name']!='gemini' )
 			    	<?php
 			    		if($char['name'] == $charname) { 
 			    			$selected = "sel";

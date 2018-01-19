@@ -18,6 +18,7 @@
 		$mcharFam = "<unknown>";
 		$mcharDiv = "Luminos Aeros";
 		$mcharAff = "None";
+		$mcharPos = "";
 		
 		$mcharAft = "Mydow";
 		$mcharSty = "None";

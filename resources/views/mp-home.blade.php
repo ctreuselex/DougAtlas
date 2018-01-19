@@ -30,9 +30,21 @@
 
 	@include('mp-inc/home-head')
 
-    <section id="home-divisions">
+    <section id="home-divi">
         <p><span class="char-name">Divisions</span> | What separates this place from that place?</p>
             @include('mp-inc/divi')
+        <div class="clear"></div>
+    </section>
+
+    <section id="home-myma">
+        <p><span class="char-name">Myst Manipulation</span> | And the way of Everything</p>
+            @include('mp-inc/myma')
+        <div class="clear"></div>
+    </section>
+
+    <section id="home-orgs">
+        <p><span class="char-name">Notable Organizations</span> | And what they do</p>
+        @include('mp-inc/orgs')
         <div class="clear"></div>
     </section>
 

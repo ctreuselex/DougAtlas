@@ -20,7 +20,7 @@
 		$mcharAff = "Order of the Void";
 		
 		$mcharAft = "Unknown*";
-		$mcharSty = "Extenebri | Voiding";
+		$mcharSty = "Extenebri";
 		$mcharWoc = "Tauroscene's Starshooter";
 
 		$charthemes = 'Longshots, Blindshots, Ghosts, Stars, Aiming Perfectionist, Super Tall';

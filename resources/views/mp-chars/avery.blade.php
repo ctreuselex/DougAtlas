@@ -14,7 +14,7 @@
 			}
 		}
 
-		$mcharNam = "Avery Gebsen";
+		$mcharNam = "Avery Gambol";
 		$mcharFam = "<unknown>";
 		$mcharDiv = "Aeros";
 		$mcharAff = "Dominion | Institute";

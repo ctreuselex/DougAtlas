@@ -19,8 +19,8 @@
 		$mcharDiv = "Mystos";
 		$mcharAff = "Dominion | Institute";
 		
-		$mcharAft = "Air";
-		$mcharSty = "Armagi | Cirkunesi";
+		$mcharAft = "Weather";
+		$mcharSty = "Cirkunesi";
 		$mcharWoc = "Tauroscene's Titan";
 
 		$charthemes = 'Storms, Mists, Elite, Purging, Genocide, Anything Sexy';

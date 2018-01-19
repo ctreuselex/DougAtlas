@@ -44,10 +44,10 @@
 
 		$charability = array(
 			array ('name'=>"Scorpion Tail", 'sk'=>'pri',
-				'des'=>"Kalli sequencially shoots with Anteres as two crossbows while in ranged mode. in melee mode, Kalli slices people like a true katana wielder."),
+				'des'=>"Kalli sequencially shoots with Antares as two crossbows while in ranged mode. in melee mode, Kalli slices people like a true katana wielder."),
 
 			array ('name'=>"Destiny Shift", 'sk'=>'sec',
-				'des'=>"Tags a target allowing Kalli's to manipulate their desnity, causing her abilities to do more effects."), 
+				'des'=>"Tags a target allowing Kalli to manipulate their destiny, causing her abilities to do more effects."), 
 
 			array ('name'=>"Quicksand", 'sk'=>'sk1',
 				'des'=>"Turns the ground into quicksand which slowly pulls all units to its center. Anyone who somehow managed to escape the pit will be slowed for a few seconds. Units under Destiny Shift will have any mobility skills disabled."), 
@@ -62,7 +62,7 @@
 				'des'=>"Grants Kalli full control over the unit affected by Destiny Shift for a few seconds. Kalli's body will remain channeling the ability and is vulnerable during the effect."),
 
 			array ('name'=>"Antares", 'sk'=>'ext',
-				'des'=>"Kalli is proud of a lot of things about herself, but one of the best things she's ever done that not only she is proud of is the way that her custom made weapon can transform into two different forms. Suck that Helios!"),
+				'des'=>"Kalli is proud of a lot of things about herself, but one of the best things she's ever done that not only she is proud of is the way that her custom made weapon can transform into two different forms. Suck on that Helios!"),
 			);
 
 		// ------------------------------------------------------------ //

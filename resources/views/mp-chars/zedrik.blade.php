@@ -20,7 +20,7 @@
 		$mcharAff = "The Ark";
 		
 		$mcharAft = "Fire";
-		$mcharSty = "Armagi | Rudimenti";
+		$mcharSty = "Rudimenti";
 		$mcharWoc = "Corporal Works' Rune Blade";
 
 		$charthemes = 'Berserker, Demon, Beast, Much Swag, Boom, Masochism, Boom!';

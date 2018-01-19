@@ -153,6 +153,24 @@
         </style>
     @endforeach
 
+    <style type="text/css">
+        li#norm {
+            border-left: 5px solid grey;
+            border-right: 5px solid grey; }
+        li#norm i {
+            color: grey;
+            font-size: 20px;
+            position: absolute;
+            left: -10px;
+            transition: 0.5s; }
+        li#norm:hover {
+            color: #333;
+            transition: 0.3s; }
+        li#norm .char-hvr {
+            border-right: 5px solid grey;
+            transition: 0.3s; }
+    </style>
+
     @include('mp-inc/dash')
 
     <div class="col-sm-10 col-sm-offset-2" style="padding: 15px;"> 
@@ -174,34 +192,40 @@
                     <?php if($yearbr>$log['y']) { $yearbr=$log['y']; echo '<div class="year-div">'.$yearbr.'</div>'; } ?>
                     <?php $ordlink = strtolower($log['ord']); if($ordlink=='moon') $ordlink = 'djerick'; ?>
                     <a href="/mirrorplane/profile/{{$ordlink}}?cts={{$log['logn']}}">
+                        <?php  $charname = ""; $logname=""; ?>
                         @foreach ($mirChars as $char)
                             @if ($log['ord']==$char['name'])
-                                <li id="{{ $char['name'] }}" name="{{ $log['name']  }}" class="li-hvr">
+                                <?php $charname = $char['name']; $logname = $log['name']; ?>
+                            @else
+                                <?php $charname = $log['ord']; $logname = $log['ord']; ?>
                             @endif
                         @endforeach
-                        <span class="col-xs-3">
-                            <b>{{ $log['y'] }}</b> | 
-                            @if ($log['s']==1) Summer<!-- <img src="{{ url('img/lum.png') }}" width="30px"> -->
-                            @elseif ($log['s']==2) Fall<!-- <img src="{{ url('img/aer.png') }}" width="30px"> -->
-                            @elseif ($log['s']==3) Winter<!-- <img src="{{ url('img/mys.png') }}" width="30px"> -->
-                            @elseif ($log['s']==4) Spring<!-- <img src="{{ url('img/gei.png') }}" width="30px"> -->
-                            @endif
-                            | {{ $log['d']  }}
-                        </span>
-                        <b class="col-xs-7">
-                            @foreach ($mirChars as $char)
-                                @if ($log['ord']==$char['name'])
-                                    <i class="{{ $char['ico'] }}"></i> 
+                        <li id="{{ $charname }}" name="{{ $logname  }}" class="li-hvr">
+                            <span class="col-xs-3">
+                                <b>{{ $log['y'] }}</b> | 
+                                @if ($log['s']==1) Summer<!-- <img src="{{ url('img/lum.png') }}" width="30px"> -->
+                                @elseif ($log['s']==2) Fall<!-- <img src="{{ url('img/aer.png') }}" width="30px"> -->
+                                @elseif ($log['s']==3) Winter<!-- <img src="{{ url('img/mys.png') }}" width="30px"> -->
+                                @elseif ($log['s']==4) Spring<!-- <img src="{{ url('img/gei.png') }}" width="30px"> -->
                                 @endif
-                            @endforeach
-                        {{ $log['name']  }}</b>
-                        <span class="col-xs-2 right capitalize">
-                            <b>{{ $log['ord']  }}</b> | 
-                            @foreach ($mirChars as $char)
-                                @if ($log['ord']==$char['name'])
-                                    {{ round(((236*1.35)*($log['y']-$char['year']))/365, 0) }}
+                                | {{ $log['d']  }}
+                            </span>
+                            <b class="col-xs-7">
+                                @foreach ($mirChars as $char)
+                                    @if ($log['ord']==$char['name'])
+                                        <i class="{{ $char['ico'] }}"></i> 
+                                    @endif
+                                @endforeach
+                            {{ $log['name']  }}</b>
+                            <span class="col-xs-2 right capitalize">
+                                @if ($log['ord'] != 'norm')
+                                    <b>{{ $log['ord']  }}</b> | 
+                                    @foreach ($mirChars as $char)
+                                        @if ($log['ord']==$char['name'])
+                                            {{ round(((236*1.35)*($log['y']-$char['year']))/365, 0) }}
+                                        @endif
+                                    @endforeach
                                 @endif
-                            @endforeach
                             </span>
                         </li>
                     </a>

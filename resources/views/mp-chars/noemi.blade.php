@@ -17,7 +17,7 @@
 		$mcharNam = "Noemi Allium";
 		$mcharFam = "<unknown>";
 		$mcharDiv = "Geios";
-		$mcharAff = "The Ark | Dominion";
+		$mcharAff = "The Ark";
 		
 		$mcharAft = "Plants";
 		$mcharSty = "Cirkunesi";

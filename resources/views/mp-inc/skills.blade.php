@@ -246,9 +246,8 @@
         content: "";
         position: absolute;
         width: 4px; height: 4px;    
-        background-color: white;
         margin-top: 3px; margin-left: 3px;
-        mix-blend-mode: color-dodge;
+        background-color: {{ $charColorSub }};
         box-shadow: 0 0 5px 1px {{ $charColor }}; }
 
     @keyframes boxshrink {

@@ -20,7 +20,7 @@
 		$mcharAff = "Dominion | Institute";
 		
 		$mcharAft = "Fire*";
-		$mcharSty = "Armagi | Extenebri";
+		$mcharSty = "Extenebri";
 		$mcharWoc = "Landar Industries' ACMA Cuff Blasters";
 
 		$charthemes = 'Dual Guns, Balance, No Second Chances, Being a Jerk to Everyone ';
