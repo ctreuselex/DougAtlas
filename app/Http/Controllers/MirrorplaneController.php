@@ -27,18 +27,43 @@ class MirrorplaneController extends Controller
 
         return view($viewchar)->with('mirChars',$mirChars)->with('mirLogs',$mirLogs)->with('mirFrm',$mirFrm); }   
 
+    public function ctstime() {
+        $mirChars = $this->charMeta("char");
+        $mirYrs = $this->charMeta("yrs");
+        $mirDiv = $this->charMeta("div");
+        $mirTeam = $this->charMeta("team");
+        $mirMems = $this->charMeta("mems");
+        $mirLogs = $this->charMeta("logs");
+
+        return view('mp-time')->with('mirChars',$mirChars)->with('mirYrs',$mirYrs)->with('mirDiv',$mirDiv)->with('mirTeam',$mirTeam)->with('mirMems',$mirMems)->with('mirLogs',$mirLogs);
+    }
+
+    public function thestory() {
+        $mirChars = $this->charMeta("char");
+        $mirStory = $this->charMeta("stor");
+        $mirStoryArg = $this->charMeta("arg");
+
+        return view('mp-story')->with('mirChars',$mirChars)->with('mirStory',$mirStory)->with('mirStoryArg',$mirStoryArg);
+    }
+
     public function charMeta($req) {
+        // ================================================================================================================================
+        // ================================================================================================================================ CHARACTERS
+        // ================================================================================================================================
+
         $mirChars = array(
             array ( 'name'=>'dom','sur'=>'','year'=>0,'color'=>'#009688','subcolor'=>'#8BC34A','ico'=>'ra ra-castle-emblem' ),
             array ( 'name'=>'cin','sur'=>'','year'=>0,'color'=>'#8BC34A','subcolor'=>'#009688','ico'=>'ra ra-castle-emblem' ),
 
             array ( 'name'=>'andrei','sur'=>'','year'=>1666,'color'=>'','subcolor'=>'','ico'=>'ra ra-crystals' ),
             array ( 'name'=>'avery','sur'=>'gambol','year'=>1668,'color'=>'#91DA2D','subcolor'=>'#9D2DDA','ico'=>'fa fa-paper-plane' ),
-            array ( 'name'=>'bono','sur'=>'vasili','year'=>1568,'color'=>'','subcolor'=>'','ico'=>'ra ra-blade-bite' ),
+            array ( 'name'=>'ceicil','sur'=>'leicel','year'=>0,'color'=>'#17EF79','subcolor'=>'#623ea7','ico'=>'ra ra-gear-heart' ),
+            array ( 'name'=>'bono','sur'=>'vasili','year'=>1568,'color'=>'#ec891a','subcolor'=>'#e71d72','ico'=>'ra ra-blade-bite' ),
             array ( 'name'=>'ceniza','sur'=>'corvera','year'=>1667,'color'=>'#9e0cd4','subcolor'=>'#f39b0f','ico'=>'ra ra-crystal-wand' ),
             array ( 'name'=>'chance','sur'=>'linus','year'=>1668,'color'=>'#673Ab7','subcolor'=>'#203E46','ico'=>'ra ra-diamond' ),
             array ( 'name'=>'daud','sur'=>'irwin','year'=>1674,'color'=>'#E64C15','subcolor'=>'#8C0B0B','ico'=>'ra ra-reverse' ),
-            array ( 'name'=>'denise','sur'=>'','year'=>1662,'color'=>'','subcolor'=>'','ico'=>'ra ra-suits' ),
+            array ( 'name'=>'denise','sur'=>'','year'=>1662,'color'=>'#b40000','subcolor'=>'#efbe15','ico'=>'ra ra-suits' ),
+            array ( 'name'=>'frederick','sur'=>'lemaitre','year'=> 1543,'color'=>'#21efd9','subcolor'=>'#258d77','ico'=>'ra ra-bird-mask' ),
             array ( 'name'=>'froxy','sur'=>'rennis','year'=> 1668, 'color' =>'','subcolor'=>'','ico'=>'ra ra-crossed-axes' ),
             array ( 'name'=>'gemini','sur'=>'','year'=> 1676, 'color' =>'#009dd0','subcolor'=>'#f8900b','ico'=>'ra ra-gemini' ),
             array ( 'name'=>'herschel','sur'=>'','year'=>1667,'color'=>'#9C27B0','subcolor'=>'#00BCD4','ico'=>'ra ra-supersonic-arrow' ),
@@ -47,7 +72,6 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'kash','sur'=>'lorielle','year'=> 1668,'color'=>'#2590ab','subcolor'=>'#d0f30f','ico'=>'ra ra-crab-claw' ),
             array ( 'name'=>'kianna','sur'=>'halley','year'=>1670,'color'=>'#0D4E84','subcolor'=>'#00BCD4','ico'=>'ra ra-snowflake' ),
             array ( 'name'=>'koom','sur'=>'','year'=>1685,'color'=>'','subcolor'=>'','ico'=>'ra ra-fox' ),
-            array ( 'name'=>'frederick','sur'=>'lemaitre','year'=> 1543,'color'=>'','subcolor'=>'','ico'=>'ra ra-bird-mask' ),
             array ( 'name'=>'llaxine','sur'=>'loquintez','year'=>1677,'color'=>'#EC78A0','subcolor'=>'#EFE167','ico'=>'ra ra-fairy' ),
             array ( 'name'=>'lupe','sur'=>'wolgraff','year'=>1665,'color'=>'#DDAF47','subcolor'=>'#882826','ico'=>'ra ra-wolf-howl' ),
             array ( 'name'=>'maximus','sur'=>'redgrave','year'=>1673,'color'=>'#17EF79','subcolor'=>'#3D7D7A','ico'=>'ra ra-reactor' ),
@@ -96,7 +120,6 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'colin','sur'=>'forth','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),   
             array ( 'name'=>'marina','sur'=>'maramba','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),
             // leicel
-            array ( 'name'=>'ceicil','sur'=>'leicel','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-gear-heart' ),
             array ( 'name'=>'cristine','sur'=>'leicel','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-gear-heart' ),
             // linus   
             array ( 'name'=>'eva','sur'=>'linus','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),  
@@ -127,6 +150,8 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'djerick','sur'=>'beleaguer','year'=>1668,'color'=>'#26DC9F','subcolor'=>'#D8A37C','ico'=>'ra ra-slash-ring' ),
 
             // randoms
+            array ( 'name'=>'carol','sur'=>'montenegro','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-sherif' ),
+
             array ( 'name'=>'jack','sur'=>'baulley','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),
             array ( 'name'=>'koba','sur'=>'gothlite','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),
             array ( 'name'=>'olive','sur'=>'ceniza','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),
@@ -150,6 +175,9 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'plis','sur'=>'no','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),
             );
         
+        // ================================================================================================================================
+        // ================================================================================================================================ CHARACTERS FORUM
+        // ================================================================================================================================
         $mirFrm = array(
             array ('name'=>'george','act'=>'GeorgieGeorgie'),
             array ('name'=>'cristine','act'=>'thisisCristineCalling'),
@@ -198,6 +226,9 @@ class MirrorplaneController extends Controller
             array ('name'=>'jogun','act'=>'JogunSkullBasher'),
             );
 
+        // ================================================================================================================================
+        // ================================================================================================================================ CHARACTER YEARS
+        // ================================================================================================================================
         $mirYrs = array(
             array ('name' => 'avery', 'in' => 'institute', 'year' => '1686'),
             array ('name' => 'ceniza', 'in' => 'institute', 'year' => '1685'),
@@ -222,6 +253,9 @@ class MirrorplaneController extends Controller
             array ('name' => 'zedrik', 'in' => 'the ark', 'year' => '1680'),
             );
 
+        // ================================================================================================================================
+        // ================================================================================================================================ DIVISION HEADS
+        // ================================================================================================================================
         $mirDiv = array (
             array ('div' => 'lum', 'name' => 'theodore', 'year' => '1692'),
             array ('div' => 'lum', 'name' => 'gamora', 'year' => '1683'),
@@ -236,6 +270,9 @@ class MirrorplaneController extends Controller
             array ('div' => 'gei', 'name' => 'george', 'year' => '1680'),
             );
 
+        // ================================================================================================================================
+        // ================================================================================================================================ DIVISION TEAMS
+        // ================================================================================================================================
         $mirTeam = array (
             array ('name' => 'storm', 'div' => 'lum', 'year' => '1687-1698'),
             array ('name' => 'tornado', 'div' => 'lum', 'year' => '1694~'),
@@ -249,6 +286,9 @@ class MirrorplaneController extends Controller
             array ('name' => 'genesis', 'div' => 'gei', 'year' => '1665-1680'),
             );
 
+        // ================================================================================================================================
+        // ================================================================================================================================ DIVISION TEAMS MEMBERS
+        // ================================================================================================================================
         $mirMems = array (
             array ('name' => 'berex', 'team' => 'storm'),
             array ('name' => 'seline', 'team' => 'storm'),
@@ -278,7 +318,9 @@ class MirrorplaneController extends Controller
             array ('name' => 'zaldy', 'team' => 'genesis'),
             );
 
-
+        // ================================================================================================================================
+        // ================================================================================================================================ CHARACTER LOGS
+        // ================================================================================================================================
         // array ( 'y'=>, 's'=>, 'd'=>'', 'ord'=>'', 'name'=>''),
         $mirLogs = array(
             array ( 'y'=>1687, 's'=>1, 'd'=>'32', 'ord'=>'valkyr', 'logn'=>5, 'name'=>'Miracle Of Life'),
@@ -384,10 +426,109 @@ class MirrorplaneController extends Controller
             array ( 'y'=>1645, 's'=>1, 'd'=>'?', 'ord'=>'norm', 'logn'=>1, 'name'=>'Meltdown'),
             array ( 'y'=>1645, 's'=>2, 'd'=>'?', 'ord'=>'norm', 'logn'=>1, 'name'=>'Origin: Children of Mandalas'),
             array ( 'y'=>1645, 's'=>2, 'd'=>'?', 'ord'=>'norm', 'logn'=>1, 'name'=>'Origin: Psykeeper'),
+            array ( 'y'=>1651, 's'=>3, 'd'=>'?', 'ord'=>'norm', 'logn'=>1, 'name'=>'The Death of the King'),
             array ( 'y'=>1656, 's'=>1, 'd'=>'1', 'ord'=>'norm', 'logn'=>1, 'name'=>'Ascension of the First Ice Queen'),
             array ( 'y'=>1666, 's'=>4, 'd'=>'42', 'ord'=>'norm', 'logn'=>1, 'name'=>'Great Aeros Fire'),
 
             );
+
+        // ================================================================================================================================
+        // ================================================================================================================================ MAIN CHARACTER STORY
+        // ================================================================================================================================
+        $mirStoryArg = array(
+                array( 'id'=>'main', 'name'=>'Main',                  'mem'=>array ('valkyr', 'herschel', 'moon', 'dom')),
+                array( 'id'=>'tark', 'name'=>'The Ark',               'mem'=>array ('jeanne', 'noemi', 'zedrik', 'gemini', 'ceicil')),
+                array( 'id'=>'oftv', 'name'=>'Order of the Void',     'mem'=>array ('rigel', 'kalli', 'frederick')),
+                array( 'id'=>'head', 'name'=>'Heads of Division',     'mem'=>array ('vriskvin', 'ceniza', 'mikael', 'theodore')),
+                array( 'id'=>'strm', 'name'=>'Storm',                 'mem'=>array ('llaxine', 'seline')),
+                array( 'id'=>'escu', 'name'=>'Escutcheon',            'mem'=>array ('maximus', 'daud', 'sandra')), 
+                array( 'id'=>'lups', 'name'=>'Lupus',                 'mem'=>array ('rustom', 'vines', 'chance')),
+                array( 'id'=>'crus', 'name'=>'Crustacean',            'mem'=>array ('avery', 'kash', 'froxy')),
+                array( 'id'=>'mdls', 'name'=>'Children of Mandalas',  'mem'=>array ('lance', 'kianna')),
+                array( 'id'=>'cmad', 'name'=>'Carnival of Madness',   'mem'=>array ('denise', 'lupe', 'koom', 'trevor')),
+                array( 'id'=>'outs', 'name'=>'The Outsiders',         'mem'=>array ('bono', 'riza', 'carol', 'fae')),
+                array( 'id'=>'taur', 'name'=>'Tauroscene Corp',       'mem'=>array ('helios')),
+                array( 'id'=>'othr', 'name'=>'Others',                'mem'=>array ('demeter', 'romania')),
+            );
+
+        $mirStory = array(
+
+            // BONO ============================================================
+            array ('char'=>'bono', 'vol'=>'1', 'chap'=>'2',
+                'desc'=>'On his task with Vox and Carol, of purging a certain area of data, Val meets with him to talk about the Ark.'),
+
+            // CAROL ============================================================
+            array ('char'=>'carol', 'vol'=>'1', 'chap'=>'2',
+                'desc'=>'Is here to shout and swear.'),
+
+            // DAUD ============================================================
+            array ('char'=>'daud', 'vol'=>'1', 'chap'=>'2',
+                'desc'=>'Saves Max from being a creepy stalker and joins up Llaxine in her mission.'),
+
+            // DOM ============================================================
+            array ('char'=>'dom', 'vol'=>'1', 'chap'=>'1',
+                'desc'=>'Was imprisoned for "stealing a lemon", he tells Val to calm down for help is coming, Bursts Val out as Herschel blasts prison with a Void arrow causing Myst lock then stops the fight between her and Moon. He then leads everyone to Moon\'s apartment before the Myst returns. '),
+            array ('char'=>'dom', 'vol'=>'1', 'chap'=>'2',
+                'desc'=>'Appears out of nowhere to annoy Moon and tell him about this guy with the Ring\'s United tattoo. They became really suspicious of his actions and began chasing him but was stopped when they bumped to Llaxine.'),
+
+            // GEMINI ============================================================
+            array ('char'=>'gemini', 'vol'=>'0', 'chap'=>'3',
+                'desc'=>'Appears out of nowhere to fight Rigel after she tries to attack Kalli.'),
+
+            // HERSCHEL ============================================================
+            array ('char'=>'herschel', 'vol'=>'0', 'chap'=>'3',
+                'desc'=>'On her way to finish her final mission for the Order (to bring the Weaver back to Lemaitre), Herschel was stopped by Kalli who fought against her and destroy her hopes of becoming "clean" by having her kill one of the Psykeepers who tried to stop their fight.'),
+            array ('char'=>'herschel', 'vol'=>'1', 'chap'=>'1',
+                'desc'=>'Fires a Void arrow which Myst locks the entire prison, She then quickly fights against the guards but was challenged when Moon comes in play. Their fight was stopped by Dom who then drags Val out of the prison and lead them to Moon\'s apartment.'),
+
+            // KALLI ============================================================
+            array ( 'char'=>'kalli', 'vol'=>0, 'chap'=>3, 
+                'desc'=>'Intercepts Herschel from her mission of hunting the Weaver then asks Herschel to join her with the Ark if she really wants to be out of the Order. A fight between them ensues to which Rigel and the Gemini twins joins, but was stopped by a Psykeeper. ' ),
+
+            // LLAXINE ============================================================
+            array ('char'=>'llaxine', 'vol'=>'1', 'chap'=>'2',
+                'desc'=>'Leaving her team to go do her mission to "infiltrate" a suspected Ring\'s United hideout, She meets up with Moon and asks him to be her teammate for the day. But with Max and Daud following her around, they get to be part of the team as well.'),
+
+            // MAXIMUS ============================================================
+            array ( 'char'=>'maximus', 'vol'=>0, 'chap'=>2, 
+                'desc'=>'Sending word to Vriskvin about the fire at the Anchor, a mysterious man appeared out of nowhere and attacked them. Vriskvin told Max to step aside as he\'ll handle to problem. Turns out that the man is a resurrected  Moon who decided to figure out the past by himself.' ),
+            array ('char'=>'maximus', 'vol'=>'1', 'chap'=>'1',
+                'desc'=>'Went to the prison to interrogate Val about the fire to which he suspects was the Ark; who has been stealing from his company for years, but was quickly shutdown by Herschel\'s Void arrow which Myst locked his armor and knocked him down unconscious.'),
+            array ('char'=>'maximus', 'vol'=>'1', 'chap'=>'2',
+                'desc'=>'Follows Llaxine around but was caught by Daud, who basically saved him from being a stalker and become Llaxine\'s teammates along with Moon and Dom.'),
+
+            // MOON ============================================================
+            array ( 'char'=>'moon', 'vol'=>0, 'chap'=>2, 
+                'desc'=>'Without knowledge about how he died and how he is alive again, Moon decided to pay the Institute a visit and quit the Psykeepers in turn of finding out what happened to him and his family.' ),
+            array ('char'=>'moon', 'vol'=>'1', 'chap'=>'1',
+                'desc'=>'Doing one last favor for Max, Moon joins him in interrogating Val which they suspected was a member of the Ark and that he might know something about what happened to his family. Ends up fighting against Herschel and then being taken back to his apartment by Dom.'),
+            array ('char'=>'moon', 'vol'=>'1', 'chap'=>'2',
+                'desc'=>'With everyone gone, Moon goes to get some breakfast and quiet but that quickly changed when Dom appears out of nowhere and joins him. They end up chasing a guy with a weird tattoo (Ring\'s United) because of Dom. Bumping to Llaxine during their chase, the guy escaped, but they now had new teammates.'),
+
+            // NOEMI ============================================================
+            array ( 'char'=>'noemi', 'vol'=>0, 'chap'=>1, 
+                'desc'=>'With Val falling into their trap, Noemi tries to reason with him to stop following the Ark if he is not going to help, but Val made up his mind a long time ago and decided to look for Jeanne somewhere else until Zed arrived. The two end up in a fight and Noemi tried helping lessen the casualty under their wrath.' ),
+
+            // RIGEL ============================================================
+            array ('char'=>'rigel', 'vol'=>'0', 'chap'=>'3',
+                'desc'=>'Stops Kalli from trying to convince Herschel into joining the Ark and engages into a fight with her and the twins.'),
+
+            // VALKYR ============================================================
+            array ( 'char'=>'valkyr', 'vol'=>0, 'chap'=>1, 
+                'desc'=>'Val goes to a bar named "Anchor" to which he suspects the Ark is hiding only to actually find them and reveal that it is a trap to stop him from stalking them.' ),
+            array ('char'=>'valkyr', 'vol'=>'1', 'chap'=>'1',
+                'desc'=>'After getting caught by the Psykeepers, Val was put unconscious and was sent to prison (which has a Myst lock disc that prevents his manips) He shortly meets Dom while still feeling dizzy and went unconscious again.'),
+            array ('char'=>'valkyr', 'vol'=>'1', 'chap'=>'2',
+                'desc'=>'Meets up with Bono, Vox, and Carol, in an alleyway only to be asked to stop looking for his wife, "You\'ve been at this for decades and it\'s obvious she does not want to be found."'),
+
+            // VRISKVIN ============================================================
+            array ( 'char'=>'vriskvin', 'vol'=>0, 'chap'=>2, 
+                'desc'=>'Ends up fighting against an old friend to which he won. Moon then him that he is going to leave the Psykeepers and that he should not follow him.' ),
+
+            // ZEDRIK ============================================================
+            array ( 'char'=>'zedrik', 'vol'=>0, 'chap'=>1, 
+                'desc'=>'With Val falling into their trap, Zed ends up having to fight him in a one-on-one after Val calls him his "brother". He\'s still quite salty about it. He ends up winning but had to leave Val alive after the Psykeepers arrived.' ),
+        );
 
         if($req=="char") return $mirChars;
         else if ($req=="frm") return $mirFrm;
@@ -396,29 +537,8 @@ class MirrorplaneController extends Controller
         else if ($req=="team") return $mirTeam;
         else if ($req=="mems") return $mirMems;
         else if ($req=="logs") return $mirLogs;
-    }
-
-    public function ctstime() {
-        $mirChars = $this->charMeta("char");
-        $mirYrs = $this->charMeta("yrs");
-        $mirDiv = $this->charMeta("div");
-        $mirTeam = $this->charMeta("team");
-        $mirMems = $this->charMeta("mems");
-        $mirLogs = $this->charMeta("logs");
-
-        return view('mirrorplane-time')->with('mirChars',$mirChars)->with('mirYrs',$mirYrs)->with('mirDiv',$mirDiv)->with('mirTeam',$mirTeam)->with('mirMems',$mirMems)->with('mirLogs',$mirLogs);
-    }
-
-    public function thestory() {
-        $mirChars = $this->charMeta("char");
-        // $mirYrs = $this->charMeta("yrs");
-        // $mirDiv = $this->charMeta("div");
-        // $mirTeam = $this->charMeta("team");
-        // $mirMems = $this->charMeta("mems");
-        // $mirLogs = $this->charMeta("logs");
-
-        // return view('mirrorplane-story')->with('mirChars',$mirChars)->with('mirYrs',$mirYrs)->with('mirDiv',$mirDiv)->with('mirTeam',$mirTeam)->with('mirMems',$mirMems)->with('mirLogs',$mirLogs);
-        return view('mp-story')->with('mirChars',$mirChars);
+        else if ($req=="stor") return $mirStory;
+        else if ($req=="arg") return $mirStoryArg;
     }
 
 }

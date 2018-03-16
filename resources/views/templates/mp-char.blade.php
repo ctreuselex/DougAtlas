@@ -13,7 +13,7 @@
     <link rel="icon" href="{{ url('img/logo.png') }}" type="image/png"> 
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ url('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url('css/bootstrap.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="{{ url('css/modern-business.css') }}" rel="stylesheet">
@@ -31,7 +31,7 @@
 
     <!-- jQuery -->
     <script src="{{ url('js/jquery.js') }}"></script>
-    <script src="{{ url('js/jquery-ui.min.js') }}"></script>
+    <script src="{{ url('js/jquery-ui.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
 
@@ -178,12 +178,9 @@
     </div>
 
     @include('mp-inc/foot')
-    
-    <!-- jQuery -->
-    <script src="{{ url('js/jquery.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{ url('js/bootstrap.min.js') }}"></script>
+    <script src="{{ url('js/bootstrap.js') }}"></script>
 
     <!-- CUSTOM Script-->
     <script src="{{ url('js/doug-atlas.js') }}"></script>

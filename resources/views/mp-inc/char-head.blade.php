@@ -191,7 +191,7 @@
 </div>
 
 <script type="text/javascript">
-    $(window).load( function() {
+    $(window).on('load', function() {
         // var firstload = true;
         callin();   
 

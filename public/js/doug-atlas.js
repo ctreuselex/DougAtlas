@@ -81,7 +81,7 @@ $(document).ready(function() {
 // checkELEHInterval = setInterval(skiBase, 3000);
 // checkELEHInterval = setInterval(skiBot, 3000);
 
-$(window).load(function(){
+$(window).on('load', function(){
   skiTop(); skiBase(); skiBot();
 });
 

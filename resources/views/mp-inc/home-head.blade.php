@@ -192,7 +192,7 @@
 </div>
 
 <script type="text/javascript">
-    $(window).load( function() {
+    $(window).on('load', function() {
         // var firstload = true;
         $('.home-main .circle-load-boot').css('animation', 'circleloadboot 4s');
         $('.home-main .circle-load-boot').css('animation-fill-mode', 'forwards');

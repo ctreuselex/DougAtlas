@@ -77,7 +77,7 @@
 
     	@foreach ($mirChars as $char)
 	    	@if ($char['ico']!='' && $char['color']!='')
-	    		@if ($char['name']!='djerick' && $char['name']!='dom' && $char['name']!='cin' && $char['name']!='kalli' && $char['name']!='trevor' && $char['name']!='gemini' )
+	    		@if ($char['name']!='djerick' && $char['name']!='dom' && $char['name']!='cin' && $char['name']!='kalli' && $char['name']!='trevor' && $char['name']!='gemini' && $char['name']!='bono' && $char['name']!='frederick' && $char['name']!='denise' && $char['name']!='ceicil' && $char['name']!='koom' )
 			    	<?php
 			    		if($char['name'] == $charname) { 
 			    			$selected = "sel";

@@ -181,7 +181,7 @@
     var tag = '';
     var des = '';
 
-    $(window).load(function() {
+    $(window).on('load', function() {
         img = mirOrgs[0]['img'];
         name = mirOrgs[0]['name'];
         tag = mirOrgs[0]['tag'];

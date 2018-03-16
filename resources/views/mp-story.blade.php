@@ -5,6 +5,7 @@
 
 @section('meta')
     <?php
+        $charname = '';
         $curPage = 'home';
         $charColor = '#18FF81';
         $charColorSub = '#009688';
@@ -16,240 +17,429 @@
             array('ord'=>'', 'n'=>"So What Story Now?",'v'=>"Having an over-arching story regarding the \"Weaver\". Division stories, which gives personality to each characters along with the organization they're supporting. And minor stories, that may be for a single character, or two, or three, or more if it pleases."),
             );
 
-        $mirVols = array(
-            array('id'=>"0", 'name'=>"Shorts", "chaps"=>array(
-                array('title'=>"The Sun", 'img'=>"",
-                    'chars'=>'valkyr,noemi,zedrik'), 
-                array('title'=>"The Moon", 'img'=>"https://orig00.deviantart.net/bf3a/f/2017/234/8/9/down_to_the_bottom_by_ctreuse109-dbcv7zs.png",
-                    'chars'=>'maximus,vriskvin,moon'), 
-                array('title'=>"The Stars", 'img'=>"https://orig00.deviantart.net/c908/f/2017/234/5/f/shot_in_the_dark_by_ctreuse109-dbcg3rb.png",
-                    'chars'=>'herschel,rigel,kalli,gemini'), 
-                )),
-            array('id'=>"1", 'name'=>"Geios", "chaps"=>array(
-                array('title'=>"Intro", 'img'=>"",
-                    'chars'=>''), 
-                array('title'=>"Intro 2", 'img'=>"",
-                    'chars'=>''), 
-                )),
-            array('id'=>"2", 'name'=>"Mystos", "chaps"=>array(
-                array('title'=>"Intro", 'img'=>"",
-                    'chars'=>''), 
-                array('title'=>"Intro 2", 'img'=>"",
-                    'chars'=>''), 
-                )),
-            array('id'=>"3", 'name'=>"Aeros", "chaps"=>array(
-                array('title'=>"Intro", 'img'=>"",
-                    'chars'=>''), 
-                array('title'=>"Intro 2", 'img'=>"",
-                    'chars'=>''), 
-                )),
-            array('id'=>"4", 'name'=>"Luminos", "chaps"=>array(
-                array('title'=>"Intro", 'img'=>"",
-                    'chars'=>''), 
-                array('title'=>"Intro 2", 'img'=>"",
-                    'chars'=>''), 
-                )),
-            array('id'=>"5", 'name'=>"Nimbocolumbus", "chaps"=>array(
-                array('title'=>"Intro", 'img'=>"",
-                    'chars'=>''), 
-                array('title'=>"Intro 2", 'img'=>"",
-                    'chars'=>''), 
-                )),
-            array('id'=>"6", 'name'=>"Mirrorplane", "chaps"=>array(
-                array('title'=>"Intro", 'img'=>"",
-                    'chars'=>''), 
-                array('title'=>"Intro 2", 'img'=>"",
-                    'chars'=>''), 
-                )),
-            );
+        $mirVols = array( 
+            array('name'=>'Shorts',
+                'color'=>'grey',
+                'chapters'=>array(
+                    array('name'=>'The Sun'),
+                    array('name'=>'The Moon'),
+                    array('name'=>'The Stars'),
+                ),
+            ),
+            array('name'=>'Geios',
+                'color'=>'#8bc34a',
+                'chapters'=>array(
+                    array('name'=>'Enter Light'),
+                    array('name'=>'Back to Business'),
+                    array('name'=>' 3'),
+                    array('name'=>'The Mission'),
+                    array('name'=>'Fire Against Fire'),
+                    array('name'=>' 6'),
+                    array('name'=>' 7'),
+                    array('name'=>'United We Stand'),
+                ),
+            ),
+            array('name'=>'Mystos',
+                'color'=>'#2196f3',
+                'chapters'=>array(
+                    array('name'=>' 1'),
+                    array('name'=>' 2'),
+                    array('name'=>' 3'),
+                    array('name'=>' 4'),
+                    array('name'=>' 5'),
+                    array('name'=>' 6'),
+                    array('name'=>' 7'),
+                    array('name'=>' 8'),
+                ),
+            ),
+            array('name'=>'Aeros',
+                'color'=>'#e91e63',
+                'chapters'=>array(
+                    array('name'=>' 1'),
+                    array('name'=>' 2'),
+                    array('name'=>' 3'),
+                    array('name'=>' 4'),
+                    array('name'=>' 5'),
+                    array('name'=>' 6'),
+                    array('name'=>' 7'),
+                    array('name'=>' 8'),
+                ),
+            ),
+            array('name'=>'Luminos',
+                'color'=>'#ff9800',
+                'chapters'=>array(
+                    array('name'=>' 1'),
+                    array('name'=>' 2'),
+                    array('name'=>' 3'),
+                    array('name'=>' 4'),
+                    array('name'=>' 5'),
+                    array('name'=>' 6'),
+                    array('name'=>' 7'),
+                    array('name'=>' 8'),
+                ),
+            ),
+            array('name'=>'Nimbocolumbus',
+                'color'=>'#333333',
+                'chapters'=>array(
+                    array('name'=>' 1'),
+                    array('name'=>' 2'),
+                    array('name'=>' 3'),
+                    array('name'=>' 4'),
+                    array('name'=>' 5'),
+                    array('name'=>' 6'),
+                    array('name'=>' 7'),
+                    array('name'=>' 8'),
+                ),
+            ),
+            array('name'=>'Mirrorplane',
+                'color'=>'#18FF81',
+                'chapters'=>array(
+                    array('name'=>' 1'),
+                    array('name'=>' 2'),
+                    array('name'=>' 3'),
+                    array('name'=>' 4'),
+                    array('name'=>' 5'),
+                    array('name'=>' 6'),
+                    array('name'=>' 7'),
+                    array('name'=>' 8'),
+                ),
+            ),
+        );
     ?>
 @stop
 
 @section('main')
     
-    <style type="text/css"> 
-        .chap-div {
+    <style type="text/css">
+        .story-characters {
+            position: fixed; top: 50px; left: 0;
+            width: 83.33333333%;
+            background-color: #eee;
+            z-index: 999; }
+            .story-characters .char-group {
+                float: left;
+                width: 100%;
+                background-color: grey;
+                border-bottom: 1px solid white; }
+                .story-characters .cgroup {
+                    float: left;
+                    color: white;
+                    font-size: 10px;
+                    font-weight: bold;
+                    padding: 5px 10px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    transition: 0.3s; }
+                    .story-characters .cgroup.off {
+                        background-color: #eee;
+                        color: #333;
+                        transition: 0.3s; }
+        .story-characters .title {
             float: left;
-            width: 100%; }
-        .feat-char.drop { margin-top:20px; }
-        .feat-char hr { margin:5px 0; }
-        .feat-char b { margin-bottom:10px; }
-        .feat-char p { margin:0; }
-        .story-div {
-            margin-bottom: 20px; }
-        ul.story-div { padding: 0; }
-        ul.story-div li {
-            box-shadow: 0 0 0;
-            padding: 0;
-            margin-bottom: 0; }
-
-        .tab-volcont {
-        /* display: block; */
-        float: left;
-        width: calc(100%); }
-        .tab-vol {
-            float: left;
-            width: calc(100% / 7);
-            background: rgba(255,255,255,0.5);
-            text-align: center;
-            line-height: 1.2;
-            padding: 10px 5px;
-            margin-bottom: 2px;
-            cursor: pointer;
-            transition: 0.3s; }
-        .tab-vol b {
             font-family: "Righteous";
-            font-size: 16px;
-            font-weight: bold; }
-        .tab-vol:hover {
-            background: white;
-            transition: 0.3s; }
-        .tab-vol.active {    
-            background: {{ $charColor }};
-            color: white; }
-
-        @keyframes prevvol {
-            0% { left: 15px; opacity: 1; }
-            100% { left: 100%; opacity: 0; } }
-        @keyframes nextvol {
-            50% { left: -100%; opacity: 0; }
-            100% { left: 15px; opacity: 1; } }
-
-        /*.mp-cont li.vol-cont { display: none; }*/
-        .mp-cont li.vol-cont { 
-            position: absolute; top: 75px; left: 15px; 
-            width: calc(100% - 30px);
-            background-color: transparent;
-            padding: 0;
-            box-shadow: 0 0 0 transparent; 
-            z-index: -1;
-            opacity: 0; }
-        .mp-cont li.vol-cont.prevvol { animation: prevvol 0.5s 1; animation-fill-mode:forwards;  }
-        .mp-cont li.vol-cont.nextvol { animation: nextvol 1s 1; animation-fill-mode:forwards; }
-
-        .mp-cont li.vol-cont .story {    
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 5px 15px; }
+        .story-characters .characters {
             float: left;
-            width: 65%; }
-        .mp-cont li.vol-cont .plot {    
-            float: left;
-            width: calc(35% - 5px);
-            background-color: white;
-            padding: 20px;
-            margin-left: 5px;
-            box-shadow: 1px 1px 0 #DDD, 2px 2px 0 #BBB; }
+            height: 30px;
+            background-color: grey; }
+            .story-characters .characters .group {
+                 float: left;
+                 border-right: 10px solid grey }
+                .story-characters .characters .char {
+                    float: left;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 20px;
+                    text-align: center;
+                    padding: 4px 0;
+                    border-right: 1px solid white }
 
-        .mp-cont li.vol-cont .point {
-            float: left; width: 100%;
-            background-color: white;
+        @foreach ($mirChars as $char)
+            <?php if($char['color']=='') { $char['color']='white'; $char['subcolor']='#d5d5d5'; } ?>
+            .story-characters .characters .char.{{$char['name']}} {
+                color: {{ $char['subcolor'] }};
+                background-color: {{ $char['color'] }} }
+        @endforeach
+
+        .story-volumes { 
+            float: left;
+            padding: 55px 0 30px; }
+        .story-volumes .volume {
+            float: left;
+            position: relative;
+            width: 2000px; }
+            .story-volumes .volume .title {
+                position: absolute; bottom: -8px; left: 0;
+                color: white;
+                font-family: "Righteous";
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 0 5px;
+                transform: rotate(-90deg);
+                transform-origin: 0 0; }
+            .story-volumes .volume-story {
+                float: left;
+                width: calc(100%);
+                margin: 0 0 0 30px;
+                background-color: rgba(255,255,255,0.5) }
+                .story-volumes .volume-story .volume-chapter {
+                    float: left;
+                    width: 100%;
+                    border-bottom: 1px solid rgba(0,0,0,0.3); }
+                    .story-volumes .volume-story .volume-chapter .subtitle {
+                        float: left;
+                        height: 29px;
+                        color: white;
+                        background-color: rgba(0,0,0,0.3);                        
+                        font-size: 12px;
+                        padding: 5px 15px; }
+                    .story-volumes .volume-story .volume-chapter .chapter-story {
+                        float: left;
+                        width: calc(100%); }
+                        .story-volumes .volume-story .volume-chapter .chapter-story .group {
+                                 float: left;
+                                 border-right: 10px solid grey }
+                            .story-volumes .volume-story .volume-chapter .chapter-story .point {
+                                float: left;
+                                width: 30px;
+                                height: 30px;
+                                color: rgba(0,0,0,0.1);
+                                text-align: center;
+                                border-right: 1px solid white;
+                                padding: 5px 0; }
+                            .story-volumes .volume-story .volume-chapter .chapter-story .point.active {
+                                position: relative;
+                                background-color: rgba(255,255,255,0.7);
+                                cursor: pointer;
+                                transition: 0.3s; }
+                                .story-volumes .volume-story .volume-chapter .chapter-story .point.active.open {
+                                    transition: 0.3s; }
+                                .story-volumes .volume-story .volume-chapter .chapter-story .point.active .desc {
+                                    display: none;
+                                    position: absolute; top: 30px; left: 0;
+                                    width: 200px;
+                                    color: #333;
+                                    background-color: white;
+                                    font-size: 12px;
+                                    text-align: left;
+                                    padding: 5px;
+                                    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+                                    z-index: 999; }
+
+        @foreach($mirVols as $key => $volume)
+            .story-volumes .volume.{{ $volume['name'] }} {
+                background-color: {{ $volume['color'] }} }
+        @endforeach
+
+        @foreach ($mirChars as $char)
+            <?php if($char['color']=='') { $char['color']='#d5d5d5'; $char['subcolor']='#d5d5d5'; } ?>
+            .story-volumes .volume-story .volume-chapter .chapter-story .point.{{$char['name']}}.active {
+                color: {{ $char['subcolor'] }}; }
+            .story-volumes .volume-story .volume-chapter .chapter-story .point.{{$char['name']}}.active.open {
+                color: white;
+                background-color: {{ $char['color'] }}; }
+            .story-volumes .volume-story .volume-chapter .chapter-story .point.{{$char['name']}}.active .desc {
+                border-bottom: 5px solid {{ $char['color'] }}; }
+        @endforeach
+
+        .editor {
+            position: fixed; bottom: 0; left: 16.66666667%;
+            width: 500px;
+            height: 150px;
+            font-family: "Open Sans";
+            font-size: 12px;
             padding: 15px;
-            margin-bottom: 1px;
-            box-shadow: 1px 1px 0 #DDD, 2px 2px 0 #BBB;  }
-        .mp-cont li.vol-cont .title {
-            font-family: "Righteous";
-            font-size: 24px;
-            font-weight: bold; }
-        .mp-cont li.vol-cont .img {
-            float: right;
-            width: 250px; height: 250px;
-            background-color: grey;
-            margin-left: 15px; }
-        .mp-cont li.vol-cont .chars {
-            float: right;
-            margin-top: -25px; }
-        .mp-cont li.vol-cont hr {
-            margin: 0 0 15px; }
-
-        .point ul {
-            padding: 0; }
-        .point li {
-            display: block;
-            padding: 0;
-            box-shadow: 0 0 0; }
+            z-index: 999; }
     </style>
 
-    <?php $volcount = 0; $isActive=""; ?>
-    <div class="tab-volcont">
-        @foreach($mirVols as $vol)
-            <?php 
-                if($volcount==0) $isActive = "active";
-                else $isActive = "";
-                $volcount++;
-         
-                $volid = $vol['id'];
-                $volname = $vol['name']; ?>        
-                <div class="tab-vol {{ $isActive }}" onclick="orgChange(this, '{{ $volid }}')">
-                    @if($volid!='0') Volume {{ $volid }} @endif
-                    <br>
-                    <b>{{ $volname }}</b>
+    <div class="story-characters">
+        <div class="char-group">
+            @foreach ($mirStoryArg as $arg)
+                <div class="cgroup" onclick="hideGroup(this, '{{ $arg['id'] }}')"> {{ $arg['name'] }} </div>
+            @endforeach
+        </div>
+        <div class="title">Characters</div>
+        <div class="characters">
+            @foreach ($mirStoryArg as $arg)
+                <div class="group g-{{ $arg['id'] }}">
+                    @foreach ($arg['mem'] as $a)
+                        @foreach ($mirChars as $char)
+                            @if ($char['name'] == $a)
+                                <?php 
+                                    $charlink = strtolower($char['name']);
+                                    if ($char['name']=='moon') $charlink = 'djerick';
+                                ?>
+                                <a href="/mirrorplane/profile/{{$charlink}}">
+                                    <i class="char {{ $char['name'] }} {{ $char['ico'] }}"></i>
+                                </a>
+                            @endif
+                        @endforeach
+                    @endforeach
                 </div>
+            @endforeach
+        </div>
+    </div>
+    <div class="story-volumes">
+        <?php $volEditor = array(); ?>
+
+        @foreach($mirVols as $vol => $volume)
+            <div class="volume {{$volume['name']}}">
+                @if($vol == 0) <div class="title">{{ $volume['name'] }}</div>
+                @else <div class="title">Volume {{ $vol }}: {{ $volume['name'] }}</div>
+                @endif
+
+                <div class="volume-story">
+
+                    @foreach($volume['chapters'] as $chap => $chapter)
+                        <div class="volume-chapter">
+                            <div class="subtitle"> {{ $chap+1 }} | <b>{{ $chapter['name'] }}</b> </div>
+                            <div class="chapter-story">
+
+                                @foreach ($mirStoryArg as $arg)
+                                    <div class="group g-{{ $arg['id'] }}">
+
+                                        @foreach ($arg['mem'] as $a)
+                                            @foreach ($mirChars as $char)
+
+                                                @if ($char['name'] == $a)
+
+                                                    <?php 
+                                                        $charlink = strtolower($char['name']);
+                                                        if ($char['name']=='moon') $charlink = 'djerick';
+
+                                                        $hasStory = "";
+                                                        foreach ($mirStory as $story) :
+                                                            if ( $story['char']==$char['name']  && $story['vol']==$vol && $story['chap']==$chap+1 ) : 
+                                                                $hasStory = $story['desc']; break;
+                                                            else : $hasStory = "";
+                                                            endif;
+                                                        endforeach;
+
+                                                        $forEditId = $char['name'].$vol.$chap;
+                                                        $forEditDesc = "";
+                                                        if($hasStory!="") $forEditDesc = $story['desc'];
+                                                        $forEdit = array( 'id'=>$forEditId, 
+                                                            'details'=>array( 'char'=>$char['name'], 'vol'=>$vol, 'chap'=>$chap+1, 'desc'=>$forEditDesc));
+                                                        array_push($volEditor, $forEdit);
+                                                    ?>
+
+                                                    @if($hasStory!="") 
+                                                        <div class="point {{ $char['name'] }} active" onclick="callEditor( '{{ $forEditId }}' )">
+                                                            <i class="{{ $char['ico'] }}"></i>
+                                                            <div class="desc"> {{ $story['desc'] }} </div>
+                                                        </div>
+                                                    @else 
+                                                        <div class="point {{ $char['name'] }}" onclick="callEditor( '{{ $forEditId }}' )">
+                                                            <i class="{{ $char['ico'] }}"></i>
+                                                        </div>
+                                                    @endif
+                                                @endif
+
+                                            @endforeach
+                                        @endforeach
+
+                                    </div>
+                                @endforeach
+
+                            </div>
+                        </div>
+                    @endforeach
+
+                </div>
+            </div>
         @endforeach
     </div>
 
-    <?php $volcount = 0; $isActive=""; ?>
-    <ul class="mp-cont" style="overflow: hidden;">
-        @foreach($mirVols as $vol)
-            <?php 
-                if($volcount==0) $isActive = "nextvol";
-                else $isActive = "";
-                $volcount++; ?> 
-            <li class="vol-cont {{ $vol['id'] }} {{ $isActive }}">
-                <div class="story">
-                @foreach($vol['chaps'] as $key => $chap)
-                    <?php $tempkey = $key+1; ?>
-                    <div class="point">
-                        <div class="img" style="background-image: url('{{ $chap['img'] }}'); 
-                            background-size: cover; background-position: center;"></div>
-                        <div class="title">{{ $chap['title'] }}</div>
-                        <div class="chars">
-                            <?php $chars = explode(',', $chap['chars']); ?>
-                            @foreach($chars as $char)
-                                @if($char!='hr')<span class="cts-{{$char}}"></span>
-                                @else |
-                                @endif 
-                            @endforeach</div>
-                            <hr>
-                            @include("mp-vols/{$vol['id']}/chap{$tempkey}")
-                    </div>
-                @endforeach
-                </div>
-                <div class="plot">
-                    
-                </div>
-            </li>
-        @endforeach
-    </ul>
+    <textarea class="editor">Junkie Editor</textarea>
 
-    <script type="text/javascript"> var mirVols = <?php echo json_encode($mirVols); ?>;</script>
+    <div class="col-xs-12" style="padding: 0;">
+        @include('mp-inc/char-sel')
+    </div>
+
+
+    <!-- <div class="story-next">
+        NEXT
+    </div> -->
+
     <script type="text/javascript">
-        function orgChange(ele, id) {
-            if(!$(ele).hasClass('active')){
-                $('.tab-vol').removeClass('active');
-                $(ele).addClass('active');
+        var volEditor = <?= json_encode($volEditor) ?>;
 
-                $('.vol-cont').removeClass('prevvol');
-                $('.vol-cont.nextvol').addClass('prevvol');
+        $(window).on('load', function() {
+            var charGroup = [];
+            $('.story-characters .group').each(function() {
+                charGroup.push($(this));
+            });
+            var storyGroup = [];
+            $('.chapter-story .group').each(function() {
+                storyGroup.push($(this));
+            });
 
-                $('.vol-cont').removeClass('nextvol');
-                $('.vol-cont.'+id).removeClass('prevvol');
-                $('.vol-cont.'+id).addClass('nextvol');
-                $('.vol-cont.'+id).show();
+            var colDiv = $('.ad-dash-pa').width() + 20;
+            $('.story-characters').width( 2000 - colDiv );
+            $('.story-characters').css('left', colDiv);
 
-                setTimeout(function () {
-                    $('.vol-cont').not('.nextvol').hide();
-                }, 1000);
+            
+            var chapTitleWidth = getMaxWidth('.story-volumes .volume-chapter .subtitle', 30);
+            $('.story-volumes .volume-chapter .chapter-story').css('width', 'calc(100% - '+chapTitleWidth+'px)');
+            $('.story-characters .title').css('width', chapTitleWidth + 30);
+            $('.story-characters .characters').css('width', 'calc(100% - '+chapTitleWidth+'px - 30px)');
+
+            $('.story-volumes .volume-story .volume-chapter .chapter-story .point.active').on('click', function() {
+                if($(this).hasClass('open') == false) $(this).addClass('open');
+                else $(this).removeClass('open');
+
+                $('.desc', this).slideToggle('fast');
+            })
+
+            $('.story-next').on('click', function() {
+                for(var i=0; i<3; i++) {
+                    charGroup[i].hide();
+                    storyGroup[i].hide();
+                }
+            });
+
+        });
+
+        function hideGroup(el, group) {
+            if( $(el).hasClass('off') == false ) {
+                $(el).addClass('off');
+
+                $('.group.g-' + group).fadeOut('fast');
+            } else {
+                $(el).removeClass('off');
+                $('.group.g-' + group).fadeIn('fast');
             }
         }
 
-        $(document).ready(function() {
-            var mirChars = <?php echo json_encode($mirChars); ?>;
-
-            for (i=0; i<mirChars.length; i++) {
-                var charico = mirChars[i]['ico'];
-                if (charico=="") charico = "fa fa-user";
-
-                $( '.cts-'+mirChars[i]['name'] ).append( "<i class='" + charico + "'></i>");
+        function callEditor(id) {
+            for(var i=0; i<volEditor.length; i++) {
+                if(volEditor[i]['id'] == id) {
+                    var edit = "array (";
+                        edit += "'char'=>'" + volEditor[i]['details']['char'] + "', ";
+                        edit += "'vol'=>'" + volEditor[i]['details']['vol']+ "', ";
+                        edit += "'chap'=>'" + volEditor[i]['details']['chap'] + "',\n";
+                        edit += "'desc'=>'" + volEditor[i]['details']['desc'] + "'";
+                    edit += "),";
+                }
             }
-        });
+
+            $('textarea.editor').val(edit);
+        }
+
+        function getMaxWidth(el, add) {
+            var elementHeights = $(el).map(function() { return $(this).width(); });
+            var maxHeight = Math.max.apply(null, elementHeights);
+            $(el).css("width", maxHeight + add)
+            return maxHeight + add;
+        } 
+        function getMaxHeight(el, add) {
+            var elementHeights = $(el).map(function() { return $(this).height(); });
+            var maxHeight = Math.max.apply(null, elementHeights);
+            $(el).css("height", maxHeight + add)
+            return maxHeight + add;
+        }
     </script>
 
 @stop 

@@ -13,7 +13,7 @@
     <link rel="icon" href="{{ url('img/logo.png') }}" type="image/png"> 
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ url('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url('css/bootstrap.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="{{ url('css/modern-business.css') }}" rel="stylesheet">
@@ -184,7 +184,7 @@
     @include('mp-inc/foot')
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{ url('js/bootstrap.min.js') }}"></script>
+    <script src="{{ url('js/bootstrap.js') }}"></script>
 
     <script type="text/javascript"> var pageNotes = <?php echo json_encode($pageNotes); ?>;</script>
 
