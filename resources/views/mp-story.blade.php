@@ -120,7 +120,8 @@
                 float: left;
                 width: 100%;
                 background-color: grey;
-                border-bottom: 1px solid white; }
+                border-bottom: 1px solid white;
+                transition: 0.3s; }
                 .story-characters .cgroup {
                     float: left;
                     color: white;
@@ -149,12 +150,14 @@
                  border-right: 10px solid grey }
                 .story-characters .characters .char {
                     float: left;
+                    color: #d5d5d5;
+                    background-color: white;
                     width: 30px;
                     height: 30px;
                     font-size: 20px;
                     text-align: center;
                     padding: 4px 0;
-                    border-right: 1px solid white }
+                    border-right: 1px solid white; }
 
         @foreach ($mirChars as $char)
             <?php if($char['color']=='') { $char['color']='white'; $char['subcolor']='#d5d5d5'; } ?>
@@ -244,6 +247,12 @@
                 border-bottom: 5px solid {{ $char['color'] }}; }
         @endforeach
 
+        .group-hide {
+            position: relative;
+            width: 40px; height: 30px;
+            overflow: hidden;
+            transition: 0.3s; }
+
         .editor {
             position: fixed; bottom: 0; left: 16.66666667%;
             width: 500px;
@@ -297,6 +306,7 @@
                             <div class="subtitle"> {{ $chap+1 }} | <b>{{ $chapter['name'] }}</b> </div>
                             <div class="chapter-story">
 
+                                <!-- CHARACTERS -->
                                 @foreach ($mirStoryArg as $arg)
                                     <div class="group g-{{ $arg['id'] }}">
 
@@ -405,11 +415,12 @@
         function hideGroup(el, group) {
             if( $(el).hasClass('off') == false ) {
                 $(el).addClass('off');
-
-                $('.group.g-' + group).fadeOut('fast');
+                $('.group.g-' + group).addClass('group-hide');
+                // $('.group.g-' + group).fadeOut('fast');
             } else {
                 $(el).removeClass('off');
-                $('.group.g-' + group).fadeIn('fast');
+                $('.group.g-' + group).removeClass('group-hide');
+                // $('.group.g-' + group).fadeIn('fast');
             }
         }
 

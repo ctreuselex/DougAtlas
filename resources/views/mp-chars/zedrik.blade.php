@@ -14,7 +14,7 @@
 			}
 		}
 
-		$mcharNam = "Zedrik 'Rune Beast' Azazel";
+		$mcharNam = "Zedrik 'Rune Beast' Azrael";
 		$mcharFam = "<unknown>";
 		$mcharDiv = "Luminos";
 		$mcharAff = "The Ark";

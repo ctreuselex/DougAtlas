@@ -52,6 +52,9 @@ class MirrorplaneController extends Controller
         // ================================================================================================================================
 
         $mirChars = array(
+            array ( 'name'=>'general','sur'=>'','year'=>0,'color'=>'','subcolor'=>'','ico'=>'fa fa-circle-o-notch' ),  
+            array ( 'name'=>'versus','sur'=>'','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-double-team' ),  
+
             array ( 'name'=>'dom','sur'=>'','year'=>0,'color'=>'#009688','subcolor'=>'#8BC34A','ico'=>'ra ra-castle-emblem' ),
             array ( 'name'=>'cin','sur'=>'','year'=>0,'color'=>'#8BC34A','subcolor'=>'#009688','ico'=>'ra ra-castle-emblem' ),
 
@@ -87,7 +90,7 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'valkyr','sur'=>'soltaire','year'=>1664,'color'=>'#F3A40C','subcolor'=>'#F54C04','ico'=>'ra ra-heartburn' ),
             array ( 'name'=>'vines','sur'=>'roderick','year'=>1668,'color'=>'#18FF81','subcolor'=>'#E91E63','ico'=>'ra ra-dragonfly' ),
             array ( 'name'=>'vriskvin','sur'=>'dirk','year'=>1667,'color'=>'#E91E63','subcolor'=>'#5F0B28','ico'=>'ra ra-clockwork' ),
-            array ( 'name'=>'zedrik','sur'=>'azazel','year'=>1661,'color'=>'#FFC107','subcolor'=>'#00BCD4','ico'=>'ra ra-flaming-claw' ), 
+            array ( 'name'=>'zedrik','sur'=>'azrael','year'=>1661,'color'=>'#FFC107','subcolor'=>'#00BCD4','ico'=>'ra ra-flaming-claw' ), 
 
             // non main
             array ( 'name'=>'amelia','sur'=>'beleaguer','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-snowflake' ),
@@ -432,10 +435,12 @@ class MirrorplaneController extends Controller
 
             );
 
+
         // ================================================================================================================================
-        // ================================================================================================================================ MAIN CHARACTER STORY
+        // ================================================================================================================================ STORY CHARACTERS
         // ================================================================================================================================
         $mirStoryArg = array(
+                array( 'id'=>'gene', 'name'=>'General',               'mem'=>array ('general', 'versus')),
                 array( 'id'=>'main', 'name'=>'Main',                  'mem'=>array ('valkyr', 'herschel', 'moon', 'dom')),
                 array( 'id'=>'tark', 'name'=>'The Ark',               'mem'=>array ('jeanne', 'noemi', 'zedrik', 'gemini', 'ceicil')),
                 array( 'id'=>'oftv', 'name'=>'Order of the Void',     'mem'=>array ('rigel', 'kalli', 'frederick')),
@@ -452,6 +457,14 @@ class MirrorplaneController extends Controller
             );
 
         $mirStory = array(
+
+            // GENERAL STORY ============================================================
+            array ('char'=>'general', 'vol'=>'1', 'chap'=>'2',
+                'desc'=>'og boii'),
+
+            // CHARACTER FIGHTS ============================================================
+            array ('char'=>'versus', 'vol'=>'1', 'chap'=>'1',
+                'desc'=>'ayy'),
 
             // BONO ============================================================
             array ('char'=>'bono', 'vol'=>'1', 'chap'=>'2',
@@ -537,6 +550,7 @@ class MirrorplaneController extends Controller
         else if ($req=="team") return $mirTeam;
         else if ($req=="mems") return $mirMems;
         else if ($req=="logs") return $mirLogs;
+
         else if ($req=="stor") return $mirStory;
         else if ($req=="arg") return $mirStoryArg;
     }
