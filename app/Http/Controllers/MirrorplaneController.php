@@ -40,10 +40,24 @@ class MirrorplaneController extends Controller
 
     public function thestory() {
         $mirChars = $this->charMeta("char");
-        $mirStory = $this->charMeta("stor");
         $mirStoryArg = $this->charMeta("arg");
 
-        return view('mp-story')->with('mirChars',$mirChars)->with('mirStory',$mirStory)->with('mirStoryArg',$mirStoryArg);
+        // $input = Input::all();
+        // $txtStory = File::get($input['story/story.txt']);
+        // $txtStory = File::get(storage_path('story.txt'));
+
+        $txtfile = storage_path('app/story.txt');
+
+        $txtStory = "";
+        foreach(file($txtfile) as $line) {
+            $txtStory .= $line;
+        }
+        $txtStory = json_decode($txtStory, true);
+
+        // echo '<pre>';
+        // die(var_dump($txtStory));
+
+        return view('mp-story')->with('mirChars',$mirChars)->with('mirStoryArg',$mirStoryArg)->with('txtStory',$txtStory)->with('txtfile',$txtfile);
     }
 
     public function charMeta($req) {
@@ -107,8 +121,12 @@ class MirrorplaneController extends Controller
             array ( 'name'=>'gamora','sur'=>'asbistos','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),  
             array ( 'name'=>'samtiel','sur'=>'vance','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ),  
             // landar
-            array ( 'name'=>'sandra','sur'=>'redgrave','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-reactor' ),  
-            array ( 'name'=>'landar','sur'=>'redgrave','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-reactor' ), 
+            array ( 'name'=>'sandra','sur'=>'redgrave','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-jigsaw-piece' ),  
+            array ( 'name'=>'landar','sur'=>'redgrave','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-reactor' ),
+            array ( 'name'=>'leanne','sur'=>'dominus','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-quill-ink' ), 
+            // rings united
+            // array ( 'name'=>'borkus','sur'=>'demeano','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-crown' ),  
+            array ( 'name'=>'mio','sur'=>'','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-three-keys' ),
             // irwin 
             array ( 'name'=>'cross','sur'=>'irwin','year'=>0,'color'=>'','subcolor'=>'','ico'=>'ra ra-ankh' ),  
             array ( 'name'=>'dianne','sur'=>'irwin','year'=>0,'color'=>'','subcolor'=>'','ico'=>'' ), 
@@ -440,108 +458,125 @@ class MirrorplaneController extends Controller
         // ================================================================================================================================ STORY CHARACTERS
         // ================================================================================================================================
         $mirStoryArg = array(
-                array( 'id'=>'gene', 'name'=>'General',               'mem'=>array ('general', 'versus')),
+                // array( 'id'=>'gene', 'name'=>'General',               'mem'=>array ('general', 'versus')),
+                array( 'id'=>'gene', 'name'=>'General',               'mem'=>array ('general')),
                 array( 'id'=>'main', 'name'=>'Main',                  'mem'=>array ('valkyr', 'herschel', 'moon', 'dom')),
                 array( 'id'=>'tark', 'name'=>'The Ark',               'mem'=>array ('jeanne', 'noemi', 'zedrik', 'gemini', 'ceicil')),
                 array( 'id'=>'oftv', 'name'=>'Order of the Void',     'mem'=>array ('rigel', 'kalli', 'frederick')),
                 array( 'id'=>'head', 'name'=>'Heads of Division',     'mem'=>array ('vriskvin', 'ceniza', 'mikael', 'theodore')),
                 array( 'id'=>'strm', 'name'=>'Storm',                 'mem'=>array ('llaxine', 'seline')),
-                array( 'id'=>'escu', 'name'=>'Escutcheon',            'mem'=>array ('maximus', 'daud', 'sandra')), 
+                array( 'id'=>'escu', 'name'=>'Escutcheon',            'mem'=>array ('maximus', 'daud',)), 
                 array( 'id'=>'lups', 'name'=>'Lupus',                 'mem'=>array ('rustom', 'vines', 'chance')),
                 array( 'id'=>'crus', 'name'=>'Crustacean',            'mem'=>array ('avery', 'kash', 'froxy')),
                 array( 'id'=>'mdls', 'name'=>'Children of Mandalas',  'mem'=>array ('lance', 'kianna')),
                 array( 'id'=>'cmad', 'name'=>'Carnival of Madness',   'mem'=>array ('denise', 'lupe', 'koom', 'trevor')),
                 array( 'id'=>'outs', 'name'=>'The Outsiders',         'mem'=>array ('bono', 'riza', 'carol', 'fae')),
+                array( 'id'=>'land', 'name'=>'Landar Inc',            'mem'=>array ('sandra', 'leanne')),
+                array( 'id'=>'ring', 'name'=>'Ring\'s United',        'mem'=>array ('andrei', 'mio', 'demeter')),
                 array( 'id'=>'taur', 'name'=>'Tauroscene Corp',       'mem'=>array ('helios')),
-                array( 'id'=>'othr', 'name'=>'Others',                'mem'=>array ('demeter', 'romania')),
+                // array( 'id'=>'othr', 'name'=>'Others',                'mem'=>array ('demeter', 'romania')),
             );
 
-        $mirStory = array(
+        // $mirStory = array(
 
-            // GENERAL STORY ============================================================
-            array ('char'=>'general', 'vol'=>'1', 'chap'=>'2',
-                'desc'=>'og boii'),
+        //     // GENERAL STORY ============================================================
+        //     array ('char'=>'general', 'vol'=>'0', 'chap'=>'1',
+        //         'desc'=>"Finding out about the Anchor, Valkyr walks into a trap to which the Ark prepared for him; in order to stop him from revealing and delaying their plans, and that his wife, which is now a part of the Ark, never wanted to be found again."),
+        //     array ('char'=>'general', 'vol'=>'0', 'chap'=>'2',
+        //         'desc'=>"After a fight between Psykeeper Vriskvin and a mysterious stranger, Moon reveals himself to his old friend after being dead for more than two years; saying that he wants to depart with his old self in order to find the truth about his and his family's death."),
+        //     array ('char'=>'general', 'vol'=>'0', 'chap'=>'3',
+        //         'desc'=>"Pursuing her final mission for the Order, to be finally be clean of her murderous past, Herschel crosses paths with her former friend, Kalli, who tries to convince her to join the Ark and their goal of freeing the people of Mirrorplane."),
+        //     array ('char'=>'general', 'vol'=>'1', 'chap'=>'1',
+        //         'desc'=>"Dom, a kid imprisoned in the Psykeeper's prison for stealing a lemon, frees Val with the help of Herschel, then drags everyone into Moon's apartment where they're supposed to plan for their supposed team-up."),
+        //     array ('char'=>'general', 'vol'=>'1', 'chap'=>'2',
+        //         'desc'=>"With everyone out of his apartment, Moon pays Andrei, the owner of the apartment, a visitonly to find Dom again at the front of the building. The duo find one of the wandering hooligans suspicious and decided to follow him ending in a chase to which they bumped to Llaxine, who asked them to join her in her mission."),
 
-            // CHARACTER FIGHTS ============================================================
-            array ('char'=>'versus', 'vol'=>'1', 'chap'=>'1',
-                'desc'=>'ayy'),
+        //     // CHARACTER FIGHTS ============================================================
+        //     array ('char'=>'versus', 'vol'=>'0', 'chap'=>'1',
+        //         'desc'=>"|valkyr|v|zedrik|"),
+        //     array ('char'=>'versus', 'vol'=>'0', 'chap'=>'2',
+        //         'desc'=>"|moon|v|maximus| <br> |vriskvin|v|moon|"),
+        //     array ('char'=>'versus', 'vol'=>'0', 'chap'=>'3',
+        //         'desc'=>"|herschel|v|kalli| <br> |herschel|rigel|v|kalli|gemini|"),
+        //     array ('char'=>'versus', 'vol'=>'1', 'chap'=>'1',
+        //         'desc'=>"|herschel|v Psykeeper Guards <br> |herschel|v|moon|"),
 
-            // BONO ============================================================
-            array ('char'=>'bono', 'vol'=>'1', 'chap'=>'2',
-                'desc'=>'On his task with Vox and Carol, of purging a certain area of data, Val meets with him to talk about the Ark.'),
+        //     // BONO ============================================================
+        //     array ('char'=>'bono', 'vol'=>'1', 'chap'=>'2',
+        //         'desc'=>"On his task with Vox and Carol, of purging a certain area of data, Val meets with him to talk about the Ark."),
 
-            // CAROL ============================================================
-            array ('char'=>'carol', 'vol'=>'1', 'chap'=>'2',
-                'desc'=>'Is here to shout and swear.'),
+        //     // CAROL ============================================================
+        //     array ('char'=>'carol', 'vol'=>'1', 'chap'=>'2',
+        //         'desc'=>"Is here to shout and swear."),
 
-            // DAUD ============================================================
-            array ('char'=>'daud', 'vol'=>'1', 'chap'=>'2',
-                'desc'=>'Saves Max from being a creepy stalker and joins up Llaxine in her mission.'),
+        //     // DAUD ============================================================
+        //     array ('char'=>'daud', 'vol'=>'1', 'chap'=>'2',
+        //         'desc'=>"Saves Max from being a creepy stalker and joins up Llaxine in her mission."),
 
-            // DOM ============================================================
-            array ('char'=>'dom', 'vol'=>'1', 'chap'=>'1',
-                'desc'=>'Was imprisoned for "stealing a lemon", he tells Val to calm down for help is coming, Bursts Val out as Herschel blasts prison with a Void arrow causing Myst lock then stops the fight between her and Moon. He then leads everyone to Moon\'s apartment before the Myst returns. '),
-            array ('char'=>'dom', 'vol'=>'1', 'chap'=>'2',
-                'desc'=>'Appears out of nowhere to annoy Moon and tell him about this guy with the Ring\'s United tattoo. They became really suspicious of his actions and began chasing him but was stopped when they bumped to Llaxine.'),
+        //     // DOM ============================================================
+        //     array ('char'=>'dom', 'vol'=>'1', 'chap'=>'1',
+        //         'desc'=>"Helps Val, Herschel, and Moon get out of the Psykeepers eye by bringing them to Moon's apartment (which he knows for some reason), and talks to them about their supposed team-up."),
+        //     array ('char'=>'dom', 'vol'=>'1', 'chap'=>'2',
+        //         'desc'=>"Appears out of nowhere to annoy Moon and tell him about this guy with the Ring's United tattoo. They became really suspicious of his actions and began chasing him but was stopped when they bumped to Llaxine."),
 
-            // GEMINI ============================================================
-            array ('char'=>'gemini', 'vol'=>'0', 'chap'=>'3',
-                'desc'=>'Appears out of nowhere to fight Rigel after she tries to attack Kalli.'),
+        //     // GEMINI ============================================================
+        //     array ('char'=>'gemini', 'vol'=>'0', 'chap'=>'3',
+        //         'desc'=>"Appears out of nowhere to fight Rigel after she tries to attack Kalli."),
 
-            // HERSCHEL ============================================================
-            array ('char'=>'herschel', 'vol'=>'0', 'chap'=>'3',
-                'desc'=>'On her way to finish her final mission for the Order (to bring the Weaver back to Lemaitre), Herschel was stopped by Kalli who fought against her and destroy her hopes of becoming "clean" by having her kill one of the Psykeepers who tried to stop their fight.'),
-            array ('char'=>'herschel', 'vol'=>'1', 'chap'=>'1',
-                'desc'=>'Fires a Void arrow which Myst locks the entire prison, She then quickly fights against the guards but was challenged when Moon comes in play. Their fight was stopped by Dom who then drags Val out of the prison and lead them to Moon\'s apartment.'),
+        //     // HERSCHEL ============================================================
+        //     array ('char'=>'herschel', 'vol'=>'0', 'chap'=>'3',
+        //         'desc'=>"On her way to finish her final mission for the Order (to bring the Weaver back to Lemaitre), Herschel was stopped by Kalli who fought against her and destroy her hopes of becoming 'clean' by having her kill one of the Psykeepers who tried to stop their fight."),
+        //     array ('char'=>'herschel', 'vol'=>'1', 'chap'=>'1',
+        //         'desc'=>"Fires a Void arrow which Myst locks the entire prison, She then quickly fights against the guards but was challenged when Moon comes in play. Their fight was stopped by Dom who then drags Val out of the prison and lead them to Moon's apartment."),
 
-            // KALLI ============================================================
-            array ( 'char'=>'kalli', 'vol'=>0, 'chap'=>3, 
-                'desc'=>'Intercepts Herschel from her mission of hunting the Weaver then asks Herschel to join her with the Ark if she really wants to be out of the Order. A fight between them ensues to which Rigel and the Gemini twins joins, but was stopped by a Psykeeper. ' ),
+        //     // KALLI ============================================================
+        //     array ( 'char'=>'kalli', 'vol'=>0, 'chap'=>3, 
+        //         'desc'=>"Intercepts Herschel from her mission of hunting the Weaver then asks Herschel to join her with the Ark if she really wants to be out of the Order. A fight between them ensues to which Rigel and the Gemini twins joins, but was stopped by a Psykeeper."),
 
-            // LLAXINE ============================================================
-            array ('char'=>'llaxine', 'vol'=>'1', 'chap'=>'2',
-                'desc'=>'Leaving her team to go do her mission to "infiltrate" a suspected Ring\'s United hideout, She meets up with Moon and asks him to be her teammate for the day. But with Max and Daud following her around, they get to be part of the team as well.'),
+        //     // LLAXINE ============================================================
+        //     array ('char'=>'llaxine', 'vol'=>'1', 'chap'=>'2',
+        //         'desc'=>"Leaving her team to go do her mission to 'infiltrate' a suspected Ring's United hideout, She meets up with Moon and asks him to be her teammate for the day. But with Max and Daud following her around, they get to be part of the team as well."),
 
-            // MAXIMUS ============================================================
-            array ( 'char'=>'maximus', 'vol'=>0, 'chap'=>2, 
-                'desc'=>'Sending word to Vriskvin about the fire at the Anchor, a mysterious man appeared out of nowhere and attacked them. Vriskvin told Max to step aside as he\'ll handle to problem. Turns out that the man is a resurrected  Moon who decided to figure out the past by himself.' ),
-            array ('char'=>'maximus', 'vol'=>'1', 'chap'=>'1',
-                'desc'=>'Went to the prison to interrogate Val about the fire to which he suspects was the Ark; who has been stealing from his company for years, but was quickly shutdown by Herschel\'s Void arrow which Myst locked his armor and knocked him down unconscious.'),
-            array ('char'=>'maximus', 'vol'=>'1', 'chap'=>'2',
-                'desc'=>'Follows Llaxine around but was caught by Daud, who basically saved him from being a stalker and become Llaxine\'s teammates along with Moon and Dom.'),
+        //     // MAXIMUS ============================================================
+        //     array ( 'char'=>'maximus', 'vol'=>0, 'chap'=>2, 
+        //         'desc'=>"Sending word to Vriskvin about the fire at the Anchor, a mysterious man appeared out of nowhere and attacked them. Vriskvin told Max to step aside as he'll handle to problem. Turns out that the man is a resurrected  Moon who decided to figure out the past by himself." ),
+        //     array ('char'=>'maximus', 'vol'=>'1', 'chap'=>'1',
+        //         'desc'=>"Went to the prison to interrogate Val about the fire to which he suspects was the Ark; who has been stealing from his company for years, but was quickly shutdown by Herschel's Void arrow which Myst locked his armor and knocked him down unconscious."),
+        //     array ('char'=>'maximus', 'vol'=>'1', 'chap'=>'2',
+        //         'desc'=>"Follows Llaxine around but was caught by Daud, who basically saved him from being a stalker and become Llaxine's teammates along with Moon and Dom."),
 
-            // MOON ============================================================
-            array ( 'char'=>'moon', 'vol'=>0, 'chap'=>2, 
-                'desc'=>'Without knowledge about how he died and how he is alive again, Moon decided to pay the Institute a visit and quit the Psykeepers in turn of finding out what happened to him and his family.' ),
-            array ('char'=>'moon', 'vol'=>'1', 'chap'=>'1',
-                'desc'=>'Doing one last favor for Max, Moon joins him in interrogating Val which they suspected was a member of the Ark and that he might know something about what happened to his family. Ends up fighting against Herschel and then being taken back to his apartment by Dom.'),
-            array ('char'=>'moon', 'vol'=>'1', 'chap'=>'2',
-                'desc'=>'With everyone gone, Moon goes to get some breakfast and quiet but that quickly changed when Dom appears out of nowhere and joins him. They end up chasing a guy with a weird tattoo (Ring\'s United) because of Dom. Bumping to Llaxine during their chase, the guy escaped, but they now had new teammates.'),
+        //     // MOON ============================================================
+        //     array ( 'char'=>'moon', 'vol'=>0, 'chap'=>2, 
+        //         'desc'=>"Without knowledge about how he died and how he is alive again, Moon decided to pay the Institute a visit and quit the Psykeepers in turn of finding out what happened to him and his family." ),
+        //     array ('char'=>'moon', 'vol'=>'1', 'chap'=>'1',
+        //         'desc'=>"Doing one last favor for Max, Moon joins him in interrogating Val which they suspected was a member of the Ark and that he might know something about what happened to his family. Ends up fighting against Herschel and then being taken back to his apartment by Dom."),
+        //     array ('char'=>'moon', 'vol'=>'1', 'chap'=>'2',
+        //         'desc'=>"Pays Andrei a visit, how was shocked that he's back after two years and has been living in the same room he did before for days. Follows Dom into chasing some guy and ends up joining Llaxine's group."),
 
-            // NOEMI ============================================================
-            array ( 'char'=>'noemi', 'vol'=>0, 'chap'=>1, 
-                'desc'=>'With Val falling into their trap, Noemi tries to reason with him to stop following the Ark if he is not going to help, but Val made up his mind a long time ago and decided to look for Jeanne somewhere else until Zed arrived. The two end up in a fight and Noemi tried helping lessen the casualty under their wrath.' ),
+        //     // NOEMI ============================================================
+        //     array ( 'char'=>'noemi', 'vol'=>0, 'chap'=>1, 
+        //         'desc'=>"With Val falling into their trap, Noemi tries to reason with him to stop following the Ark if he is not going to help, but Val made up his mind a long time ago and decided to look for Jeanne somewhere else until Zed arrived. The two end up in a fight and Noemi tried helping lessen the casualty under their wrath." ),
 
-            // RIGEL ============================================================
-            array ('char'=>'rigel', 'vol'=>'0', 'chap'=>'3',
-                'desc'=>'Stops Kalli from trying to convince Herschel into joining the Ark and engages into a fight with her and the twins.'),
+        //     // RIGEL ============================================================
+        //     array ('char'=>'rigel', 'vol'=>'0', 'chap'=>'3',
+        //         'desc'=>"Stops Kalli from trying to convince Herschel into joining the Ark and engages into a fight with her and the twins."),
 
-            // VALKYR ============================================================
-            array ( 'char'=>'valkyr', 'vol'=>0, 'chap'=>1, 
-                'desc'=>'Val goes to a bar named "Anchor" to which he suspects the Ark is hiding only to actually find them and reveal that it is a trap to stop him from stalking them.' ),
-            array ('char'=>'valkyr', 'vol'=>'1', 'chap'=>'1',
-                'desc'=>'After getting caught by the Psykeepers, Val was put unconscious and was sent to prison (which has a Myst lock disc that prevents his manips) He shortly meets Dom while still feeling dizzy and went unconscious again.'),
-            array ('char'=>'valkyr', 'vol'=>'1', 'chap'=>'2',
-                'desc'=>'Meets up with Bono, Vox, and Carol, in an alleyway only to be asked to stop looking for his wife, "You\'ve been at this for decades and it\'s obvious she does not want to be found."'),
+        //     // VALKYR ============================================================
+        //     array ( 'char'=>'valkyr', 'vol'=>0, 'chap'=>1, 
+        //         'desc'=>"Val goes to a bar named 'Anchor' to which he suspects the Ark is hiding only to actually find them and reveal that it is a trap to stop him from stalking them."),
+        //     array ('char'=>'valkyr', 'vol'=>'1', 'chap'=>'1',
+        //         'desc'=>"After getting caught by the Psykeepers, Val was put unconscious and was sent to prison (which has a Myst lock disc that prevents his manips) He shortly meets Dom while still feeling dizzy and went unconscious again."),
+        //     array ('char'=>'valkyr', 'vol'=>'1', 'chap'=>'2',
+        //         'desc'=>"Meets up with Bono, Vox, and Carol, in an alleyway only to be asked to stop looking for his wife, 'You've been at this for decades and it's obvious she does not want to be found."),
 
-            // VRISKVIN ============================================================
-            array ( 'char'=>'vriskvin', 'vol'=>0, 'chap'=>2, 
-                'desc'=>'Ends up fighting against an old friend to which he won. Moon then him that he is going to leave the Psykeepers and that he should not follow him.' ),
+        //     // VRISKVIN ============================================================
+        //     array ('char'=>'vriskvin', 'vol'=>'0', 'chap'=>'2',
+        //         'desc'=>"Ends up fighting against an old friend to which he won. Moon then told him that he is going to leave the Psykeepers and that he should not follow him because he does not want them to get caught in whatever led him to his death in the first place."),
 
-            // ZEDRIK ============================================================
-            array ( 'char'=>'zedrik', 'vol'=>0, 'chap'=>1, 
-                'desc'=>'With Val falling into their trap, Zed ends up having to fight him in a one-on-one after Val calls him his "brother". He\'s still quite salty about it. He ends up winning but had to leave Val alive after the Psykeepers arrived.' ),
-        );
+        //     // ZEDRIK ============================================================
+        //     array ( 'char'=>'zedrik', 'vol'=>0, 'chap'=>1, 
+        //         'desc'=>"With Val falling into their trap, Zed ends up having to fight him in a one-on-one after Val calls him his 'brother'. He\'s still quite salty about it. He ends up winning but had to leave Val alive after the Psykeepers arrived." ),
+        // );
 
         if($req=="char") return $mirChars;
         else if ($req=="frm") return $mirFrm;
@@ -550,9 +585,31 @@ class MirrorplaneController extends Controller
         else if ($req=="team") return $mirTeam;
         else if ($req=="mems") return $mirMems;
         else if ($req=="logs") return $mirLogs;
-
-        else if ($req=="stor") return $mirStory;
         else if ($req=="arg") return $mirStoryArg;
+    }
+
+    function editorsave() {
+
+        print_r('The php script is called....');
+        var_dump($_POST['info']);
+
+        $post_data = $_POST['info'];
+        
+        $filename = storage_path('app/story.txt');
+        chmod($filename, 0777); 
+        file_put_contents($filename, $post_data.PHP_EOL , LOCK_EX);
+
+        // ============================================
+
+        // $to      = 'alexis@solutionsresource.com';
+        // $subject = 'GSM Calendar Download';
+        // $message = '$post_data';
+        // $headers  = 'MIME-Version: 1.0' . "\r\n";
+        // $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+        // mail($to, $subject, $message, $headers);
+
+        // echo 'Email Sent.';
     }
 
 }

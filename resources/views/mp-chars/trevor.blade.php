@@ -1,7 +1,7 @@
 @extends('templates.mp-char')
 
 <!-- METAS -->
-@section('title') Mirrorplane | Lupe @stop
+@section('title') Mirrorplane | Trevor @stop
 @section('char-meta')
 	<?php 
 		$charname = 'trevor';
@@ -20,7 +20,7 @@
 		$mcharAff = "Howler | Carnival of Madness";
 		
 		$mcharAft = "Flesh";
-		$mcharSty = "Invorti";
+		$mcharSty = "Invorti | Cirkunesi";
 		$mcharWoc = "His Trusty Claws";
 
 		$charthemes = 'The Murderer, Big Bad Wolf, Alpha Alpha Wolf, Is actually the one more appropriate for the name \'Lupe\'';

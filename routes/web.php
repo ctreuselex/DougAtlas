@@ -21,5 +21,7 @@ Route::get('/mirrorplane/profile/{char}', 'MirrorplaneController@character')->na
 Route::get('/mirrorplane/the-story', 'MirrorplaneController@thestory');
 Route::get('/mirrorplane/cts-timeline', 'MirrorplaneController@ctstime');
 
+Route::post('/editor-save', 'MirrorplaneController@editorsave');
+
 
 Route::get('/register', 'TestController@index');
