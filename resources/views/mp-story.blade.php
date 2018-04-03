@@ -155,8 +155,7 @@
             width: 83.33333333%; height: 55px;
             background-color: #eee;
             overflow: hidden;
-            z-index: 999;
-            cursor: grab; }
+            z-index: 999; }
             .story-characters .char-group {
                 float: left;
                 width: 100%; height: 25px;
@@ -190,7 +189,8 @@
         .story-characters .characters {
             position: absolute; top: 25px;
             height: 30px;
-            background-color: grey; }
+            background-color: grey;
+            cursor: grab; }
             .story-characters .characters .group {
                  float: left;
                  border-right: 10px solid grey }
@@ -248,7 +248,8 @@
                         color: white;                         
                         font-size: 12px;
                         padding: 5px 15px;
-                        z-index: 9; }
+                        border-bottom: 1px solid white;
+                        z-index: 99; }
                         .story-volumes .volume-story .volume-chapter .subtitle:before {
                             content: ""; 
                             position: absolute;
@@ -289,7 +290,7 @@
                                     padding: 10px;
                                     border: 0;
                                     box-shadow: 0 3px 3px rgba(0,0,0,0.3);
-                                    z-index: 99; }
+                                    z-index: 9; }
                                 .story-volumes .volume-story .volume-chapter .chapter-story .point.active.open .desc {
                                     display: block; }
                                     .story-volumes .volume-story .volume-chapter .chapter-story .point.active .char {
@@ -544,6 +545,8 @@
                 });
 
                 // DRAG ITEMS
+                var maxLeft = chapTitleWidth,
+                    maxRight = ((($(window).width() * 0.8333333333) - chapTitleWidth) / 2) * -1;
                 var storyOrigin = chapTitleWidth;
                 var downPoint, movePoint, upPoint, drag;
                 var storyDrag = false;
@@ -556,9 +559,18 @@
                     if(storyDrag) {
                         movePoint = downPoint - (event.pageX * windowWidth);
                         drag = storyOrigin - movePoint;
-                        $('.story-characters .characters').css('left', drag + 30);
+
+                        if( drag < maxLeft && drag > maxRight ) {
+                            $('.story-characters .characters').css('left', drag + 30);
+                        } else if ( drag > maxLeft && drag > maxRight ) {
+                            $('.story-characters .characters').css('left', maxLeft + 30);
+                            drag = maxLeft;
+                        } else if ( drag < maxLeft && drag < maxRight ) {
+                            $('.story-characters .characters').css('left', maxRight + 30);
+                            drag = maxRight;
+                        }
                         // $('.story-volumes .volume-chapter .chapter-story').css('left', drag);
-                    }
+                    }h
                 });
                 $(window).on('mouseup', function(event) {
                     if(storyDrag) {
@@ -570,6 +582,7 @@
                         }, 500);
                     }
                 });
+                // $('#editor-desc').val(maxLeft + ' || ' + maxRight);
 
             });
 
